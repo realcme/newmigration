@@ -1,0 +1,1 @@
+1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 <!-- <!-- The footer was extracted by Jon Toshmatov --> The footer was extracted by Jon Toshmatov --> <!-- The footer was extracted by Jon Toshmatov --> <?php global $user; $img_path = base_path() . path_to_subtheme(); ?> <!doctype html>

@@ -1,0 +1,21 @@
+/* $Id: style.css,v 1.1 2009-05-20 18:09:55 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+ 
+ 
+ /* moved to Brand CSS
+.cme-questions {
+height: 500px !important;
+overflow: auto !important;
+}
+
+.cme-piechart,
+#score-avg,
+#score-median {
+   display: none !important;
+}
+*/

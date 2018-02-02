@@ -1,0 +1,1 @@
+<div id="header"><div id="header-inner" class="clear-block"> <div id="banner"> <div id="headline"></div> <div id="banner-inner"> <a class="accel" href="/cms"> </a> </div> </div> </div> <?php if ($header): ?> <div id="header-blocks"> <?php print $header; ?> </div> <!-- /#header-blocks --> <?php endif; ?> </div></div> <!-- /#header-inner, /#header -->

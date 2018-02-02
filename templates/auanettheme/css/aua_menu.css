@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*
+Container for the menu.
+*/
+#menuwrapper {
+	color: #FFFFFF;
+	width: 928px;
+	height: 52px;
+}
+/*
+p7menubar is the root UL and p7menubar ul applies to all the sub-menu ULs.
+*/
+#p7menubar, #p7menubar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	background-position: left;
+	z-index:1000;
+}
+/*
+Root-Level Links.
+*/
+#p7menubar a {
+	display: block;
+	text-decoration: none;
+	font-weight: normal;
+}
+/*
+First level graphics and rollovers
+*/
+#p7menubar a.blankleft {
+	background-image: url(../img/auanet/blankleft.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 52px;
+	width: 32px;
+}
+#p7menubar a.blankright {
+	background-image: url(../img/auanet/blankright.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 52px;
+	width: 32px;
+}
+#p7menubar a.about {
+	/*background-image: url(../img/auanet/about.jpg);*/
+	background-image: url(../img/auanet/about_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.about:hover {
+	/*background-image: url(../img/auanet/about_over.jpg);*/
+	background-image: url(../img/auanet/about_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.edu {
+	/*background-image: url(../img/auanet/education.jpg);*/
+	background-image: url(../img/auanet/education_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.edu:hover {
+	/*background-image: url(../img/auanet/education_over.jpg);*/
+	background-image: url(../img/auanet/education_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.guidelines {
+	/*background-image: url(../img/auanet/quality.jpg);*/
+	/*background-image: url(../img/auanet/clinical_practice_guidelines_new.jpg);*/
+	background-image: url(../img/auanet/clinical_practice_guidance_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.guidelines:hover {
+	/*background-image: url(../img/auanet/quality_over.jpg);*/
+	/*background-image: url(../img/auanet/clinical_practice_guidelines_new_over.jpg);*/
+	background-image: url(../img/auanet/clinical_practice_guidance_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.membership {
+	/*background-image: url(../img/auanet/membership.jpg);*/
+	background-image: url(../img/auanet/membership_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.membership:hover {
+	/*background-image: url(../img/auanet/membership_over.jpg);*/
+	background-image: url(../img/auanet/membership_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.residency {
+	/*background-image: url(../img/auanet/Residency.jpg);*/
+	background-image: url(../img/auanet/residency_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.residency:hover {
+	/*background-image: url(../img/auanet/Residency_over.jpg);*/
+	background-image: url(../img/auanet/residency_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.products {
+	/*background-image: url(../img/auanet/Products.jpg);*/
+	background-image: url(../img/auanet/products_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.products:hover {
+	/*background-image: url(../img/auanet/Products_over.jpg);*/
+	background-image: url(../img/auanet/products_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.health {
+/*#p7menubar a.practice {*/
+	/*background-image: url(../img/auanet/PracticeResources.jpg);*/
+	background-image: url(../img/auanet/health_policy_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.health:hover {
+/*#p7menubar a.practice:hover {*/
+	/*background-image: url(../img/auanet/PracticeResources_over.jpg);*/
+	background-image: url(../img/auanet/health_policy_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.policies {
+/*#p7menubar a.legislative {*/
+	/*background-image: url(../img/auanet/Legislative.jpg);*/
+	background-image: url(../img/auanet/aua_policies_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.policies:hover {
+/*#p7menubar a.legislative:hover {*/
+	/*background-image: url(../img/auanet/Legislative_over.jpg);*/
+	background-image: url(../img/auanet/aua_policies_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.international {
+	/*background-image: url(../img/auanet/International.jpg);*/
+	background-image: url(../img/auanet/international_new.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+#p7menubar a.international:hover {
+	/*background-image: url(../img/auanet/International_over.jpg);*/
+	background-image: url(../img/auanet/international_new_over.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 52px;
+	width: 96px;
+}
+/*
+Class assigned to selected button for whatever page is active
+*/
+
+#p7menubar a.selected {
+	display: block;
+	text-decoration: none;
+	color: #333333;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+/* *************************************************************** */
+
+/*
+The Root-Level list items. Floating left allows
+them to appear horizontally.
+*/
+#p7menubar li {
+	float: left;
+	width: 15em;
+}
+/*
+Sets width for Sub-Menu box and the List Items inside - in proportional em units. 
+This allows the sub-menu width to expand if users resize the text in their browsers.
+*/
+#p7menubar li ul, #p7menubar ul li {
+	width: 15em;
+}
+/*
+The sub-menu links.
+*/
+#p7menubar ul li a {
+	color: #0000FF;
+	border: 1px solid #99ccff;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+}
+/*
+Sub-Menu Unordered Lists describes each dropdown sub-menu grouping. 
+Positioned Absolutely to allow them to appear below their root trigger.
+Set to display none to hide them until trigger is moused over.
+Background Color must be set or problems will be encountered in MSIE.
+*/
+#p7menubar li ul {
+	/* second-level lists */
+	position: absolute;
+	display: none;
+	background-color: #FFFFCC;
+	border: 1px solid #99CCFF;
+}
+/*
+Set the Sub-Menu UL to be visible when its associated
+Root-Level link is moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+*/
+#p7menubar li:hover ul, #p7menubar li.sfhover ul {
+	display: block;
+	left: auto;
+}
+/*
+Sets the Text color of the Sub-Level links when the Root-Level
+menu items are moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+The color set should match the normal Sub-Level link color
+in the rule: #p7menubar ul li a.
+*/
+#p7menubar li:hover ul a, #p7menubar li.sfhover ul a {
+	color: #333333;
+	background-color: transparent;
+}
+/*
+The normal hover class for Sub-Level links. The Important directive
+is required for older browsers. We set a background color, which shows
+over the gradient background. We set text color to white.
+*/
+#p7menubar ul a:hover {
+	background-color: #0000FF!important;
+	color: #FFFFFF!important;
+}
+#p7menubar ul a:hover {
+	background-color: #0000FF;
+	color: #FFFFFF;
+}
+#p7menubar li {
+	width: auto;
+}
+/* Third level */
+
+#p7menubar ul.tier3 li {
+	border: 1px solid #8c8c8c;
+}
+/* third-and-above-level lists */
+#p7menubar li ul ul {
+	left: -999em;
+}
+#p7menubar ul li ul {
+	position: absolute;
+	width: 100%;
+	float: left;
+	background: #99ccff;
+	display: block;
+	z-index: 999;
+	color: 333333;
+	margin-top: -1.75em;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 15em;
+}
+#p7menubar li:hover ul ul, #p7menubar li.sfhover ul ul {
+	left: -999em;
+}
+#p7menubar li:hover ul, #p7menubar li li:hover ul, #p7menubar li.sfhover ul, #p7menubar li li.sfhover ul {
+	left: auto;
+}
+
+
+
+#p7menubar ul a.multi {
+	padding-left: 20px;
+	background-image: url(../img/auanet/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+}
+#p7menubar ul a.multi:hover {
+	padding-left: 20px;
+	background-image: url(../img/auanet/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+}

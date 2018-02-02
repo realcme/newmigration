@@ -1,0 +1,186 @@
+#views-filters {display:none}
+.page-cmealerts-alerts #views-filters {display:inline}
+
+body {
+    background-color: #e0e0e0;
+    background-image: url("/cms/sites/all/themes/zen/patientcoachtheme/img/top-bg-pattern.png");
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+}
+
+.back {
+    position:relative;
+    z-index:5;
+}
+
+.cme-recommend-to-peer, .cme-mastery-report {
+    display: none;
+}
+
+#page {
+  width: 1024px;
+  padding: 20px 0px;
+  background-color: transparent;
+}
+
+#header {
+    border-top: 1px solid #fff;
+    clear: both;
+    display: block;
+}
+
+.nav {
+  float: right; 
+  font-family: Montserrat,sans-serif; 
+  font-size: 13px;
+}
+
+#page-inner {
+    background-color: #fff;
+    display: inline-block;
+    min-height: 100vh;
+    height: auto;
+    margin-top: 30px;
+    min-width: 1024px;
+}
+#logo-title {
+    display: block;
+}
+
+#header-blocks {
+   clear: none;
+}
+
+#main {padding: 0px 10px;}
+
+#footer {padding: 10px 10px;}
+
+.healthcourse-record.open {
+   background-color: #FFFFFF;
+   border-top: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+}
+
+
+.healthcourse-record-title {
+  font-weight: bold;
+}
+
+.curric-title { 
+  color: #faaf40; 
+  font-size: 22px; 
+  font-weight: bold; 
+  clear: right; 
+  padding-top: 10px;
+}
+#curricdata .reflections {
+    margin-bottom: 15px;
+}
+
+/* #b8cb77 -> #2461AA */
+/* #d7e1b1 -> #AECBEE */
+
+#healthcoursenav {
+    background-color: transparent;
+    width: auto;
+    border-width: 0;
+}
+
+#healthcoursenav > ul > li > a {
+    border: none;
+}
+#healthcoursenav > ul > li > a:hover{background:#AECBEE;}
+#healthcoursenav ul li.has-sub:hover > a{ background:#AECBEE; } 
+#healthcoursenav ul li.has-sub > a:hover{background:#AECBEE; } 
+#healthcoursenav > ul > li > a{color:#fff;} 
+#healthcoursenav ul li > ul li a{color:#5F88A8;} 
+#healthcoursenav ul li a.active {
+   background-color: #5F88A8;
+   color: #fff!important;
+}
+ul.primary li {
+   border: 1px solid #5F88A8;
+   border-radius: 0;
+}
+ul.primary li a:hover{
+   background-color: #AECBEE;
+   border-radius: 0;
+}
+ul.primary li.active a, ul.primary li.active a:hover {
+   border-radius: 0;
+}
+
+.tabs li {
+   background-color: #fff!important;
+}
+.tabs li a {
+   color: #000!important;
+}
+.tabs li a:hover {
+  color: #fff!important;
+}
+.tabs li.active a, .tabs li.active a:link {
+   background-color: #5F88A8!important;
+   color: #fff!important;
+}
+.tabs li.active a:hover {
+   background-color: #AECBEE;
+   color: #fff!important;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+  background: #7494A9; /* Old browsers */
+  box-shadow: none;
+  border-radius: 0;
+  padding-top: 0;
+}
+
+#btn-proceed {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+div > #btn-proceed {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#proceed {
+  padding-top: 7px;
+}
+
+#btn-proceed-top {
+  margin-top: 15px;
+}
+
+.view-item-all-activities .view-data-node-link
+{
+  float: right;
+    background-color: #2461AA;
+    background-image: -moz-linear-gradient(center top , #AECBEE, #2461AA);
+    border-color: #AECBEE #AECBEE #2461AA;
+    color: #FFFFFF;
+}
+.form-btn {
+  background: #2461AA; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #AECBEE 0%, #2461AA 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#AECBEE), color-stop(100%,#2461AA)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #AECBEE 0%,#2461AA 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #AECBEE 0%,#2461AA 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #AECBEE 0%,#2461AA 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #AECBEE 0%, #2461AA 100%); /* W3C */
+  color: #FFFFFF;
+}
+
+#blockactivityreview .reviewheader {
+  padding-right: 10px;
+}
+
+#blockactivityreview .profession {
+    left: 150px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

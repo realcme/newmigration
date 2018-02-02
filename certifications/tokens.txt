@@ -1,0 +1,83 @@
+Louise visit 1: 
+@number=92011469-A
+
+Louise visit 2:
+@number=92011469-B
+
+Louise visit 3:
+@number=92011469-C
+
+Traversing the Clinical Challenges and Complexities of Asthma Assessment and Treatment: Improving Control of Asthma Symptoms
+@number=92431470
+
+DIME Sue (ALL visits)
+@aanp_pid=Program ID #0911395
+
+DIME ancc (TROY)
+@ina=0313-007- XXXXX
+
+Margy visit 1
+@uan = 077-999-09-037-H01-P
+@uantype = knowledge-based
+@akhid = 11010 WB0909
+
+Margy visit 2
+@uan = 077-999-09-039-H01-P
+@uantype = knowledge-based
+@akhid = 10992 WB1009
+
+Raj visit 1
+@uan = 077-999-09-038-H01-P
+@uantype = knowledge-based
+@akhid = 10991 WB0909
+
+Raj visit 2
+@uan = 077-999-09-040-H01-P
+@uantype = knowledge-based
+@akhid = 10993 WB1009
+
+Joseph visit 1
+@uan = 0077-9999-10-010-H01-P
+@uantype = knowledge-based
+@akhid = 11055WB0210
+@akh_release_date = Feb-25-10
+@akh_expiration_date = Feb-25-11
+
+Joseph visit 2
+@uan = 0077-9999-10-011-H01-P
+@uantype = knowledge-based
+@akhid = 11056WB0410
+  //@akh_release_date = Feb-25-10
+  //@akh_expiration_date = Feb-25-11
+
+Howard visit 2
+@uan = 0077-9999-10-012-H01-P
+@uantype = knowledge-based
+@akhid = 11054WB0210
+@akh_release_date = Feb-25-10
+@akh_expiration_date = Feb-25-11
+
+Optimizing VTE Prophylaxis in the Inpatient Setting
+@uan = 276-000-09-044-H01-P
+@ed = This educational activity is an application-based activity.
+
+Jim Visit 1
+@uan = 276-000-09-045-H01-P
+@ed = This educational activity is a knowledge-based activity.
+
+Mark Visit 1
+@uan = 276-000-10-005-H01-P
+@ed = This educational activity is a knowledge-based activity.
+
+Stanley Visit 1
+@uan = 276-000-10-006-H01-P
+@ed = This educational activity is a knowledge-based activity.
+
+Alicia Visit 1
+@invalid = This certificate is not valid for continuing education contact hours. A valid certificate for 1 contact hour will be issued upon successful completion of visit 1 and visit 2.
+
+Andy Visit 1
+@invalid = This certificate is not valid for continuing education contact hours. A valid certificate for 1 contact hour will be issued upon successful completion of visit 1 and visit 2.
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&

@@ -1,0 +1,105 @@
+
+.curric-title { display: none}
+
+div.node-type-activity_group {
+	border-radius: 2px;
+  -moz-box-shadow: inset -1px -1px 10px #333;
+  -webkit-box-shadow:inset -1px -1px 10px #333;;
+  box-shadow:inset -1px -1px 10px #333;
+  padding: 10px;
+}
+.curric-intro-text p {
+	margin: 0px;
+}
+.node-type-activity_group .title {
+  display: none;  
+}
+
+#intro-text { 
+  font-family: Arial, verdana, sans-serif; 
+  margin-bottom: 15px; 
+}
+
+#intro-text-title { 
+  margin-bottom: 10px; 
+}
+
+.curric-logo { 
+  float: left; padding-right: 5px; 
+}
+
+.curric-title { 
+  color: #FDA738; 
+  font-size: 22px; 
+  font-weight: bold; 
+  clear: right; 
+  padding-top: 10px;
+}
+
+
+.ag-record {
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  -moz-box-shadow: inset -1px -1px 5px #ddd;
+  -webkit-box-shadow: inset -1px -1px 5px #ddd;
+  box-shadow: inset -1px -1px 5px #ddd;
+  padding: 10px 10px 5px 10px;
+  height: 220px;
+}
+
+.ag-record.open {
+  background-image: linear-gradient(left , rgb(255,255,255) 35%, rgb(194,215,158) 68%);
+  background-image: -o-linear-gradient(left , rgb(255,255,255) 35%, rgb(194,215,158) 68%);
+  background-image: -moz-linear-gradient(left , rgb(255,255,255) 35%, rgb(194,215,158) 68%);
+  background-image: -webkit-linear-gradient(left , rgb(255,255,255) 35%, rgb(194,215,158) 68%);
+  background-image: -ms-linear-gradient(left , rgb(255,255,255) 35%, rgb(194,215,158) 68%);
+}
+
+.ag-record.forbidden, .ag-record.completed {
+	background-color: rgb(221,221,221);
+}
+
+.ag-record-icon {
+ float: left;
+ width: 100px;
+}
+
+.ag-record-info {
+ float: left;
+ max-width: 650px;
+}
+
+.ag-record-action {
+ position: absolute;
+ top: 50px;
+ right: 0px;
+ width: 200px;
+ text-align: right;
+ padding-right: 10px;
+ padding-bottom: 10px;
+ font-size: 14px;
+}
+
+.ag-record.forbidden.ag-record-action {
+	height: 20px; 
+}
+
+.ag-record-title {
+	font-weight: bold;
+}
+
+.ag-record-credits {
+  padding-top: 5px;
+}
+
+.ag-record-credits-title {
+	float: left;
+	font-weight: bold;
+	padding-right: 5px;
+}
+.ag-record-credits-value {
+  float: left;
+  font-weight: normal;
+}

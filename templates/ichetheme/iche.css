@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, #page {
+	background-color: #C2C2C2;
+}
+
+#page {
+	width: 1000px;
+}
+
+#page-inner {
+	width: 960px;
+	padding: 0 20px;	
+	background-color: #FFF;	
+}
+
+#header {
+	margin: 0;
+	padding-top: 10px;
+}
+
+#header_bar {
+	background-color: #c3002c;
+	height: 28px;
+}
+
+#header_bar img {
+	margin: 0;
+}
+
+#logo img{
+	vertical-align: absbottom;
+}
+
+#iche-footer {
+	text-align: center;
+	width: 960px;
+	padding: 0 20px;		
+}
+
+#iche-footer a {
+	color:#666666;
+font-size:7.5pt;
+padding:3px;
+text-decoration:none;
+font-weight: normal;
+}

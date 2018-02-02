@@ -1,0 +1,243 @@
+html {
+    background: url("../img/html.png") no-repeat scroll 50% 0 #031B51;
+}
+
+body {
+    background: url("../img/body.png")  no-repeat scroll 50% 100% transparent;
+    padding: 0px;
+    background-color: rgb(5,29,84);
+}
+
+#upennlogo {
+    background: url("../img/logo-cme-perelman.png") no-repeat scroll 0 0 transparent;
+    bottom: 13px;
+    display: block;
+    height: 95px;
+    left: 0;
+    position: absolute;
+    width: 213px;
+}
+#upennlogo img {
+    display: none;
+}
+#site-header {
+    position: relative;
+    z-index: 100;
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;    
+    font-family: Helvetica,Arial,sans-serif;
+    color: #2B2B2B;
+}
+#site-header .wrapper {
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+}
+
+.navigation.services a {
+    font-weight: normal;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.navigation.utility .wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+.navigation.utility {
+    background: none repeat scroll 0 0 #021644;
+}
+.navigation.utility ul {
+    float: right;
+    padding: 5px 0;
+}
+.navigation.utility li {
+    float: left;
+    margin-left: 15px;
+}
+.navigation.utility a {
+    color: #819CD2;
+    display: inline-block;
+    font-family: "Arial Narrow",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navigation.utility a:focus, .navigation.utility a:hover {
+    color: #FFFFFF;
+}
+.navigation.utility li.give-penn a {
+    color: #FFFFFF;
+}
+.navigation.utility a.last {
+    padding-right: 0;
+}
+.navigation.services {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.navigation.services ul, .navigation.services form {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.navigation.services li {
+    float: left;
+    margin-left: 5px;
+}
+.navigation.services a {
+    color: #F2C100;
+    display: inline-block;
+    font-family: "Arial Narrow",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navigation.services a:focus, .navigation.services a:hover {
+    color: #FFFFFF;
+}
+
+#cse-search-box {
+    margin-left: 44px;
+    visibility: hidden;
+}
+#cse-search-box li {
+    margin: 0;
+}
+#cse-search-q {
+    background-color: #FFFFFF;
+    background-position: 10px -108px;
+    border: medium none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    width: 160px;
+}
+.lte7 #cse-search-q {
+    margin-top: -1px;
+}
+#cse-search-q.no-bg {
+    background-image: none;
+}
+#cse-search-box button {
+    background-position: 0 -60px;
+    border: medium none;
+    display: block;
+    height: 26px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 33px;
+}
+#cse-search-box button:focus, #cse-search-box button:hover {
+    background-position: -34px -60px;
+}
+.navigation.primary {
+    bottom: 22px;
+    margin-top: 20px;
+    position: absolute;
+    right: -14px;
+}
+.ie6 .navigation.primary {
+    width: 700px;
+}
+.navigation.primary li {
+    border-left: 1px solid #042F92;
+    border-right: 1px solid #011456;
+    float: left;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 18px;
+}
+.navigation.primary .first {
+    border-left: medium none;
+}
+.navigation.primary .last {
+    border-right: medium none;
+}
+.navigation.primary .has-secondary {
+    position: relative;
+}
+.navigation.primary a {
+    color: #FFFFFF;
+    display: inline-block;
+    margin: -8px 1px -8px 2px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.navigation.primary li:hover a, .navigation.primary a:focus, .navigation.primary a:hover {
+    background-color: #022571;
+}
+.navigation.primary li.current a {
+    background-color: #0D3489;
+    margin: -8px -2px -8px -1px;
+    padding: 8px 15px;
+}
+.navigation.primary li.has-secondary a {
+    background-position: 100% 14px;
+    padding-right: 34px;
+}
+.navigation.primary li.has-secondary:hover a, .navigation.primary .has-secondary a:focus, .navigation.primary .has-secondary a:hover {
+    background-position: 100% -16px;
+}
+.navigation.secondary {
+    background: none repeat scroll 0 0 #022571;
+    left: -9999px;
+    padding: 20px 20px 10px;
+    position: absolute;
+    top: 26px;
+    width: 220px;
+}
+.has-secondary > a:focus + .navigation.secondary, .has-secondary:hover .navigation.secondary, #navigation-more.focused {
+    left: auto;
+    right: 1px;
+}
+.navigation.secondary ul {
+    float: left;
+    width: 100px;
+}
+.navigation.secondary .first {
+    margin-right: 20px;
+}
+.navigation.secondary li {
+    border: medium none;
+    float: none;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+.navigation.secondary li:before {
+    color: #6182C2;
+    content: "•";
+    display: inline-block;
+    margin-right: 6px;
+}
+.navigation.primary .navigation.secondary li a {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+}
+.navigation.secondary li a:focus, .navigation.secondary li a:hover {
+    text-decoration: underline;
+}
+.navigation ul {
+	list-style: none;
+}
+.master-sprite {
+    background-image: url("../img/master-sprite.png?2");
+    background-repeat: no-repeat;
+}

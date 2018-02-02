@@ -1,0 +1,201 @@
+/*----ELEMENTAL STYLES----*/
+
+body {
+	margin: 0px 75px 0px 75px;
+	text-align: left;
+	background-color:#666;
+}
+
+img {
+	border: 0px;
+}
+
+li {
+	margin: 2px 2px 4px 18px;
+}
+
+
+table {
+	border: 0px 0px 0px 0px;
+	border-collapse: collapse;
+}
+
+td {
+	vertical-align: top;
+	text-align: left;
+}
+
+#headerTable a, #headerTable a:visited {
+	color: #174A92;
+	text-decoration: none;
+}
+
+#headerTable a:hover, #headerTable a:visited:hover {
+	color: #630010;
+	text-decoration: underline;
+}
+
+table.footerTable, table.headerTable {
+	width: 100%;
+	border-top:thin;
+}
+
+div.footerContainer {	
+	background-color:#FFF;
+	margin: 0px 0px 0px 0px;
+	border-top:medium;
+}
+
+div.footerInnerContainer {
+}
+
+div.footerTextLeft {
+	font-size: 10px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+}
+
+div.footerTextRight {
+	text-align: right;
+	font-size: 11px;
+	margin: 5px 5px 5px 3px;
+	float: right;
+}
+.footerUL li{
+	float:left;
+	margin: 0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+.footerUL {
+	padding:0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+
+}
+table.headerTable {
+	background-color:#000;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width:980px;
+}
+
+.headerTable td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	width: 980px;
+}
+
+#main {
+	width: 960px;
+	margin: auto;
+}
+
+tbody {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.footermenu {
+	font-size:9px;
+	border-top:thin;
+}
+
+.footermenu a{
+	text-decoration:none;
+	color:#003471;
+	border-top:thin;
+	font-weight:normal;
+
+}
+
+.footermenu li{
+	display:inline;
+	border-left:1px solid #003471;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.menuDiv  {
+    background: url(../img/sprite-nav.jpg) no-repeat scroll 0px -65px #742E34;
+	width: 980px;
+	min-width: 960px;
+	margin-top: -2px;
+}
+
+.menuBar {
+	margin-top: 0px;
+	padding: 5px 0;
+	list-style-type: none;
+	text-align: center;
+	height:15px;
+}
+
+.menuBar li {
+	display: inline;
+	margin: 5;
+	margin-left: 4px;
+}
+
+.menuBar li a{
+	text-decoration: none;
+	font:12px/1 arial,helvetica,sans-serif;
+	padding: 6px 17px 5px;
+	margin-right: 0px;
+	color: #FFFFFF;
+	height:auto;
+}
+
+.menuBar li a:visited{
+	color: #FFFFFF;
+}
+
+.menuBar li a:hover{
+	background-color:#66B4B4;
+	
+
+}
+
+.menuBar li a:active{
+	color: #7EACB4;
+}
+
+.menuBar li.selected a{ /*selected tab effect*/
+	position: relative;
+	background-color: #fff9e8;
+	color: black;
+}
+
+.menu2Div{
+	position:absolute;
+	top:5px;
+	right: 90px;
+	width:300px:
+	
+}
+.menu2Bar li {
+	display:inline;
+	padding:none;
+}
+
+.menu2Bar ul{
+
+}
+
+.footerTable {
+	
+	border-top:thin;
+}
+
+
+.footerTable table{
+	border-top:thin;
+	margin: 0;
+}
+
+.homelinks {
+	display: none;
+}

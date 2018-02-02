@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #408ed0 url(./img/background.jpg) repeat-x center top;
+}
+#page {
+	width: 960px;	
+}
+
+#content-inner{
+	margin: 10px;
+}
+
+#footer {
+	padding: 0px;	
+}

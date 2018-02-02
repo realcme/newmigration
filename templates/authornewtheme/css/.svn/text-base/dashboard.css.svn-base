@@ -1,0 +1,92 @@
+/*
+* Override dashboard-at.css
+*/
+
+body {
+	font-family: Raleway, Arial, sans-serif !important;
+}
+{
+	font-size: 18px;
+	font-family: 'Raleway', trebuchet ms, sans-serif !important;
+	border: 0;
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 5px 15px;
+	height: 32px;
+	margin: 3px 10px;
+	text-shadow: none;
+	line-height: 32px;
+	font-weight: normal;
+	background: #008CcC;
+	margin: 0;
+}
+
+#page {
+	 background-color: #EEE !important;
+}
+/*
+.gs-w {
+	border: 1px solid red;
+}
+.widget {
+  border: 1px solid green;
+}
+*/
+.widget div.button, .widget div.button:hover, #resetdb, #resetdb:hover {
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	background: #5681a0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 5px 8px 4px;
+	cursor: pointer;
+	font-size: 12px;
+}
+#resetdb, #resetdb:hover {
+	padding: 5px 12px 4px;
+}
+.widget div.button.disabled {
+	background-color: #D5D5D5;
+	font-weight: normal;
+	text-shadow: none;
+}
+.widget table {
+  border: none;
+}
+.widget table th {
+  border: none;
+  background: none;
+  background-color: #F9F9F9;
+  font-weight: normal;
+  height: 25px;
+  margin: 0 0 0 1px;
+  padding: 3px 5px;
+  text-align: left;
+  color:  #666
+}
+.widget table td {
+	border: none;
+  text-align: left;
+}
+
+.widget a:link {
+    color: #008ccc;
+    font-weight: 600;
+}
+.widget a:visited {
+    color: #008ccc;
+}
+.widget a:hover {
+    color: #008ccc;
+}
+
+#widget-cmeauthor-last-used-templates div.wheader .title {font-size: 20px;}
+#widget-cmeauthor-last-used-templates table tr td:nth-child(1) div:nth-child(1) {font-size: 14px;}
+#widget-cmeauthor-last-used-templates table tr td:nth-child(1) div:nth-child(3) div:nth-child(1) {font-size: 12px;}

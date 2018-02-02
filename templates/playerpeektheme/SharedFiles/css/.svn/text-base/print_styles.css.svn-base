@@ -1,0 +1,1384 @@
+/*
+ * rcm_reset.css
+ */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,select{font-family: verdana,sans-serif;font-size:100%;background-color: transparent;border-color: transparent;margin:0;padding:0;}
+textarea, input {font-family: verdana,sans-serif;font-size:100%;margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-family: verdana,sans-serif;font-size:100%;background-color: transparent;border: none;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+strong{font-weight:bold;}
+em{font-style:italic;}
+.forumpost {margin-top:0px;background-color: #F6F6F6;}
+.forumheaderlist, .forumpost {border: none;}
+.forumpost .content {background-color: #F6F6F6;padding:5px;}
+.forumpost .left {background-color:#FFFFFF;padding: 0px;text-align: left;width: 99.6%;}
+a:link, a:visited, a:active, a:hover {text-decoration:underline;}
+ 
+/*
+ * rcm_fonts.css
+ */
+
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ * 
+ */
+body {font:12px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+
+/**
+ * 99% for safari; 100% is too large
+ */
+select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}
+
+/**
+ * Bump up !IE to get to 13px equivalent
+ */
+pre, code {font:115% monospace;*font-size:100%;}
+
+/**
+ * Default line-height based on font-size rather than "computed-value"
+ * see: http://www.w3.org/TR/CSS21/visudet.html#line-height
+ */
+body * {line-height:1.5em;}
+
+ 
+/*
+ * rcm_base.css
+ *
+ *  This file defines the basic styles for the site.
+ *  The main content should use these styles except
+ *  in special cases.
+ *  In other words, this file should style the elements as they should
+ *  look in the main content area.
+ */
+
+
+/*
+ *  Required style defs
+ */
+body
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-family: verdana, sans-serif;
+  color: #666;
+}
+
+h1
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-size: 110%;
+  font-weight:bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h2
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-size: 105%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-size: 100%;
+}
+
+a
+{}
+a:link
+{}
+a:visited
+{}
+a:hover
+{}
+a:active
+{}
+
+p
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+ul
+{
+  /* recommended styles */
+  list-style: disc outside;
+  margin-left: 2em;
+
+  /* add custom styles here */
+  padding-bottom: 1em;
+}
+ol
+{
+  /* recommended styles */
+  list-style: decimal outside;
+  margin-left: 2.5em;
+
+  /* add custom styles here */
+  padding-bottom: 1em;
+}
+
+hr{}
+
+div {}
+
+li {}
+
+input {}
+
+select {}
+
+/* reset.css removes this */
+strong, strong *, b, b *
+{
+  font-weight: bold !important;
+}
+
+/* reset.css removes this */
+em, em *, i, i *
+{
+  font-style: italic !important;
+}
+
+
+/*
+ *  Optional style defs
+ *
+ *  These are elements that should be specified
+ *  for a more complete style sheet.
+abbr
+acronym
+button
+ */
+table
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  background-color: #eee;
+}
+caption
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-weight: bold;
+  background-color: #888;
+}
+th
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  font-weight: bold;
+}
+td
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  border: 0px solid #888;
+}
+blockquote
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  padding-left: 2em;
+}
+cite
+{
+  /* recommended styles */
+  font-style: italic;
+
+  /* add custom styles here */
+}
+code
+{
+  /* recommended styles */
+  white-space: pre;
+
+  /* add custom styles here */
+}
+/*
+dd
+h4
+h5
+h6
+...
+ */
+ 
+ 
+ /*******************************************************\
+ * rcm_layout.css
+ * You can change this file to make different layouts
+ * using the markers below. Once you are done customizing the layout
+ * feel free to delete these instructions.
+ *
+ * Markers:
+ *
+ * Left Aligned layout
+ * -------------------------
+ * m1 - delete
+ *
+ *
+ * Alt Container on the right
+ * adn Alt2 on the left
+ * ---------------------------
+ * m21 - change to [float: right;]
+ * m22 - change to [margin-right]
+ * m23 - change to [float: left;]
+ * m24 - change to [margin-left]
+ *
+ *
+ * Make layout fluid
+ * ------------------------
+ * m3 - comment or delete this line
+ *
+ *
+ * To remove Alt column
+ * ------------------------
+ * comment or delete the altcontainer <div> and it's contents from the markup
+ * m21 - comment or delete this line
+ * m22 - comment or delete this line
+ *
+ *
+ * To remove Alt2 column
+ * ------------------------
+ * comment or delete the altcontainer2 <div> and it's contents from the markup
+ * m23 - comment or delete this line
+ * m24 - comment or delete this line
+ *
+\*******************************************************/
+
+/*
+ * Header style Definitions
+ */
+#header
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+}
+#headerbody
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  background-color: #aaa;
+  height: 75px;
+}
+#headernav
+{
+  /* recommended styles */
+  width: 100%;
+  float: left;
+
+  /* add custom styles here */
+  background-color: #ddd;
+}
+
+/*
+ * Body style Definitions
+ */
+#body
+{
+  /* recommended styles */
+  clear: both;
+
+  /* add custom styles here */
+}
+#altcontainer
+{
+  /* recommended styles */
+  float: left; /* marker :m21: */
+  width: 170px; /* should match the margin-left of #container */
+
+  /* add custom styles here */
+}
+#altcontainer2
+{
+  /* recommended styles */
+  width: 170px; /* should match the margin-right of #container */
+  /* add custom styles here */
+}
+#container
+{
+  /* recommended styles */
+  overflow: hidden;
+
+  /* add custom styles here */
+  background-color: #fff;
+}
+
+/*
+ * Footer style Definitions
+ */
+#footer
+{
+  /* recommended styles */
+
+  /* add custom styles here */
+  border: 1px solid #888;
+  background-color: #aaa;
+  padding: 5px;
+}
+
+/*
+ * rcm_content.css
+ *
+ *  This file defines any special case styles
+ *  for the main content area as well as any
+ *  unique style for secondary content areas.
+ */
+ 
+#header{
+  height: 55px;
+  margin:5px 0 15px 0;
+}
+
+#header img{
+  float:left;
+  margin-top: 10px;
+}
+#line{
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  position: absolute;
+  top: 30px;
+  left: 160px;
+  z-index: -1;
+}
+#courseinfo{
+  width: 230px;
+  padding: 5px;
+  background-color: #fcfcfc;
+  border:1px solid #ccc;
+  float:right;
+}
+
+#header #courseinfo ul{
+  list-style-type: none;
+  list-style-image: none;
+  margin:0;
+  padding:0;
+  font-size: 11px;
+}
+#patientstats{
+  background: transparent url(../img/header-horiz-bg.png) right top repeat-y;
+  width: 95px;
+  margin: 0px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+#patientstats img{
+  float: left;
+  margin-left: 5px;
+  background-color: #ffffff;
+}
+#patientstats table{
+  float: left;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#patientstats td{
+  padding: 0 0 0 5px;
+}
+#courseinfo ul li{
+  margin-bottom: 5px;
+}
+#coursedata{
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 11px;
+}
+.bg-grad{
+  background: transparent url(../img/header-bg-tall.png) left bottom repeat-x;
+  padding: 10px;
+  width: 100%;
+}
+.bg-grad-top{
+  background: transparent url(../img/header-bg-tall-top.png) left top repeat-x;
+  padding: 10px;
+  width: 100%;
+}
+.bg-grad ul{
+  padding-right: 20px;
+}
+#btn-proceed{
+  margin-top: 15px;
+}
+.facultyinfo{
+  padding: 5px;
+  border-bottom: 1px dashed #ccc;
+  float: left;
+  width: 95%;
+}
+.bio{
+  height: 14px;
+  width: 32px;
+  float: right;
+}
+.topspace-20{
+  margin-top: 20px;
+}
+.topspace-40{
+  margin-top: 40px;
+}
+.small, .small p{
+  font-size: 85%;
+}
+#prev{
+  float: left;
+  margin-top: 20px;
+}
+#next{
+  float: right;
+  margin-top: 20px;
+}
+.bold{
+  font-weight: bold;
+}
+
+#container{
+  overflow:hidden;
+  margin:0;
+}
+* html #container{
+  height:1%; /* So IE plays nice */
+}
+#content{
+}
+.bold{font-weight: bold;}
+/*
+.right{ float: right; display: inline; }
+.left{ float: left; display: inline; }
+*/
+div.page-page { width: 710px; page-break-after: always; }
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.spacer{
+  height: 1px;
+  border-bottom: 0;
+  width: 50%;
+  margin: 10px auto;
+}
+#userinfo{
+  background: transparent url(../img/info-bg.png) 5px 100% repeat-x;
+  border: 1px solid #ddd;
+  border-bottom: 0px;
+  border-right: 0px;
+  padding: 0px;
+  padding-top: 3px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 98%;
+}
+#userinfo p{
+  color:#666;
+  margin: 8px;
+}
+#userinfo img{
+  padding: 2px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  float: left;
+}
+#userinfo ul{
+  list-style-type: none;
+  list-style-image: none;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: bold !important;
+}
+
+#userinfo li em {
+  font-weight: bold !important;
+}
+
+.textcontent{
+  margin-right:10px;
+  padding:10px;
+}
+.patientchart .table {
+  width: 99%;
+  border: 1px solid #ccc;
+}
+table{
+  background-color: transparent;
+}
+td{
+  padding: 5px;
+	border-color: #ccc; 
+}
+div.textcontent td {
+	border: 1px solid #ccc;
+}
+.td-title{
+  font-weight: bold;
+  text-align: right;
+  vertical-align: text-top;
+}
+.td-bold{
+  font-weight: bold;
+  text-align: left;
+  vertical-align: text-top;
+}
+.td-desc{
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px dashed #999;
+}
+.td-lineleft{
+  text-align: left;
+  vertical-align: text-top;
+  border-bottom: 1px solid #999;
+}
+.td-lineright{
+  text-align: right;
+  vertical-align: text-top;
+  border-bottom: 1px solid #999;
+}
+
+#topnav-prev{
+  width: 33px;
+  height: 11px;
+  position: absolute;
+  top: 11px;
+  left: 366px;
+}
+#topnav-next{
+  width: 33px;
+  height: 11px;
+  position: absolute;
+  top: 11px;
+  left: 404px;
+}
+fieldset{
+  border: 0;
+  padding: 10px;
+  margin: 10px;
+}
+
+table.question {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+
+table.required {
+  border: 1px solid #FF0000;
+}
+
+table.question td {
+  padding: 6px;
+  vertical-align: top;
+  text-align: left;
+}
+table.question td.ql {
+  width: 20px;
+}
+.survey { 
+  background-color: #eee; 
+  width: 500px; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  padding: 0 10px 5px 10px; 
+  border: solid 1px #999;
+}
+.survey p {
+  padding-bottom: 0px;
+}
+.surveychartempty { 
+  text-align: top;
+  width: 0px;
+  height: 0px;
+  display: none;
+} 
+.surveychart { 
+  text-align: top;
+  width: 260px;
+  height: 120px;
+} 
+#statusbar{
+  position: relative;
+  width: 100%;
+  
+}
+#statusbar img{
+  float: left;
+  padding-right: 10px;
+}
+#sb-header{
+  margin-left: 15px;
+}
+#sb-nav{
+}
+#sb-gfx-1{
+  border: 1px solid #000;
+  border-top: 0px;
+  width: 98%;
+  height: 15px;
+  margin-top: 20px;
+}
+#todobar{
+  height: 3px;
+  padding: 0;
+  margin: 55px auto 20px auto;
+  width: 90%;
+  background-color: #ccc;
+  position: relative;
+}
+#completedbar{
+  background-color: #666;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#donebar{
+  background-color: #fdb913;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#sbholder{
+  position: absolute;
+  left: -4px; /* half the width of the pin-sub and pin-on image */
+  top: 0;
+  width: 100%;
+}
+#sb01, #sb02, #sb03, #sb04, #sb05, #sb06, #sb07, #sb08, #sb09, #sb10, #sb11{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 9px;
+  height: 12px;
+  cursor: pointer;
+  background: transparent url(../img/bar/pin-off.gif) left top no-repeat;
+}
+.pinon{
+  background-image: url(../img/bar/pin-on.gif) !important;
+}
+#sb-sub-01, #sb-sub-02, #sb-sub-03, #sb-sub-04, #sb-sub-05, #sb-sub-06, #sb-sub-07, #sb-sub-08, #sb-sub-09, #sb-sub-10, #sb-sub-11, #sb-sub-12, #sb-sub-13, #sb-sub-14, #sb-sub-15{
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 9px;
+  height: 12px;
+  background: transparent url(../img/bar/pin-sub.gif) left top no-repeat; 
+}
+.hide{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.show{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 30px;
+  width: 400px;
+}
+.wide textarea{
+  width: 90%;
+  height: 80px;
+  overflow-y: scroll;
+}
+.wide table td{
+  border: 0;
+}
+.chartnotes{
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #999;
+  font-style: italic; 
+}
+.correct{
+  font-weight: bold;
+}
+.noborder{
+  border: 0 !important;
+}
+
+.used{
+  color: #999;
+}
+.graybg{
+  background-color: #f6f6f6;
+}
+.forumpost {
+  width: 98%;
+}
+.caption{
+  font-size: 100%;
+}
+.reference {
+  width: 99%;
+  font-size: 90%;
+  padding-top: 0px;
+}
+#textreference {
+  clear: both;
+}
+#textreference p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.forumreference {
+  font-size: 90%;
+}
+#forum .forumreference p {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#forum-topic {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+.facultypost { 
+  background-color: #fff; 
+  border: solid 1px #ccc; 
+  font-size: 90%; 
+}
+
+#consulta, #consultb, #faculty {
+  position: relative;
+  clear: both;
+} 
+.consultcopyA, .consultcopyB, .facultycopy { 
+  background-color: #fff; 
+  border: solid 1px #ccc; 
+  margin: 10px 80px 10px 10px; 
+  font-size: 90%; 
+  width: 450px; 
+}
+.consultcopyB, .facultycopy { 
+  margin: 10px 10px 10px 80px; 
+}
+.forumheaderlist{
+  border: 1px solid #ccc;
+  margin-left: 2px;
+  font-size: 11px;
+}
+.forumheaderlist tr{
+  border-bottom: 1px solid #ccc;
+}
+.forumheaderlist th{
+  background-color: #eee;
+  padding-left: 5px;
+}
+.forumheaderlist .replies{
+  text-align: center;
+}
+.discussion a{
+  color: #6699cc;
+  font-size: 10px;
+}
+#learnerforums li{
+  list-style-type: circle;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+.testscore {
+  background: transparent url(../img/header-bg-tall.png) left bottom repeat-x;
+  padding: 10px;
+  width: 95%;
+  float: left;
+}
+.testscore p{
+  margin-left: 20px;
+}
+.rating-cat{
+  font-weight: bold;
+  text-align: right;
+}
+#rat-exc, #rat-vg, #rat-g, #rat-f, #rat-p{
+  background-color: #f9b03f;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+}
+#rat-exc{width: 42%;}
+#rat-vg{width: 28%;}
+#rat-g{width: 21%;}
+#rat-f{width: 9%;}
+#rat-p{width: 0%;}
+#nav-bottom{width: 100%; padding-top:0px; margin-top:0px;}
+#p24bottomnav, #p24bottomnav a, #p24bottomnav img{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.forumpost {
+  width: 98%;
+}
+.tablebasic {width: 90%; border: 1px solid #666666;}
+.tablebasic td {vertical-align: top; text-align: left; border: 1px solid #666666;padding: 3px 5px 3px 5px;}
+.tablebasic th {vertical-align: top; text-align: left; border: 1px solid #666666;padding: 3px 5px 3px 5px;}
+.casedescription {padding-left: 10px;}
+.subcasedescription {padding-left: 10px; font-style:italic;}
+.transcript {font-style: italic; }
+.boldquestions {font-weight: bold;}
+
+.rcmvideo {
+     margin-top: 10px;      
+     border: 1px solid #ccc;
+     margin-bottom: 10px;
+     padding-left: 5px;
+     width: 97%;
+}
+    
+.rcmvideocontainer {
+     width: 98%;
+}
+    
+.rcmvideobox {
+     float: right;
+     width: 340px;
+     height: 250px;
+     background-color: transparent;
+     text-align: center;
+}
+
+.rcmaudiobox {
+     float: right;
+   width: 170px;
+     margin: 5px;
+     /* padding: 1px; */
+     background-color: transparent;
+     text-align: center;
+}
+
+/* Slider */
+
+.ratings { background-color: #eee; padding: 10px; width: 95%; margin-top: 10px; margin-bottom: 15px; border: solid 1px #ccc; }
+
+.sliderbg {
+  width:475px; 
+  height: 62px;
+  margin: auto;
+  background-image: url(../img/slider.gif); 
+  background-repeat: no-repeat;
+}
+.sliderbg fieldset {
+  border: none;
+  padding: 0px;
+  margin: auto;
+  width: 260px;
+}
+.sliderbg fieldset div {
+  clear: left;
+  position: relative;
+  top; 0px;
+}
+.slideContainer {
+  margin-top: 0px; 
+  height: 22px;
+  border: none;
+  position: relative;
+}
+.slideContainer a {
+  border: 0px;
+  outline: 0;
+  margin: 0px;
+}
+.ui-slider-handle { 
+  z-index: 1; 
+  height: 22px; 
+  width: 45px; 
+  top: 0px; 
+  left: 0px; 
+  background-image: url(../img/indicator.gif);  
+  background-repeat: no-repeat;
+}
+
+.sliding input {
+  position: absolute;
+  left: -999em;
+  display: none;
+}
+.sliding fieldset {
+  padding: 0;
+}
+.sliding .value {
+  float: right;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+  width: 40px;
+  height: 20px;
+  font-weight: bold;
+  display: none;
+}
+.rcmqreviewtext {
+     width: 100%;
+}
+.rcmqreviewcontainer {
+     width: 100%;
+}
+.rcmqreviewchart {
+  float: right;
+  width: 250px;
+  height: 120px;
+  background-color: transparent;
+  text-align: center;
+}
+.rcmqreviewchart img{
+  float: left;
+  margin: 12px 10px 0 0;
+}
+
+.hradio {
+  margin-right: 5px;
+}
+
+.evallink {
+  font-size:140%;
+  font-weight: bold;
+}
+
+/*
+#previewheader {
+  background-image: url(../img/ThePractice_header_screensh.png); 
+  background-repeat: no-repeat;
+  width: 765px;
+  height: 183px;
+
+}
+*/
+
+.author-survey {
+  display: none;
+} 
+
+.author-reference {
+  display: none;
+} 
+
+/*
+ * Style for displaying a question 
+ */
+
+.qdesctake {
+  font-weight: bold;
+}
+#userinfo .qdesctake em {
+  font-weight: bold !important;
+}
+
+/*
+ * Style for displaying the answer to a question on a page that has only 1 answer
+ */
+
+.qicon {
+}
+
+.qdesc {
+  font-weight: bold;
+  margin-left: 35px;
+  padding: 15px 10px 10px 10px;
+}
+#userinfo .qdesc em {
+  font-weight: bold !important;
+}
+
+.singleoption {
+  padding: 10px;
+}
+
+.qchosenanswer {
+  padding: 10px;
+}
+
+.qnumber {
+  padding-right: 5px;
+  display: inline;
+}
+.singleoption .qnumber {
+  float: left;
+}
+.qchosenanswer .qnumber {
+  float: left;
+}
+.qr .qnumber {
+  float: left;
+}
+.qscalel {
+  
+}
+.qscaler {
+  text-align: left;
+  width: 300px;   
+}
+.qscaleitem {
+  width: 40px;
+  padding-right: 5px;
+  text-align: center;
+  float: left;
+}
+.qprompt {
+  font-weight: bold;
+  float: left;
+  padding-right: 5px;
+}
+
+.singleanswer {
+  background: transparent url(../img/header-bg-tall-top.png) left top repeat-x;
+  padding: 10px;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.singleanswer-icon {
+  padding: 2px;
+  border: 1px solid #ccc;
+  margin: 10px 5px 5px 5px;
+  float: left;
+}
+
+.singleanswer-message {
+  margin-left: 55px;
+  padding: 10px;
+}
+
+.correctanswer {
+  font-weight: bold;
+  display: inline;
+}
+
+.incorrectanswer {
+  font-weight: bold;
+  display: inline;
+}
+
+.qmessage {
+  float: left;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.msgincorrect{
+  font-weight: bold;
+  width: 100%;
+}
+
+/*
+ * Style for displaying the answer to a question on a page that has multiple answers
+ */
+
+.multipleanswer-index {
+  float: left;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.multipleanswer-description {
+  margin-left: 20px;
+  padding: 0 10px 10px 10px;
+}
+
+.multipleanswer-icon {
+  float: left;
+}
+
+.multipleanswer-options {
+  margin-left: 20px;
+  padding: 10px 10px 10px 0px;
+}
+
+.multipleanswer-chosenanswer {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.multipleanswer-prompt {
+  font-weight: bold;
+  float: left;
+  padding-right: 5px;
+}
+
+.multipleanswer-message {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+/*
+ * Style for displaying the answer to a question on a page that has multiple answers
+ */
+
+.ig_result {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.ig_prompt {
+  float: left;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+/*
+ * Style for thubnails within lyteboxes
+ */
+
+.slideshow {
+  padding: 2px;
+}
+
+/*
+ * Style fron FCK editor indent
+ */
+.rteindent1 {
+  padding-left: 10px;
+}
+.rteindent2 {
+  padding-left: 20px;
+}
+.rteindent3 {
+  padding-left: 40px;
+}
+.rteindent4 {
+  padding-left: 50px;
+}
+
+
+/* Theming for RealCME forums and forum comments */
+#subframe-page {
+    background-color: #f6f6f6;
+}
+
+#subframe-page #page-inner {
+    width: auto;
+}
+
+#subframe-page .preview-node-text {
+    margin-top: 20px;
+}
+
+#subframe-page .preview-node-text .node-type-forum {
+    padding-top: 10px;
+    border-top: 1px solid #c6bda8;
+}
+
+#comment-form .comment {
+    margin-top: 20px;
+}
+
+.comment .title {
+    font-weight: bold;
+}
+
+#subframe-page .node-type-forum .submitted {
+    padding: 5px 10px;
+}
+
+#subframe-page .node-type-forum .content {
+    padding: 10px;
+}
+
+#subframe-page .node-type-forum .links {
+    padding: 0px 5px 5px;
+}
+
+#subframe-page .node-type-forum .forum-box-outer {
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+#subframe-page .node-type-forum .forum-box-outer .forum-box {
+    padding: 5px 5px 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#subframe-page #comments {
+    padding: 10px;
+}
+
+#subframe-page .comment,
+#comment-form .preview .comment {
+    margin-bottom: 10px;
+    border: 1px solid #c6bda8;
+    background-color: #fff;
+}
+
+#subframe-page .comment .comment-header,
+#comment-form .preview .comment .comment-header {
+    border-bottom: 1px solid #c6bda8;
+    padding: 5px;
+    background-color: #e6e6fa;
+}
+
+#subframe-page .comment .content,
+#comment-form .preview .comment .content {
+    padding: 5px;
+}
+
+#subframe-page .node-form {
+    padding: 10px;
+}
+
+#subframe-page .node-form .tips {
+    margin-left: 15px;
+}
+
+#subframe-page .preview h2,
+#subframe-page .preview-node-text h2 {
+    padding-left: 10px;
+}
+
+#subframe-page .box {
+    background-color: #FFF;
+    border: none;
+}
+
+#subframe-page #subframe-content #forum .add-topic-links {
+    margin: 0px 0px 0px 20px;
+}
+
+#subframe-page #subframe-content #forum table {
+    width: 90%;
+    margin: 0 20px 20px 20px;
+    border: 1px solid #c6bda8;
+}
+
+#subframe-page #subframe-content #forum thead th {
+    color: #666;
+    background-color: #fff;
+    text-align: left;
+}
+
+#subframe-page #subframe-content #forum table tr.odd {
+    background: #e6e6fa none repeat scroll 0 0;
+    border: none;
+}
+
+#subframe-page #subframe-content #forum table tr.even {
+    background: #fff none repeat scroll 0 0;
+    border: none;
+}
+
+#subframe-page .moodle-forum-rating-widget {
+    margin-top: 1em;
+}
+
+#subframe-page .moodle-forum-rating-widget .moodle-forum-rating-widget-title {
+    font-weight: bold;
+}
+
+#subframe-page .moodle-forum-rating-widget .moodle-forum-rating-widget-container {
+    padding: 1em 0px;
+}
+
+#subframe-page a:link { color: #7660ad; font-weight: bold; text-decoration: none; }
+#subframe-page a:visited { color: #7660ad; font-weight: bold; text-decoration: none; }
+#subframe-page a:hover, #subframe-page a:focus { color: #69c; font-weight: bold; text-decoration: none; }
+#subframe-page a:active { color: #69c; }
+
+.author-video-div {
+  background-color: transparent; 
+  background-image: url(../../SharedFiles/img/video_fake.png); 
+  background-repeat: no-repeat; margin: 0; padding: 0; width: 331px; height: 248px; float: left;
+}
+.author-audio-div {
+  background-color: transparent; 
+  background-image: url(../../SharedFiles/img/audio_fake.png); 
+  background-repeat: no-repeat; margin: 0; padding: 0; width: 93px; height: 17px; float: left;
+}
+
+.claim { 
+  background-color: #eeeeee; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  padding: 10px 10px 5px 10px; 
+  border: solid 1px #999;
+}
+
+
+/*
+ * Styles for curriculum 
+ */
+
+ul.center {
+  background: #FFD;
+}
+ul.left {
+  background: #EFE;
+  border: 1px solid gray;
+}
+ul.right {
+  background: #FEE;
+  border: 1px solid gray;
+}
+ul.sortable { 
+  list-style-type: none; 
+  margin: 10px auto; 
+  padding: 0 0 70px 0; 
+  float: left;
+  width: 33%;
+}
+ul.sortable li {
+  margin: 0 8px 8px 8px;
+  padding: 4px;
+  text-align: center;
+  font-family: verdana, arial, san-serif;
+  font-size: 11px;
+  line-height: 1.2em;
+  border: 1px solid #3164a3;
+  background: white;
+  color: #222;
+  cursor: pointer
+}
+ul.sortable li.header {
+  font-weight: bold;
+  border: none;
+  background: transparent;
+}.score {background: transparent url(../img/info-bg.png) 5px 100% repeat-x; border: 1px solid #ddd; border-bottom: 0px; border-right: 0px; padding: 0px; padding-top: 3px; margin-top: 10px; margin-bottom: 0px; width: 98%; }
+.score-title {font-weight: bold; font-size: 18px;text-align:left; float: left; padding-left: 10px}
+.score-yours {font-weight: bold; font-size: 18px;text-align:center}
+.score-others {font-weight: bold; text-align:center}
+.igtable {width: 98%; border: 1px solid #DDDDDD; padding-top: 5px; margin: auto;}
+.igtable td {vertical-align: top; text-align: left; border: 1px solid #DDDDDD;padding: 3px 5px 3px 5px;}
+.igtable th {vertical-align: top; text-align: left; border: 1px solid #DDDDDD;padding: 3px 5px 3px 5px;}
+.igsummary  {background: transparent url(../img/info-bg.png) 5px 100% repeat-x; border: 1px solid #ddd; border-bottom: 0px; border-right: 0px; padding: 0px; padding-top: 3px; margin-top: 10px; margin-bottom: 0px; width: 98%; }
+.igsummary-title {font-weight: bold; font-size: 12pt;text-align:left}
+.igsummary-desc {font-weight: bold; text-align:left;}
+.button-toggle {float: right; background: transparent url(../img/down.gif) top right no-repeat; width: 23px; padding-bottom: 2px}
+.button-toggle-close {float: right; background: transparent url(../img/up.gif) top right no-repeat; width: 23px;}
+.description-toggle {margin-left: 20px; padding: 0px 0px 10px 10px; }
+
+/* ticket #1266 */
+#allquestions > fieldset > span.bold, table.question td > span.bold, div.testscore > p > span.bold { clear: both; float: left; padding-right: 5px; }

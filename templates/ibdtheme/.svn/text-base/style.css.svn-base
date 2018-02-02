@@ -1,0 +1,137 @@
+/* $Id: style.css,v 1.1 2009-11-06 14:44:33 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+
+body {
+	background-color: #E6DEB9 !important;
+}
+
+#page-inner, #footer {
+	background-color: #E6DEB9 !important;
+}
+
+.homelinks {
+	background-color: #E6DEB9 !important;
+}
+
+#page-inner {
+	left-padding: 10px;
+}
+
+#page {
+	width: 1000px !important;
+}
+
+#header {
+	margin-top: 0 !important;
+	background-color: #E6DEB9 !important;
+}
+
+#header img {
+	float: none !important;
+}
+
+table#sddm
+{
+	z-index: 30;
+	padding-right: 75px;
+	float: right;
+	margin-right: 10px;
+}
+
+table#sddm td {
+	padding: 0;
+}
+
+#sddm li a:hover
+{
+}
+
+#sddm div
+{
+	position: absolute;
+	visibility: hidden;
+	background-color: #000;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 15px;
+	z-index: 9999;
+}
+
+	#sddm div a
+	{
+	position: relative;
+	display: block;
+	margin: 0;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	color: #e5e5e5;
+	font-family: arial;
+	font-size: 16px;
+	background-color: #000;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+	#sddm div a:hover
+	{
+	color: #ff0000
+}
+
+#contactBar{
+	height: 17px;
+	float: right;
+	width: 380px;
+	padding-top: 8px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+
+#menu {
+	display: block;
+}
+
+#menu {
+	float: left;
+	height: 100px;
+	width: 725px;
+	background-image: url(img/banner.png);
+	background-repeat: no-repeat;
+}
+
+
+ol, ul {
+}
+
+#logo-title {
+	float: left;
+	height: 100px;
+	width: 259px;
+}
+
+.homelinks {
+	background-color: #fff !important;
+}
+	
+
+#main {
+	padding-top: 16px;
+	padding-left: 15px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}

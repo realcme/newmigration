@@ -1,0 +1,29 @@
+body {
+    background: url("../img/bg_main.png") repeat-x scroll 0 0 #c7e2d8;
+    background-position: 0 -112px;
+    height: 100%;
+}
+
+.page-header {
+    background: none repeat scroll 0 0 #208a62;
+    color: #ffffff;
+    margin-top: 12px;
+    width: 960px;
+    margin:auto;
+    padding: 0;
+}
+.page-footer {
+	margin: auto;
+	padding: 0;
+	width: 960px;
+	font-size: 11px;
+	color: #000;
+	margin-top: 10px;
+	font-family: "Helvetica Neue",​Helvetica,​Arial,​sans-serif;
+}
+.page-footer a {
+	font-weight: normal;
+}
+
+#header {margin-top: 0px}
+#main {padding-left: 5px}

@@ -1,0 +1,54 @@
+8
+
+dir
+17674
+svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/opedtheme/img
+svn+ssh://svn.realcme.com/svn/realcme
+
+
+
+2015-09-18T18:39:49.482726Z
+13192
+mstaneluis
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54cdfa15-4bae-4c23-a447-dd2ea17af9e4
+
+logo.jpg
+file
+
+
+
+
+2015-09-23T18:48:14.000000Z
+6aee0034eea5513a21c6ec878da9692b
+2015-09-18T18:39:49.482726Z
+13192
+mstaneluis
+has-props
+
+footerlogo.png
+file
+
+
+
+
+2015-09-23T18:48:14.000000Z
+e01ba769ac040efc479d226dab7e6425
+2015-09-18T18:39:49.482726Z
+13192
+mstaneluis
+has-props
+

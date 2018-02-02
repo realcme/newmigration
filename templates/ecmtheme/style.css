@@ -1,0 +1,185 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+body {	
+	background: #c5b9b4 url("http://copdcmecenter.org/images/mainBak.png") repeat-x left top;
+	height:1000px;
+	margin:0px auto;
+}
+
+#page-main {
+	margin-top: 20px !important;
+}
+
+#page-inner {
+	background: #ffffff;
+}
+
+#page {
+	width: 1000px !important;
+}
+
+#header-nav {
+    border-color: #000000 #000000 #383633;
+    border-style: solid;
+    border-width: 2px;
+    height: 70px;
+    width: 996px; 
+
+	background: #45433f; /* Old browsers */
+	background: -moz-linear-gradient(top, #45433f 0%, #242321 50%, #272624 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45433f), color-stop(50%,#242321), color-stop(100%,#272624)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #45433f 0%,#242321 50%,#272624 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #45433f 0%,#242321 50%,#272624 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #45433f 0%,#242321 50%,#272624 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #45433f 0%,#242321 50%,#272624 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45433f', endColorstr='#272624',GradientType=0 ); /* IE6-9 */
+}
+
+   /*-- TOP NAV STYLE --*/
+.logo-box {
+	float:left;
+	width:247px;
+	height:60px;
+	box-shadow: 3px 3px 5px #000000;
+}
+#top-nav {
+	float:left;
+	width: 74%;
+}
+#top-nav .top-link {
+    float: left;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    width: auto;
+	padding: 0px 32px;
+		padding: 0px 30px;\\*8
+	border:0px solid red;
+}
+
+#top-nav .top-link a {
+	color: #FFFFFF;
+    display: block;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 30px auto;
+    text-decoration: none;
+}
+#top-nav .top-link a:hover {
+	color: #fba700;
+    text-decoration: underline;
+}
+#top-nav .last-top-link {
+	border-right: 0 none;
+    float: right;
+    height: 60px;
+    margin: 0 auto;
+    width: 269px;
+}
+.top-div {
+	background:transparent url("http://copdcmecenter.org/images/topNavDiv.png") no-repeat left bottom;
+	width:2px;
+	height:70px;
+	float:left;
+}
+.topSearchBox {
+	border: 0px solid red;
+	height: 32px;
+	margin: 0 auto;
+	padding: 0px; 
+	width: 256px;
+	text-align:right;
+	color:#cecece;
+	font-weight:bold;
+	clear:both;
+}
+.link {
+	font-family:arial;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;
+}
+.link a {
+	text-decoration:none;
+}
+.link a:link,.link a:active,.link a:visited {
+	color:#FFF;
+}
+.links a:hover, .link a:hover {
+	text-decoration:underline;
+}
+.light-blue a:link, 
+.light-blue a:hover, 
+.light-blue a:visited, 
+.light-blue a:active {
+	color:#01ccff;
+}
+.links a:link,
+.links a:visited, 
+.links a:active {
+	color:#FFF;
+}
+   /*-- TOP NAV STYLE --*/
+
+   /*-- HEADER STYLE --*/
+
+   /*-- FOOTER STYLE --*/
+#footer {
+	background-color: #000000;
+	top: 0 !important;
+	
+}
+
+#footer {
+}
+
+.footerContent {
+	background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    float: left;
+    font-family: arial;
+    font-size: 11px;
+    height: auto;
+    padding: 24px 34px;
+    text-decoration: none;
+    width: 932px;
+
+}
+.footerSection {
+	float:left;
+	width:200px;
+	height:auto;
+}
+.footerSection a {
+	color:#FFF !important;
+	text-decoration:none;
+	line-height: 21px;
+	font-weight:bold;
+}
+.footerSection a:hover {
+	color:grey;
+	text-decoration:underline;
+}
+.cmelisting {
+	display:block; 
+	height:16px; 
+	padding:4px 0px; 
+	line-height:12px;
+}
+.footerSection .ContactRight {
+	 line-height:15px;
+}
+   /*-- FOOTER STYLE --*/
+  
+
+.neoblue {
+	color:#00deff;
+	line-height:21px;
+} 

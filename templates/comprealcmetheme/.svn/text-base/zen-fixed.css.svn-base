@@ -1,0 +1,6 @@
+/* $Id: zen-fixed.css,v 1.1 2008-04-18 02:24:21 valerie Exp $ */
+
+  #page
+  { width: 646px; /* page width  */
+    margin: 0; padding: 0; /* Center the page */
+  }

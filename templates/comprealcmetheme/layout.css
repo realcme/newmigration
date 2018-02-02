@@ -1,0 +1,51 @@
+/* $Id: layout.css,v 1.2 2009-12-14 14:52:40 psantini Exp $ */
+
+/*
+ * LAYOUT STYLES
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This is the same layout method used by Garland.
+ *
+ * However, there is a KNOWN BUG with this layout method that has no known fix:
+ *   oversize content will causes IE to display the sidebars underneath the main
+ *   content.
+ */
+
+  body
+  {
+    margin: 0;
+    padding: 0;
+  }
+#page
+  {
+    /*
+     * If you want to make the page a fixed width and centered in the viewport,
+     * this is the standards-compliant way to do that. See also the ie.css file
+     * for the necessary IE5 hack to center a div.
+     */
+    background-color: none; width: 646px; margin: 0; padding: 0 0 0 5px; }
+#header
+  { background-image: url(images/header-bg.png); background-repeat: no-repeat; background-attachment: scroll; background-position: 100% top; width: 639px; height: 111px; margin: 0; padding: 0; }
+#container
+  { background-color: transparent; background-image: url(images/contents-bg.gif); background-repeat: no-repeat; background-attachment: scroll; position: relative; overflow: auto; width: 646px; height: 513px; margin: 0; padding: 0; }
+
+/* Layout the main content column */
+  #main
+  { position: relative; top: 10px; left: 25px; float: left; width: 580px; height: 470px; overflow: auto; margin: 0; padding: 0; display: inline; /* Prevent it from being too narrow on near-empty pages */
+  }
+#squeeze
+  { position: relative; margin: 0; padding: 0; }
+/* Layout the footer */
+  #footer
+  { float: none; clear: both; margin: 0; padding: 0; }
+
+/* Ensure long text or wide images don't break IE6 layout. */
+  #page, #header, #footer, #squeeze, #container .sidebar
+  {
+    _overflow: auto;
+    _overflow-y: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }

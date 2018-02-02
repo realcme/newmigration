@@ -1,0 +1,18 @@
+/*----ELEMENTAL STYLES----*/
+
+td { 
+}
+tr {
+}
+/*----ELEMENTAL STYLE CLASSES----*/
+
+table.alignCenter{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.topNav {
+	background-color: #6E0917;
+	height: 22px;
+	border-bottom: 1px solid #AE7758;
+}

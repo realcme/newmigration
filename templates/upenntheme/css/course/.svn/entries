@@ -1,0 +1,54 @@
+8
+
+dir
+17674
+svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/upenntheme/css/course
+svn+ssh://svn.realcme.com/svn/realcme
+
+
+
+2013-09-16T18:54:08.712394Z
+10500
+valerie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54cdfa15-4bae-4c23-a447-dd2ea17af9e4
+
+rcm_base.css
+file
+
+
+
+
+2015-03-26T15:41:16.000000Z
+484fac5d2f301a7ac92a4823a06a226a
+2013-09-16T18:54:08.712394Z
+10500
+valerie
+has-props
+
+rcm_content.css
+file
+
+
+
+
+2015-03-26T15:41:16.000000Z
+61abd9d67bf7ffe33e895e78b12756ff
+2013-09-16T18:54:08.712394Z
+10500
+valerie
+has-props
+

@@ -1,0 +1,279 @@
+
+.curric-logo {
+	display: none;
+}
+
+div#branded_header {
+/*background:#FFF url(../sites/all/themes/zen/lipidtheme/img/alogo.gif) no-repeat scroll center top;*/
+height:118px;
+left:0;
+position:relative;
+top:0;
+width:100%;
+z-index:100;
+/*padding-bottom: 10px;*/
+}
+
+div#branded_header div {
+clear:both;
+width:100%;
+}
+
+div#branded_header ul {
+float:right;
+font-size:11px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+/*margin:50px 10px 0 0;*/
+}
+
+div#branded_header ul li {
+display:inline;
+/*margin:0 0 0 20px;*/
+}
+
+div#branded_header li a, div#top a:link, div#top a:active, div#top a:hover, div#top a:visited {
+color:#FFF;
+letter-spacing:1px;
+text-decoration:none;
+font-family:	Verdana,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size:9px;
+font-style:normal;
+font-weight:400;
+/*margin:0;*/
+}
+
+img#branded_nla {
+float:left;
+position: relative;
+width:100%;
+/*padding-bottom: 5px;
+padding-left: 20px;
+padding-top:1px;*/
+}
+
+div#branded_footer {
+/*background:#A70600 url(http://www.lipid.org/images/footer_bg.png) no-repeat scroll center top;*/
+bottom:0;
+clear:both;
+color:#FFF;
+font-size:88%;
+height:65px;
+left:0;
+margin:65px 0 0;
+min-height:65px;
+position:fixed;
+text-align:center;
+width:100%;
+line-height:1.6;
+}
+
+div#branded_footer p {
+padding:32px 0 0;
+font-family:	Verdana,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size-adjust:inherit;
+font-size:14px;
+font-style:inherit;
+font-weight:inherit;
+font-variant:inherit;
+margin:0 0 1.5em;
+}
+
+
+
+#banner_nla{
+	background: url("./img/ahead_bg.gif") repeat-x scroll 0 0 transparent;
+	height:74px;
+}
+
+.topNav {
+float:right;
+}
+.topNav a {
+background:url("./img/bullet.gif") no-repeat scroll left 5px transparent;
+color:#5C0003;
+font-family:Arial,Tahoma,Helvetica,sans-serif;
+font-size:11px;
+margin:0 10px 0 0;
+padding:0 0 0 9px;
+text-decoration:none;
+vertical-align:middle;
+float:right;
+font-weight: normal;
+}
+.topNav a:hover {
+color:#E04415;
+}
+.topNav img {
+vertical-align:middle;
+float:right;
+}
+
+#branded_header h1 a{
+	background:url("./img/alogo.gif") no-repeat scroll 0 0 transparent;
+	display:block;
+	height:65px;
+	/*margin 0 0 0 22px;*/
+	padding:0;
+	text-indent:-999px;
+	width: 242px;
+}
+
+.disignBoxFirst_def1{
+float:left;
+}
+.navigationWrapper{
+	position:relative; height:30px;
+float:left;
+}
+
+#menu {
+	margin: -4px 0 0 19px;
+}
+*html #menu {
+	margin: -4px 0 0 24px;
+}
+*+html #menu {
+	margin: -4px 0 0 24px;
+}
+#menu li {
+	MARGIN: 0px 2px;
+	padding: 0 0 8px;
+	float: left;
+	list-style: none;
+	position: relative;	
+}
+
+
+/* main level link */
+#menu a {
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform:uppercase;
+	FONT-SIZE: 10px; 
+	PADDING-LEFT:10px; 
+	margin:0;
+	BACKGROUND: url("./img/nav_left.gif") no-repeat left top; 	
+}
+
+#menu A SPAN {
+	PADDING-RIGHT: 15px; 
+	background:url("./img/nav_right.gif") no-repeat right top;
+	PADDING-BOTTOM: 9px; 
+	PADDING-TOP: 7px
+}
+#menu A {
+	DISPLAY: block; FLOAT: left
+}
+
+#menu A SPAN {
+	DISPLAY: block; FLOAT: left; color:#3B3B3B;
+}
+
+#menu A {
+	FLOAT: none
+}
+#menu A SPAN {
+	FLOAT: none
+}
+#menu A:hover {
+	PADDING-LEFT: 10px; COLOR: #E4261B
+}
+
+#menu A:hover SPAN {
+	PADDING-RIGHT: 15px; color:#E4261B;
+}
+#menu A.slected {
+	PADDING-LEFT: 15px; COLOR: #E4261B
+}
+#menu A.slected SPAN {
+	PADDING-RIGHT: 12px; 
+}
+
+
+/* main level link hover */
+#menu .current a, #menu li:hover > a {
+	color: #444;
+}
+
+/* sub levels link hover */
+#nav ul li:hover a, #menu li:hover li a {
+	border-bottom:1px solid #aaaaaa;
+	padding:7px 5px 7px 18px;
+	background:url("./img/arrow.png") 0 5px no-repeat #fff;
+	color: #666;
+	margin:1px 4px 0 4px;
+}
+#nav ul li:hover a, #menu li:hover li a.last {
+border:none;
+}
+#menu ul a:hover {
+	color: #e4261b !important;
+	background:url("./img/arrow.png") 0 5px no-repeat #f8eeee !important;
+}
+
+/* dropdown */
+#menu li:hover > ul {
+	display: block;
+}
+
+/* level 2 list */
+#menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 154px;
+	position: absolute;
+	float:left;
+	top: 30px;
+	left: 0px;
+	background:url("./img/menu_bg.png") 0 0 no-repeat;
+}
+#menu ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul a {
+	font-weight: normal;
+}
+
+/* level 3+ list */
+#menu ul ul {
+	left: 152px;
+	top: -1px;
+}
+
+/* rounded corners of first and last link */
+#menu ul li:first-child > a {
+}
+#menu ul li:last-child > a {
+}
+
+/* clearfix */
+#menu:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#menu {
+	display: inline-block;
+} 
+html[xmlns] #menu {
+	display: block;
+	float:left;
+}
+ 
+* html #menu {
+	height: 1%;
+}
+
+.header_table td {
+	padding: 0;
+}

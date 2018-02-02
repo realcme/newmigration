@@ -1,0 +1,11 @@
+/* $Id: style.css,v 1.2 2010-02-16 21:27:35 psantini Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+#btn-proceed-top {
+	display: none;
+}

@@ -1,0 +1,231 @@
+/* $Id: style.css,v 1.1 2009-05-20 18:09:55 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* BOF AXIS MED navigation styling */
+#navigation { line-height:normal;  }
+
+#navigation .block {
+    margin-bottom: 0;
+}
+#navigation .block-menu .block-title,
+#navigation .block-menu-block .block-title {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+#navigation ul.links,
+#navigation ul.menu {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#navigation ul.links li,
+#navigation ul.menu li {
+    float: left;
+    padding: 0 10px 0 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+.region-navigation {}#main-menu {}#secondary-menu {
+    float: right;
+}
+.block-menu {}.block-menu-block {} .views-displays .secondary li {
+    float: none;
+    margin: 0 6px 0;
+}
+.views-displays .secondary a:link,
+.views-displays .secondary a:visited {
+    text-shadow: none;
+    padding: 2px 7px 3px;
+}
+.views-displays .secondary .open > a {
+    -webkit-border-radius: 7px 7px 0 0;
+    -moz-border-radius: 7px 7px 0 0;
+    -ms-border-radius: 7px 7px 0 0;
+    -o-border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
+}
+.views-displays .secondary .open > a:hover {
+    color: #333;
+}
+.views-displays .secondary .action-list li {
+    margin: 0;
+}
+.views-displays .secondary .action-list li:first-child {
+    -webkit-border-radius: 0 7px 0 0;
+    -moz-border-radius: 0 7px 0 0;
+    -ms-border-radius: 0 7px 0 0;
+    -o-border-radius: 0 7px 0 0;
+    border-radius: 0 7px 0 0;
+}
+.views-displays .secondary .action-list li:last-child {
+    -webkit-border-radius: 0 0 7px 7px;
+    -moz-border-radius: 0 0 7px 7px;
+    -ms-border-radius: 0 0 7px 7px;
+    -o-border-radius: 0 0 7px 7px;
+    border-radius: 0 0 7px 7px;
+}
+
+#main-menu ul:after,
+.item-list .pager:after,
+.views-slideshow-controls-text:after,
+#quiz_progress:after,
+#edit-date-filter-wrapper .views-widget:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#navigation #main-menu li {
+    padding: 0;
+    position: relative;
+}
+#main-menu ul {
+    display: block;
+}
+#main-menu li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 12px 20px 10px;
+    color: #6d6d6d;
+    border-right: 1px solid #d2d2d2;
+    /*font-size: 157%;*/
+    font-weight:normal;
+}
+#main-menu li.first a {
+    border-left: 1px solid #d2d2d2;
+}
+#main-menu li a:hover,
+#main-menu li a.active-trail,
+#main-menu li.expanded > a:hover:after,
+#main-menu li.expanded > a.active-trail:after {
+    color: #7ac637;
+}
+#main-menu li a.active-trail {
+    border: 1px solid #acacac;
+    border-top: 5px solid #51a800;
+    border-bottom: 0;
+    margin-top: -5px;
+    position: relative;
+    background-color: #fff;
+}
+#main-menu li.active-trail:before,
+#main-menu li.active-trail:after {
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 6px;
+}
+#main-menu > div > ul > li.active-trail:before {
+    left: -6px;
+    box-shadow: inset -6px 0 6px -6px rgba(0, 0, 0, .3);
+}
+#main-menu > div > ul > li.active-trail:after {
+    right: -6px;
+    box-shadow: inset 6px 0 6px -6px rgba(0, 0, 0, .3);
+}
+#navigation #main-menu li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    width: 160%;
+    padding: 5px 8px;
+    left: 1px;
+    z-index: 5;
+}
+#navigation #main-menu li li {
+    float: none;
+}
+#main-menu li li a,
+#main-menu li li.first a {
+    border: 0;
+    font-size: 100%;
+    padding: 6px 10px 5px;
+    border-bottom: 1px solid #eaeaea;
+}
+#main-menu li li.last a {
+    border-bottom: 0;
+}
+#main-menu li li a.active-trail {
+    border: 0;
+    background-color: transparent;
+    margin-top: 0;
+}
+#main-menu li li a.active-trail:before,
+#main-menu li li a.active-trail:after {
+    display: none;
+}
+#main-menu li.expanded > a:after {
+    content: "\f0d7";
+    font-family: fontawesome;
+    font-size: 75%;
+    position: relative;
+    left: 9px;
+    top: -2px;
+    font-weight: normal;
+    color: #b7b7b7;
+}
+#navigation #main-menu li:hover ul {
+    display: block;
+}
+
+#main-menu,
+#navigation {
+    background-color: #90b0a1;
+    font-family: Oswald;
+}
+#navigation a,
+#main-menu li a {
+    color: #000;
+}
+#main-menu li a:hover,
+#main-menu li a.active-trail {
+    background-color: #ffa77a;
+    border-top: none !important;
+    color: #000;
+    margin-top: 0px;
+    position: relative;
+}
+#main-menu li ul.menu a:hover {
+    border-top: none !important;
+    margin-top: 0px;
+}
+#navigation #main-menu li ul {
+    background: #BCD0FF;
+    padding: 0px;
+}
+#navigation #main-menu li ul a {
+    color: #1C3F94;
+    font-size:130%;
+}
+#navigation #main-menu li ul a:hover {
+    color: #fff;
+}
+#main-menu li.expanded > a:hover:after {
+    color: #E8941A;
+}
+
+#main-menu li.last a { border-right:none; }
+/* EOF AXIS NAV */
+
+.sidebar-right #content { width:780px !important; }
+#sidebar-right,
+#altcontainer2 { /* width:170px !important; */ float:right;}

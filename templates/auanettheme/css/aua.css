@@ -1,0 +1,63 @@
+body {
+    background-color: white;
+    background-image: url("../img/auanet/blue_gradiant.jpg");
+    background-repeat: repeat-x;
+    font-family: arial,helvetical,verdana;
+    font-size: 10px;
+    height: 100%;
+}
+.wing_topleft {
+    background-image: url("../img/auanet/wing_topleft.jpg");
+    background-repeat: no-repeat;
+    padding: 4px 0 0;
+}
+.wing_toprt {
+    background-image: url("../img/auanet/wing_toprt.jpg");
+    background-repeat: no-repeat;
+    padding: 4px 0 0;
+}
+.wing_btmleft {
+    background-image: url("../img/auanet/wing_btmleft.jpg");
+    background-repeat: no-repeat;
+    padding: 4px 0 0;
+}
+.wing_btmrt {
+    background-image: url("../img/auanet/wing_btmrt.jpg");
+    background-repeat: no-repeat;
+    padding: 4px 0 0;
+}
+#auafooter {
+    background-image: url("../img/auanet/footer.png");
+    background-repeat: no-repeat;
+    height: 76px;
+    padding-top: 5px;
+    position: relative;
+    width: 928px;
+}
+#auafooterbottom {
+    color: white;
+    height: 20px;
+    width: 928px;
+}
+#auafooterbottom ul {
+    list-style: none outside none;
+    margin: 0;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+#auafooterbottom ul li {
+    float: left;
+    position: relative;
+}
+a.auafootermenu, a.auafootermenu:active, a.auafootermenu:visited {
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+a.auafootermenu:hover {
+    color: #0033CC;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}

@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* This section delineates the layout of the page, there is no "styling" here */
+		#top_nav, #page-main {
+			position: relative;
+			top: -20px;		
+		}
+		.with-navbar #content, .with-navbar #sidebar-left, .with-navbar #sidebar-right	{
+			margin-top: 2em;	
+		}
+		#page-inner {
+			position: relative;	
+		}
+		#sidebar-right {
+			position: relative;	
+		}
+		#header-blocks {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		#top_nav {
+			float: right;
+		}
+		#page-main {
+			padding: 0px 20px;       /* CC padding */
+			padding-bottom: 50px;
+			width: 100%;
+			clear: right;
+		}
+		#footer {
+			clear: both;
+                        margin-bottom:15px;
+		}
+		#TB_window {
+			background: none;	
+		}
+		
+
+
+
+/**************************************************************************/
+
+/* This next section deals with the styling of the various elements of the page */
+img {
+	border: 0;
+}
+
+#page {
+	
+}
+
+body {
+	background:#ECEAEA;
+	margin: 0;
+	padding: 0;
+}
+
+
+#page-main {
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+/* Top navigation bar */
+
+#top_nav {
+	background-image: url("../img/new_images/top_nav_left_curve.png");
+	font-family: "arial";
+	font-size: 13px;	
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+#top_nav_links {
+	list-style: none;
+	margin: 0;
+	margin-left: 5px;
+	padding: 7px 50px 5px 50px;
+	background-image: url("../img/new_images/top_nav_background.png");  
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+#top_nav_links li {
+	display: inline;
+	border-right: 1px solid #fff;
+	padding: 0 16px;
+}
+#top_nav_links li.last {
+	border-right: none;	
+}
+#top_nav_links a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+#top_nav_links li.selected {
+	padding: 4px 20px 7px 0px; 
+	border-right: none;
+	background-image: url("../img/new_images/top_selected_right_curve.png");
+	background-position: top right;
+	background-repeat: no-repeat;  
+}
+
+#top_nav_links li.selected a {
+	color: #3164a3;	
+	background-color: white;
+	background-image: url("../img/new_images/top_selected_left_curve.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 4px 0 7px 20px; 
+	margin-left: -15px; 
+}
+
+/* Footer, and links therein */
+#footer {
+	clear: both;	
+}
+#copyright {
+	padding-top: 6px;
+	padding-left: 2px;
+	float: left;
+	color: #444;
+	font-size: 11px;	
+}
+#bottom_links {
+	padding-top: 6px;
+	float: right;
+	color: #444;
+	font-size: 11px;
+}
+#top_quick_links ul, #bottom_links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#top_quick_links ul li, #bottom_links ul li{
+	display: inline;
+	border-left: 1px solid #444;
+	padding: 0px 10px;
+}
+#top_quick_links ul li.first_link, #bottom_links ul li.first_link {
+	border-left: none;	
+}
+#top_quick_links a, #top_quick_links a:visited, #bottom_links a, #bottom_links a:visited {
+	color: #444;
+	text-decoration: none;	
+}
+#top_quick_links a:hover, #bottom_links a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+/* Quick links at the top of the header */
+#top_quick_links {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	font-size: 12px;
+}
+
+#top_quick_links ul li{
+	padding: 0px 20px;
+}

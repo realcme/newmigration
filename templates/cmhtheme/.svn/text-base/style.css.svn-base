@@ -1,0 +1,169 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */ 
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+table.topheader, .topheader tr, .topheader td, .topheader tbody,
+table.menuheader, .menuheader tr, .menuheader td, .menuheader tbody {
+	margin: 0;
+ 	padding: 0;
+}
+
+table {
+	margin: 0 !important;
+}
+#page {
+	width: 1003px;
+}
+
+#page-inner {
+	margin-top: -5px;
+}
+
+#page-main {
+	margin-top: 20px !important;
+	border: 2px solid #996633;
+}
+
+#footer {
+	background-color: #f0f0f0 !important;
+}
+
+#header img {
+	margin-top: 0 !important;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.main_tbl_br {
+	clear: none;
+	float: none;
+	height: auto;
+	width: auto;
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #996633;
+	border-right-color: #996633;
+	border-bottom-color: #996633;
+	border-left-color: #996633;
+	padding-top: 0px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.link_11_size {
+	padding-top:5px;
+	padding-right:5px;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #CCCCCC ;
+}
+.link_11_size a, .link_11_size a:visited {color:#CCCCCC;text-decoration:none;}
+.link_11_size a:hover {color:#CCCCCC;text-decoration: none;}
+.link_11_size a:active {color: #CCCCCC;text-decoration: none;}
+
+.tophomeNav
+{
+    display: block;   
+    width:1003px;
+    background-image: url(http://cmhfound.org/images/top_nav_off.png);
+   
+}
+
+.tophomenav_on{
+    display: block;
+    padding-left:5px;
+    padding-top:5px;
+    background-image: url(http://cmhfound.org/images/top_nav_on_1.png);
+    color: #ffffff ;
+    font-family: Verdana;
+	font-size: 11px;
+	font-weight:  bold;	
+	height:25px;
+}
+
+ .tophomenav_off{
+   
+    padding-left:5px !important;
+    padding-top:5px !important;
+    color: #ffffff !important;
+    font-family: Verdana !important;
+	font-size: 11px !important;
+	font-weight:  bold !important;
+	background: url(http://cmhfound.org/images/top_nav_off_1.png);
+	height:25px !important;
+}
+.tophomenav_off:hover
+  { 
+    color:#ffffff;
+    font-weight:  bold;
+    background: url(http://cmhfound.org/images/top_nav_on_1.png) no-repeat 0 0;
+  }
+
+.tophomenav_off  a {text-decoration: none !important;color: #ffffff !important ;font-family: Verdana !important;font-size: 11px !important;font-weight:  bold !important;}
+.tophomenav_on  a {text-decoration: none;color: #ffffff ;font-family: Verdana;font-size: 11px;font-weight:  bold;}
+
+.nav_on{
+    display: block;
+    padding-left:15px;
+    padding-top:5px;
+    background-image: url(http://cmhfound.org/images/left_nav_on.png);
+    color: #000000 ;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight:  bold;
+	width:155px;
+	height:24px;
+}
+.nav_off{
+   
+    padding-left:15px;
+    padding-top:5px;
+    color: #990000 ;
+    font-family: Verdana;
+	font-size: 10px;
+	font-weight:  bold;
+	background: url(http://cmhfound.org/images/left_nav_off.png);
+	 
+	 width:155px;
+	height:24px;
+}
+.nav_off:hover
+  { 
+    color: #000000 ;
+    background: url(http://cmhfound.org/images/left_nav_on.png) no-repeat 0 0;
+  }
+
+
+.nav_off  a {text-decoration: none;color: #990000 ;font-family: Verdana;font-size: 10px;font-weight:bold;display:block;}
+.nav_on a {text-decoration: none;color: #000000 ;font-family: Verdana;font-size: 10px;font-weight:  bold;}
+.HeaderTitle
+{
+    font-family: Verdana;
+	font-size: 12px;
+	
+	font-weight:  bold;
+	text-transform:uppercase;
+	color: #350303 ;
+	
+	
+}

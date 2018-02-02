@@ -1,0 +1,66 @@
+#views-filters {display:none}
+.page-cmealerts-alerts #views-filters {display:inline}
+
+body {background-color: #6B7E8F}
+
+#page {
+	width: 1024px;
+	padding: 10px 0px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+
+}
+
+#main {padding: 0px 10px;}
+
+#footer {padding: 10px 10px;}
+
+#healthcoursenav {
+    background-color: #800000 !important;
+}
+#healthcoursenav > ul > li > a:hover{background:#C42B01 !important;}
+#healthcoursenav ul li.has-sub:hover > a{ background:#C42B01 !important; border-color:#C42B01 !important;}
+#healthcoursenav ul li.has-sub > a:hover{background:#C42B01 !important; border-color:#C42B01 !important;}
+#healthcoursenav ul li > ul{border-color:#C42B01 !important;}
+#healthcoursenav > ul > li > a {color: #FFFFFF;}
+
+ul.primary li {border-color:#800000;background-color: #800000;}
+ul.primary li a:hover{background-color: #C42B01;color:#FFFFFF}
+
+.form-btn {
+  background: #D2D8DD; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #6B7E8F 0%, #D2D8DD 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6B7E8F), color-stop(100%,#D2D8DD)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #6B7E8F 0%, #D2D8DD 100%); /* W3C */
+}
+
+.view-item-all-activities .view-data-node-link {
+    background-image: -moz-linear-gradient(center top , #6B7E8F, #D2D8DD);
+    border-color: #6B7E8F #6B7E8F #D2D8DD;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+  background: #D2D8DD; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #6B7E8F 0%, #D2D8DD 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#6B7E8F), color-stop(100%,#D2D8DD)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #6B7E8F 0%,#D2D8DD 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #6B7E8F 0%, #D2D8DD 100%); /* W3C */
+}
+ #user-login #edit-submit:hover, #user-register #edit-submit:hover, #user-pass #edit-submit:hover,  #user-edit #edit-submit:hover, #user-edit #edit-delete:hover  {
+  color: #FFFFFF;
+  font-weight: bold;
+ }
+ 
+#coursedata p {margin: 0}
+

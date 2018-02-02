@@ -1,0 +1,129 @@
+body {
+    background-color: #ECEAEA;
+}
+#imer_top {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #762F7D;
+}
+#imer_top td {
+	padding: 0px;
+	
+}
+
+#imer_bottom {
+	width: 100%;
+	background-color: #DADADA;
+  padding: 0px;
+  margin: 0px;
+}
+#imer_bottom td {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+}
+#imer_bottom a {
+    color: #762F7D;
+    font-weight: normal;
+    text-decoration: none;
+    margin-right: 5px;
+}
+#imer_bottom .footnote {
+    color: #762F7D;
+    font-size: 10px;
+}
+
+#navPrimary {
+	background:none repeat scroll 0 0 #762F7D;
+	color:#FFFFFF;
+	font-weight:normal;
+	list-style:none outside none;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+}
+#navPrimary li {
+	float:left;
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+  height:27px;
+}
+#navPrimary li.nav1 {
+  margin-left: 100px;
+  margin-right: 25px;
+}
+#navPrimary li.nav2 {
+  margin-right: 25px;
+}
+#navPrimary a {
+	color:#FFFFFF;
+	display:block;
+	line-height:20px;
+	padding:0 20px;
+	text-decoration:none;
+	font-weight: normal;
+}
+#navPrimary li a:hover, #navPrimary li.current a, #navPrimary li:hover, #navPrimary li.sfhover {
+  background:none repeat scroll 0 0 #9E75AB;
+}
+#navPrimary li:hover a, #navPrimary li li:hover a:hover, #navPrimary li.sfhover a:hover {
+color:#FFFFFF;
+}
+#navPrimary li li a:hover {
+color:#FFFFFF;
+text-decoration:underline;
+}
+#navPrimary li ul {
+  left:-9999px;
+  list-style:none outside none;
+  margin:0;
+  padding-left:0;
+  position:absolute;
+  z-index:10;
+  background-color: #9E75AB;
+  background-image: url("../img/imeronline/imer_ul.png");
+  background-repeat: repeat-y;
+  width: 240px;
+}
+#navPrimary li li {
+	float:left;
+	margin:0 !important;
+	width: 240px;
+}
+#navPrimary .navsep {
+	width: 220px;
+  border-top: 1px solid #E19EFB;
+  height: 3px;
+  margin-left: 10px;
+  padding-bottom: 7px;
+}
+
+#navPrimary li li a {
+	display:block;
+	line-height:1;
+	padding:0.5em;
+	text-transform:none;
+}
+#navPrimary ul li.first, #navPrimary ul li li.first {
+  border:0 none;
+}
+#navPrimary li ul ul {
+  margin:-1.95em 0 0 12em;
+}
+#navPrimary li:hover ul ul, #navPrimary li:hover ul ul ul, #navPrimary li.sfhover ul ul, #navPrimary li.sfhover ul ul ul {
+	left:-9999px;
+	z-index:1001;
+}
+#navPrimary li:hover ul, #navPrimary li li:hover ul, #navPrimary li li li:hover ul, #navPrimary li.sfhover ul, #navPrimary li li.sfhover ul, #navPrimary li li li.sfhover ul {
+  left:auto;
+}
+#imer_grad {
+  width: 948px;
+  padding: 0px;
+  margin: 0px;
+  height: 8px; 
+  background-image: url("../img/imeronline/imer_grad.png");
+  background-repeat: repeat-x;
+}

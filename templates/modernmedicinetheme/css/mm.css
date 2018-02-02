@@ -1,0 +1,162 @@
+body {
+	background-color: #D8DCE1;
+}
+
+#page-inner {
+	padding: 9px;
+}
+#header img  {
+	margin-top: 0px;
+}
+#header-inner {
+}
+
+#page
+{
+	width: 975px;
+	background-color: #FFFFFF;
+}
+
+#topspace {
+	height: 9px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #D8DCE1;
+}
+
+#mm_toolbar .stylediv .verticalcomponent {
+	float: left;
+	margin:0;
+}
+
+#mm_dropdown_wrapper {width:auto;height:49px;}
+#mm_dropdown {width:957px;margin:0;padding:0;}
+#mm_dropdown ul, #mm_dropdown li {margin:0;padding:0;border:0;float:left;list-style:none;}
+#mm_dropdown a {display:block;}
+#mm_dropdown .toplevel li {width:100%;text-align:left;}
+#mm_dropdown li li {width:100%;}
+#mm_dropdown li:hover ul, #mm_dropdown li.sfhover ul {left:auto;}
+#mm_dropdown li:hover, #mm_dropdown li.sfhover {background:none;}
+/* top level settings */
+#mm_dropdown .toplevel a {height:49px;font-size:0;}
+#mm_dropdown .toplevel.top1 a {height:49px;font-size:0;margin-top:0;}
+/* set imgs and widths */
+#mm_dropdown .top1 a {width:95px; background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar1.jpg) ;}
+#mm_dropdown .top1 a:hover {background-position:0 49px;}
+#mm_dropdown .top2 a {width:189px;background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar2.jpg);}
+#mm_dropdown .top2 a:hover {background-position:0 49px;}
+#mm_dropdown .top3 a {width:106px;background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar3.jpg);}
+#mm_dropdown .top3 a:hover {background-position:0 49px;}
+#mm_dropdown .top4 a {width:193px;background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar4.jpg);}
+#mm_dropdown .top4 a:hover {background-position:0 49px;}
+#mm_dropdown .top5 a {width:217px;background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar5.jpg);}
+#mm_dropdown .top5 a:hover {background-position:0 49px;}
+#mm_dropdown .top6 a {width:157px;background:url(http://www.modernmedicine.com/modernmedicine/sitewide/images/toolbar/toolbar6.jpg);}
+#mm_dropdown .top6 a:hover {background-position:0 49px;}
+/* sub level settings */
+#mm_dropdown .toplevel li a {width:auto;height:auto;color:#2070EC;background:#ECF7FF;font-size:11px;font-weight:bold;font-family:arial,helvetica,sans-serif;margin:0;padding:5px;text-decoration:none;border:none;}
+#mm_dropdown .toplevel li a:hover {text-decoration:underline;}
+#mm_dropdown li ul {width:150px;position:absolute;left:-2000px;margin:0;z-index:999;}
+#mm_dropdown li.top5 ul {width:200px;}
+#mm_dropdown li.top6 ul {width:170px;}
+#mm_dropdown li li {}
+/* sub level resource center settings */
+#mm_dropdown li ul {margin:0;position:absolute;left:-2000px;z-index:999;}
+#mm_dropdown li ul table {width:500px;background:#ECF7FF;padding:5px;margin:0px;border:2px solid #456177;border-top:none;}
+#mm_dropdown li ul table td {width:33%;padding:0 3px;}
+#mm_dropdown td.show_all {background:#9BD5FF;border:1px solid #EEE;text-align:center;}
+#mm_dropdown td.show_all a, #mm_dropdown td.show_all a:hover {width:auto;background:#9BD5FF;text-align:center;}
+/* Support for the "iehover-fix.js" */
+ul#mm_dropdown iframe {
+ position: absolute;
+ /* account for the border */
+ left: -0.25em;
+ top: -0.25em;
+ z-index: -1;
+ filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+}
+* html ul#mm_dropdown li { z-index: 201; }
+/* this is for IE 5.0
+select.hide { visibility: hidden; }
+/* End Support for the "iehover-fix.js" */
+
+
+.mm_footer {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	font-family:helvetica,arial,sans-serif;
+}
+
+.mm_footer_container p, .mm_footer_container p a {
+	font:11px Arial, Helvetica, sans-serif;color:#666;
+	margin:0;padding:40px 30px 0 59px;line-height:13px;text-align:left;}
+.mm_footer_container p a {padding:0;}
+.mm_footer_container p a:hover {text-decoration:underline;color:#666;}
+#modmed_blurb{background:url(http://www.memag.com/memag/data/html/memag/482007/476290/footer_modmedlogo.gif) no-repeat;width:310px;float:left;padding:0;border-right:double #CCC;}
+
+.mm_footer_container{
+	float:left;
+	padding:9px 0 0px 0;
+	margin:0 8px;
+	border-bottom:solid 1px #CCC;
+	float:left;
+	background-color: #FFFFFF;
+}
+	
+.footer_logos_row{float:left;padding:3px 0 0 8px;}
+.footer_logos_row #medec a { background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/mag_logo01.gif);}
+.footer_logos_row #locum a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/locum_life.gif);}
+.footer_logos_row #contpeds a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/cont_peds.gif);}
+.footer_logos_row #ophthal a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/op_times.gif);}
+.footer_logos_row #geriatric a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/geri.gif);}
+.footer_logos_row #urology a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/uro_times.gif);}
+.footer_logos_row #contobgyn a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/obgyn.gif);}
+.footer_logos_row #cosmetic a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/cosmetic_surgery.gif);}
+.footer_logos_row #derm a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/derm_times.gif);}
+.footer_logos_row #rn a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/rn.gif);}
+.footer_logos_row #healthcare a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/health_trav.gif);}
+.footer_logos_row #formulary a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/formulary.gif);}
+.footer_logos_row #managed a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/mb_exec.gif);}
+.footer_logos_row #drug a {background-image:url(http://www.memag.com/memag/data/html/memag/482007/476290/drug_topics.gif);}
+.footer_logos_row a {display:block;float:left;width:123px;height:36px;background-repeat:no-repeat;background-position:right top;}
+.footer_logos_row a:hover {background-position:right bottom;}
+
+#spc_404492 {
+	float: left;
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#spc_404498 {
+	float: left;
+	background-color: #FFFFFF;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#spc_404498 table {
+	margin: 2px;
+	padding: 0px;
+}
+
+#spc_404498 td {
+	vertical-align: top;
+	padding: 0px 5px 2px 0px;
+}
+
+.mm_footertext {
+	color:#000000;
+	font-size:8pt;
+	font-weight: normal;
+}
+.mm_footer-link, .mm_footer-link:link, .mm_footer-link:active, .mm_footer-link:visited {
+	color:#000000;
+	font-size:8pt;
+	text-decoration:none;
+	font-weight: normal;	
+}

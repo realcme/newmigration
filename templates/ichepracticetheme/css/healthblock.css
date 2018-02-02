@@ -1,0 +1,62 @@
+/*
+#healthcoursenav{ height:37px; display:block; padding:0; margin: 0;  border:1px solid; border-radius:5px; } 
+#healthcoursenav > ul {list-style:inside none; padding:0; margin:0;} 
+#healthcoursenav > ul > li {list-style:inside none; padding:0; margin:0; float:left; display:block; position:relative;} 
+#healthcoursenav > ul > li > a{ outline:none; display:block; position:relative; padding:12px 20px; font:bold 13px/100% Arial, Helvetica, sans-serif; text-align:center; text-decoration:none; text-shadow:1px 1px 0 rgba(0,0,0, 0.4); } 
+#healthcoursenav > ul > li:first-child > a{border-radius:5px 0 0 5px;} 
+#healthcoursenav > ul > li > a:after{ content:''; position:absolute; border-right:1px solid; top:-1px; bottom:-1px; right:-2px; z-index:99; } 
+#healthcoursenav ul li.has-sub:hover > a:after{top:0; bottom:0;} 
+#healthcoursenav > ul > li.has-sub > a:before{ content:''; position:absolute; top:18px; right:6px; border:5px solid transparent; border-top:5px solid #fff; } 
+#healthcoursenav > ul > li.has-sub:hover > a:before{top:19px;} 
+#healthcoursenav ul li.has-sub:hover > a{ background:#fff; border-color:#fff; padding-bottom:13px; padding-top:13px; top:-1px; z-index:999; } 
+#healthcoursenav ul li.has-sub:hover > ul, #healthcoursenav ul li.has-sub:hover > div{display:block;} 
+#healthcoursenav ul li.has-sub > a:hover{background:#fff; border-color:#fff;} 
+#healthcoursenav ul li > ul, #healthcoursenav ul li > div{ display:none; width:auto; position:absolute; top:38px; padding:10px 0; background:#fff; border-radius:0 0 5px 5px; z-index:999; } 
+#healthcoursenav ul li > ul{width:200px;} 
+#healthcoursenav ul li > ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;} 
+#healthcoursenav ul li > ul li a{ outline:none; display:block; position:relative; margin:0; padding:8px 20px; font:10pt Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; text-shadow:1px 1px 0 rgba(0,0,0, 0.5); } 
+
+
+#healthcoursenav, #healthcoursenav > ul > li > ul > li a:hover{ background:#333333; background:-moz-linear-gradient(top, #333333 0%, #222222 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(100%,#222222)); background:-webkit-linear-gradient(top, #333333 0%,#222222 100%); background:-o-linear-gradient(top, #333333 0%,#222222 100%); background:-ms-linear-gradient(top, #333333 0%,#222222 100%); background:linear-gradient(top, #333333 0%,#222222 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#222222',GradientType=0 ); } 
+#healthcoursenav{border-color:#000;} 
+#healthcoursenav > ul > li > a{border-right:1px solid #000; color:#fff;} 
+#healthcoursenav > ul > li > a:after{border-color:#444;} 
+#healthcoursenav > ul > li > a:hover{background:#111;}
+*/
+
+#healthcoursenav{border-color:#fff;float:right;width:965px;background-color:#000;} 
+#healthcoursenav > ul > li > a{border-right:1px solid #fff; color:#eee; letter-spacing: 1px} 
+#healthcoursenav > ul > li > a:hover{background:#ccc;}
+
+#healthcoursenav{ height:37px; display:block; padding:0; margin: 0;} 
+#healthcoursenav > ul {list-style:inside none; padding:0; margin:0;} 
+#healthcoursenav > ul > li {list-style:inside none; padding:0; margin:0; float:right; display:block; position:relative;} 
+#healthcoursenav > ul > li > a{ outline:none; display:block; position:relative; padding:12px 20px; text-align:center; text-decoration:none;} 
+#healthcoursenav > ul > li:first-child > a{border-radius:5px 0 0 5px;} 
+#healthcoursenav > ul > li > a:after{ content:''; position:absolute; top:-1px; bottom:-1px; right:-2px; z-index:99; } 
+#healthcoursenav ul li.has-sub:hover > a:after{top:0; bottom:0;} 
+#healthcoursenav > ul > li.has-sub > a:before{ content:''; position:absolute; top:18px; right:6px; border:5px solid transparent; border-top:5px solid #fff; } 
+#healthcoursenav > ul > li.has-sub:hover > a:before{top:19px;} 
+#healthcoursenav ul li.has-sub:hover > a{ background:#ccc; border-color:#ccc; padding-bottom:13px; padding-top:13px; top:-1px; z-index:999; } 
+#healthcoursenav ul li.has-sub:hover > ul, #healthcoursenav ul li.has-sub:hover > div{display:block;} 
+#healthcoursenav ul li.has-sub > a:hover{background:#ccc; border-color:#ccc;} 
+#healthcoursenav ul li > ul, #healthcoursenav ul li > div{ display:none; width:auto; position:absolute; top:38px; padding:10px 0; background:#fff; border-radius:0 0 5px 5px; z-index:999; } 
+#healthcoursenav ul li > ul{width:200px;border: 1px solid #000;} 
+#healthcoursenav ul li > ul li{display:block; list-style:inside none; padding:0; margin:0; position:relative;} 
+#healthcoursenav ul li > ul li a{ outline:none; display:block; position:relative; margin:0; padding:4px 20px; color:#666; text-decoration:none; letter-spacing:1px} 
+#healthcoursenav .logout {display: none;};
+
+.blockactivityreview-frontmatter {border: 1px solid #C0C0C0; width: 100%; margin-top: 10px; margin-left: 6px; padding: 2px; height: 25px}
+.blockactivityreview-inactivity {border: 1px solid #C0C0C0; width: 100%%; margin-top: 10px; margin-left: 6px; padding: 2px; height: 55px}
+#blockactivityreview .reviewheader{width: 100%; clear: both;height: 20px;}
+#blockactivityreview .reviewtitle {font-weight: bold; font-weight: bold; font-size:11px;color:black;float:left}
+#blockactivityreview .back {float: right; }
+#blockactivityreview .editbrandings {float: right;padding-right: 20px}
+#blockactivityreview .label {margin-bottom: 0px;}
+#blockactivityreview a:link {color: #D0660A; font-weight: bold; text-decoration: none; font-size:12px}
+#blockactivityreview a:active {color: #D0660A;}
+#blockactivityreview a:visited {color: #D0660A;}
+#blockactivityreview #reset {padding-top: 0px;padding-bottom: 0px;}
+#blockactivityreview .profession {padding-top: 5px;width:100%}
+#blockactivityreview .profession div {float: left !important;}
+#blockactivityreview .profession .label {padding-top: 5px}

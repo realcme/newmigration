@@ -1,0 +1,3 @@
+.listing-tabs .form-item input {
+    width: 90px;
+}

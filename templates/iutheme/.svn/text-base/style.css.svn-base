@@ -1,0 +1,78 @@
+/* $Id: style.css,v 1.1 2009-11-06 14:44:33 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+#main {
+	margin: auto;
+	width: 970px;
+}
+
+.clear {
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	clear: both;
+}
+#top-header {
+	height: 130px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+.inner {
+	width: 970px;
+	margin: 0 auto;
+}
+
+#top-space {
+	height: 44px;
+	background: url('img/branding-bg.gif') repeat-x top;
+}
+
+#bottom-space {
+	height: 140px;
+	background: url('img/bg-midnight.gif') repeat-x top;
+}
+
+#top-logo {
+	display: block !important;
+	width: 520px !important;
+	height: 89px !important;
+	float: right !important;
+}
+
+#nav ul.level-1 {
+	float: left;
+	margin: auto;
+	height: 40px;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	padding: 12px 12px;
+	float: left;
+border-left: 1px solid #CCC;
+	border-right: 1px solid white;
+	position: relative;
+	color: dimGray;
+	font-size: 1em;
+}
+
+
+
+li.first, li:first-child {
+border-left: none!important;
+}
+
+#nav a {
+	display: block;
+	font-weight: bold;
+	color: #3A3A3A;
+	font-size: 1em;
+}

@@ -1,0 +1,152 @@
+<?php
+  global $user;
+  $img_path = base_path() . path_to_theme() . '/images';
+  
+  $viewport = '<meta name="viewport" content="width=768 initial-scale=1.0 maximum-scale=1.33333 user-scalable=1" />';
+  $viewport = '';
+  
+  // override title
+  $head_title = '';
+  
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language; ?>" xml:lang="<?php print $language; ?>">
+
+<head>
+  <title><?php print $head_title; ?></title>
+  	<?php print $viewport; ?>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="apple-touch-icon" href="<?php print $img_path; ?>/touch_icon_small.png" />
+		<link rel="apple-touch-icon" href="<?php print $img_path; ?>/touch_icon_medium.png" sizes="72x72" />
+		<link rel="apple-touch-icon" href="<?php print $img_path; ?>/touch_icon_big.png" sizes="114x114" />
+  <?php print $head; ?>
+  <?php print $styles; ?>
+  <!--[if IE]>
+    <link rel="stylesheet" href="<?php print $base_path . $directory; ?>/ie.css" type="text/css">
+    <?php if ($subtheme_directory && file_exists($subtheme_directory .'/ie.css')): ?>
+      <link rel="stylesheet" href="<?php print $base_path . $subtheme_directory; ?>/ie.css" type="text/css">
+    <?php endif; ?>
+  <![endif]-->
+
+  <?php print $scripts; ?>
+  <?php print phptemplate_cookie_js(); ?> 
+  <?php print phptemplate_opencomp_js(); ?> 
+  
+</head>
+
+<body class="<?php print $body_classes; ?>">
+
+  <div id="page"><div id="page-inner">
+
+
+    <a name="top" id="navigation-top"></a>
+    <div style="display: none" id="skip-to-nav"><a href="#navigation"><?php print t('Skip to Navigation'); ?></a></div>
+
+    <div id="header"><div id="header-inner" class="clear-block">
+
+      <div id="logo">&nbsp;</div> 
+
+      <?php if ($header): ?>
+        <div id="header-blocks">
+          <?php print $header; ?>
+        </div> <!-- /#header-blocks -->
+      <?php endif; ?>
+
+    </div></div> <!-- /#header-inner, /#header -->
+<?php /*
+<div id="top_nav">
+<ul id="top_nav_links">
+	<li class=""><a href="/aboutus.php">About Us</a></li>
+    <li class=""><a href="/providers.php">Offerings</a></li>
+    <li class=""><a href="/platform.php">Platform</a></li>
+    <li class=""><a href="/news-releases/">News</a></li>
+    <li class="last "><a href="/jobs.php">Jobs</a></li>
+</ul>
+</div>
+*/ ?>
+
+    <div id="page-main"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
+
+      <div id="content"><div id="content-inner">
+
+        <?php if ($mission): ?>
+          <div id="mission"><?php print $mission; ?></div>
+        <?php endif; ?>
+
+        <?php if ($content_top): ?>
+          <div id="content-top">
+            <?php print $content_top; ?>
+          </div> <!-- /#content-top -->
+        <?php endif; ?>
+
+        <?php if ($breadcrumb or $title or $tabs or $help or $messages): ?>
+          <div id="content-header">
+            <?php // print $breadcrumb; ?>
+            <?php if ($title): ?>
+              <h1 class="title"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php if ($user->uid == 1) { print $messages;} ?>
+            <?php if ($tabs): ?>
+              <div class="tabs"><?php print $tabs; ?></div>
+            <?php endif; ?>
+            <?php print $help; ?>
+          </div> <!-- /#content-header -->
+        <?php endif; ?>
+
+        <div id="content-area">
+          <?php print $content; ?>
+        </div>
+
+<!-- 
+        <?php if ($feed_icons): ?>
+          <div class="feed-icons"><?php print $feed_icons; ?></div>
+        <?php endif; ?>
+ -->
+ 
+        <?php if ($content_bottom): ?>
+          <div id="content-bottom">
+            <?php print $content_bottom; ?>
+          </div> <!-- /#content-bottom -->
+        <?php endif; ?>
+
+      </div></div> <!-- /#content-inner, /#content -->
+
+      <?php if ($sidebar_left): ?>
+        <div id="sidebar-left"><div id="sidebar-left-inner">
+          <?php //print $sidebar_left; ?>
+        </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
+      <?php endif; ?>
+
+    </div></div> <!-- /#main-inner, /#main -->
+
+    
+<div id="footer">
+<div id="copyright">
+	&copy; 2008-<?=date("Y");?> RealCME. All rights reserved.
+</div>
+
+<div id="bottom_links">
+<ul>
+
+	<li class="first_link"><a href="/">Home</a></li>
+    <li><a href="/cms/support-center">Support</a></li>
+    <li><a href="/privacy.php">Privacy Statement</a></li>
+    <li><a href="/tos.php">Terms of Use</a></li>
+    <li><a href="/sitemap.php">Sitemap</a></li>
+    <li><a href="/cms/contact-us">Contact Us</a></li>
+</ul>
+</div> 
+
+</div>    <!-- Close Footer -->
+ 
+
+    <?php if ($closure_region): ?>
+      <div id="closure-blocks"><?php print $closure_region; ?></div>
+    <?php endif; ?>
+
+    <?php print $closure; ?>
+
+  </div>
+  </div> <!-- /#page-inner, /#page -->
+
+</body>
+</html>

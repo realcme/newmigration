@@ -1,0 +1,71 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+#page {
+	width: auto !important;
+}
+
+#header {
+	background: #fff url('/cms/sites/all/themes/zen/impactedutheme/img/header_bg.jpg') left bottom repeat-x;
+	height: 90px;
+	
+}
+
+#header-inside {
+	margin-left: 40px;
+}
+
+#page-main {
+	width: 960px !important;
+	margin: auto;
+	top: 0 !important;
+}
+
+#navi {
+	font: bold 11px arial;
+	color: #002250;
+	text-decoration: none;
+	padding-left: 200px;
+	padding-top: 53px;
+}
+
+#navi a:link, #navi a:visited, #navi a:hover, #navi a:active {
+	font: bold 11px arial;
+	color: #002250;
+	text-decoration: none;
+}
+
+/*
+
+
+#header {
+	background: #fff url('/cms/sites/all/themes/zen/impactedutheme/img/header_bg.jpg') left bottom repeat-x;
+	height: 100px;
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none
+}
+
+
+#header .logo {
+	float: left;
+	width: 161px;
+}
+
+#navi {
+	float: left; 
+	width: auto;
+	margin-top: 44px;
+	margin-left: 20px;
+}
+
+*/

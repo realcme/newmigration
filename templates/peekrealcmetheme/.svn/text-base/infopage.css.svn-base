@@ -1,0 +1,18 @@
+#peekpage {
+  margin: auto;
+  width: 760;
+  background-color: #FFFFFF;
+  color: #666666;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  font-family: verdana,sans-serif;
+} 
+#header {display:none;}
+#content-header {display:none;}
+#peekcontent {
+  margin: 0;
+  padding: 0;
+}
+
+

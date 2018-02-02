@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+background:url("./img/bg-main.png") repeat-x scroll 0 0 #FFFFFF;
+margin:16px 0 50px;
+}
+
+a.header {
+background:url("./img/aga-logo.png") no-repeat scroll 0 0 transparent;
+display:block;
+height:0;
+overflow:hidden;
+padding-top:102px;
+width:745px;
+}
+
+#utility {float:left;color:#BDB8B6;font-size:10px;width:745px;overflow:hidden;white-space:nowrap;margin:14px 0 0 0;font-family: normal Arial, Helvetica, Verdana, sans-serif;}
+#utility a {padding:0 5px; color: #0F4CC3; font-weight:normal;}
+#utility a.first {padding-left:27px;}
+
+/* Main navigation*/
+#nav {margin:10px 0 10px 0;background:#14387F;width:960px;height:49px;font-weight:bold;list-style:none;position:relative;z-index:19; clear: both;}
+#nav ul {list-style-type:none;padding:0;margin:0;width:960px;height:49px;}
+#nav li {float:left;min-height:49px;position:relative;z-index:20;font-family: normal Arial, Helvetica, Verdana, sans-serif;}
+#nav li a {float:left;display:block;height:49px;background-repeat:no-repeat;background-image:url('./img/nav-main.png');text-indent:-666em;outline:none;color:#FFF;}
+* html #nav li {min-height:49px}
+#nav li#navpractice {width:92px;}
+#nav li#navpractice a {width:92px;background-position:0 top;}
+#nav li#navpractice a:active {background-position:0 bottom;}
+#nav li#navpractice a.on {background-position:0 -98px;}
+#nav li#navpractice a:hover, #nav li#navpractice a.hover {background-position:0 -49px;}
+#nav li#navresearch {width:86px;}
+#nav li#navresearch a {width:86px;background-position:-92px top;}
+#nav li#navresearch a:active {background-position:-92px bottom;}
+#nav li#navresearch a.on {background-position:-92px -98px;}
+#nav li#navresearch a:hover, #nav li#navresearch a.hover {background-position:-92px -49px;}
+#nav li#naveducation {width:153px;}
+#nav li#naveducation a {width:153px;background-position:-178px top;}
+#nav li#naveducation a:active {background-position:-178px bottom;}
+#nav li#naveducation a.on {background-position:-178px -98px;}
+#nav li#naveducation a:hover, #nav li#naveducation a.hover {background-position:-178px -49px;}
+#nav li#navadvocacy {width:160px;}
+#nav li#navadvocacy a {width:160px;background-position:-331px top;}
+#nav li#navadvocacy a:active {background-position:-331px bottom;}
+#nav li#navadvocacy a.on {background-position:-331px -98px;}
+#nav li#navadvocacy a:hover, #nav li#navadvocacy a.hover {background-position:-331px -49px;}
+#nav li#navgi {width:109px;}
+#nav li#navgi a {width:109px;background-position:-491px top;}
+#nav li#navgi a:active {background-position:-491px bottom;}
+#nav li#navgi a.on {background-position:-491px -98px;}
+#nav li#navgi a:hover, #nav li#navgi a.hover {background-position:-491px -49px;}
+#nav li#navjournal {width:164px;}
+#nav li#navjournal a {width:164px;background-position:-600px top;}
+#nav li#navjournal a:active {background-position:-600px bottom;}
+#nav li#navjournal a.on {background-position:-600px -98px;}
+#nav li#navjournal a:hover,#nav li#navjournal a.hover {background-position:-600px -49px;}
+#nav li#navcommunity {width:94px;}
+#nav li#navcommunity a {width:94px;background-position:-764px top;}
+#nav li#navcommunity a:active {background-position:-764px bottom;}
+#nav li#navcommunity a.on {background-position:-764px -98px;}
+#nav li#navcommunity a:hover,#nav li#navcommunity a.hover {background-position:-764px -49px;}
+#nav li#navabout {width:102px;}
+#nav li#navabout a {width:102px;background-position:-858px top;}
+#nav li#navabout a:active {background-position:-858px bottom;}
+#nav li#navabout a.on {background-position:-858px -98px;}
+#nav li#navabout a:hover,#nav li#navabout a.hover {background-position:-858px -49px;}
+#nav li .submenu {position:absolute;width:180px;left:0;display:none;top:49px;z-index:21;background:#A49E9B}
+#nav li .submenu ul {width:180px;padding:6px 0;height:auto;list-style-type:none;padding:6px 0;margin:0;background:transparent;width:180px;}
+#nav li .submenu ul li {display:block;border:1px solid #A49E9B;width:178px;min-height:0;float:none;position:relative;z-index:12;background:none}
+#nav li .submenu ul li a,
+#nav li#navadvocacy .submenu ul li a,
+#nav li#navresearch .submenu ul li a,
+#nav li#navpractice .submenu ul li a,
+#nav li#naveducation .submenu ul li a,
+#nav li#navgi .submenu ul li a,
+#nav li#navjournal .submenu ul li a,
+#nav li#navcommunity .submenu ul li a,
+#nav li#navabout .submenu ul li a {float:none;display:block;height:auto;width:150px;text-indent:0;background-image:none;background-color:#A49E9B;text-indent:0;font-size:11px;padding:8px 14px;}
+#nav li .submenu ul li a:hover,
+#nav li#navadvocacy .submenu ul li a:hover,
+#nav li#navresearch .submenu ul li a:hover,
+#nav li#navpractice .submenu ul li a:hover,
+#nav li#naveducation .submenu ul li a:hover,
+#nav li#navgi .submenu ul li a:hover,
+#nav li#navjournal .submenu ul li a:hover,
+#nav li#navcommunity .submenu ul li a:hover,
+#nav li#navabout .submenu ul li a:hover,
+#nav li ul li a:hover {background-color:#FFF;color:#D16E2A;text-decoration:none;background-image:none;}
+
+
+#main {	border: 4px solid #D8D4D2;	padding: 10px; }
+
+#gastro-footer p {
+font-size:10px;
+margin:0 0 8px;
+margin-bottom:4px;
+padding:0px 15px 0 27px;
+font-family: normal Arial, Helvetica, Verdana, sans-serif;
+color: #2D2D2D;
+}
+
+#gastro-footer .footer-links {
+	clear: both;
+	border-top:1px solid #EAE8E7;
+	color:#BDB8B6;
+	padding:4px 15px 0 27px;
+	
+}
+
+#gastro-footer .footer-links a {
+color: #0F4CC3; font-weight:normal;}

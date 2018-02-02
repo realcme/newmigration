@@ -1,0 +1,40 @@
+#essentia_header {
+	height:64px;
+	margin: 50px 0px 40px 0px;
+	padding:0;
+}
+
+#essentia_nav_top {
+	margin-right:0px;
+	margin-top:-22px;
+	text-align:right;
+}
+
+#essentia_nav_top ul {
+	list-style-type: none;
+	display: inline;
+}
+
+#essentia_nav_top ul li {
+	color: #666;
+	display: inline;
+}
+
+#essentia_nav_top ul li a:link, #essentia_nav_top ul li a:visited, #essentia_nav_top ul li a:hover, #essentia_nav_top ul li a:active {
+	text-decoration: underline;
+	color: #879298;
+	font-size: 9px;
+	font-weight: normal;
+	font-family:arial,helvetica,verdana,sans-serif;
+	padding: 0px 0px 0px 5px;
+}
+
+#essentia_nav_top ul li a.active, #essentia_nav_top ul li a:hover {
+	color: #8fa6c0;
+}
+
+#essentia_divider {
+	background: #8fA6C0;
+	margin: 10px 0px 0px 0px;
+	height: 12px;
+}

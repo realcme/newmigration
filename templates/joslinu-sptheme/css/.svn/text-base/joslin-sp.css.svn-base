@@ -1,0 +1,106 @@
+#views-filters {display:none}
+.page-cmealerts-alerts #views-filters {display:inline}
+
+body {background-color: #C8C7CC}
+
+#page {
+  width: 915px;
+  padding: 0px 0px;
+}
+
+#main {padding: 0px 10px;}
+
+#footer-inner {padding: 10px 10px 0px 10px;}
+
+#healthcoursenav {
+    background-color: #C8C7CC !important;
+    width: 915px;
+    border: none;
+}
+#healthcoursenav > ul > li > a:hover{background:#EA5802 !important;}
+#healthcoursenav ul li.has-sub:hover > a{ background:#EA5802 !important; border-color:#EA5802 !important;}
+#healthcoursenav ul li.has-sub > a:hover{background:#EA5802 !important; border-color:#EA5802 !important;}
+#healthcoursenav ul li > ul{border-color:#EA5802 !important;}
+#healthcoursenav > ul > li > a {color: #FFFFFF; border: none;}
+
+ul.primary li {border-color:#EA5802;background-color: #EA5802;}
+ul.primary li a:hover{background-color: #EA5802;color:#FFFFFF}
+
+.form-btn {
+  background: #EA3407; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #EA5802 0%, #EA3407 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#EA5802), color-stop(100%,#EA3407)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #EA5802 0%, #EA3407 100%); /* W3C */
+}
+
+.view-item-all-activities .view-data-node-link {
+    background-image: -moz-linear-gradient(center top , #EA5802, #EA3407);
+    border-color: #EA5802 #EA5802 #EA3407;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+  background: #EA3407; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #EA5802 0%, #EA3407 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#EA5802), color-stop(100%,#EA3407)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #EA5802 0%,#EA3407 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #EA5802 0%, #EA3407 100%); /* W3C */
+}
+
+ #user-login #edit-submit:hover, #user-register #edit-submit:hover, #user-pass #edit-submit:hover,  #user-edit #edit-submit:hover, #user-edit #edit-delete:hover  {
+  color: #FFFFFF;
+  font-weight: bold;
+ }
+ 
+#coursedata p {margin: 0}
+
+
+#footer {
+    border-top: 4px solid #EA5802;
+}
+
+#rcmcontent #header {
+    display: none;
+}
+#courseheadertable {
+    display: none;
+}
+#coursedata {
+	background-position: 40px 15px !important;
+}
+#coursedata table tr:nth-child(3) {display : none;}
+#coursedata table tr:nth-child(4) {display : none;}
+
+.healthcourse-record-btn {
+  display: inline;
+  width: 110px;
+  margin-left: 5px;
+}
+
+.healthcourse-record-pdf {
+  width: 130px;
+}
+
+#logo-footer-sponsor
+{
+	text-align: left; 
+	vertical-align: top; 
+	font-weight:bold;
+	padding-left: 20px;
+	font-size: 14px;
+}
+#logo-footer-sponsor div {
+	float: left;
+  padding-top: 25px;
+  padding-right: 10px;
+}
+div.cme-recommend-to-peer {
+	width: 210px;
+}
+#user-pass .pass-btn {
+  width: 310px;
+}

@@ -1,0 +1,37 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+body {
+	margin-top: 0;
+	background-color: #cccccc !important;
+}
+
+#page {
+	width: 1024px !important;
+	margin: auto;
+
+}
+
+
+#header_table img,
+#header_table tr,
+#header_table td {
+	margin: 0 !important;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+table#header_table {
+	margin-top: -10px;
+
+} 
+#header_table img {
+	float: right !important;
+}

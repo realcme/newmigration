@@ -1,0 +1,214 @@
+@CHARSET "ISO-8859-1";
+
+body {
+  background-color:#fff;
+}
+* html body {
+	background-color: #fff;
+	width: 95%; }
+#page
+{
+	/* recommended styles */
+	margin: auto; /* marker :m1: delete this to make layout left aligned */
+
+	/* add custom styles here */
+	width: 775px; /* marker :m3:  */
+	/*border: 1px solid #000;*/
+}
+* html #page {
+	width: 775px;
+	height: 1%;
+	margin-left: 10px;
+	zoom: 1; }
+/*HEADER*/
+#page-title {
+	color: #e57e1c;
+	font-size: 24px;
+	font-family: Arial, verdana, sans-serif;
+	font-weight: normal;
+	width: 748px;
+	height: 26px;
+	overflow: visible;
+	margin: 25px 0 10px 12px;
+	padding: 0; }
+* html #page-title {
+	overflow_y: hidden; }
+/*PAGE CONTENTS*/
+#content
+  { margin: 0; padding: 0; }
+#content-area form {
+	margin: 0;
+	padding: 0; }
+.with-navbar #content
+  {
+	height: 340px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto; }
+* html .with-navbar #content {
+	width: 100%;
+	height: 340px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	zoom: 1; }
+#revisions-top {
+	font-size: 0;
+	line-height: 0;
+	background-color: transparent;
+	background-image: url(../img/revisions_top.gif);
+	background-repeat: no-repeat;
+	width: 760px;
+	height: 6px;
+	margin: 0;
+	padding: 0; }
+#content-area { background-color: transparent; background-image: url(../img/revisions_content_bgtile.gif); background-repeat: repeat-y; width: 734px; margin: 0; padding: 1px 14px 6px 7px; }
+#revisions-bottom { background-color: transparent; background-image: url(../img/revisions_bottom.gif); background-repeat: no-repeat; width: 760px; height: 8px; margin: 0 0 0; padding: 0; }
+table {
+	width: 734px;
+	margin: 0;
+	padding: 0;
+	border-color: #ccc #ccc #a3a3a3;
+	border-style: solid;
+	border-width: 1px; }
+thead tr th {
+	color: #444;
+	background-color: transparent;
+	background-image: url(../img/revisions_header_bgtile.gif);
+	background-repeat: repeat-x;
+	text-align: center;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+	border-style: none; }
+td {
+	padding: 10px; }
+tr.odd {
+	background-color: #e7e7e7;
+	border-bottom: 1px solid #ccc; }
+tr.even {
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #ccc; }
+form {
+	margin: 0;
+	padding: 0; }
+.form-radios {
+	margin: 0; }
+.revision-compare { text-align: center;}
+td.revision-current {
+  background: #cdcdcd;
+}
+/*PAGER*/
+.pager  { background-color: transparent; background-image: url(../img/pager_bgtile.gif); background-repeat: repeat-x; text-align: left; height: 69px; margin: 0; padding-top: 10px; padding-left: 5px; }
+.nopager { background-color: transparent; background-image: url(../img/pager_bgtile.gif); background-repeat: repeat-x; text-align: left; margin: 0; padding-top: 10px; padding-left: 5px; height: 69px; }
+.pager strong.pager-current { color: #fff; font-weight: bold; line-height: 2em; background-color: #63499b; margin-right: 2px; margin-left: 2px; padding: 3px 8px; border: solid 1px #63499b; }
+.pager a, .pager-last  { padding: 3px 8px; color: #63499b; font-weight: bold; line-height: 2em; background-color: #fff; margin-right: 2px; margin-left: 2px; border: solid 1px #eaeaea; }
+
+#revisions { padding-top: 20px }
+/*DIFFERENCES*/
+.diff-nav {
+	background-color: transparent;
+	background-image: url(../img/revisions_diff_bgtile.gif);
+	background-repeat: repeat-x;
+	height: 31px;
+	clear: both;
+	margin: 0;
+	padding: 15px 10px 0;
+	border: solid 1px #ccc; }
+.diff-nav-prev {
+	float: left;
+	margin: 0;
+	padding: 0; }
+.diff-nav-list {
+	text-align: right;
+	float: right;
+	margin: 0;
+	padding: 0; }
+.diff-nav-next {
+	float: left;
+	margin: 0;
+	padding: 0; }
+#diff-nav-next-button {
+	background-color: transparent;
+	background-image: url(../img/btn-next-sm.gif);
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	width: 40px;
+	height: 19px;
+	float: left; }
+#diff-nav-prev-button {
+	background-color: transparent;
+	background-image: url(../img/btn-prev-sm.gif);
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	width: 40px;
+	height: 19px;
+	float: left; }
+#diff-nav-next-button-dis {
+	background-color: transparent;
+	background-image: url(../img/btn-next-sm-disabled.gif);
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	width: 40px;
+	height: 19px;
+	float: left; }
+#diff-nav-prev-button-dis {
+	background-color: transparent;
+	background-image: url(../img/btn-prev-sm-disabled.gif);
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	width: 40px;
+	height: 19px;
+	float: left; }
+.diff-header {
+	clear: both;
+	padding-top: 5px; }
+.diff-header li {
+	font-style: italic; }
+.diff-legend-ins {
+	color: green;
+	font-style: normal;
+	text-decoration: underline; }
+.diff-legend-del {
+	color: red ;
+	font-style: normal;
+	text-decoration: line-through; }
+.diff-legend-keep {
+	font-style: normal; }
+table.diff {
+	margin-bottom: 0;
+	zoom: 1; }
+td.diff-section-title, div.diff-section-title {
+	background-color: #eee;
+	margin-top: 0.5em;
+	zoom: 1; }
+.diff-section-title em {
+	font-weight: bold;
+	font-style: normal; }
+.diff-section {
+	overflow: auto;
+	margin-bottom: 0.5em;
+	word-wrap: break-word; }
+/*ADMIN*/
+#cmeauthoradmin-activityform table { width: 734px; margin: 0; padding: 0; border-color: #ccc #ccc #a3a3a3; border-style: solid; border-width: 1px; }
+#cmeauthoradmin-activityform table thead th {
+	color: #444;
+	background-color: transparent;
+	background-image: url(../img/authoractivities_bgtile.gif);
+	background-repeat: repeat-x;
+	text-align: center;
+	height: 46px;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #bcbbbb;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: none; }
+#cmeauthoradmin-activityform table tbody tr.odd td { background-color: #e7e7e7; margin: 0; border-right: 1px solid #aaa9a9; border-bottom: 1px solid #ccc; border-top-style: none; border-top-width: 0; border-left-style: none; border-left-width: 0; padding-top: 0px; padding-bottom: 0px}
+#cmeauthoradmin-activityform table tbody tr.even td { background-color: #f6f6f6; margin: 0; border-right: 1px solid #aaa9a9; border-bottom: 1px solid #ccc; border-top-style: none; border-top-width: 0; border-left-style: none; border-left-width: 0; padding-top: 0px; padding-bottom: 0px }
+#cmeauthoradmin-activityform td.save  { text-align: center;  }
+#cmeauthoradmin-activityform .form-checkboxes {text-align:center; }
+#cmeauthoradmin-activityform .name {white-space: nowrap;}
+

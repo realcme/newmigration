@@ -1,0 +1,1444 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+strong{font-weight:bold;}
+em{font-style:italic;}
+
+#navbar {
+	display: none;
+}
+
+.breadcrumb {
+	display: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.barscore-value {
+	font-weight: bold;
+  float: left;
+  padding: 0px 5px 0px 2px;
+}
+.barscore-value.cscore {
+  padding-right: 7px;
+}
+
+.barscore-text {
+	font-size: 11px;
+	font-family: Arial, verdana, sans-serif;
+	font-weight: normal;
+	text-align: right;
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 0 2px 0 0;
+	display: inline;
+}
+.barscore-bar {
+  float: left;	
+}
+
+.score {
+	font-size: 0;
+	background-color: transparent;
+	background-image: url(../../images/score.gif);
+	background-repeat: repeat-x;
+	background-position: 100% center;
+	position: relative;
+	height: 12px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #666;
+	display: inline;
+}
+.barscore-bar.cscore{
+	clear: left;
+}
+.score.cscore  {
+  background-image: url(../../images/scoreothers.gif);
+}
+
+
+.score-blank {
+	font-size: 0;
+	background-color: #f4f4f4;
+	position: relative;
+	height: 12px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	display: inline;
+}
+
+.healthcourse-record {
+	position: relative;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	overflow: hidden;
+	padding: 10px 10px 5px 10px
+}
+
+.healthcourse-record-icon {
+	float: left;
+}
+
+.healthcourse-record-info {
+	float: left;
+	padding-left: 10px;
+}
+
+.healthcourse-record-title {
+	padding-top: 5px;
+  padding-left: 55px;
+  font-weight: bold;
+  min-height: 43px;
+}
+
+.healthcourse-record-perf {
+	font-size: 11px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.healthcourse-record-status {
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+
+.healthcourse-record-action {
+	float: right
+}
+
+.healthcourse-record-goto {
+}
+
+.healthcourse-record-cert {
+	width: 120px;
+}
+
+.healthcourse-record-pdf {
+	width: 120px;
+}
+
+/*
+   background-color: #5BB75B;
+   background-image: -moz-linear-gradient(center top , #62C462, #51A351);
+   border-color: #51A351 #51A351 #458B45;
+*/
+.healthcourse-record-btn {
+	padding: 3px;
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-align: center;
+	background-color: #C0C0C0;
+	background-image: -moz-linear-gradient(center top, #D0D0D0, #A0A0A0);
+	border-color: #A0A0A0 #A0A0A0 #888888;
+	border-image: none;
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px
+		rgba(0, 0, 0, 0.05);
+}
+
+.healthcourse-record-btn {
+  display:inline;
+  width: 110px;
+  margin-left: 5px;
+}
+
+.healthcourse-record-btn a,.healthcourse-record-btn a:link {
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.healthcourse-record-btn:hover {
+	background-color: #787878;
+	background-position: 0 -15px;
+	color: #333333;
+	text-decoration: none;
+	transition: background-position 0.1s linear 0s;
+}
+
+.healthcourse-record-btn:focus {
+	outline: thin dotted #333333;
+	outline-offset: -2px;
+}
+
+.view-content-all-activities ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+.view-item-all-activities {
+	position: relative;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	height: 50px;
+	padding: 10px 10px 5px 10px
+}
+
+.view-item-all-activities .view-data-node-data-field-icon-field-icon-fid
+	{
+	float: left;
+}
+
+.view-item-all-activities .view-data-node-title {
+	float: left;
+	padding-left: 10px;
+	font-size: 120%
+}
+
+.view-item-all-activities .view-data-node-link
+{
+	float: right;
+    background-color: #C0C0C0;
+    background-image: -moz-linear-gradient(center top , #D7E1B1, #B8CB77);
+    background-repeat: repeat-x;
+    border-color: #D7E1B1 #D7E1B1 #B8CB77;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #03486E;
+    font-weight: normal;
+}
+
+.view-all-activities #views-filters thead {
+	display: none;
+}
+
+.view-all-activities #views-filters div.form-item {
+	background: none repeat scroll 0 0 white;
+	border: 1px inset #AAAAAA;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+	float: left;
+	height: 22px;
+	line-height: 2em;
+	margin: 0;
+	padding: 0 12px;
+	text-align: center;
+}
+
+.view-all-activities #views-filters #edit-filter0 {
+	border: none;
+	width: 150px;
+	margin-right: 6px;
+}
+
+.view-all-activities #views-filters #edit-submit {
+	background: url("/cms/sites/all/themes/zen/images/magnifying_glass.png")
+		no-repeat scroll center bottom transparent;
+	border: medium none;
+	cursor: pointer;
+	height: 16px;
+	margin: 0;
+	width: 16px;
+}
+
+.view-all-activities #views-filters>div {
+	background-color: #AAA;
+	background: -moz-linear-gradient(center top, #EEEEEE, #777777) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#777));
+	border: 1px solid #DDDDDD;
+	padding: 4px 12px;
+	border-radius: 6px;
+	width: 200px;
+	margin-bottom: 5px;
+}
+
+.view-all-activities #views-filters table {
+	margin: 0;
+}
+
+.view-all-activities #views-filters table td {
+	border: none;
+}
+
+.view-all-activities #views-filters table tr.even {
+	background-color: transparent;
+	border: none;
+}
+
+.view-all-activities #views-filters table tr.odd {
+	background-color: transparent;
+	border: none;
+}
+.node-type-course .title {display: none;}
+
+.section-user .title {display: none;}
+
+.homelinks {display: none;}
+
+#user-login {
+  background-image:url('../img/login.png');
+  background-repeat:no-repeat;
+  background-position: 99% 50%; 
+  background-size:435px 287px;
+  height: 300px;
+  background-color: white;
+  padding: 5px 20px;
+}
+
+.form-btn {
+  background: #B8CB77; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #D7E1B1 0%, #B8CB77 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#D7E1B1), color-stop(100%,#B8CB77)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #D7E1B1 0%,#B8CB77 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #D7E1B1 0%,#B8CB77 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #D7E1B1 0%,#B8CB77 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #D7E1B1 0%, #B8CB77 100%); /* W3C */
+  border-radius: 14px;
+  -moz-box-shadow: inset -2px -2px 10px #333;
+  -webkit-box-shadow:inset -2px -2px 10px #333;;
+  box-shadow:inset -2px -2px 10px #333;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-weight: normal;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-align: center;
+  cursor: pointer;
+}
+
+#user-login .login-btn, #user-register .register-btn, #user-pass .pass-btn {
+  border: 0;
+  padding: 10px 0px;
+}
+
+#user-login .login-btn {
+  float: left;
+  width: 150px;
+}
+
+#user-register .register-btn {
+  width: 200px;
+}
+
+#user-pass .pass-btn {
+  width: 200px;
+}
+
+#user-edit .useredit-btn, #user-edit .userdelete-btn {
+  width: 120px;
+}
+
+#user-login input, #user-register input, #user-pass input, #user-edit input  {
+  height: 30px;
+  cursor: pointer;
+}
+
+#user-login #edit-submit, #user-register #edit-submit,  #user-pass #edit-submit,  #user-edit #edit-submit, #user-edit #edit-delete {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+ }
+
+
+ #user-login #edit-submit:hover, #user-register #edit-submit:hover, #user-pass #edit-submit:hover,  #user-edit #edit-submit:hover, #user-edit #edit-delete:hover  {
+  color: #FAD000;
+ }
+ 
+.login-required {
+  font-size: 0.85em;
+  width:250px;
+  float: left;
+}
+
+#user-register, #user-pass, #user-edit {
+  background-color: white;
+  padding: 5px 20px;
+}
+
+div.error {
+  padding: 20px 10px;
+  margin: 10px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-left-radius: 15px;
+  color: red;
+  background-color: white;
+  font-size: bold;
+}
+
+div.messages {
+  padding: 20px 10px;
+  margin: 10px;
+  -moz-border-radius-bottomright: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-left-radius: 15px;
+  color: green;
+  background-color: white;
+  font-size: bold;
+}
+
+.profile dd, .profile dt {
+    display: inline;
+    margin: 0;
+    height: 25px;
+    padding: 10px 0px;
+}
+.profile dd:before {
+    content: ': '; /* space them */
+}
+.profile dt:before { /* insert line break before <dt> */
+    content:"\A";
+    white-space:pre;
+}
+.profile dt:first-child:before { /* disable line break before the first <dt> */
+    content: none;
+}
+
+.profile, #heathcourseadmin {
+  background-color: white;
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.profile .user-member {display: none;}
+.profile .og-og_groups {display: none;}
+
+.node-type-forum h1.title, .node-type-forum h2.title, .node-type-forum h3.title, .section-comment h2.title, .section-mdl h2.title, .section-node-add h2.title {
+    margin: 0;
+}
+.node-type-forum h1, .section-node-add h1 {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.node-type-forum, .section-comment, .section-mdl, .section-node-add {
+    color: #666666;
+    font-size: 12px;
+}
+
+.healthcourse-record-pdf {
+  width: 130px;
+}
+
+#altcontainer h1{
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #666;
+	font-weight: bold;
+	padding: 10px 0 0 20px;;
+}
+#altcontainer li a{
+	color: #333;
+	text-decoration: none;
+	font-size: 10px;
+}
+#altcontainer li a:hover{
+	text-decoration: underline;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.right{float: right;}
+.left{float: left;}
+.bold{font-weight: bold;}
+#companionbox{
+	margin: 0;
+	padding: 0;
+}
+#altcontainer2 a{
+	color: #666;
+}
+
+#altcontainer
+{
+	/* recommended styles */
+	float: left; /* marker :m21: */
+	width: 178px; /* should match the margin-left of #container */
+
+	/* add custom styles here */
+	background: transparent url(../img/header-bg-tall-top-3x.png) left top repeat-x;
+}
+#altcontainer2
+{
+	/* recommended styles */
+	float: right; /* marker :m23: */
+	width: 178px; /* should match the margin-right of #container */
+
+	/* add custom styles here */
+	background-color: #fff;
+	font-size: 10px;
+}
+#companionlogo
+{
+	/* recommended styles */
+	float: left; /* marker :m23: */
+	width: 146px; /* should match the margin-right of #container */
+	_width:110px;
+
+	/* add custom styles here */
+	background-color: #fff;
+	padding: 12px 12px 0px 12px;
+	margin-left: 6px;
+	_margin-left: 6px;
+	border-left: 1px solid #c0c0c0;
+}
+
+#container
+{
+	/* recommended styles */
+	margin-left: 180px; /* marker :m22: should match width on #altcontainer */
+	margin-right: 170px; /* marker :m24: should match width on #altcontainer */
+
+	/* add custom styles here */
+	padding: 0 10px 20px 5px;
+	background-color: #fff;
+}
+
+/*
+ * ZEN STYLES
+ *
+ * This is an example stylesheet. Sub-themes should NOT include this file, but
+ * instead copy any needed CSS to their own stylesheets.
+ *
+ * In this stylesheet, we have included all of the classes and IDs from this
+ * theme's tpl.php files. We have also included many of the useful Drupal core
+ * styles to make it easier for theme developers to see them.
+ *
+ * Many of these styles are over-riding Drupal's core stylesheets, so if you
+ * remove a declaration from here, the styles may still not be what you want
+ * since Drupal's core stylesheets are still styling the element. See the
+ * drupal5-reference.css file for a list of all Drupal 5.x core styles.
+ *
+ * In addition to the style declarations in this file, other Drupal styles that
+ * you might want to override or augment are those for:
+ *
+ *   Book Navigation  See line 74  of Zen's drupal5-reference.css file
+ *   Forum            See line 197 of Zen's drupal5-reference.css file
+ *   Menus            See line 667 of Zen's drupal5-reference.css file
+ *   News Aggregator  See line 20  of Zen's drupal5-reference.css file
+ *   Polls            See line 287 of Zen's drupal5-reference.css file
+ *   Search           See line 320 of Zen's drupal5-reference.css file
+ *   User Profiles    See line 945 of Zen's drupal5-reference.css file
+ */
+
+
+/** body **/
+  body
+  {
+  }
+
+  #page
+  {
+  }
+
+  #page-inner
+  {
+  }
+
+/** header **/
+  #header
+  {
+  }
+
+  #header-inner
+  {
+  }
+
+  #logo-title /* Wrapper for logo, website name, and slogan */
+  {
+  }
+
+  #logo /* Wrapper for logo */
+  {
+  }
+
+  #logo-image /* The actual logo image */
+  {
+  }
+
+  #site-name /* The name of the website */
+  {
+  }
+
+  #site-name a:link,
+  #site-name a:visited
+  {
+    color: #000;
+    text-decoration: none;
+  }
+
+  #site-name a:hover
+  {
+    text-decoration: underline;
+  }
+
+  #site-slogan /* The slogan (or tagline) of a website */
+  {
+  }
+
+  #header-blocks /* Wrapper for any blocks placed in the header region */
+  {
+  }
+
+/** main (container for everything else) **/
+  #main
+  {
+  }
+
+  #main-inner
+  {
+  }
+
+/** content **/
+  #content
+  {
+  }
+
+  #content-inner
+  {
+  }
+
+  #mission /* The mission statement of the site (displayed on homepage) */
+  {
+  }
+
+  #content-top /* Wrapper for any blocks placed in the "content top" region */
+  {
+  }
+
+  #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
+  {
+  }
+
+  .breadcrumb /* The path to the current page in the form of a list of links */
+  {
+    padding-bottom: 0; /* Undo system.css */
+  }
+
+  h1.title, /* The title of the page */
+  h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+  h3.title /* Comment title */
+  {
+    margin: 0;
+  }
+
+  div.messages /* Important messages (status, warning, and error) for the user */
+  {
+    margin: 0 1em 5px 1em;
+    border: 2px solid #ccc;
+    padding: 5px;
+    color: #000;
+    background-color: #fff;
+    font-style: italic;
+  }
+
+  div.status /* Normal priority messages */
+  {
+  }
+
+  div.warning /* Medium priority messages */
+  {
+    border-color: #ff7;
+  }
+
+  div.warning, tr.warning
+  {
+    color: #000;
+    background-color: #ffc;
+  }
+
+  div.error /* High priority messages. See also the .error declaration below. */
+  {
+    border-color: #c00;
+  }
+
+  div.error, tr.error
+  {
+    color: #900;
+    background-color: #fee;
+  }
+
+  div.tabs /* See also the tabs.css file. */
+  {
+  }
+
+  .help /* Help text on a page */
+  {
+    margin: 1em 0;
+  }
+
+  .more-help-link /* Link to more help */
+  {
+    font-size: 0.85em;
+    text-align: right;
+  }
+
+  #content-area /* Wrapper for the actual page content */
+  {
+  }
+
+  .pager /* A list of page numbers when more than 1 page of content is available */
+  {
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .pager a, .pager strong.pager-current
+  {
+    padding: 0.5em;
+  }
+
+  .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+  {
+    margin: 1em 0;
+  }
+
+  #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+  {
+  }
+
+/** navbar **/
+  #navbar
+  {
+  }
+
+  #navbar-inner
+  {
+  }
+
+  #search-box /* Wrapper for the search form */
+  {
+  }
+
+  #primary /* Primary links */
+  {
+  }
+
+  #secondary /* Secondary links */
+  {
+  }
+
+/** sidebar-left **/
+  #sidebar-left
+  {
+  }
+
+  #sidebar-left-inner
+  {
+  }
+
+/** sidebar-right **/
+  #sidebar-right
+  {
+      float:right;
+  }
+
+  #sidebar-right-inner
+  {
+  }
+
+/** footer **/
+  #footer
+  {
+  }
+
+  #footer-inner
+  {
+  }
+
+  #footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                     and for any blocks placed in the footer region */
+  {
+  }
+
+/** closure **/
+  #closure-blocks /* Wrapper for any blocks placed in the closure region */
+  {
+  }
+
+/** Drupal nodes **/
+  .node /* Node wrapper */
+  {
+  }
+
+  .node-inner /* Additional wrapper for node */
+  {
+  }
+
+  .sticky /* A sticky node (displayed before others in a list) */
+  {
+  }
+
+  .node-unpublished /* Unpublished nodes */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+  .comment-unpublished div.unpublished
+  {
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+  .node-mine /* A node created by the current user */
+  {
+  }
+
+  .node-teaser /* A node displayed as teaser */
+  {
+  }
+
+  /* All nodes are given a node-type-FOO class that describes the type of
+   * content that it is. If you create a new content type called
+   * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+   */
+  .node-type-page /* Page content node */
+  {
+  }
+
+  .node-type-story /* Story content node */
+  {
+  }
+
+  .node h2.title /* Node title */
+  {
+  }
+
+  .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+  {
+    color: #c00;
+  }
+
+  .node .picture /* The picture of the node author */
+  {
+  }
+
+  .node.node-unpublished .picture,
+  .comment.comment-unpublished .picture
+  {
+    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+  }
+
+  .node .submitted /* The "posted by" information */
+  {
+  }
+
+  .node .taxonomy /* Node taxonomy (categories) */
+  {
+  }
+
+  .node .content /* Node's content wrapper */
+  {
+  }
+
+  .node div.links /* Wrapper for node links */
+  {
+    margin: 1em 0;
+  }
+
+  ul.links /* Taxonomy links, node links, comment links */
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.links.inline
+  {
+    display: inline;
+  }
+
+  ul.links li
+  {
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+  }
+
+  .preview .node /* Preview of the content before submitting new or updated content */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal comments **/
+  #comments /* Wrapper for all comments */
+  {
+    margin: 1em 0;
+  }
+
+  .comment /* Wrapper for a single comment */
+  {
+  }
+
+  .comment-inner /* Additional wrapper for a single comment */
+  {
+  }
+
+  .comment.odd /* An odd-numbered comment in the list of comments */
+  {
+  }
+
+  .comment.even /* An even-numbered comment in the list of comments */
+  {
+  }
+
+  .comment-unpublished /* Unpublished comments */
+  {
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+  }
+
+  .comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+  {
+  }
+
+  .comment-by-author /* A comment created by the node's author */
+  {
+  }
+
+  .comment-by-anon /* A comment created by an anonymous user */
+  {
+  }
+
+  .comment-mine /* A comment created by the current user */
+  {
+  }
+
+  .comment h3.title /* Comment title */
+  {
+  }
+
+  .new /* "New" marker for comments that are new for the current user */
+  {
+    color: #c00;
+  }
+
+  .comment .picture /* The picture of the comment author */
+  {
+  }
+
+  .comment .submitted /* The "posted by" information */
+  {
+  }
+
+  .comment .content /* Comment's content wrapper */
+  {
+  }
+
+  .comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+  {
+    margin: 1em 0;
+  }
+
+  .indented /* Nested comments are indented */
+  {
+    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+  }
+
+  .preview .comment /* Preview of the comment before submitting new or updated comment */
+  {
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+  }
+
+/** Drupal blocks **/
+  .block /* Block wrapper */
+  {
+    margin-bottom: 1em;
+  }
+
+  .block.region-odd /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.region-even /* Zebra striping for each block in the region */
+  {
+  }
+
+  .block.odd /* Zebra striping independent of each region */
+  {
+  }
+
+  .block.even /* Zebra striping independent of each region */
+  {
+  }
+
+  .region-count-1 /* Incremental count for each block in the region */
+  {
+  }
+
+  .count-1 /* Incremental count independent of each region */
+  {
+  }
+
+  .block-inner /* Additional wrapper for block */
+  {
+  }
+
+  .block h2.title /* Block title */
+  {
+  }
+
+  .block .content /* Block's content wrapper */
+  {
+  }
+
+  #block-aggregator-category-1 /* Block for the latest news items in the first category */
+  {
+  }
+
+  #block-aggregator-feed-1 /* Block for the latest news items in the first feed */
+  {
+  }
+
+  #block-block-1 /* First administrator-defined block */
+  {
+  }
+
+  #block-blog-0 /* "Recent blog posts" block */
+  {
+  }
+
+  #block-book-0 /* "Book navigation" block for the current book's table of contents */
+  {
+  }
+
+  #block-comments-0 /* "Recent comments" block */
+  {
+  }
+
+  #block-forum-0 /* "Active forum topics" block */
+  {
+  }
+
+  #block-forum-1 /* "New forum topics" block */
+  {
+  }
+
+  #block-menu-2 /* "Primary links" block */
+  {
+  }
+
+  #block-node-0 /* "Syndicate" block for primary RSS feed */
+  {
+  }
+
+  #block-poll-0 /* "Most recent poll" block */
+  {
+  }
+
+  #block-profile-0 /* "Author information" block for the profile of the page's author */
+  {
+  }
+
+  #block-search-0 /* "Search form" block */
+  {
+  }
+
+  #block-statistics-0 /* "Popular content" block */
+  {
+  }
+
+  #block-user-0 /* "User login form" block */
+  {
+  }
+
+  #block-user-1 /* "Navigation" block for Drupal navigation menu */
+  {
+  }
+
+  #block-user-2 /* "Who's new" block for a list of the newest users */
+  {
+  }
+
+  #block-user-3 /* "Who's online" block for a list of the online users */
+  {
+  }
+
+/** Drupal boxes **/
+  /* Wrapper for Comment form, Comment viewing options, Menu admin, and
+   * Search results.
+   */
+  .box /* Wrapper for box */
+  {
+  }
+
+  .box-inner /* Additional wrapper for box */
+  {
+  }
+
+  .box h2.title /* Box title */
+  {
+  }
+
+  .box .content /* Box's content wrapper */
+  {
+  }
+
+/** Miscellaneous Drupal styles **/
+  .error /* Errors that are separate from div.messages status messages (see above.) */
+  {
+    color: #c00;
+  }
+
+  .more-link /* Aggregator, blog, and forum more link */
+  {
+    text-align: right;
+  }
+
+  #user-login-form /* Drupal's default login form */
+  {
+    text-align: left;
+  }
+
+  tr.even, tr.odd /* Some tables have rows marked even or odd. See also the ".section-admin #content tr.even" declaration below. */
+  {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  tr.even
+  {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  }
+
+  tr.odd
+  {
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  }
+
+  li a.active /* The active item in a Drupal menu */
+  {
+    color: #000;
+  }
+
+
+/** Drupal forms **/
+  .form-item, /* Wrapper for a form element (or group of form elements) and its label */
+  .form-checkboxes,
+  .form-radios
+  {
+    margin: 1em 0;
+  }
+
+  .form-item input.error, /* Highlight the form elements that caused a form submission error */
+  .form-item textarea.error,
+  .form-item select.error
+  {
+    border: 2px solid #c00;
+  }
+
+  .form-item label /* The label for a form element */
+  {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-item label.option /* The label for a radio button or checkbox */
+  {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .form-required /* The part of the label that indicates a required field */
+  {
+    color: #c00;
+  }
+
+  .form-item .description /* The descriptive help text (separate from the label) */
+  {
+    font-size: 0.85em;
+  }
+
+  .form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+  .form-radios .form-item
+  {
+    margin: 0.4em 0;
+  }
+
+  .form-submit /* The submit button */
+  {
+  }
+
+  .container-inline .form-submit
+  {
+  }
+
+  .tips /* Tips for Drupal's input formats */
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+/** Drupal admin tables **/
+  /* We overrode these styles in html-elements.css, but restore them for the
+   * admin section of the site.
+   */
+  .section-admin #content tbody
+  {
+    border-top: 1px solid #ccc;
+  }
+
+  .section-admin #content th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin #content tbody th
+  {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .section-admin #content thead th
+  {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+  }
+
+  .section-admin #content tr.even,
+  .section-admin #content tr.odd
+  {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 0.1em 0.6em;
+  }
+
+table tr.odd  { background: #e7e7e7; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; }
+table tr.even { background: #f6f6f6; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; }
+td.active { background-color: #ddd; margin: 0; padding: 2px 4px; }
+td.icon  {    text-align: center;  }
+
+table.system-status-report tr.error, table.system-status-report tr.error th  {    background-color: #fcc;    border-color: #ebb;    color: #200;  }
+table.system-status-report tr.warning, table.system-status-report tr.warning th  {    background-color: #ffd;    border-color: #eeb;  }
+table.system-status-report tr.ok, table.system-status-report tr.ok th  {    background-color: #dfd;    border-color: #beb;  }
+
+/* * Pager styles */
+.pager  { text-align: center; margin-top: 30px; margin-bottom: 2px; }
+.pager  a, .pager-current  {    padding: 3px 8px;    margin: 0 2px;    color: #7660ad;    font-weight: bold;    border: solid 1px #eee;  }
+.pager-current  {    color: #fff;    background-color: #7660ad;  }
+
+
+/*
+ * Block layout
+ */
+  div.block
+  {
+  	position: static;
+  	margin-bottom: 0px;
+  }
+
+  
+/*Performance Barchart settings*/
+#barchart { position: relative; margin: 0; padding: 0; display: inline; overflow: hidden; }
+* html #barchart { overflow: visible; height: 1%; margin: 0; padding: 0; display: inline; }
+.score { font-size: 0; background-color: transparent; background-image: url(img/score.gif); background-repeat: repeat-x; background-position: 100% center; position: relative; height: 12px; float: left; margin: 0; padding: 0; border: solid 1px #666; display: inline; }
+.score-blank { font-size: 0; background-color: #f4f4f4; position: relative; height: 12px; float: left; margin: 0; padding: 0; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.goal { font-size: 0; background: url(img/goal.gif) repeat-x 100% center; position: relative; margin: 0; padding: 0; height: 12px; float: left; border: solid 1px #666; display: inline; }
+.goal-blank { font-size: 0; background-color: #f4f4f4; margin: 0; padding: 0; position: relative; height: 12px; float: left; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.barchart-text { font-size: 11px; font-family: Arial, verdana, sans-serif; font-weight: normal; text-align: right; position: relative; width: 70px; float: left; clear: right; margin: 0; padding: 0 2px 0 0; display: inline; }
+.clearboth { clear: both; }
+
+#blockbarchart { position: relative; margin: 0; padding: 0; display: block; overflow: hidden; }
+* html #blockbarchart { position: relative; overflow: visible; height: 1%; margin: 0; padding: 0; display: block; }
+.blockscore { font-size: 0; background-color: transparent; background-image: url(img/score.gif); background-repeat: repeat-x; background-position: 100% center; position: relative; height: 9px; float: left; margin: 0; padding: 0; border: solid 1px #666; display: inline; }
+.blockscore-blank { font-size: 0; background-color: #f4f4f4; position: relative; height: 9px; float: left; margin: 0; padding: 0; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.blockgoal { font-size: 0; background: url(img/goal.gif) repeat-x 100% center; position: relative; margin: 0; padding: 0; height: 9px; float: left; border: solid 1px #666; display: inline; }
+.blockgoal-blank { font-size: 0; background-color: #f4f4f4; margin: 0; padding: 0; position: relative; height: 9px; float: left; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.blockbarchart-text { font-size: 11px; font-family: Arial, verdana, sans-serif; font-weight: normal; text-align: right; position: relative; width: 70px; float: left; clear: right; margin: 0; padding: 0 2px 0 0; display: inline; }
+
+#blockmasterygoal {
+	padding-left:0px;
+	padding-right:2px;
+	padding-top:0px;
+	margin-top:-1px;
+}
+#blockmasteryrange {
+	padding-left:0px;
+	padding-right:2px;
+	padding-top:0px;
+	margin-top:-1px;
+}
+/*
+ * Planner Block
+ */
+.view-content-planner-block .view-cell-header {
+	display:none;
+}
+.view-content-planner-block .odd {
+	background-color:transparent;
+}
+.view-content-planner-block .odd .active {
+	background-color:transparent;
+}
+.view-content-planner-block .even .active {
+	background-color:transparent;
+}
+/*
+ * Login/Registration block
+ */
+.cmeloginregistration {
+	border-bottom:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	padding-left: 4px;
+	margin-left: 6px;
+}
+
+.cmelogout {
+	border-left:1px solid #CCCCCC;
+	padding-left: 5px;
+	margin-left: 6px;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	padding-right: 20px;
+	margin-top: 0px;
+}
+#cmelogouttext {
+	padding-top: 0px;
+}
+#cmesalutation {
+	padding: 15px 2px 0px 4px;
+	width: 100%;
+}
+
+.node-type-course .title {
+	display: none;
+}
+
+td.view-field-node-data-field-cme-credit-field-cme-credit-value {
+	text-align: center;
+
+}
+/*
+ * Listings
+ */
+.view-header-all-activities h1 { font-family: Arial,verdana,sans-serif; font-size: 15px; font-color: #000000; padding-left: 0px; }
+.view-content-all-activities .view-cell-header .view-field-node-data-field-icon-field-icon-fid { display: none }
+.view-content-all-activities table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; }
+.view-content-all-activities table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-all-activities table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-all-activities thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-all-activities thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-all-activities tbody { border-style: none; }
+.view-content-all-activities .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-all-activities .separator {width: 757px; height: 2px; border: 0;} 
+
+.view-content-activities .view-cell-header .view-field-node-data-field-icon-field-icon-fid { display: none }
+.view-content-activities table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; }
+.view-content-activities table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-activities table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-activities thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-activities thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-activities tbody { border-style: none; }
+.view-content-activities .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-activities .separator {width: 757px; height: 2px; border: 0;} 
+
+.view-all-activities form { }
+.view-all-activities .form-item input { width: 400px; }  
+
+.user-profile-link img {
+  border: 1px solid #C0C0C0;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#blockactivityreview {border: 1px solid #C0C0C0;
+  width: 160px; 
+  margin-top: 10px; 
+  margin-left: 6px; 
+  padding: 2px !important;
+  color: #D0660A;
+  height: 130px;
+}
+div.blockactivityreview-inactivity {height:120px}
+div.blockactivityreview-frontmatter {height:40px}
+#blockactivityreview a:link {color: #D0660A; font-weight: bold; text-decoration: none; font-size:12px}
+#blockactivityreview a:active {color: #D0660A;}
+#blockactivityreview a:visited {color: #D0660A;}
+#blockactivityreview .reviewtitle {font-weight: bold;color: #000000;font-size:11px}
+#blockactivityreview .label {margin-bottom:5px;}
+#blockactivityreview .back {
+	margin: 8px 0px 10px 6px;
+  padding: 5px 10px;
+}
+#blockactivityreview .editbrandings {display:none}
+#blockactivityreview .profession {margin-bottom: 5px}
+#blockactivityreview #reset {margin-top: 5px}
+#blockactivityreview .profession {color: #000000;}
+.block-cmeauthoradmin {
+    background: none;
+    border-bottom: 0px;
+    position: relative !important;
+    z-index: 101;
+}
+
+#sidebar-right-inner h3 {
+    line-height:0;
+}

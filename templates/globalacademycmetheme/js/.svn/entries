@@ -1,0 +1,41 @@
+8
+
+dir
+17674
+svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/globalacademycmetheme/js
+svn+ssh://svn.realcme.com/svn/realcme
+
+
+
+2014-03-13T18:04:27.338533Z
+11392
+valerie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54cdfa15-4bae-4c23-a447-dd2ea17af9e4
+
+generate_menu_element.js
+file
+
+
+
+
+2015-03-26T15:41:23.000000Z
+f66058a9da21bbf4a003a74260f6e1c1
+2014-03-13T18:04:27.338533Z
+11392
+valerie
+has-props
+

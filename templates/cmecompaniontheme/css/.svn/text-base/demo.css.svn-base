@@ -1,0 +1,33 @@
+#views-filters {display:none}
+.page-cmealerts-alerts #views-filters {display:inline}
+
+body {background-color: #B8CB77}
+
+#page {width: 1024px;padding: 10px 0px;}
+
+#main {padding: 0px 10px;}
+
+#footer {padding: 10px 10px;}
+
+.healthcourse-record.completed {
+   background-color: #B8CB77;
+}
+
+.healthcourse-record.open {
+   background-color: #D7E1B1;
+}
+
+.healthcourse-record-title {
+  font-weight: bold;
+}
+
+.curric-title { 
+  color: #faaf40; 
+  font-size: 22px; 
+  font-weight: bold; 
+  clear: right; 
+  padding-top: 10px;
+}
+#curricdata .reflections {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,109 @@
+body {background:#545c63;border:0;margin:0;padding:0;text-align:left;}
+
+body.popup {}
+
+#user  {font-family:Helvetica, Arial, Verdana, sans-serif;}
+
+img {border:0;}
+label {cursor:pointer;}
+
+/*Helpers*/
+.h {display:none !important;}
+.sBlock {display:block;}
+.sInline {display:inline;}
+.clearfix:after {clear:both;content:".";display:block;height:0;line-height:0;visibility:hidden;}
+.clearfix {display:inline-block;}
+html[xmlns] .clearfix {display:block;}
+* html .clearfix {height:1%;}
+.oov {display:block;text-indent:-5000em;}
+.rule {font-size:1px;height:1px;overflow:hidden;}
+.error, .required {color:#FF9600;}
+
+/* Anchors */
+a {color:#3d82c1;}
+a:hover {}
+a:visited {}
+
+/* Paragraphs */
+p {margin:0 0 1em 0;padding:0;}
+
+
+#page {background:#fff url(../sysimages/pagebg.gif) 0 0 repeat-y;margin:110px auto 0 auto;position:relative;width:980px;}
+#content {margin:0 0 0 9px;}
+#block01 {display:inline;float:left;width:610px;}
+
+#block02 {display:inline;float:left;width:352px;}
+
+
+#masthead {background:url(../sysimages/masthead_bg.gif) 0 0 no-repeat;height:102px;}
+#masthead .oncologylogo {background:url(../sysimages/masthead_oncology_logo.gif) 0 0 no-repeat;height:64px;left:40px;position:relative;top:21px;width:321px;}
+#masthead .oncologylogo a {display:block;height:64px;overflow:hidden;width:321px;}
+
+/*Ads*/
+#masthead_ad {background: url(../sysimages/bg_adlabel_vertical.gif) 2px 10px no-repeat;height:90px;left:120px;overflow:hidden;padding:0 0 0 12px;position:absolute;top:-100px;width:728px;}
+/*Blue subtitle*/
+#blue-bar { background: url(../sysimages/blue_bar.jpg) repeat-x top;  height: 37px; margin: 0 9px; padding: 13px 15px 0px 15px; color: white; font-size: 13px; font-weight: bold;}
+#blue-bar .powered_by {font-weight: normal; font-size: 12px;}
+
+/*Date*/
+#date {color:#515151;font-size:75%;left:405px;position:absolute;top:17px;}
+/*Global Login & User Info*/
+#user {left:405px;position:absolute;top:53px;}
+#user label {color:#6a6a6a;font-size:75%;}
+#user input.text {font-size:120%;margin:3px 0 0 0;position:absolute;top:14px;width:100px;}
+#user label {position:absolute;top:0;}
+#user label.user, #user input.user {left:0;}
+#user label.pass, #user input.pass {left:128px;}
+#user input.button {font-size:120%;left:252px;line-height:normal;position:absolute;top:16px;}
+#user input.remember {left:318px;position:absolute;margin:0;padding:0;border:0;top:8px;width:12px;height:12px;}
+#user label.remember {left:336px;line-height:normal;position:absolute;top:8px;width:70px;}
+#user a.forgot {color:#4b4b4b;font-size:75%;left:318px;position:absolute;text-decoration:none;top:24px;width:100px;}
+#user a.forgot:hover {text-decoration:underline;}
+#user .register {font-size:75%;left:455px;position:absolute;top:5px;width:100px;}
+#user .register a {display:block;font-size:130%;font-weight:bold;margin-top:1px;text-decoration:none;}
+#user ul {
+	padding-top: 14px;
+}
+/*Header*/
+.cme-home
+{
+	font-weight: bold; 
+	font-size: 120%; 
+	list-style-type: none;
+}
+
+.cme-home a
+{
+	text-decoration: none; 
+
+}
+
+/*Footer*/
+#footer {background:#f9f9f9 url(../sysimages/footer_bg_small.jpg) 0 0 repeat-x;border-right:1px solid #909292;height:87px;margin:0 9px;position:relative;}/*width:961px;*/
+#footer .elsevierlogo {background:url(../sysimages/footer_elsevier_logo.gif) 0 0 no-repeat;height:60px;left:50px;position:absolute;top:20px;width:53px;}
+#footer .elsevierlogo a {display:block;height:60px;overflow:hidden;width:53px;}
+#footer #fnav {background:url(../sysimages/fnav_bg.gif) 0 0 repeat-y;margin:0;padding:0;position:absolute;top:15px;left:165px;width:672px;height:70px;}
+#footer #fnav li {list-style-type:none;position:absolute;}
+#footer #fnav li.f01 {left:24px;top:15px;}
+#footer #fnav li.f02 {left:24px;top:36px;}
+#footer #fnav li.f03 {left:157px;top:15px;}
+#footer #fnav li.f04 {left:157px;top:36px;}
+#footer #fnav li.f05 {left:367px;top:15px;}
+#footer #fnav li.f06 {left:367px;top:36px;}
+#footer #fnav li.f07 {left:549px;top:15px;}
+#footer #fnav li.f08 {left:549px;top:36px;}
+#footer #fnav a {color:#747171;text-decoration:none;font-size:130%;}
+#footer a.hon {left:875px;position:absolute;top:20px;}
+#footer a.hon img {border:none;}
+/*Copyright*/
+#copyright {background:#545C63 url(../sysimages/copyright_bg.jpg) 0 0 no-repeat;color:#444545;font-size:90%;height:120px;padding:21px 0 0 60px;}
+#copyright .indent {padding-left:20px;}
+#copyright a {color:#444545;}
+
+
+#content-inner {
+	padding-left: 20px;
+}
+.homelinks {
+	display: none;
+}

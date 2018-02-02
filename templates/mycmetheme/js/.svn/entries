@@ -1,0 +1,41 @@
+8
+
+dir
+17674
+svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/mycmetheme/js
+svn+ssh://svn.realcme.com/svn/realcme
+
+
+
+2013-11-20T22:06:44.940482Z
+10852
+valerie
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54cdfa15-4bae-4c23-a447-dd2ea17af9e4
+
+mycme.js
+file
+
+
+
+
+2015-03-26T15:41:15.000000Z
+77b086d36f01b6e902e036b084747a8d
+2013-11-20T22:06:44.940482Z
+10852
+valerie
+has-props
+

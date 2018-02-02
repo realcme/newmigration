@@ -1,0 +1,6 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,select{
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+	background-color: transparent;border-color: transparent;margin:0;padding:0;
+	line-height: 1.5em !important;
+}

@@ -1,0 +1,54 @@
+8
+
+dir
+17674
+svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/ucsdtheme/cmecompaniontheme/css/course
+svn+ssh://svn.realcme.com/svn/realcme
+
+
+
+2015-06-03T20:03:30.558527Z
+12863
+mstaneluis
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54cdfa15-4bae-4c23-a447-dd2ea17af9e4
+
+rcm_base.css
+file
+
+
+
+
+2015-03-31T22:52:15.000000Z
+484fac5d2f301a7ac92a4823a06a226a
+2015-03-31T22:38:29.699038Z
+12673
+rtorres
+has-props
+
+rcm_content.css
+file
+
+
+
+
+2015-06-04T13:52:33.000000Z
+80db54a34cd42c65d71528a5aef30661
+2015-06-03T20:03:30.558527Z
+12863
+mstaneluis
+has-props
+

@@ -1,0 +1,362 @@
+
+#rmeicontainer td {
+  font-size: 100%;
+}
+
+#rmeicontainer td .footnote {
+  font-size: 85%;
+}
+
+#rmeicontainer .table-header-app {
+  font-size: 120%;
+}
+
+#rmeicontainer {
+  background: url(../img/rmei/container_bg.gif) 0px 0px no-repeat;
+  margin: 0px auto;
+  width: 1050px;
+  font-family: arial,sans-serif;
+  font-size: 12px;
+}
+
+#homeWrapper,#interiorWrapper {
+  background: url(../img/rmei/homewrapper_bg.gif) 0px 0px repeat-x;
+  clear: both;
+  margin: 0px auto;
+  width: 1011px;
+}
+
+#rmeiheader {
+  clear: both;
+  height: 104px;
+  margin: 0px auto;
+  width: 970px;
+}
+
+#rmeilogo {
+  float: left;
+  display: inline-block;
+  margin: 25px 0px 0px 11px;
+}
+
+#utilContainer {
+  float: right;
+  margin: 4px 0px 18px 0px
+}
+
+#utilContainer .searchInput {
+  background: url(../img/rmei/util_searchtable_bg.gif) 0px 0px no-repeat;
+  height: 20px;
+  padding: 0px 0px 0px 5px;
+  width: 172px;
+  vertical-align: top;
+  /* JIRA-261 */
+  display:none;
+}
+
+#searchBox {
+    background: url("../img/rmei/search_bg.gif") repeat-x scroll 0 0 transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    font-size: 80%;
+    height: 18px;
+    padding: 2px 0 0 4px;
+    width: 136px;
+}
+
+#utilities {
+  float: right;
+  display: inline; /*IE double margin fix*/
+  margin: 0px 35px 0px 0px;
+}
+
+#utilities li {
+  display: inline;
+  padding: 0px 0px 0px 10px;
+}
+
+#utilities {
+  color: #999999;
+  font-size: 90%;
+  line-height: 100%;
+  text-align: right;
+}
+
+#utilities a {
+  color: #999999;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+#utilities a:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+#topNav { /*background:url(images/topnav_bg.gif) 0px 0px repeat-x;*/
+  float: right;
+  clear: right;
+  height: 27px;
+  /*padding:0px 0px 0px 160px;*/
+  width: 527px;
+}
+
+#topNav img {
+  float: left;
+  display: block;
+}
+
+.menu
+{
+  white-space:nowrap;
+  float:left;
+  position:relative;
+}
+
+
+.menu:after 
+{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.menu ul.horizontal,
+.menu ul.vertical
+{
+  margin:0;
+  padding:0;
+  display:none;
+  position:relative;
+  left:0;
+  float:left;
+}
+
+.menu .item
+{
+  float:left;
+  position:relative;
+  list-style:none;
+  _display:inline;
+}
+
+
+.menu .horizontal .item
+{
+  clear:none;
+}
+
+.menu .vertical .item
+{
+  clear:both;
+}
+
+
+.menu ul.active,
+.menu ul.rootGroup
+{
+  /* display:block; */
+  /* JIRA-261 */
+  display:none;
+}
+
+.menu .slide, 
+.contextMenu
+{
+  position:absolute;
+  overflow:hidden;
+  display:none;
+  _height:1px;
+  float:left;
+}
+
+.contextMenu
+{
+  z-index:1000;
+}
+
+.menu .text
+{
+  display:block;
+}
+
+.menu a.link
+{
+  cursor:default;
+  display:block;  
+}
+
+
+.scrollWrap
+{
+  position:absolute;
+  float:left;
+  overflow:hidden;
+}
+
+.menu .leftArrow,
+.menu .topArrow,
+.menu .bottomArrow,
+.menu .rightArrow
+{
+  position:absolute;
+  z-index:2000;
+  text-indent:-1000em;
+}
+
+.menu .leftArrowDisabled,
+.menu .topArrowDisabled,
+.menu .bottomArrowDisabled,
+.menu .rightArrowDisabled
+{
+  display:none;
+  text-indent:-1000em;
+}
+
+.menu .leftImage
+{
+  border:0;
+  float:left;
+}
+
+.rtl
+{
+  float:right;
+}
+
+.rtl ul.horizontal,
+.rtl ul.vertical
+{
+  float:right;
+}
+
+.rtl .item
+{
+  float:right;  
+}
+
+.rtl .leftImage,
+.rtlcontext .leftImage
+{
+  border:0;
+  float:right;
+}
+
+.RadMenu_Default .group .link {
+    color: #333333;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: left;
+    white-space: normal;
+    width: 151px;
+}
+.RadMenu_Default .group .link .item last {
+    border: 0 none;
+}
+.RadMenu_Default .group .group .link {
+    color: #333333;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: left;
+    white-space: normal;
+    width: 151px;
+}
+.RadMenu_Default .link, .RadMenu_Default .link:visited {
+    cursor: pointer;
+    font-size: 90%;
+    text-decoration: none;
+}
+.RadMenu_Default .group .link:hover, .RadMenu_Default .group .focused, .RadMenu_Default .group .expanded {
+    background: none repeat scroll 0 0 #EED7A1;
+    color: #572600;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: left;
+    white-space: normal;
+    width: 151px;
+}
+.RadMenu_Default .group .group .link:hover, .RadMenu_Default .group .group .focused, .RadMenu_Default .group .group .expanded {
+    background: none repeat scroll 0 0 #EED7A1;
+    color: #572600;
+    font-weight: bold;
+    padding: 8px 10px;
+    text-align: left;
+    white-space: normal;
+    width: 151px;
+}
+.RadMenu_Default .link:hover, .RadMenu_Default .link:visited:hover, .RadMenu_Default .focused, .RadMenu_Default .expanded {
+    cursor: pointer;
+    font-size: 90%;
+    text-decoration: none;
+}
+.RadMenu_Default .group {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDAF44;
+}
+.RadMenu_Default {
+}
+.RadMenu_Default_Context {
+    background: none repeat scroll 0 0 transparent;
+}
+.RadMenu_Default .text {
+    padding-left: 0;
+    padding-right: 0;
+}
+.RadMenu_Default .text:hover {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#homeMain {
+    clear: both;
+    height: auto !important;
+    margin: 0 auto;
+    min-height: 500px;
+    width: 970px;
+}
+#homeTop {
+    background: url("../img/rmei/hometop_bg.gif") repeat-x scroll 0 bottom transparent;
+    border: 2px solid #DDAF44;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    width: 966px;
+}
+#homeBottom {
+    background: none repeat scroll 0 0 #DDAF44;
+}
+
+#rmeifooter {
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    clear: both;
+    margin: 12px auto 10px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+#rmeifooter ul {
+    list-style: none outside none;
+    margin: 0;
+}
+#rmeifooter ul li {
+    display: inline;
+    padding: 0 0 0 3px;
+}
+#rmeifooter a {
+    color: #666666;
+    text-decoration: none;
+    font-weight: normal;
+}
+#rmeifooter a:hover {
+    color: #666666;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+div.cme-commentary > div > img{
+    max-width: 570px;
+}

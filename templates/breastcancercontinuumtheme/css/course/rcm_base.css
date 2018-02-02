@@ -1,0 +1,182 @@
+/*
+ *	base.css
+ *
+ *	This file defines the basic styles for the site.
+ *	The main content should use these styles except
+ *	in special cases.
+ *	In other words, this file should style the elements as they should
+ *	look in the main content area.
+ */
+
+
+/*
+ *	Required style defs
+ */
+body
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-family: verdana, sans-serif;
+}
+
+h1
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-size: 110%;
+	font-weight:bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h2
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-size: 105%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-size: 100%;
+}
+
+a
+{}
+a:link
+{}
+a:visited
+{}
+a:hover
+{}
+a:active
+{}
+
+p
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	padding-bottom: 1em;
+	margin-right: 10px;
+}
+
+ul
+{
+	/* recommended styles */
+	list-style: disc outside;
+	margin-left: 2em;
+
+	/* add custom styles here */
+	padding-bottom: 1em;
+}
+ol
+{
+	/* recommended styles */
+	list-style: decimal outside;
+	margin-left: 2.5em;
+
+	/* add custom styles here */
+	padding-bottom: 1em;
+}
+
+hr{}
+
+div {}
+
+li {}
+
+input {}
+
+select {}
+
+/* reset.css removes this */
+strong
+{
+	font-weight: bold;
+}
+
+/* reset.css removes this */
+em
+{
+	font-style: italic;
+}
+
+
+/*
+ *	Optional style defs
+ *
+ *	These are elements that should be specified
+ *	for a more complete style sheet.
+abbr
+acronym
+button
+ */
+table
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	background-color: #eee;
+}
+caption
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-weight: bold;
+	background-color: #888;
+}
+th
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	font-weight: bold;
+}
+td
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	border: 0px solid #888;
+}
+blockquote
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	padding-left: 2em;
+}
+cite
+{
+	/* recommended styles */
+	font-style: italic;
+
+	/* add custom styles here */
+}
+code
+{
+	/* recommended styles */
+	white-space: pre;
+
+	/* add custom styles here */
+}
+/*
+dd
+h4
+h5
+h6
+...
+ */

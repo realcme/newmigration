@@ -1,0 +1,172 @@
+body {
+    color: #555;
+    font-family: "Arial","Verdana",sans-serif;
+    background: none repeat scroll 0 0 #ededed;
+    height: 100%;
+    padding-top: 20px; 
+}
+#page {
+    background: none repeat scroll 0 0 #ededed;
+}
+#page-inner {
+  border-radius: 5px;
+	background: #FFF;
+}
+#akhheader {
+    height: 80px;
+    position: relative;
+    padding: 20px 20px 10px;
+    line-height: 1.6;
+}
+#akhnavigation {
+    position: relative;
+    text-align: center;
+    z-index: 20;
+}
+#akhnavigation h2 {
+    display: none;
+}
+#akhnavigation .akhcontent {
+    background-color: #404040;
+    border-radius: 5px;
+    height: 37px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 930px;
+}
+#akhnavigation .akhcontent li {
+    border-right-color: #fff;
+    border-right-style: solid !important;
+    border-right-width: 1px;
+    float: left;
+    min-width: 90px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    line-height: 1.6 !important;
+}
+#akhnavigation .akhcontent li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 5px 10px;
+    float: none;
+    line-height: 1.6 !important;
+}
+#akhnavigation .akhcontent li.active-trail {
+    background: none repeat scroll 0 0 #009ca7;
+}
+#akhnavigation .akhcontent li:hover {
+    background: none repeat scroll 0 0 #009ca7;
+}
+#akhnavigation .akhcontent li li:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#akhnavigation .akhcontent li:first-child:hover, #akhnavigation .akhcontent li.active-trail:first-child {
+    border-radius: 5px 0 0 5px;
+}
+#akhnavigation .akhcontent li ul {
+    background-color: #009ca7;
+    border: medium none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px 2px #37590d;
+    display: none;
+    left: 0;
+    min-width: 189px;
+    padding: 5px;
+    position: absolute;
+    top: 37px;
+}
+#akhnavigation .akhcontent li:hover ul {
+    display: block;
+}
+#akhnavigation .akhcontent li li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: medium none;
+    border-image: none;
+    border-left: medium none;
+    border-right: medium none !important;
+    border-top: medium none;
+    float: none;
+    line-height: 16px;
+    padding-bottom: 14px;
+    padding-top: 10px;
+    position: relative;
+    text-align: left !important;
+}
+#akhnavigation .akhcontent li li.first {
+    margin-top: 10px;
+}
+#akhnavigation .akhcontent li li a {
+    font-size: 10pt;
+    font-weight: bold;
+    left: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+#akhnavigation .akhcontent li li:hover a {
+    color: #37590d;
+}
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: block;
+}
+#akhnavigation ul.menu {
+    border: medium none;
+    list-style: none outside none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#akhnavigation ul.menu li {
+    margin: 0;
+}
+#akhnavigation {font-size: 14px;color: #fff;line-height: 1.6 !important;}
+
+#akhnavigation ul.menu li.leaf, #akhnavigation ul.menu li.expanded {
+	list-style: none;
+}
+#footer {
+  border-radius: 5px;
+}
+#akhfooter-message {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 10px 4px 10px;
+    text-align: center;
+    width: 940px;
+    clear: both;
+    font-size: 9pt;
+    line-height: 1.6;
+}
+#akhfooter-message p {
+    margin: 0 0 1em;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+#akhfooter-message p a, #akhfooter-message p a:link{
+	color: #009ca7 !important;
+}
+#content-inner {
+    padding-left: 5px;
+}

@@ -1,0 +1,138 @@
+#header {margin-top: 0px}
+#axismedednavmain {
+    background-color: #204498;
+    float: left;
+    height: 32px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+	  color: #FFFFFF;
+	  font-family: Arial;
+	  font-size: 12pt;
+	  font-style: normal;
+	  font-weight: normal;
+	  text-decoration: none;
+  
+}
+#axismedednavmainwrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 1042px;
+    z-index: 100;
+}
+.grid_2, .grid_9 {
+    display: block;
+    float: left
+}
+
+nav {
+    float: left;
+    margin: 0;
+    width: 1042px;
+}
+nav ul.grid_9 {
+    list-style-type: none;
+    margin: 0 0 0 380px;
+    padding: 0;
+    width: 42.4%;
+}
+nav ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li > a.topNavItem {
+    color: #F7F7F7;
+    display: block;
+    font-size: 17px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+nav ul li:hover a.topNavItem {
+    background-color: #333399;
+}
+nav ul li > a.topNavItem:hover {
+    background-color: #333399;
+}
+nav ul li > a.topNavItem.current {
+    background-color: #333399;
+}
+nav ul li > a.topNavItem.current:hover {
+    background-color: #333399;
+}
+
+.subnavdropdown {
+    background-color: #204498;
+    display: block;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    top: auto;
+    width: 30%;
+    z-index: 9999;
+    margin-top: 20px;
+}
+.dropdownCallout {
+    height: auto;
+    margin: 0 1.5%;
+    padding-left: 13px;
+    text-align: left;
+}
+.dropdownCallout ul {
+    margin: 0 !important;
+    padding: 0;
+    list-style-type: none;
+}
+.dropdownCallout ul li {
+    border: none;
+    margin: 0;
+    padding: 4px 0;
+    text-align: left;
+    width: 100%;
+}
+.dropdownCallout ul li a {
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 0 !important;
+    text-decoration: none;
+}
+.dropdownCallout ul li a:hover {
+    background-color: #333399;
+}
+
+#axisfooter {
+	background-color: #BCD0FF;
+	border-top: 5px solid #204498;
+	color: #000000;
+  font-family: Arial;
+  font-size: 10pt;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#axisfooter a:link {
+  color: #000000;
+  font-size: 10pt;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#axisfooter a {
+  color: #000000;
+  font-size: 10pt;
+  font-weight: normal;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.axiscopy {
+	font-size: 8pt;
+	margin-top: 8px;
+}

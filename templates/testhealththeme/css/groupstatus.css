@@ -1,0 +1,54 @@
+.node-type-activity_group .title {
+  display: none;  
+}
+
+#intro-text { 
+  font-family: Arial, verdana, sans-serif; 
+  margin-bottom: 15px; 
+}
+
+#intro-text-title { 
+  margin-bottom: 10px; 
+}
+
+.curric-logo { 
+  float: left; padding-right: 5px; 
+}
+
+.curric-title { 
+  color: #faaf40; 
+  font-size: 22px; 
+  font-weight: bold; 
+  clear: right; 
+  padding-top: 10px;
+}
+
+.healthcourse-record.completed {
+	 background-color: #99FF99 !important;
+}
+
+.healthcourse-record.open {
+   background-color: #CCFFFF;
+}
+
+.healthcourse-record {
+  height: 250px !important;
+}
+
+.healthcourse-record-perf {
+    top: 170px  !important; 
+}
+
+.healthcourse-record-status {
+   top: 230px !important;
+}
+
+.healthcourse-record-title {
+  font-weight: bold;
+}
+
+.healthcourse-record-lo {
+  position: absolute;
+  left: 70px;
+  top: 20px;
+}

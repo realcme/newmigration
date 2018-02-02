@@ -1,0 +1,143 @@
+/*******************************************************\
+ * You can change this file to make different layouts
+ * using the markers below. Once you are done customizing the layout
+ * feel free to delete these instructions.
+ *
+ * Markers:
+ *
+ * Left Aligned layout
+ * -------------------------
+ * m1 - delete
+ *
+ *
+ * Alt Container on the right
+ * adn Alt2 on the left
+ * ---------------------------
+ * m21 - change to [float: right;]
+ * m22 - change to [margin-right]
+ * m23 - change to [float: left;]
+ * m24 - change to [margin-left]
+ *
+ *
+ * Make layout fluid
+ * ------------------------
+ * m3 - comment or delete this line
+ *
+ *
+ * To remove Alt column
+ * ------------------------
+ * comment or delete the altcontainer <div> and it's contents from the markup
+ * m21 - comment or delete this line
+ * m22 - comment or delete this line
+ *
+ *
+ * To remove Alt2 column
+ * ------------------------
+ * comment or delete the altcontainer2 <div> and it's contents from the markup
+ * m23 - comment or delete this line
+ * m24 - comment or delete this line
+ *
+\*******************************************************/
+
+#page
+{
+	/* recommended styles */
+	margin: auto; /* marker :m1: delete this to make layout left aligned */
+
+	/* add custom styles here */
+	width: 960px; /* marker :m3:  */
+	/*border: 1px solid #000;*/
+}
+
+/*
+ * Header style Definitions
+ */
+#header
+{
+	/* recommended styles */
+	/* add custom styles here */
+}
+#headerbody
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	background-color: #aaa;
+	height: 75px;
+}
+#headernav
+{
+	/* recommended styles */
+	width: 100%;
+	float: left;
+
+	/* add custom styles here */
+	background-color: #ddd;
+}
+
+/*
+ * Body style Definitions
+ */
+#body
+{
+	/* recommended styles */
+	clear: both;
+
+	/* add custom styles here */
+}
+#altcontainer
+{
+	/* recommended styles */
+	float: left; /* marker :m21: */
+	width: 178px; /* should match the margin-left of #container */
+
+	/* add custom styles here */
+	background: transparent url(../img/header-bg-tall-top-3x.png) left top repeat-x;
+}
+#altcontainer2
+{
+	/* recommended styles */
+	float: right; /* marker :m23: */
+	width: 178px; /* should match the margin-right of #container */
+
+	/* add custom styles here */
+	background-color: #fff;
+	font-size: 10px;
+}
+#companionlogo
+{
+	/* recommended styles */
+	float: left; /* marker :m23: */
+	width: 146px; /* should match the margin-right of #container */
+	_width:110px;
+
+	/* add custom styles here */
+	background-color: #fff;
+	padding: 12px 12px 0px 0px;
+	margin-left: 11px;
+	_margin-left: 6px;
+	border-left: 1px solid #c0c0c0;
+}
+#container
+{
+	/* recommended styles */
+	margin-left: 180px; /* marker :m22: should match width on #altcontainer */
+	margin-right: 170px; /* marker :m24: should match width on #altcontainer */
+
+	/* add custom styles here */
+	padding: 0 10px 20px 5px;
+	background-color: #fff;
+}
+
+/*
+ * Footer style Definitions
+ */
+#footer
+{
+	/* recommended styles */
+
+	/* add custom styles here */
+	border: 0;
+	background-color: #fff;
+	padding: 20px;
+}

@@ -1,0 +1,41 @@
+/* $Id: style.css,v 1.1 2009-05-20 18:09:55 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+td {
+    padding: 0px !important;
+}
+
+#block-cmeprofile-2 {
+    display:none;
+}
+
+#footer p {
+    text-align: center;
+    padding: 15px 0px 5px 0px;
+}
+
+#menu {
+    padding: 0;
+    margin: 0;
+}
+
+#altcontainer2 {
+    width: 155px !important;
+}
+
+#companionlogo, #list1 {
+    background-color: transparent! important;
+}
+
+#list1 {
+   width: 162px !important;
+}
+
+div.cme-commentary > div > img{
+    max-width: 570px;
+}

@@ -1,0 +1,74 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+#schedule_link {
+	display: none !important;
+}
+
+#courseheader {
+	display: none !important;
+}
+#rcmcontent #logo {
+	display: none;
+}
+#coursedata table tr:nth-child(n+2)
+{
+	display: none;
+}
+#coursedata table tr:nth-child(1) td:nth-child(1)
+{
+	display: none;
+}
+#coursedata table tr:nth-child(1) td:nth-child(2)
+{
+  width: 100%;
+  text-align: center;
+}
+#coursedata table 
+{
+	border: none;
+}
+#coursedata
+{
+	-moz-border-radius: 15px;
+  border-radius: 15px;
+	font-family: verdana, arial, sans-serif;
+	background-image: none !important;
+  background-color: #DEEDFE;
+  border: 2px solid #3164A3 !important;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+/*
+  blue3
+  background-color: #BCDBFE;
+  border: 2px solid #3164A3 !important;
+
+  blue2
+  background-color: #197EBC;
+  border: 2px solid #3164A3 !important;
+
+  blue1
+  background-color: #7ABDFD;
+  border: 2px solid #3164A3 !important;
+  
+  background-color: #FED835;
+  border: 2px solid #FBAB36 !important;
+
+  background-color: #E6EEF0;
+  border: 2px solid #3164A3 !important;
+*/
+#coursedata h2
+{
+	
+	font-family: verdana, arial, sans-serif;
+  font-size: 150%;
+}
+div.cme-course {
+	display: none;
+}

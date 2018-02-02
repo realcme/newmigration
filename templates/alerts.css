@@ -1,0 +1,135 @@
+.alert-table {
+	border: 1px solid #CCC;
+}
+
+.alert-table td {
+  border-top: 1px solid #CCC;
+  padding: 12px 20px 12px 10px;
+}
+
+.alert-table .sep td {
+  border-top: 3px solid #CCC;
+}
+
+.alert-table .description {
+  font-family: Verdana, arial, sans-serif;
+	font-size: 0.78em;
+  margin-top: 8px;
+}
+
+.alert-table .form-radios {
+	margin: 0;
+}
+
+.alert-table .form-text {
+	width: 580px;
+}
+
+.form-item .form-text {
+  width: 95%;
+}
+#act-list .bold {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+#act-list .indent {
+  padding-left: 18px;
+}
+
+.fieldset-wrapper .tag-insert {
+	padding-right: 40px;
+}
+
+.fieldset-wrapper iframe {
+  width: 95%;
+}
+.tag-insert {
+	text-align: right;
+}
+.tag-insert input {
+	font-size: 8pt;
+}
+#tags {
+	display: none;
+	background-color: #EFE;
+	position: absolute;
+	z-index: 100;
+	padding: 6px;
+	border: 1px solid black;
+}
+#tagtype {
+	color: #006;
+	margin: 2px 0 2px 2px;
+}
+#taglist {
+	padding: 6px 4px;
+}
+#taglist option {
+	margin: 3px 0;
+}
+input.error, textarea.error, select.error, iframe.error {
+  border: 2px solid red !important;
+}
+input.form-radio {
+  margin-left: 8px;
+}
+span.suffix {
+  margin-left: 14px;
+}
+div.help {
+	margin: 10px 0 0 0;
+}
+
+#edit-cancel {
+  margin: 0 24px 0 580px;
+}
+.hidden {
+	display: none;
+}
+.left {
+	float: left;
+}
+.right {
+  float: right;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+body {
+	position: relative;
+}
+#overlay {
+  position: absolute;
+  background-color: #333;
+  display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+div.messages {
+	margin: 20px 0 0 0;
+	padding: 5px;
+	width: 750px;
+}
+div.messages ul {
+	padding-bottom: 2px;
+}
+div.messages li {
+	margin: 5px 0;
+}
+label.use-default {
+	float: left;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+textarea.text-content {
+  width: 100%; 
+  overflow: hidden;
+  border: none;
+}

@@ -1,0 +1,25 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+div#companionlogo,
+div#companion_description,
+#block-cmeprofile-1 > div > div > div > span > span,
+#block-cmeprofile-1 > div > div > div > span > div > span {
+	display: none;
+}
+
+#header-inner {
+	padding: 0;
+	height: 130px;
+}
+
+#related-activities-title,
+h1 {
+    color: #79c363 !important;
+}
+

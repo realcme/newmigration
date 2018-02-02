@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #B5ADA0  url(./img/bg_body.gif);
+}
+#page {
+	width: 1000px;
+	border: 1px solid black;	
+}
+
+#content-inner{
+	margin: 10px;
+}
+
+#footer {
+	padding: 0px;	
+	margin-bottom: 10px;
+}
+
+
+.mecmeHeaderLft {
+    background: url("../../img/mecme/header-left.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 164px;
+    width: 640px;
+}
+.einstineLogo {
+    float: left;
+    margin: 50px 85px 0 10px;
+}
+.montifioreLogo {
+    float: left;
+    margin: 50px 0 0;
+}
+.einstineLogoN {
+    float: left;
+    height: 163px;
+    line-height: 163px;
+    margin: 35px 65px 35px 10px;
+    vertical-align: middle;
+}
+.montifioreLogoN {
+    float: left;
+    height: 163px;
+    line-height: 163px;
+    margin: 35px 0;
+    vertical-align: middle;
+}
+.mecmeSlideHolder {
+    height: 164px;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 360px;
+}
+.mecmeSlideHolder ul {
+    margin: 0;
+}
+.mecmeBannerTxt {
+    position: absolute;
+    text-align: right;
+    top: 65px;
+}
+
+.mecmeHeaderFlash {
+    background: none repeat scroll 0 0 #2A4374;
+    float: left;
+    height: 164px;
+    width: 360px;
+}
+.mecmeclbth {
+    clear: both;
+}
+
+.mecmeNavContainer {
+    background: none repeat scroll 0 0 #800040;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    width: 1000px;
+}
+#mecmenav, #mecmenav ul {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 1000px;
+}
+#mecmenav a {
+    background-color: #800040;
+    color: #FFFFFF;
+    display: block;
+    padding: 0 32px;
+    text-decoration: none;
+    line-height: 20px;
+}
+#mecmenav a:hover {
+    background-color: #666666;
+    color: #FFFFFF;
+}
+#mecmenav li {
+    background: none repeat scroll 0 0 #800040;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 20px;
+}
+#mecmenav ul {
+    display: none;
+    position: absolute;
+    top: 1.8em;
+    width: 12em;
+}
+#mecmenav li ul a {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+    float: left;
+    height: auto;
+    width: 15em;
+    line-height: 20px;
+}
+#mecmenav li ul li a:hover {
+    background: none repeat scroll 0 0 #800040;
+    color: #FFFFFF;
+}
+#mecmenav ul ul {
+    top: auto;
+}
+#mecmenav li ul ul {
+    left: 12em;
+    margin: 0 0 0 10px;
+}
+#mecmenav li:hover ul ul, #mecmenav li:hover ul ul ul, #mecmenav li:hover ul ul ul ul {
+    display: none;
+}
+#mecmenav li:hover ul, #mecmenav li li:hover ul, #mecmenav li li li:hover ul, #mecmenav li li li li:hover ul {
+    display: block;
+}
+
+
+
+.mecmeFooterContainer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid #000000;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 980px;
+}
+.mecmeFooterHolder {
+    color: #000000;
+    font-size: 11px;
+    margin: 20px 0;
+}
+.mecmeFooterHolder p {
+    padding: 0 0 10px;
+    text-align: center;
+}
+.mecmeFooterHolder p a {
+    color: #000000;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.mecmeFooterHolder p a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+/**
+	* nav code css stolen from alist apart
+	* used for global nav at top of page
+	* http://www.alistapart.com/articles/taminglists/
+	.navButtonActive{background: white; border-right: 1px solid #666; 	font-size: 11px;}
+	.navButton{border-right: 1px solid black; 	font-size: 11px;}
+	*/
+
+/* GLOBAL NAVIGATION */
+	
+
+	#globalNavigation { 
+		background: url(./img/bg_navigation.gif) repeat-x top left;
+		height: 17px;
+		border-top: 1px solid #666; 
+		border-bottom: 1px solid #666;
+		}
+
+	#globalNavigation  ul {
+		margin: auto;
+		padding-left: 0; 
+		display: inline;
+	} 
+
+	#globalNavigation  ul li {
+		background: url(./img/bg_navigation.gif) repeat-x top left;
+		height: 15px;
+		list-style: none;
+		float:left;
+		border-right: 1px solid black;
+		background-color: #e6e6dc; 
+		/* width: 100px; /* min-width does not work on IE... */ 
+		font-size: 11px;
+		font-weight: bold;
+		text-align:center;
+		padding: 1px 10px;
+	}
+	
+	#globalNavigation a{
+		text-decoration:none; 
+		color: #666666;
+	}
+
+	#globalNavigation a:hover{
+		text-decoration:none; 
+		color: #041E74;
+	} 
+	
+	#globalNavigation .current{		
+		background-image: none;
+		background-color:#FFF0E6;
+
+	}
+
+/* END GLOBAL NAVIGATION */

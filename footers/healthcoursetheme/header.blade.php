@@ -1,0 +1,1 @@
+<div id="header"><div id="header-inner" class="clear-block"> <a href="http://www.healthcourse.com/"><img src="<?php print $img_path ?>/img/logo.png"></a> </div></div> <!-- /#header-inner, /#header -->

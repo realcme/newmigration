@@ -1,0 +1,618 @@
+
+/* $Id: realcme.css,v 1.31 2009-12-14 14:52:41 psantini Exp $ */
+/* * COMMON STYLES */
+body  { background: none; margin: 0; padding: 0; }
+#main .node .content  {    color: #666;  }
+div.content, div.links  { font-size: 12px; font-family: Arial, verdana, sans-serif; }
+.block h3  {    font-size: 122%;  }
+.book .body  {    padding: 0 0 0.5em 0;    margin: 0;  }
+/* * HEADER STYLES */
+#logo-title  { margin: 0; position: relative; padding: 0; }
+#logo  { width: 105px; height: 63px; float: left; clear: left; margin: 34px 0 0 22px; padding: 0; }
+#name-and-slogan  {    display: inline;  }
+#site-name  {    margin: 0;    display: inline;    font-size: 246%;  }
+#site-name a, #site-name a:hover  {    font-family: "Trebuchet MS", "Bitstream Vera Sans", Verdana, Arial, Helvetica, sans-serif;    font-weight: normal;    color: #6DA6E2;    margin: 0;    padding: 0;  }
+#site-slogan  { color: #aaa; margin: 0; font-size: 85%; padding: 0; }
+#search  {    position: absolute;    padding: 0;    top: 0;    right: 0;  }
+#mission  {    color: #666;    font-weight: bold;    padding: 2em;    background: #D7E3F0 url(images/background.png);    margin-bottom: 20px;    font-size: 85%;    border: solid 1px #B5C9D8;  }
+.breadcrumb  {    margin: 0;    padding: 0;    font-size: 85%;    margin-left: 20px;  }
+/* Alternatively, the skip-nav link can be completely hidden until a user tabs     to the link. Un-comment the following CSS to use this technique. */
+#skip-nav a, #skip-nav a:hover, #skip-nav a:visited  {    position: absolute;    left: 0;    top: -500px;    width: 1px;    height: 1px;    overflow: hidden;  }
+#skip-nav a:active, #skip-nav a:focus  {    position: static;    width: auto;    height: auto;  }
+#logo-title  {    margin: 0;  }
+/*COMPANION SECTION NAME*/
+#companion-section { text-align: left; margin: 0; padding: 0; position: relative; top: 3px; right: 0; bottom: 0; left: 20px; width: 180px; float: left; clear: left; display: inline; }
+.section-name { color: #666; font-size: 16px; font-family: Arial, verdana, sans-serif; font-weight: bold; vertical-align: middle; margin: 0; padding: 0; }
+/* * MENU STYLES */
+div.menu  { background: url(images/tabs-bg.jpg) no-repeat left top; height: 28px; margin: 0; padding: 0; }
+#primary  { position: relative; top: 25px; width: 500px; height: 57px; float: left; padding: 0; margin: 0; display: inline; }
+.links-menu { display: inline; }
+#primary ul  {    padding: 0;    margin: 0;    list-style: none;  }
+#primary li { float: left; margin: 0; padding: 0; list-style-image: none; display: inline; }
+#primary ul.links li,  #secondary ul.links li  {    display: inline;    border-left: none;    margin: 0;    padding: 0;  }
+#primary a  { color: #666; font-size: 13px; font-weight: bold; text-decoration: none; float: left; padding: 0; margin: 0; }
+#primary a  {    background-position: 0% 0;  }
+#primary a:hover  { color: #fff; font-size: 13px; text-decoration: none; }
+#primary a.active  { color: #fff; font-size: 13px; text-decoration: none; }
+#secondary  { font-size: 13px; font-weight: bold; line-height: normal; position: relative; top: 0; left: 0; right: 0; bottom: 0; float: left; clear: right; margin: 0; padding: 0; border-style: none; display: inline; }
+#secondary ul  {    margin: 0;    padding: 0;    list-style: none;  }
+#secondary li  { float: left; display: inline; text-decoration: none; list-style-image: none; }
+#secondary a 	{ color: #666; 	font-size: 13px; 	font-weight: bold; 	background-image: url(images/tabs.png); 	background-repeat: repeat-x; 	background-attachment: scroll; 	background-position: 0 0; 	text-decoration: none; 	display: block; 	float: left; 	padding: 5px 10px; 	margin: 1px 1px 0 0; 	border-color: transparent #c0c0c0; 	border-style: none solid; 	border-width: 1px 1px 0; 	}
+#secondary a:hover{ color: #fff; font-size: 13px; background-position: 0 -42px; text-decoration: none; border-right-color: #a2a2a2; border-left-color: #a2a2a2; }
+#secondary a.active { color: #fff; font-size: 13px; background-position: 0 -84px; text-decoration: none; border-right-color: #a2a2a2; border-left-color: #a2a2a2; }
+/* * LINK STYLES */
+ul.links  {    text-align: left;  }
+ul.links li  {    border-left: 1px solid #9cf;  }
+.taxonomy  {    margin: 0;    padding: 0;    display: inline;  }
+.taxonomy ul.links li  {    border: none;    padding: 0 .1em 0 .2em;  }
+.taxonomy ul.links li:after  {    content: ",";  }
+.taxonomy ul.links li.last:after  {    content: "";  }
+ul.links li.first  {    padding-left: 0;    border: none;  }
+.links  {    color: #999;  }
+.links a  {    padding: 0 .1em 0 .1em;  }
+.submitted, .taxonomy  {    font-size: 85%;    color: #999;  }
+/* * FORM STYLES */
+input, textarea, textfield  {    margin: 0;    color: #000;    font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;    padding: 1px;    font-size: 100%;  }
+input.form-checkbox, input.form-radio  {    border: none;  }
+#search .form-text, #user-login-form .form-text  {    color: #444;    border: 1px solid #6191C5;    padding: 2px;  }
+.form-submit, .button  { font-size: 11px; padding: 1px; }
+#search .button,  #search .form-submit,  #user-login-form .button,  #user-login-form .form-submit  {    background-color: #68A0D9;    color: #fff;    font-weight: bold;    border: 1px solid #4070A1;  }
+#user-login-form  {    text-align: left;  }
+#user-login-form .item-list ul  {    margin-top: 10px;  }
+.form-item .description { font-size: 0.95em; line-height: 1.1em; margin-top: 2px; }
+/* * ALERTS, STATUS, HELP MESSAGE STYLES */
+.messages  {    padding: 1.3em 1em .3em 52px;    border: 2px solid #ddd;    background: #eee;    margin: 10px 0;  }
+div.error  {    border: 2px solid #F00;  }
+.messages ul  {    padding: 0 0 0 20px;    margin: 0;  }
+/* * FOOTER STYLES */
+#footer-wrapper  { margin: 0; padding: 0; }
+#footer  { color: #ffffff; text-align: center; margin: 0; font-size: 85%; padding: 0; border-style: none; }
+#footer a  {    color: #fff;    font-weight: bold;    border-bottom: 1px dotted #FFFFFF;  }
+#footer a:hover  {    border-bottom: 1px solid #FFFFFF;  }
+#footer img.drupal-powered  {    position: relative;    top: .3em;  }
+/* * ADMINISTRATION STYLES */
+.admin-panel  {    margin: 0;    padding: 0;  }
+.admin-panel .body  {    background-color: #eee;    border: solid #6191C5 1px;  }
+.admin-panel .body dl, .admin-panel .body p  {    padding: 10px;  }
+.admin-panel h3  {    margin-bottom: 0;    padding: 5px 5px 5px 30px;    font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, sans-serif;    font-size: 122%;    color: #fff;    border-width: 0 2px 2px 2px;  }
+table tr.odd  { background: #e7e7e7; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; }
+table tr.even { background: #f6f6f6; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; }
+td.active { background-color: #ddd; margin: 0; padding: 2px 4px; }
+td.icon  {    text-align: center;  }
+/* * COMMENT STYLES */
+.comment  {    margin: 0 0 10px 0;    padding: 10px;    background: #EBF2F8;  }
+.comment-unpublished  {    background-color: #FFF;  }
+.comment-by-author  {    background: none;    border: 1px solid #6191C5;  }
+.comment  h3.title  {    font-size: 122%;  }
+.comment  h3.title, .comment  h3.title a  {    color: #2266AB;    font-weight: normal;    font-family: "Trebuchet MS", "Bitstream Vera Sans", Verdana, Arial, Helvetica, sans-serif;    margin-bottom: 3px;    margin-top: 0;  }
+.comment .picture, .node .picture  {    float: left;    margin-right: 15px;  }
+.node.node-unpublished .picture,  .comment.comment-unpublished .picture  {    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */  }
+.comment .new  {    color: #FFC600;    font-weight: bold;    font-family: "Trebuchet MS", "Bitstream Vera Sans", Verdana, Arial, Helvetica, sans-serif;  }
+.comment .links  {    text-align: right;  }
+/* * POLL STYLES */
+.poll .bar .foreground  {    background: #2763A5;  }
+.poll .bar  {    padding: 2px;    background: #BDCBDD;  }
+/* * BOOK STYLES */
+div.node div.content .book-navigation  {    background: #eee;    margin: 0;    padding: 0;  }
+div.node div.content .book-navigation ul.menu  {    border: 0;    border-top: 1px solid #2763A5;    margin: 0;    padding-bottom: 10px;  }
+div.node div.content .book-navigation .page-links  {    background: #C1D4EA; /*#347FD2;*/    border: 1px solid #2763A5;    border-width: 1px 0 1px 0;    padding: 5px;    margin: 0;  }
+/* * FORUM STYLES */
+#forum table  {    width: 100%;  }
+/* * Pager styles */
+.pager  { text-align: center; margin-top: 30px; margin-bottom: 2px; }
+.pager  a, .pager-current  {    padding: 3px 8px;    margin: 0 2px;    color: #7660ad;    font-weight: bold;    border: solid 1px #eee;  }
+.pager-current  {    color: #fff;    background-color: #7660ad;  }
+/* * Node, Block, Content styles */
+.node  {    margin-bottom: 15px;    padding-bottom: 15px;  }
+.node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */  .comment-unpublished div.unpublished  {    height: 0;    overflow: visible;    color: #d8d8d8;    font-size: 75px;    line-height: 1;    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;    font-weight: bold;    text-transform: uppercase;    text-align: center;    word-wrap: break-word; /* A very nice CSS3 property */  }
+.node h2.title  {    margin-bottom: .1em;  }
+.node h2.title a  {    color: #555;    font-size: 129%;    font-weight: normal;    font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;    line-height: 1.4em;  }
+.node .content  {    padding-top: 0;    padding-bottom: 5px;  }
+.sticky  {    border-bottom: solid 3px #ddd;  }
+#sidebar-left .block,  #sidebar-right .block  {    border-bottom: solid #ddd 1px;    padding-bottom: 15px;    margin: 0 0 1.5em 0;  }
+#sidebar-left .block  {    padding-right: 15px;  }
+#sidebar-right .block  {    padding-left: 15px;  }
+.block .content  {    margin: 0.5em 0;  }
+.block .item-list ul  {    padding-left: 0;  }
+/* * Status report colors. */
+table.system-status-report tr.error, table.system-status-report tr.error th  {    background-color: #fcc;    border-color: #ebb;    color: #200;  }
+table.system-status-report tr.warning, table.system-status-report tr.warning th  {    background-color: #ffd;    border-color: #eeb;  }
+table.system-status-report tr.ok, table.system-status-report tr.ok th  {    background-color: #dfd;    border-color: #beb;  }
+/*Performance Barchart settings*/
+#barchart { position: relative; margin: 0; padding: 0; display: inline; overflow: hidden; }
+* html #barchart { overflow: visible; height: 1%; margin: 0; padding: 0; display: inline; }
+.score { font-size: 0; background-color: transparent; background-image: url(images/score.gif); background-repeat: repeat-x; background-position: 100% center; position: relative; height: 12px; float: left; margin: 0; padding: 0; border: solid 1px #666; display: inline; }
+.score-blank { font-size: 0; background-color: #f4f4f4; position: relative; height: 12px; float: left; margin: 0; padding: 0; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.goal { font-size: 0; background: url(images/goal.gif) repeat-x 100% center; position: relative; margin: 0; padding: 0; height: 12px; float: left; border: solid 1px #666; display: inline; }
+.goal-blank { font-size: 0; background-color: #f4f4f4; margin: 0; padding: 0; position: relative; height: 12px; float: left; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+.barchart-text { font-size: 11px; font-family: Arial, verdana, sans-serif; font-weight: normal; text-align: right; position: relative; width: 95px; float: left; clear: right; margin: 0; padding: 0 2px 0 0; display: inline; }
+.clearboth { clear: both; }
+
+/*misc settings
+*/
+.view { margin: 0; padding: 0; }
+#state_requirements { font-size: 12px; }
+.tips { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; font-size: 0.95em; line-height: 1.1; }
+
+#inner-state-requirement {
+	margin-left:10px;
+	margin-top:5px;
+	padding-left:5px;
+	border: solid 1px #B5C9D8;
+	background-color: #FFFFFF;
+}
+
+#coursetitle {
+	padding-bottom: 2px;
+}
+
+#coursedata{
+	border: 1px solid #ccc;
+	padding: 0px;
+	font-size: 11px;
+	width: 99%;
+}
+
+#coursedata .td-title{
+	font-weight: bold;
+	text-align: right;
+	vertical-align: text-top;
+	width: 150px;
+}
+#coursedata .td-bold{
+  font-weight: bold;
+}
+#coursedata td {
+	border: none;
+}
+#coursedetail {
+	padding: 0px;
+	font-size: 11px;
+}
+
+.right{float: right;}
+.left{float: left;}
+#reg_pass {
+	padding-top: 0px;
+	margin-top: 0px;
+	float:left
+}
+#reg_pass .form-item {
+	float:left;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-right: 30px;
+}
+#reg_pass .form-item .description {
+	clear: both;
+}
+#reg_username {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#reg-profile-firstname {
+	float: left;
+	margin-right: 20px;
+}
+#reg-profile-lastname {
+	float: left;
+}
+#reg-profile-yearsinpractice {
+  clear: both;
+}
+#reg-profile-profession {
+	float: left;
+	margin-right: 40px;
+}
+#reg-profile-specialty {
+	float: left;
+}
+#reg-profile-country {
+	clear: both;
+}
+#reg-profile-temp-license {
+	float: left;
+	margin-right: 30px;
+}
+#reg-profile-temp-dea {
+	float: left;
+}
+.reg_validation_toggle {
+	float: left;
+}
+#reg-profile-temp-school {
+	float: left;
+	margin-right: 20px;
+}
+#reg-profile-temp-grad-year {
+	float: left;
+}
+#reg-profile-temp-birthdate {
+	clear: both;
+}
+.reg_legal_agreement {
+	margin-left:0px;
+	margin-top:10px;
+	padding-left:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FFFFFF;
+	border: solid 1px #B5C9D8;
+}
+#view_legal_agreement  {    
+	color: #7660ad; font-weight: bold; text-decoration: none; display: inline;  
+}
+.profile-field-name {
+	float: left;
+	font-weight: bold;
+	margin-right:10px;
+	margin-left: 10px;
+}
+.profile-field-value {
+	float: left;
+	margin-right:10px;
+}
+.profile-profile_biography {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #F0F0F0;
+    border: 1px solid #C0C0C0;
+    width: 90%;
+}
+td.view-field-node-data-field-cme-credit-field-cme-credit-value {
+	text-align: center;
+}
+#edit-filter0 {
+    width:400px;
+}
+#secure {
+	clear:right;
+	position: absolute;
+	top: 90px;
+	right: 70px;
+	padding:0pt;
+}
+/* UNCOMMENT - BENCHMARKING */
+.view-field-og-membership-field-final-score-field-final-score-value {
+	width: 225px;
+}
+.barchart {border: none; padding: 0px; margin:0px; width: 100%}
+.barchart td {text-align: left; border: none; padding: 0px; margin:0px}
+.barscore-text { font-size: 11px; font-family: Arial, verdana, sans-serif; font-weight: normal; text-align: right; position: relative; width: 95px; float: left; clear: right; margin: 0; padding: 0 2px 0 0; display: inline; }
+.scoreothers { font-size: 0; background-color: transparent; background-image: url(images/scoreothers.gif); background-repeat: repeat-x; background-position: 100% center; position: relative; height: 12px; float: left; margin: 0; padding: 0; border: solid 1px #666; display: inline; }
+.scoreothers-blank { font-size: 0; background-color: #f4f4f4; position: relative; height: 12px; float: left; margin: 0; padding: 0; border-top: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; display: inline; }
+
+/**Listings*/
+.view-content-planner-upcoming table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; }
+.view-content-planner-upcoming table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-planner-upcoming table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-planner-upcoming table tr .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-planner-upcoming table td .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-planner-upcoming table td { background-color: transparent; border-style: none; }
+.view-content-planner-upcoming td.active { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 4px; border-style: none; }
+.view-content-planner-upcoming thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-planner-upcoming thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-planner-upcoming img { margin-top: 3px; margin-bottom: 3px; }
+.view-content-planner-upcoming img.separator { width: 442px; height: 2px; margin: 0; padding: 0; }
+.view-content-planner-upcoming .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-planner-upcoming .coursetype { display: none }
+.view-content-planner-upcoming .imagefield-field_icon {height: 43px; width: 43px }
+.view-content-planner-upcoming .mainrow { font-size: 100%; }
+.view-content-planner-upcoming .view-field-node-title { display: none }
+.view-content-planner-upcoming td.view-field-node-data-field-credit-expire-field-credit-expire-value { white-space: nowrap; }
+.view-content-planner-upcoming td.view-field-node-data-field-active-begin-date-field-active-begin-date-value { white-space: nowrap; }
+
+.view-content-program-search table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; }
+.view-content-program-search table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-program-search table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-program-search table tr .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-program-search table td .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-program-search table td { background-color: transparent; border-style: none; }
+.view-content-program-search td.active { background-color: #transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 4px; border-style: none; }
+.view-content-program-search thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-program-search thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-program-search img { margin-top: 3px; margin-bottom: 3px; }
+.view-content-program-search img.separator { width: 442px; height: 2px; margin: 0; padding: 0; }
+.view-content-program-search .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-program-search .coursetype { display: none }
+.view-content-program-search td.view-field-node-data-field-credit-expire-field-credit-expire-value { white-space: nowrap; }
+.view-content-program-search td.view-field-node-data-field-active-begin-date-field-active-begin-date-value { white-space: nowrap; }
+.view-content-program-search .view-field-node-title { display: none }
+
+.view-content-tracker-open table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; width: 99% }
+.view-content-tracker-open table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-tracker-open table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-tracker-open table tr .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-tracker-open table td .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-tracker-open table td { background-color: transparent; border-style: none; }
+.view-content-tracker-open td.active { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 4px; border-style: none; }
+.view-content-tracker-open thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-tracker-open thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-tracker-open img { margin-top: 3px; margin-bottom: 3px; }
+.view-content-tracker-open img.separator { width: 442px; height: 2px; margin: 0; padding: 0; }
+.view-content-tracker-open .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-tracker-open .coursetype { display: none }
+.view-content-tracker-open .imagefield-field_icon {height: 43px; width: 43px }
+.view-content-tracker-open .mainrow { font-size: 100%; }
+.view-content-tracker-open .view-field-node-title { display: none }
+.view-content-tracker-open td.view-field-node-data-field-credit-expire-field-credit-expire-value { white-space: nowrap; }
+.view-content-tracker-open td.view-field-node-data-field-active-begin-date-field-active-begin-date-value { white-space: nowrap; }
+
+.view-content-performance-scores table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; width: 99% }
+.view-content-performance-scores table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-performance-scores table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-performance-scores table tr .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-performance-scores table td .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.view-content-performance-scores table td { background-color: transparent; border-style: none; }
+.view-content-performance-scores td.active { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 4px; border-style: none; }
+.view-content-performance-scores thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.view-content-performance-scores thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.view-content-performance-scores img { margin-top: 3px; margin-bottom: 3px; }
+.view-content-performance-scores img.separator { width: 442px; height: 2px; margin: 0; padding: 0; }
+.view-content-performance-scores .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-performance-scores .coursetype { display: none }
+.view-content-performance-scores .imagefield-field_icon {height: 43px; width: 43px }
+.view-content-performance-scores .mainrow { font-size: 100%; }
+.view-content-performance-scores .view-field-node-title { display: none }
+.view-content-performance-scores td.view-field-node-data-field-credit-expire-field-credit-expire-value { white-space: nowrap; }
+.view-content-performance-scores td.view-field-node-data-field-active-begin-date-field-active-begin-date-value { white-space: nowrap; }
+
+.credit-table table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; width: 99% }
+.credit-table table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.credit-table table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.credit-table table tr .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.credit-table table td .separator { background-color: transparent; margin: 0; padding: 0; border-style: none; }
+.credit-table table td { background-color: transparent; border-style: none; }
+.credit-table td.active { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 4px; border-style: none; }
+.credit-table thead { color: #666; background-color: #e7e7e7; border: solid 1px #ccc; }
+.credit-table thead th { color: #666; background-color: #e7e7e7; border-style: none; }
+.credit-table img { margin-top: 3px; margin-bottom: 3px; }
+.credit-table img.separator { width: 442px; height: 2px; margin: 0; padding: 0; }
+.credit-table .view-field-node-data-field-series-field-series-value { display: none }
+.credit-table .coursetype { display: none }
+.credit-table .imagefield-field_icon {height: 43px; width: 43px }
+.credit-table .mainrow { font-size: 100%; }
+.credit-table .view-field-node-title { display: none }
+.credit-table td.view-field-node-data-field-credit-expire-field-credit-expire-value { white-space: nowrap; }
+.credit-table td.view-field-node-data-field-active-begin-date-field-active-begin-date-value { white-space: nowrap; }
+
+#pending-curriculum-table { width: 98%}
+#pending-curriculum-table .detail { width: 60px; }
+#pending-curriculum-table .curriculum-review-icon { vertical-align: middle}
+
+#completed-curriculum-table { width: 98%}
+#completed-curriculum-table .detail { width: 60px; }
+#completed-curriculum-table .curriculum-review-icon { vertical-align: middle}
+
+.mastery-curriculum-activity-table {width: 98%}
+.mastery-curriculum-activity-table .curriculum-review-icon {text-align: left; width: 30px; border-right: 0px; background-color: #eee; }
+.mastery-curriculum-activity-table .curriculum-review-text {text-align: left; border-left: 0px; background-color: #eee; }
+
+.mastery-curriculum-review-table table {width: 98%}
+.mastery-curriculum-review-table table tr.odd {background-color: #F6F6F6;}
+.mastery-curriculum-review-table table tr.even {background-color: #E7E7E7;}
+.mastery-curriculum-review-table .curriculum-score-label { font-weight: bold; vertical-align: middle; text-align: left; }
+.mastery-curriculum-review-table .curriculum-score { font-weight: bold; vertical-align: middle; text-align: center; }
+.mastery-curriculum-review-table .consistent {background-color: #EEFFEE; vertical-align: middle; text-align: center;}
+.mastery-curriculum-review-table .notconsistent {background-color: #FFEEEE; vertical-align: middle; text-align: center;}
+.mastery-curriculum-review-table .unknown {vertical-align: middle; text-align: center;}
+.mastery-curriculum-review-table .facultychoice {font-weight: bold;}
+.mastery-curriculum-back-link {text-align: right;}
+
+#new-picme-table { width: 98%}
+#new-picme-table .action {text-align: center; width: 25%;}
+#pending-picme-table { width: 98%}
+#pending-picme-table .action {text-align: center; width: 25%;}
+#completed-picme-table { width: 98%}
+#completed-picme-table .action {text-align: center; width: 25%;}
+.picme-back-link {text-align: right;}
+
+#picme-activities table {width: 98%}
+
+.picme-questions-table {width: 98%}
+.picme-questions-table .single-answer {vertical-align: top; text-align: left;}
+.picme-questions-table .multiple-answer {vertical-align: top; text-align: left;}
+.picme-questions-table .benchmark-graphic{vertical-align: top; text-align: center; width: 50%}
+
+.picme-chart-table {width: 98%}
+.picme-chart-table .chart-metric {background-color: #E7E7E7; cursor: pointer}
+.picme-chart-table .picme-toggle-metric {vertical-align: top; width: 10px; border-right: 0px}
+.picme-chart-table .picme-header-metric {border-left: 0px}
+.picme-chart-table .chart-guidelines {background-color: #F6F6F6; display: none; font-weight: bold}
+.picme-chart-table .chart-benchmark {background-color: #F6F6F6; display: none;  font-weight: bold}
+.picme-chart-table .chart-patient {background-color: #FFFFFF; display: none}
+.picme-chart-table .picme-chart-table-left {text-align: right; width: 15%}
+.picme-chart-table .picme-chart-table-right {text-align: left}
+.picme-chart-table .picme-toggle-metric span.minus { display: none; }
+
+.picme-chart-compare td.picme-chart-compare-table {text-align:center;}
+.picme-chart-compare-table th.picme-summary-header {background-color:#F6F6F6;color:#666666;font-weight:normal}
+.picme-chart-compare-table tr.picme-summary-header {background-color:#F6F6F6;color:#666666;font-weight:normal}
+.picme-chart-compare-table tr.picme-summary-subheader {background-color:#F6F6F6;color:#666666;font-weight:normal}
+.picme-chart-compare-table tr.picme-summary-row {background-color: #FFFFFF;font-weight: normal;}
+.picme-chart-compare-table td.picme-summary-row-text {text-align:left}
+.picme-chart-compare-table td.picme-summary-row-value {text-align:center}
+
+.picmetoggle {color: #7660AD; font-weight: bold; cursor: pointer;}
+.picmetoggle span.minus { display: none; }
+.picmetoggledata {display: none;}
+ul.picmeul {list-style-type: disc;}
+
+
+#picme-goals-table {width: 98%}
+
+div.cme-baseline-aggregated-metric {
+  width:45%;
+  float: left;
+  border: 1px solid #AAA;
+  margin: 2px 2px 5px 15px;
+}
+div.cme-baseline-aggregated-metric div:first-child { 
+  font-weight:bold; 
+  background-color:#DDF8DD;
+  text-align: center;
+  padding: 5px;    
+}
+div.cme-baseline-aggregation td {border: none;}
+/* Message list styles */
+form#privatemsg-list-form #cme-message-listing ul.links {
+    margin: 0.5em 0px 1em;
+}
+form#privatemsg-list-form #cme-message-listing table {
+    width: 100%;
+}
+.privatemsgbody {
+  padding: 5px;
+  background-color: #F0F0F0;
+  border: 1px solid #C0C0C0;
+  margin-bottom: 10px;
+}
+
+/* Message box styles */
+form#cmemessage-compose-form {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#cmemessage-recipient-fields {
+    margin: 0px 0px 1.5em 0px;
+    padding: 0px;
+    border: none;
+}
+#cmemessage-recipient-fields .method-field {
+    margin: 0px -4px 0px -6px;
+    padding: 0px 4px 0px 32px;
+    border: none;
+    background: #EEE url(images/radio-unchecked.gif) no-repeat 0.5em 0.5em;
+    overflow: auto;
+}
+#cmemessage-recipient-fields #cmemessage-privatemsg-nonpeer-method-fields {
+    background: none;
+}
+#cmemessage-recipient-fields #cmemessage-privatemsg-nonpeer-method-fields .method-mode-fieldset{
+    overflow-y: hidden;
+}
+#cmemessage-recipient-fields #cmemessage-privatemsg-nonpeer-method-fields label {
+    display: inline;
+    color: #666666;
+}
+#cmemessage-recipient-fields .method-field.radio-selected {
+    background: #c3bcdb url(images/radio-checked.gif) no-repeat 0.5em 0.5em;
+}
+#cmemessage-recipient-fields .method-field .method-field-title {
+    font-weight: bold;
+    margin: 0 4px 0 9px;
+    padding: 8px 0px;
+    float: left;
+    color: #000;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset {
+    clear: left;
+    overflow: auto;
+    margin: 0px 4px 0px 9px;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset .form-item {
+    float: left;
+    margin: 0px;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset label {
+    margin: 0px;
+    padding: 4px 0;
+    color: #000;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset label a.cmemessage-peer-help-link {
+    color: #3d157c;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset .cmemessage-mode-selected label {
+    color: #000;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset select {
+    margin-bottom: 12px;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset select.readonly {
+    background-color: #CCC;
+    color: #777;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset input {
+    background: #CCC;
+    color: #777;
+}
+#cmemessage-recipient-fields .method-field .method-mode-fieldset .cmemessage-mode-selected input {
+    background: #FFF;
+    color: #000;
+}
+#cmemessage-recipient-fields .method-field div.or {
+    float: left;
+    margin: 1em 1.5em;
+    font-size: 1.333333em;
+}
+#cmemessage-compose-form select#edit-selected-mode,
+#cmemessage-compose-form select#edit-selected-method,
+#cmemessage-compose-form select#edit-get-defaults {
+    display: none;
+}
+
+#cmemessage-compose-form #message-subject label {
+    display: inline;
+}
+
+#cmemessage-compose-form #to-recommend-fields label {
+    display: inline;
+}
+#cmemessage-compose-form input#edit-change-rec {
+    display: none;
+}
+
+form#user-edit .wp-widget input.wp-widget-number {
+    height: auto;
+}
+
+/* Peer requests */
+table.pending-peer-request-table .user-profile-link {
+    padding-right: 2em;
+}
+
+/* IE hacks */
+.IE #cmemessage-recipient-fields .method-field {
+    margin: 0px;
+    padding: 0px 0px 0px 32px;
+    height: 1%;
+}
+.IE #cmemessage-recipient-fields .method-field .method-mode-fieldset .form-item select {
+    height: 2em;
+    margin-bottom: 12px;
+}
+
+.IE #cmemessage-recipient-fields .method-field div.or {
+    margin: 1em 1em;
+}
+
+#tracker_practice_state {
+	float: left;
+	padding-left: 50px;
+}
+#tracker_profession {
+	float: left;
+}
+#tracker_state_requirements {
+	clear: both;
+}
+
+.user-profile-link img {
+  border: 1px solid #C0C0C0;
+  margin-right: 5px;
+}
+
+
+#edit_pass_toggle {
+  color:#6699CC;
+  font-weight: bold;
+  cursor:  pointer; 
+  background-color: transparent; 
+  background-image: url(images/secure.gif); background-repeat: no-repeat; background-position: left top;
+  padding-left: 15px;
+}
+
+#edit_pass {
+  display: none;
+}

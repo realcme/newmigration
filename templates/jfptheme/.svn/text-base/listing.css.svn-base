@@ -1,0 +1,3 @@
+.listing-tabs .listing-filter {
+	display: none;
+}

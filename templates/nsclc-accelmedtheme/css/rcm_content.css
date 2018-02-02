@@ -1,0 +1,38 @@
+/*
+ *	content.css
+ *
+ *	This file defines any special case styles
+ *	for the main content area as well as any
+ *	unique style for secondary content areas.
+ */
+
+#altcontainer h1{
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #666;
+	font-weight: bold;
+	padding: 10px 0 0 20px;;
+}
+#altcontainer li a{
+	color: #333;
+	text-decoration: none;
+	font-size: 10px;
+}
+#altcontainer li a:hover{
+	text-decoration: underline;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.right{float: right;}
+.left{float: left;}
+.bold{font-weight: bold;}
+#companionbox{
+	margin: 0;
+	padding: 0;
+}
+#altcontainer2 a{
+	color: #666;
+}

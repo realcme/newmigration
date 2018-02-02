@@ -1,0 +1,182 @@
+#page-inner {
+    border-radius: 20px !important;
+    margin-top: 15px !important;
+}
+
+#header {
+    border-top: 0 !important;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #e0e0e0 !important;
+    color: #7494a9 !important;
+    border-radius: 5px !important;
+}
+
+#content {
+    margin-top: 0px !important;
+}
+#content-inner {
+    margin-top: 10px;
+}
+
+#coursedata {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.view-item-all-activities .view-data-node-link,
+#btn-proceed {
+    background: #7494a9 !important;
+    background-image: none !important;
+    border-color: #7494a9 !important;
+    box-shadow: none;
+    text-shadow: none;
+
+
+}
+
+.view-field.view-data-node-link,
+#btn-proceed {
+    margin-top: 9px;
+    padding: 5px;
+}
+
+#btn-proceed {
+    border-radius: 4px !important;
+}
+
+#btn-proceed-top {
+    margin-right: 400px !important;
+}
+
+#btn-proceed:hover
+{
+    background: #e0e0e0 !important;
+
+}
+
+#btn-proceed:hover > #btn-proceed #login #a {
+    color: #7494a9 !important;
+}
+
+
+
+#login {
+    background: none !important;
+}
+
+#btn-proceed #login a {
+    text-transform: uppercase !important;
+
+}
+
+#btn-proceed-top #btn-proceed,
+#btn-proceed-bottom #btn-proceed,
+#btn-proceed-top #login,
+#btn-proceed-bottom #login
+{
+    padding-top: 5px !important;
+
+}
+
+.view-item-all-activities {
+    border: 1px solid #ddd;
+
+}
+
+.no-sidebars #content {
+    width: 100%;
+}
+
+.view-field.view-data-node-title a {
+    display: block;
+    margin-top: 10px;
+}
+
+.header-content {
+    background-color: #efefef;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.with-navbar #content, .with-navbar #sidebar-left, .with-navbar #sidebar-right {
+    margin-top: 10px;
+}
+
+.view-header h1 {
+    text-transform: uppercase;
+    border-left: 10px solid #e0e0e0;
+    padding: 5px;
+    color: #ffffff;
+    background: #7494a9;
+}
+
+.related-activities-title {
+    text-transform: uppercase;
+    border-left: 10px solid #e0e0e0;
+    padding: 5px;
+    color: #ffffff;
+    background: #7494a9;
+    font-size: 2em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#bg-image {
+    border-top-right-radius: 15px;
+    background-image: url('../img/landing-img.png');
+    background-repeat: no-repeat;
+}
+
+div.tabs {
+    margin-top: 10px;
+}
+
+div.tabs ul.tabs li:first-child,
+div.tabs ul.tabs li:first-child a {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div.tabs ul.tabs li:last-child,
+div.tabs ul.tabs li:last-child a {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.tabs ul.tabs li a:hover {
+    background: #7494a9 !important;
+}
+
+div.tabs ul.tabs li {
+    border-color: #7494a9 !important;
+}
+
+.tabs li.active a, .tabs li.active a:link {
+    border-color: #7494a9 !important;
+}
+
+#related-activities {
+    margin-bottom: 15px;
+}
+.related-activities-left, .related-activities-right {
+    display: table-cell;
+    width: 502px;
+}
+.related-activities-right {
+    padding-left: 15px;
+}
+
+.related-patient-bg {
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+#views-filters {display:none}
+.page-cmealerts-alerts #views-filters {display:inline}
+
+body {background-color: #B8CB77}
+
+#page {width: 1024px;padding: 10px 0px;}
+
+#main {padding: 0px 10px;}
+
+#footer {padding: 10px 10px;}

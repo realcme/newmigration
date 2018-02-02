@@ -1,0 +1,75 @@
+/* $Id: virtualclinic.css,v 1.6 2009-09-28 18:28:43 valerie Exp $ */
+
+
+/*
+ * Virtual Clinic*/
+.bold { font-weight: bold; }
+#eclinic-wrapper { font-family: Arial,verdana,sans-serif; }
+.eclinic-folders { width: 291px; float: left; }
+#intro-text { font-family: Arial, verdana, sans-serif; margin-bottom: 15px; }
+#intro-text-title { margin-bottom: 10px; }
+.eclinic-logo { float: left; padding-right: 5px; }
+.eclinic-title { color: #faaf40; font-size: 22px; font-weight: bold; clear: right; padding-top: 10px; }
+.eclinic-intro-text { }
+#eclinic-box { margin: auto; width: 640px;}
+#eclinic-header { background-color: transparent; background-image: url(../../images/virtualclinic/eclinic-header-bg.gif); background-repeat: repeat-x; width: 638px; height: 27px; border-top: 2px solid #c1cbdd; border-bottom: 1px solid #fff; border-left: 2px solid #8a97ac; border-right-width: 0; }
+.eclinic-header-left { background-color: #fff; width: 1px; height: 27px; float: left; }
+.eclinic-header-title { color: #000; font-size: 14px; font-weight: bold; float: left; padding-top: 5px; padding-left: 8px; }
+.eclinic-header-date { color: #1a1a1a; font-size: 14px; font-weight: bold; float: right; padding-top: 5px; padding-right: 35px; }
+#eclinic { background-color: transparent; background-image: url(../../images/virtualclinic/eclinic-bg640.gif); background-repeat: no-repeat; width: 640px; height: 362px; clear: left; }
+#eclinic-top-left { width: 125px; height: 205px; float: left; }
+.patient-border { width: 49px; height: 49px; margin: 95px auto 5px; padding: 4px; border: solid 2px #ccc; }
+.eclinic-patient { text-align: center; padding: 2px; border: solid 1px #ccc; }
+.patient-info { font-size: 11px; line-height: 1.2em; text-align: center; }
+#eclinic-top-right { width: 430px; height: 205px; float: left; }
+#eclinic-top-row { width: 430px; height: 50px; }
+.doctor-name { color: #666; font-size: 11px; width: 240px; float: left; padding-top: 20px; padding-left: 12px; }
+.number-patients-text { color: #000; font-weight: bold; text-align: right; width: 105px; float: left; padding-top: 20px; }
+.number-patients { color: #000; font-size: 16px; font-weight: bold; background-color: transparent; background-image: url(../../images/virtualclinic/patient-number.gif); background-repeat: no-repeat; text-align: center; width: 37px; height: 35px; float: left; margin-top: 10px; padding-top: 10px; }
+#eclinic-folders-row { width: 430px; height: 90px; }
+.doctor-icon { width: 71px; float: left; padding-left: 12px; }
+.arrow-back { width: 24px; float: left; margin-top: 53px; }
+#eclinic table { margin: 0; padding: 0; border-style: none; border-width: 0; }
+#eclinic td { margin: 0; padding: 0; border-style: none; border-width: 0; }
+.folder-rollover { font-size: 11px; background-color: transparent; background-image: url(../../images/virtualclinic/folder-rollover-bg.gif); background-repeat: no-repeat; width: 281px; height: 19px; padding-top: 3px; padding-left: 10px; }
+.folders { text-align: center; }
+.arrow-next { width: 25px; float: left; margin-top: 53px; }
+#eclinic-pages { text-align: center; height: 50px; float: left; margin-top: 15px; padding-left: 53px; }
+#eclinic-bottom-left { background-color: transparent; background-image: url(../../images/virtualclinic/patient-lines.gif); background-repeat: no-repeat; width: 178px; height: 157px; float: left; }
+#eclinic-bottom-right { width: 377px; height: 157px; float: left; }
+.eclinic-comment-info { color: #000; font-size: 14px; font-weight: bold; height: 24px; margin-top: 5px; }
+.eclinic-comment { font-size: 12px; background-color: #fff; width: 293px; height: 46px; overflow: hidden; padding: 12px 15px; border: solid 1px #b3b3b3; }
+.eclinic-link { font-size: 12px; }
+.eclinic-link a:link
+  {
+  color: #2c2a75; font-weight: bold; text-decoration: none;
+  }
+.eclinic-link a:visited
+  {
+  color: #2c2a75; font-weight: bold; text-decoration: none;
+  }
+.eclinic-link a:hover, .eclinic-link a:focus
+  {
+  color: #7660ad; font-weight: bold; text-decoration: none;
+  }
+.eclinic-link a:active
+  {
+  color: #7660ad;
+  }
+
+/* 
+ * Refinments added by Scott E 
+ */
+#folders-div { border:0px solid #DDE; height:50px; width:42px; overflow: hidden; }
+#folders-pane { height:50px; width:42px; }
+.half-icon { background:white; width:20px; height:20px; margin-left:9px; margin-top: 5px; }
+.half-icon-open { width:7px; height:20px; margin-left:9px; margin-top: 7px; }
+.folder-div { float:left; width:42px; height:48px; background-color: transparent; background-repeat: no-repeat; }
+.arrow-back { width: 23px; float: left; margin-top: 45px; }
+.arrow-next { width: 23px; float: left; margin-top: 45px; }
+#eclinic-pages { position: relative; height: 64px; margin-top: -8px; border: 0px solid gray; width: 340px; overflow: hidden; }
+.page-image { position: absolute; }
+.number-patients { padding-top: 8px; }
+.number-patients-text { width: 115px; }
+.folder-rollover { padding-top: 5px }
+#next-steps  { padding-top: 10px }

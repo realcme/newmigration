@@ -1,0 +1,1809 @@
+<html>
+<head>
+<TITLE>CMEZone</TITLE>
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<script language="JavaScript">
+<!--
+<!-- Set min and max time to display a single banner ad -->
+var min_delay_range = 15;
+var max_delay_range = 20;
+
+<!-- Declare global variables -->
+var banner1_image;
+var banner2_image;
+var banner3_image;
+var banner4_image;
+var banner5_image;
+var banner6_image;
+var banner1_rollover;
+var banner2_rollover;
+var banner3_rollover;
+var banner4_rollover;
+var banner5_rollover;
+var banner6_rollover;
+var banner1_link;
+var banner2_link;
+var banner3_link;
+var banner4_link;
+var banner5_link;
+var banner6_link;
+var banner1_target;
+var banner2_target;
+var banner3_target;
+var banner4_target;
+var banner5_target;
+var banner6_target;
+var do_rotate;
+
+<!-- Generate unique random numbers (for use when image_list.length < banner_count) -->
+var rand_num1 = generate(0, 2);
+var rand_num2 = generate(0, 2);
+while (rand_num1 == rand_num2) {
+  rand_num2 = generate(0, 2);
+}
+
+<!-- Set array of images -->
+var image_index = 0;
+image_list = new Array();
+
+<!-- Set array of image rollovers -->
+var rollover_index = 0;
+rollover_list = new Array();
+
+<!-- Set array of image URLs -->
+var url_index = 0;
+url_list = new Array();
+
+<!-- Set array of target windows -->
+var target_index = 0;
+target_list = new Array();
+
+<!-- Set array of placement for required images -->
+placement_list = new Array();
+placement_list[0] = -1;
+placement_list[1] = -1;
+placement_list[2] = -1;
+placement_list[3] = -1;
+placement_list[4] = -1;
+placement_list[5] = -1;
+
+function imageItem(image_location) {
+  this.image_item = new Image();
+  this.image_item.src = image_location;
+}
+
+function get_ImageItemLocation(imageObj) {
+  return(imageObj.image_item.src)
+}
+
+function generate(x, y) {
+  var range = y - x + 1;
+  return Math.floor(Math.random() * range) + x;
+}
+
+function getNextImage() {
+  image_index = generate(0, image_list.length-1);
+  var new_image = get_ImageItemLocation(new imageItem(image_list[image_index]));
+  return(new_image);
+}
+
+<!-- Main function called on page load -->
+function rotateImage(banner,link) {
+  <!-- Check to make sure banner ads appear on the page before proceeding -->
+  var top_banners_exist = "N";
+  var bot_banners_exist = "N";
+  var banner_count = 0;
+  for (i=0; i<document.images.length; i++) {
+    if (document.images[i].name == "banner3") {
+      top_banners_exist = "Y";
+      banner_count = banner_count + 3;
+    }
+    if (document.images[i].name == "banner6") {
+      bot_banners_exist = "Y";
+      banner_count = banner_count + 3;
+    }
+  }
+
+  <!-- If there are not more images available than ad slots -->
+  if (banner_count >= image_list.length) {
+    if (image_list.length >= 3) {
+      if (top_banners_exist == "Y") {
+        document["banner1"].src = get_ImageItemLocation(new imageItem(image_list[0]));
+        banner1_image = image_list[0];
+        banner1_rollover = rollover_list[0];
+        banner1_link = url_list[0];
+        banner1_target = target_list[0];
+        document["banner2"].src = get_ImageItemLocation(new imageItem(image_list[1]));
+        banner2_image = image_list[1];
+        banner2_rollover = rollover_list[1];
+        banner2_link = url_list[1];
+        banner2_target = target_list[1];
+        document["banner3"].src = get_ImageItemLocation(new imageItem(image_list[2]));
+        banner3_image = image_list[2];
+        banner3_rollover = rollover_list[2];
+        banner3_link = url_list[2];
+        banner3_target = target_list[2];
+      }
+    }
+    if (bot_banners_exist == "Y") {
+      if (image_list.length == 3) {
+        document["banner4"].src = get_ImageItemLocation(new imageItem(image_list[0]));
+        banner4_image = image_list[0];
+        banner4_rollover = rollover_list[0];
+        banner4_link = url_list[0];
+        banner4_target = target_list[0];
+        document["banner5"].src = get_ImageItemLocation(new imageItem(image_list[1]));
+        banner5_image = image_list[1];
+        banner5_rollover = rollover_list[1];
+        banner5_link = url_list[1];
+        banner5_target = target_list[1];
+        document["banner6"].src = get_ImageItemLocation(new imageItem(image_list[2]));
+        banner6_image = image_list[2];
+        banner6_rollover = rollover_list[2];
+        banner6_link = url_list[2];
+        banner6_target = target_list[2];
+      }
+      else if (image_list.length == 4) {
+        document["banner4"].src = get_ImageItemLocation(new imageItem(image_list[3]));
+        banner4_image = image_list[3];
+        banner4_rollover = rollover_list[3];
+        banner4_link = url_list[3];
+        banner4_target = target_list[3];
+        document["banner5"].src = get_ImageItemLocation(new imageItem(image_list[rand_num1]));
+        banner5_image = image_list[rand_num1];
+        banner5_rollover = rollover_list[rand_num1];
+        banner5_link = url_list[rand_num1];
+        banner5_target = target_list[rand_num1];
+        document["banner6"].src = get_ImageItemLocation(new imageItem(image_list[rand_num2]));
+        banner6_image = image_list[rand_num2];
+        banner6_rollover = rollover_list[rand_num2];
+        banner6_link = url_list[rand_num2];
+        banner6_target = target_list[rand_num2];
+      }
+      else if (image_list.length == 5) {
+        document["banner4"].src = get_ImageItemLocation(new imageItem(image_list[3]));
+        banner4_image = image_list[3];
+        banner4_rollover = rollover_list[3];
+        banner4_link = url_list[3];
+        banner4_target = target_list[3];
+        document["banner5"].src = get_ImageItemLocation(new imageItem(image_list[4]));
+        banner5_image = image_list[4];
+        banner5_rollover = rollover_list[4];
+        banner5_link = url_list[4];
+        banner5_target = target_list[4];
+        document["banner6"].src = get_ImageItemLocation(new imageItem(image_list[rand_num1]));
+        banner6_image = image_list[rand_num1];
+        banner6_rollover = rollover_list[rand_num1];
+        banner6_link = url_list[rand_num1];
+        banner6_target = target_list[rand_num1];
+      }
+      else if (image_list.length == 6) {
+        document["banner4"].src = get_ImageItemLocation(new imageItem(image_list[3]));
+        banner4_image = image_list[3];
+        banner4_rollover = rollover_list[3];
+        banner4_link = url_list[3];
+        banner4_target = target_list[3];
+        document["banner5"].src = get_ImageItemLocation(new imageItem(image_list[4]));
+        banner5_image = image_list[4];
+        banner5_rollover = rollover_list[4];
+        banner5_link = url_list[4];
+        banner5_target = target_list[4];
+        document["banner6"].src = get_ImageItemLocation(new imageItem(image_list[5]));
+        banner6_image = image_list[5];
+        banner6_rollover = rollover_list[5];
+        banner6_link = url_list[5];
+        banner6_target = target_list[5];
+      }
+    }
+  }
+
+  <!-- Randomly create rotating banner ads --->
+  else if (banner_count < image_list.length) {
+    <!-- Display required images --->
+    if ((banner == "banner1") && (placement_list[0] > -1)) {
+      document["banner1"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[0]]));
+      banner1_image = image_list[placement_list[0]];
+      banner1_rollover = rollover_list[placement_list[0]];
+      banner1_link = url_list[placement_list[0]];
+      banner1_target = target_list[placement_list[0]];
+      do_rotate = "N";
+    }
+    else if ((banner == "banner2") && (placement_list[1] > -1)) {
+      document["banner2"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[1]]));
+      banner2_image = image_list[placement_list[1]];
+      banner2_rollover = rollover_list[placement_list[1]];
+      banner2_link = url_list[placement_list[1]];
+      banner2_target = target_list[placement_list[1]];
+      do_rotate = "N";
+    }
+    else if ((banner == "banner3") && (placement_list[2] > -1)) {
+      document["banner3"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[2]]));
+      banner3_image = image_list[placement_list[2]];
+      banner3_rollover = rollover_list[placement_list[2]];
+      banner3_link = url_list[placement_list[2]];
+      banner3_target = target_list[placement_list[2]];
+      do_rotate = "N";
+    }
+    else if ((banner == "banner4") && (placement_list[3] > -1)) {
+      document["banner4"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[3]]));
+      banner4_image = image_list[placement_list[3]];
+      banner4_rollover = rollover_list[placement_list[3]];
+      banner4_link = url_list[placement_list[3]];
+      banner4_target = target_list[placement_list[3]];
+      do_rotate = "N";
+    }
+    else if ((banner == "banner5") && (placement_list[4] > -1)) {
+      document["banner5"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[4]]));
+      banner5_image = image_list[placement_list[4]];
+      banner5_rollover = rollover_list[placement_list[4]];
+      banner5_link = url_list[placement_list[4]];
+      banner5_target = target_list[placement_list[4]];
+      do_rotate = "N";
+    }
+    else if ((banner == "banner6") && (placement_list[5] > -1)) {
+      document["banner6"].src = get_ImageItemLocation(new imageItem(image_list[placement_list[5]]));
+      banner6_image = image_list[placement_list[5]];
+      banner6_rollover = rollover_list[placement_list[5]];
+      banner6_link = url_list[placement_list[5]];
+      banner6_target = target_list[placement_list[5]];
+      do_rotate = "N";
+    }
+    else {
+      <!-- If not required, then randomly get new image from array -->
+      var new_image = getNextImage();
+      do_rotate = "Y";
+    }
+
+    if (do_rotate == "Y") {
+      <!-- Check if the selected image is already being displayed -->
+      var image_displayed = "N";
+      if (top_banners_exist == "Y") {
+        if ((new_image == document["banner1"].src) ||
+            (new_image == document["banner2"].src) ||
+            (new_image == document["banner3"].src)) {
+          image_displayed = "Y";
+        }
+      }
+      if (bot_banners_exist == "Y") {
+        if ((new_image == document["banner4"].src) ||
+            (new_image == document["banner5"].src) ||
+            (new_image == document["banner6"].src)) {
+          image_displayed = "Y";
+        }
+      }
+
+      <!-- If the selected image is not currently dsiplayed then -->
+      if (image_displayed == "N") {
+        <!-- Set the new images properties -->
+        if (banner == "banner1") {
+          banner1_image = image_list[image_index];
+          banner1_rollover = rollover_list[image_index];
+          banner1_link = url_list[image_index];
+          banner1_target = target_list[image_index];
+         }
+        else if (banner == "banner2") {
+          banner2_image = image_list[image_index];
+          banner2_rollover = rollover_list[image_index];
+          banner2_link = url_list[image_index];
+          banner2_target = target_list[image_index];
+          }
+         else if (banner == "banner3") {
+          banner3_image = image_list[image_index];
+          banner3_rollover = rollover_list[image_index];
+          banner3_link = url_list[image_index];
+          banner3_target = target_list[image_index];
+        }
+        else if (banner == "banner4") {
+          banner4_image = image_list[image_index];
+          banner4_rollover = rollover_list[image_index];
+          banner4_link = url_list[image_index];
+          banner4_target = target_list[image_index];
+          }
+        else if (banner == "banner5") {
+          banner5_image = image_list[image_index];
+          banner5_rollover = rollover_list[image_index];
+          banner5_link = url_list[image_index];
+          banner5_target = target_list[image_index];
+        }
+        else if (banner == "banner6") {
+          banner6_image = image_list[image_index];
+          banner6_rollover = rollover_list[image_index];
+          banner6_link = url_list[image_index];
+          banner6_target = target_list[image_index];
+        }
+
+        <!-- Display the new image -->
+        document[banner].src = new_image;
+
+        <!-- Set the timeout period for the new image  -->
+        var recur_call = "rotateImage('"+banner+"','"+link+"')";
+        var interval = (Math.floor(Math.random()*(max_delay_range-min_delay_range))+min_delay_range)*1000;
+        setTimeout(recur_call, interval);
+      }
+
+      <!-- If the selected image is already being displayed then -->
+      else {
+        <!-- Continually call this function until a suitable image is selected -->
+        rotateImage(banner,link)
+      }
+
+    }
+  }
+}
+
+function launch(banner, banner_url) {
+  var popup = false;
+  if (banner == "banner1") {
+    if (banner1_target == "_blank") popup = true;
+  }
+  else if (banner == "banner2") {
+    if (banner2_target == "_blank") popup = true;
+  }
+  else if (banner == "banner3") {
+    if (banner3_target == "_blank") popup = true;
+  }
+  else if (banner == "banner4") {
+    if (banner4_target == "_blank") popup = true;
+  }
+  else if (banner == "banner5") {
+    if (banner5_target == "_blank") popup = true;
+  }
+  else if (banner == "banner6") {
+    if (banner6_target == "_blank") popup = true;
+  }
+  if (popup) {
+    window.open(banner_url,'','');
+  }
+  else {
+    location.href=banner_url;
+  }
+}
+//-->
+</script>
+
+<link rel="STYLESHEET" type="text/css" href="/cce_cmez/styles.css">
+<style>
+.htmllayer{position:absolute; z-index:2; visibility:hidden; }
+</style>
+<script language="javascript">
+<!--
+var popWin=0;
+function openPopup(theURL, winName, sb, rz, w, h) {
+popWin = open(theURL, winName, 'toolbar=no,location=no,status=no,menubar=no,scrollbars='+sb+',resizable='+rz+',width='+w+',height='+h+'');
+}
+//-->
+</script>
+</HEAD>
+<STYLE TYPE="text/css">
+.Layer {POSITION:absolute;VISIBILITY:hidden;Z-INDEX:200;}
+</STYLE>
+<body  bgcolor="#FFFFFF" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0" link="black" vlink="black" alink="black">
+<div align="left"><left>
+<div id="Layer" class="Layer"><TABLE  WIDTH=130 BORDER=1 BORDERCOLOR=black CELLPADDING=2 CELLSPACING=0 BGCOLOR=white><TD><IMG SRC=/img/blank.gif width=130 height=85 name=LayImg border=0></TD></TABLE></div>
+<meta name="WT.ti" content="Specialty Page">
+<meta name="WT.cg_n" content="Company Code">
+<meta name="WT.cg_s" content="CMEZ">
+<!-- START OF SDC Advanced Tracking Code -->
+<!-- Copyright (c) 1996-2008 WebTrends Inc.  All rights reserved. -->
+<!-- V8.0 -->
+<!-- $DateTime: 2007/02/16 11:44:56 $ -->
+<SCRIPT TYPE="text/javascript"><!--
+var gService = false;
+var gTimeZone = -5;
+// Code section for Enable First-Party Cookie Tracking
+function dcsCookie(){
+if (typeof(dcsOther)=="function"){
+dcsOther();
+}
+    else if (typeof(dcsPlugin)=="function"){
+dcsPlugin();
+}
+    else if (typeof(dcsFPC)=="function"){
+dcsFPC(gTimeZone);
+}
+}
+function dcsGetCookie(name){
+var pos=document.cookie.indexOf(name+"=");
+    if (pos!=-1){
+var start=pos+name.length+1;
+        var end=document.cookie.indexOf(";",start);
+if (end==-1){
+end=document.cookie.length;
+}
+        return unescape(document.cookie.substring(start,end));
+}
+    return null;
+}
+function dcsGetCrumb(name,crumb){
+var aCookie=dcsGetCookie(name).split(":");
+    for (var i=0;i<aCookie.length;i++){
+var aCrumb=aCookie[i].split("=");
+        if (crumb==aCrumb[0]){
+return aCrumb[1];
+}
+}
+    return null;
+}
+function dcsGetIdCrumb(name,crumb){
+var cookie=dcsGetCookie(name);
+    var id=cookie.substring(0,cookie.indexOf(":lv="));
+var aCrumb=id.split("=");
+    for (var i=0;i<aCrumb.length;i++){
+if (crumb==aCrumb[0]){
+return aCrumb[1];
+}
+}
+    return null;
+}
+function dcsIsFpcSet(name,id,lv,ss){
+if (id==dcsGetIdCrumb(name,"id")){
+if (lv==dcsGetCrumb(name,"lv")){
+if (ss=dcsGetCrumb(name,"ss")){
+return true;
+}
+}
+}
+    return false;
+}
+function dcsFPC(offset){
+if (typeof(offset)=="undefined"){
+return;
+}
+    if (document.cookie.indexOf("WTLOPTOUT=")!=-1){
+return;
+}
+    var name=gFpc;
+var dCur=new Date();
+    var adj=(dCur.getTimezoneOffset()*60000)+(offset*3600000);
+dCur.setTime(dCur.getTime()+adj);
+    var dExp=new Date(dCur.getTime()+315360000000);
+var dSes=new Date(dCur.getTime());
+    WT.co_f=WT.vt_sid=WT.vt_f=WT.vt_f_a=WT.vt_f_s=WT.vt_f_d=WT.vt_f_tlh=WT.vt_f_tlv="";
+if (document.cookie.indexOf(name+"=")==-1){
+if ((typeof(gWtId)!="undefined")&&(gWtId!="")){
+WT.co_f=gWtId;
+}
+        else if ((typeof(gTempWtId)!="undefined")&&(gTempWtId!="")){
+WT.co_f=gTempWtId;
+            WT.vt_f="1";
+}
+        else{
+WT.co_f="2";
+            var cur=dCur.getTime().toString();
+for (var i=2;i<=(32-cur.length);i++){
+WT.co_f+=Math.floor(Math.random()*16.0).toString(16);
+}
+            WT.co_f+=cur;
+WT.vt_f="1";
+}
+        if (typeof(gWtAccountRollup)=="undefined"){
+WT.vt_f_a="1";
+}
+        WT.vt_f_s=WT.vt_f_d="1";
+WT.vt_f_tlh=WT.vt_f_tlv="0";
+}
+    else{
+var id=dcsGetIdCrumb(name,"id");
+        var lv=parseInt(dcsGetCrumb(name,"lv"));
+var ss=parseInt(dcsGetCrumb(name,"ss"));
+        if ((id==null)||(id=="null")||isNaN(lv)||isNaN(ss)){
+return;
+}
+        WT.co_f=id;
+var dLst=new Date(lv);
+        WT.vt_f_tlh=Math.floor((dLst.getTime()-adj)/1000);
+dSes.setTime(ss);
+        if ((dCur.getTime()>(dLst.getTime()+1800000))||(dCur.getTime()>(dSes.getTime()+28800000))){
+WT.vt_f_tlv=Math.floor((dSes.getTime()-adj)/1000);
+            dSes.setTime(dCur.getTime());
+WT.vt_f_s="1";
+}
+        if ((dCur.getDay()!=dLst.getDay())||(dCur.getMonth()!=dLst.getMonth())||(dCur.getYear()!=dLst.getYear())){
+WT.vt_f_d="1";
+}
+}
+    WT.co_f=escape(WT.co_f);
+WT.vt_sid=WT.co_f+"."+(dSes.getTime()-adj);
+    var expiry="; expires="+dExp.toGMTString();
+document.cookie=name+"="+"id="+WT.co_f+":lv="+dCur.getTime().toString()+":ss="+dSes.getTime().toString()+expiry+"; path=/"+(((typeof(gFpcDom)!="undefined")&&(gFpcDom!=""))?("; domain="+gFpcDom):(""));
+    if (!dcsIsFpcSet(name,WT.co_f,dCur.getTime().toString(),dSes.getTime().toString())){
+WT.co_f=WT.vt_sid=WT.vt_f_s=WT.vt_f_d=WT.vt_f_tlh=WT.vt_f_tlv="";
+        WT.vt_f=WT.vt_f_a="2";
+}
+}
+
+// Code section for Use the new first-party cookie generated with this tag.
+var gFpc="WT_FPC";
+var gConvert=true;
+
+function dcsAdv(){
+dcsFunc("dcsET");
+    dcsFunc("dcsCookie");
+dcsFunc("dcsAdSearch");
+    dcsFunc("dcsTP");
+}
+
+//-->
+</SCRIPT>
+<!-- END OF SDC Advanced Tracking Code -->
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2008 WebTrends Inc.  All rights reserved. -->
+<!-- V8.0 -->
+<!-- $DateTime: 2007/03/01 14:48:29 $ -->
+<SCRIPT TYPE="text/javascript"><!--
+var gDomain="ssdc.cecity.com";
+var gDcsId="dcsd8ujjjf5sbfzx2j9osgzoc_9w2j";
+
+
+if ((typeof(gConvert)!="undefined")&&gConvert&&(document.cookie.indexOf(gFpc+"=")==-1)&&(document.cookie.indexOf("WTLOPTOUT=")==-1)){
+document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");
+}
+//-->
+</SCRIPT>
+<SCRIPT TYPE="text/javascript"><!--
+var gImages=new Array;
+var gIndex=0;
+var DCS=new Object();
+var WT=new Object();
+var DCSext=new Object();
+var gQP=new Array();
+var gI18n=false;
+if (window.RegExp){
+var RE=gI18n?{"%25":/\%/g}:{"%09":/\t/g,"%20":/ /g,"%23":/\#/g,"%26":/\&/g,"%2B":/\+/g,"%3F":/\?/g,"%5C":/\\/g,"%22":/\"/g,"%7F":/\x7F/g,"%A0":/\xA0/g};
+    if (gI18n){
+var EXRE=/dcs(uri)|(ref)|(aut)|(met)|(sta)|(sip)|(pro)|(byt)|(dat)|(p3p)|(cfg)|(redirect)|(cip)/i;
+}
+}
+
+// Add customizations here
+
+function dcsVar(){
+var dCurrent=new Date();
+    WT.tz=dCurrent.getTimezoneOffset()/60*-1;
+if (WT.tz==0){
+WT.tz="0";
+}
+    WT.bh=dCurrent.getHours();
+WT.ul=navigator.appName=="Netscape"?navigator.language:navigator.userLanguage;
+    if (typeof(screen)=="object"){
+WT.cd=navigator.appName=="Netscape"?screen.pixelDepth:screen.colorDepth;
+        WT.sr=screen.width+"x"+screen.height;
+}
+    if (typeof(navigator.javaEnabled())=="boolean"){
+WT.jo=navigator.javaEnabled()?"Yes":"No";
+}
+    if (document.title){
+WT.ti=document.title;
+}
+    WT.js="Yes";
+WT.jv=dcsJV();
+    if (document.body&&document.body.addBehavior){
+document.body.addBehavior("#default#clientCaps");
+        WT.ct=document.body.connectionType||"unknown";
+document.body.addBehavior("#default#homePage");
+        WT.hp=document.body.isHomePage(location.href)?"1":"0";
+}
+    else{
+WT.ct="unknown";
+}
+    if (parseInt(navigator.appVersion)>3){
+if ((navigator.appName=="Microsoft Internet Explorer")&&document.body){
+WT.bs=document.body.offsetWidth+"x"+document.body.offsetHeight;
+}
+        else if (navigator.appName=="Netscape"){
+WT.bs=window.innerWidth+"x"+window.innerHeight;
+}
+}
+    WT.fi="No";
+if (window.ActiveXObject){
+for(var i=10;i>0;i--){
+try{
+var flash = new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+i);
+                WT.fi="Yes";
+WT.fv=i+".0";
+                break;
+}
+            catch(e){
+}
+}
+}
+    else if (navigator.plugins&&navigator.plugins.length){
+for (var i=0;i<navigator.plugins.length;i++){
+if (navigator.plugins[i].name.indexOf('Shockwave Flash')!=-1){
+WT.fi="Yes";
+                WT.fv=navigator.plugins[i].description.split(" ")[2];
+break;
+}
+}
+}
+    if (gI18n){
+WT.em=(typeof(encodeURIComponent)=="function")?"uri":"esc";
+        if (typeof(document.defaultCharset)=="string"){
+WT.le=document.defaultCharset;
+} 
+        else if (typeof(document.characterSet)=="string"){
+WT.le=document.characterSet;
+}
+}
+    WT.tv="8.0.3";
+WT.sp="@@SPLITVALUE@@";
+    DCS.dcsdat=dCurrent.getTime();
+DCS.dcssip=window.location.hostname;
+    DCS.dcsuri=window.location.pathname;
+if (window.location.search){
+DCS.dcsqry=window.location.search;
+        if (gQP.length>0){
+for (var i=0;i<gQP.length;i++){
+var pos=DCS.dcsqry.indexOf(gQP[i]);
+                if (pos!=-1){
+var front=DCS.dcsqry.substring(0,pos);
+                    var end=DCS.dcsqry.substring(pos+gQP[i].length,DCS.dcsqry.length);
+DCS.dcsqry=front+end;
+}
+}
+}
+}
+    if ((window.document.referrer!="")&&(window.document.referrer!="-")){
+if (!(navigator.appName=="Microsoft Internet Explorer"&&parseInt(navigator.appVersion)<4)){
+DCS.dcsref=window.document.referrer;
+}
+}
+}
+
+function dcsA(N,V){
+if (gI18n&&!EXRE.test(N)){
+if (N=="dcsqry"){
+var newV="";
+            var params=V.substring(1).split("&");
+for (var i=0;i<params.length;i++){
+var pair=params[i];
+                var pos=pair.indexOf("=");
+if (pos!=-1){
+var key=pair.substring(0,pos);
+                    var val=pair.substring(pos+1);
+if (i!=0){
+newV+="&";
+}
+                    newV+=key+"="+dcsEncode(val);
+}
+}
+            V=V.substring(0,1)+newV;
+}
+        else{
+V=dcsEncode(V);
+}
+}
+    return "&"+N+"="+dcsEscape(V, RE);
+}
+
+function dcsEscape(S, REL){
+if (typeof(REL)!="undefined"){
+var retStr = new String(S);
+        for (var R in REL){
+retStr = retStr.replace(REL[R],R);
+}
+        return retStr;
+}
+    else{
+return escape(S);
+}
+}
+
+function dcsEncode(S){
+return (typeof(encodeURIComponent)=="function")?encodeURIComponent(S):escape(S);
+}
+
+function dcsCreateImage(dcsSrc){
+if (document.images){
+gImages[gIndex]=new Image;
+        gImages[gIndex].src=dcsSrc;
+gIndex++;
+}
+    else{
+document.write('<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="'+dcsSrc+'">');
+}
+}
+
+function dcsMeta(){
+var elems;
+    if (document.all){
+elems=document.all.tags("meta");
+}
+    else if (document.documentElement){
+elems=document.getElementsByTagName("meta");
+}
+    if (typeof(elems)!="undefined"){
+var length=elems.length;
+        for (var i=0;i<length;i++){
+var name=elems.item(i).name;
+            var content=elems.item(i).content;
+var equiv=elems.item(i).httpEquiv;
+            if (name.length>0){
+if (name.indexOf("WT.")==0){
+WT[name.substring(3)]=content;
+}
+                else if (name.indexOf("DCSext.")==0){
+DCSext[name.substring(7)]=content;
+}
+                else if (name.indexOf("DCS.")==0){
+DCS[name.substring(4)]=content;
+}
+}
+            else if (gI18n&&(equiv=="Content-Type")){
+var pos=content.toLowerCase().indexOf("charset=");
+                if (pos!=-1){
+WT.mle=content.substring(pos+8);
+}
+}
+}
+}
+}
+
+function dcsTag(){
+if (document.cookie.indexOf("WTLOPTOUT=")!=-1){
+return;
+}
+    var P="http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?";
+for (var N in DCS){
+if (DCS[N]){
+P+=dcsA(N,DCS[N]);
+}
+}
+    var keys=["co_f","vt_sid","vt_f_tlv"];
+for (var i=0;i<keys.length;i++){
+var key=keys[i];
+        if (WT[key]){
+P+=dcsA("WT."+key,WT[key]);
+            delete WT[key];
+}
+}
+    for (N in WT){
+if (WT[N]){
+P+=dcsA("WT."+N,WT[N]);
+}
+}
+    for (N in DCSext){
+if (DCSext[N]){
+P+=dcsA(N,DCSext[N]);
+}
+}
+    if (P.length>2048&&navigator.userAgent.indexOf('MSIE')>=0){
+P=P.substring(0,2040)+"&WT.tu=1";
+}
+    dcsCreateImage(P);
+}
+
+function dcsJV(){
+var agt=navigator.userAgent.toLowerCase();
+    var major=parseInt(navigator.appVersion);
+var mac=(agt.indexOf("mac")!=-1);
+    var ff=(agt.indexOf("firefox")!=-1);
+var ff0=(agt.indexOf("firefox/0.")!=-1);
+    var ff10=(agt.indexOf("firefox/1.0")!=-1);
+var ff15=(agt.indexOf("firefox/1.5")!=-1);
+    var ff2up=(ff&&!ff0&&!ff10&!ff15);
+var nn=(!ff&&(agt.indexOf("mozilla")!=-1)&&(agt.indexOf("compatible")==-1));
+    var nn4=(nn&&(major==4));
+var nn6up=(nn&&(major>=5));
+    var ie=((agt.indexOf("msie")!=-1)&&(agt.indexOf("opera")==-1));
+var ie4=(ie&&(major==4)&&(agt.indexOf("msie 4")!=-1));
+    var ie5up=(ie&&!ie4);
+var op=(agt.indexOf("opera")!=-1);
+    var op5=(agt.indexOf("opera 5")!=-1||agt.indexOf("opera/5")!=-1);
+var op6=(agt.indexOf("opera 6")!=-1||agt.indexOf("opera/6")!=-1);
+    var op7up=(op&&!op5&&!op6);
+var jv="1.1";
+    if (ff2up){
+jv="1.7";
+}
+    else if (ff15){
+jv="1.6";
+}
+    else if (ff0||ff10||nn6up||op7up){
+jv="1.5";
+}
+    else if ((mac&&ie5up)||op6){
+jv="1.4";
+}
+    else if (ie5up||nn4||op5){
+jv="1.3";
+}
+    else if (ie4){
+jv="1.2";
+}
+    return jv;
+}
+
+function dcsFunc(func){
+if (typeof(window[func])=="function"){
+window[func]();
+}
+}
+
+dcsVar();
+dcsMeta();
+dcsFunc("dcsAdv");
+dcsTag();
+//-->
+</SCRIPT>
+
+<NOSCRIPT>
+<IMG ALT="" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://ssdc.cecity.com/dcsd8ujjjf5sbfzx2j9osgzoc_9w2j/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.2">
+</NOSCRIPT>
+<!-- END OF SmartSource Data Collector  TAG -->    
+
+
+<table width="980" cellspacing="0" cellpadding="0" border="0" align="center">
+<tr>
+<td colspan="3">
+<table width="980" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="/cce_cmez/img/cmez_header.jpg"></td>
+<td align="right" valign="bottom"><img src="/cce_cmez/img/apllied_banner.jpg"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td colspan="3">
+<script language="javascript">
+<!--
+function f_submit_search(){
+  if (document.header_search.v_search_type[document.header_search.v_search_type.selectedIndex].value != '') {
+    document.header_search.submit();
+  }
+}
+//-->
+</script>
+<table width="980" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="background: url('/cce_cmez/img/tabbar_background.gif') repeat-x;" width="475"><script language="javascript">
+function f_swaptab(v_obj, v_src){
+  v_obj.src=v_src;
+}
+function f_show(v_text,v_name){
+  Xoffset = 10; Yoffset = -55;
+  var nav = false;
+  if (navigator.appName=="Netscape"){
+    nav=true;
+  }
+  if (nav == true){
+    null;
+  }else{
+    if (document.images[v_name]){
+    document.images[v_name].alt = "";
+    document.all.tooltip.style.left = event.x+document.body.scrollLeft+Xoffset;
+    document.all.tooltip.style.top = event.y+document.body.scrollTop+Yoffset;
+    document.all.tooltip.innerHTML = '<table border="0" cellpadding="2" cellspacing="0" class="tooltip"><tr><td valign="top">'+v_text+'</td></tr></table>';
+    document.all.tooltip.style.visibility="visible";
+  }
+  }
+}
+function f_hide(){
+  if (navigator.appName=="Netscape"){
+    //alert('Go Away');
+    document.layers["tooltip"].visibility = "hide";
+  }else{
+    document.all.tooltip.style.visibility = "hidden";
+  }
+}
+</script>
+<div id="tooltip" class="Layer" style="position:absolute; z-index:1; visibility:hidden"></div>
+<!--cmez_spotlight//-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!--cmez_spotlight cmez_spotlight 783 //-->
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_specialty_pages.specialty_page_w?v_company_code=CMEZ&cookie=35832641&ip_component_seq=783" onMouseOver="f_swaptab(document.tab0,'/cce_cmez/img/newtabs/tab_1_home.gif');" onMouseOut="f_swaptab(document.tab0,'/cce_cmez/img/newtabs/tab_1_home.gif');"><img alt="" name="tab0" src="/cce_cmez/img/newtabs/tab_1_home.gif" border="0"></a></td>
+<!--cmez_spotlight myaccount 42 //-->
+<td><a href="http://www.cmezone.com/ce-bin/owa/contact_pkg.my_account_w?v_company_code=CMEZ&cookie=35832641" onMouseOver="f_swaptab(document.tab1,'/cce_cmez/img/newtabs/tab_0_myaccount.gif');" onMouseOut="f_swaptab(document.tab1,'/cce_cmez/img/newtabs/tab_0_myaccount.gif');"><img alt="" name="tab1" src="/cce_cmez/img/newtabs/tab_0_myaccount.gif" border="0"></a></td>
+<!--cmez_spotlight cmez_featuredcme 1117 //-->
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_specialty_pages.specialty_page_w?v_company_code=CMEZ&cookie=35832641&ip_component_seq=1117" onMouseOver="f_swaptab(document.tab2,'/cce_cmez/img/newtabs/tab_0_featuredcme.gif');" onMouseOut="f_swaptab(document.tab2,'/cce_cmez/img/newtabs/tab_0_featuredcme.gif');"><img alt="" name="tab2" src="/cce_cmez/img/newtabs/tab_0_featuredcme.gif" border="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td style="background: url('/cce_cmez/img/tabbar_background.gif') repeat-x; padding-top: 6px;" align="right" width="285" valign="top">
+<form name="header_search" action="pkg_spotlight_search.display_search?v_company_code=CMEZ" method="post" style="padding: 0px; margin: 0px;">
+<input type="hidden" name="cookie" value="35832641">
+Search <input class="textfielda" type="text" name="v_keyword" size="14">
+</td>
+<td style="background: url('/cce_cmez/img/tabbar_background.gif') repeat-x; padding-top: 3px; padding-right: 5px; padding-left: 5px;" width="15" valign="top"><a href="javascript:document.header_search.submit()"><img src="/cce_cmez/img/header_gobutton.gif" border="0"></a></td>
+<td style="background: url('/cce_cmez/img/tabbar_background.gif') repeat-x; padding-top: 5px;" width="180" valign="top">
+Search By
+<select name="v_search_type" class="textfielda" onChange="f_submit_search()">
+<option value=""></option>
+<option value="TOPIC">Topic</option>
+<option value="CONDITION_DISEASE_DISORDER">Disease</option>
+<option value="PRODUCT_CATEGORY">Product</option>
+<option value="PROFESSION">Profession</option>
+<option value="CONTENT_SOURCE">Content Source</option>
+<option value="WHATS_NEW">What's New</option>
+<option value="MOST_POPULAR">Most Popular</option>
+<option value="CONTENT_TYPE">Content Type</option>
+</select>
+</form>
+</td>
+<td align="right" valign="top" width="15"><img src="/cce_cmez/img/tabbar_rightside.gif"></td>
+</tr>
+</table>
+</td>
+</tr>
+<td width="170" valign="top" align="left"><br>
+<script language="JavaScript" type="text/JavaScript" src="/cce_cmez/login.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="/cce_cmez/nav.js"></script>
+<table width="158" cellspacing="0" cellpadding="0" style="padding-left: 6px; padding-right: 6px; border-style: solid; border-color: #cccccc; border-width: 1px;">
+<tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td class="navheaderleft">Login</td>
+<td class="navheaderright"><a href="javascript:togglelayer('loginnav')"><img id="loginnavcontrol" src="/ce-img/pixel.gif" border="0"></a>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navcell">
+<div id="loginnav"></div>
+<div id="loginnavhtml" class="htmllayer">
+<script language="javascript">
+<!--
+if ('login' == 'login') {
+  document.write('<form id="login_form" name="login_form" method="post" action="secure.mylogin" style="margin-top:0px;">');
+  document.write('<input type="hidden" name="ip_company_code" value="CMEZ">');
+  document.write('<table width="100%">');
+  document.write('<tr>');
+  document.write('<td>');
+  document.write('Username:<br/><input id="user_id" name="v_user_id" type="text" value="" size="12" class="textfielda"><br />');
+  document.write('Password:<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="50"><input name="v_password" type="password" value="" size="12" class="textfielda"></td>');
+  document.write('<td>&nbsp;<a href="javascript:submitLogin();"><img src="/cce_cmez/img/gobutton.gif" border="0"></a></td></tr></table>');
+  document.write('<input id="remember" name="remember" type="checkbox" value="" class="noline">Remember Me<br/>');
+  document.write('<img src="/cce_cmez/img/navarrow.gif"> <a href="http://www.cmezone.com/ce-bin/owa/pkg_eula.license_options?v_company_code=CMEZ"><span class="navlink">Register Me</span></a><br />');
+  document.write('<img src="/cce_cmez/img/navarrow.gif"> <a href="javascript:;" onClick="window.open(\'pkg_lost_password.show_lost_password_form?cookie=0&i_company_code=CMEZ&i_email_type=FORGOTTEN PASSWORD\', \'Support\', \'toolbar=no,width=740,height=565,left=50,top=50,screenX=500,screenY=200,status=no,scrollbars=no,resize=yes\');" onMouseOver="window.status=\'Forgot Password\'; return true;" onMouseOut="window.status=\'\';" class="sidenavlink"><span class="navlink">Forgot Password</span></a>');
+  document.write('</td>');
+  document.write('</tr>');
+  document.write('</table>');
+  document.write('</form>');
+  checkRememberMe();
+} else if ('login' == 'logout') {
+  document.write('<table width="100%" border="0" cellspacing="0" cellpadding="0">');
+  document.write('<tr>');
+  document.write('<td>');
+  document.write('Welcome, Guest User<br/><br/>');
+  document.write('<a href="secure.logout?ip_company_code=CMEZ" onMouseOver="window.status=\'Logout\'; return true;" onMouseOut="window.status=\'\';" class="sidenavlink"><span class="navlink">Logout</span></a><br/><br/>');
+  document.write('</td>');
+  document.write('</tr>');
+  document.write('</table>');
+}
+//-->
+</script>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navheaderleft">Search by Topic</td>
+<td class="navheaderright"><a href="javascript:togglelayer('topicnav')"><img id="topicnavcontrol" src="/ce-img/pixel.gif" border="0"></a></td>
+</tr>
+<tr>
+<td colspan="2"class="navcell">
+<div id="topicnav"></div>
+<div id="topicnavhtml" class="htmllayer">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=83383"><span class="navlink">Anesthesiology</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=651"><span class="navlink">Cardiology</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=125479"><span class="navlink">Critical Care</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=2251"><span class="navlink">Gastroenterology</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=125451"><span class="navlink">Pharmacy</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=2243"><span class="navlink">Infectious Disease</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=2237"><span class="navlink">Neurology</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=23377"><span class="navlink"> Oncology</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=29091"><span class="navlink">Pain Management</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=125473"><span class="navlink">Primary Care</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=2247"><span class="navlink">Psychiatry</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="http://www.cmezone.com/ce-bin/owa/pkg_explorer_search.prof_select?ip_company_code=CMEZ&cookie=35832641&ip_event_type=&ip_subject=58161"><span class="navlink"> Surgery</span></a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navheaderleft">Links</td>
+<td class="navheaderright"><a href="javascript:togglelayer('linksnav')"><img id="linksnavcontrol" src="/ce-img/pixel.gif" border="0"></a></td>
+</tr>
+<tr>
+<td colspan="2"class="navcell">
+<div id="linksnav"></div>
+<div id="linksnavhtml" class="htmllayer">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/mission_cmez.htm','mission','no','yes',740,380)"><span class="navlink">Mission Statement</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/about_cmezone.htm','about','yes','yes',740,600)"><span class="navlink">About CMEZone.com</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/about_ace.htm','about','yes','yes',740,600)"><span class="navlink">Applied Clinical Education</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/about_mcmahon.htm','about','yes','yes',740,600)"><span class="navlink">McMahon Group</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/about_wwloe.htm','about','yes','yes',740,600)"><span class="navlink">World Wide Learn Online Education</span></a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navheaderleft">Resources</td>
+<td class="navheaderright"><a href="javascript:togglelayer('resourcesnav')"><img id="resourcesnavcontrol" src="/ce-img/pixel.gif" border="0"></a></td>
+</tr>
+<tr>
+<td colspan="2"class="navcell">
+<div id="resourcesnav"></div>
+<div id="resourcesnavhtml" class="htmllayer">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/ce-bin/owa/pkg_support.show_email_form?cookie=35832641&i_company_code=CMEZ','support','no','yes','690','640')"><span class="navlink">Tech Support</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/common_help/index.htm','help','no','yes','750','550')"><span class="navlink">Help</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/invite_cmez.htm','Invite','yes','yes','740','565');"><span class="navlink">Invite a Colleague</span></a></td>
+<tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/partner.htm','partner','yes','yes','800','600')"><span class="navlink">Partner with CMEZone</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://208.40.175.32/cecity/mycecity/region_content/cmez/ce-bin/accreditation_legend.cfm','partner','yes','yes','800','580')"><span class="navlink">Accreditation Legend</span></a></td>
+</tr>
+<tr>
+<td width="12" align="left" valign="top" style="padding-top: 5px;"><img src="/cce_cmez/img/navbullet.gif"></td>
+<td><a href="javascript:openPopup('http://www.cmezone.com/download.htm','partner','yes','yes','810','600')"><span class="navlink">Website and Activity Viewing Requirements</span></a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p align="center">
+<img src="/cce_cmez/img/celogo.gif">
+</p>
+<script language="javascript">
+<!--
+setlayer('loginnav');
+setlayer('topicnav');
+setlayer('linksnav');
+setlayer('resourcesnav');
+//-->
+</script>
+</td>
+<td width="812" valign="top"><!-- display.myads_top start //-->
+
+<!--myads_top begin-->
+<TABLE width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="padding-top:3px;">
+<tr>
+  <td width="33%" align="center" valign="middle">
+    <a NAME="link1" href="javascript:launch('banner1', banner1_link);" onMouseOver="MM_swapImage('banner1','',banner1_rollover,1)" onMouseOut="MM_swapImage('banner1','',banner1_image,1)"><img NAME="banner1" src="/img/spacer.gif" border="0"></a>
+  </td>
+  <td width="33%" align="center" valign="middle">
+    <a NAME="link2" href="javascript:launch('banner2', banner2_link);" onMouseOver="MM_swapImage('banner2','',banner2_rollover,1)" onMouseOut="MM_swapImage('banner2','',banner2_image,1)"><img NAME="banner2" src="/img/spacer.gif" border="0"></a>
+  </td>
+  <td width="33%" align="center" valign="middle">
+    <a NAME="link3" href="javascript:launch('banner3', banner3_link);" onMouseOver="MM_swapImage('banner3','',banner3_rollover,1)" onMouseOut="MM_swapImage('banner3','',banner3_image,1)"><img NAME="banner3" src="/img/spacer.gif" border="0"></a>
+  </td>
+</tr>
+</TABLE>
+<TABLE cellspacing="0" cellpadding="0" border="0">
+<tr>
+  <td><img src="/img/spacer.gif" OnLoad="rotateImage('banner1','link1');rotateImage('banner2','link2');rotateImage('banner3','link3');" width="1" height="1"></td>
+</tr>
+</TABLE>
+<!--myads_top end-->
+
+<!-- display.myads_top end //-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td colspan=""><!-- //--></td></tr></table><!-- TOP HALF OF WORKSPACE FRAME START //-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><script language="javascript">
+<!--
+var v_img = 'Specialty Pages';
+v_img = v_img.replace(/\//g, '');
+v_img = v_img.replace(/ /g, '');
+v_img = v_img + 'subheader.gif';
+v_url = window.location.toString();
+if (v_url.indexOf('my_license_handler') == -1) {
+  document.write('<img src="/cce_cmez/img/' + v_img.toLowerCase() + '">');
+}
+//-->
+</script></td>
+</tr>
+<td>
+<!-- TOP HALF OF WORKSPACE FRAME END //-->
+
+
+<table width="614" border="0" cellspacing="0" cellpadding="0" background="/cce_cmez/img/welcome_background.jpg" height="133">
+  <tr>
+    <td width="300" align="left">
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="268" height="133" id="banner_v4" align="middle">
+  <param name="allowScriptAccess" value="sameDomain" />
+  <param name="movie" value="/banner.swf?xmlPath=&xmlFile=/banner_info.xml&companyCode=CMEZ&componentSeq=666&cookieCode=35832641&bnrEnviroment=ce_bin" />
+  <param name="quality" value="high" />
+  <embed src="/banner.swf?xmlPath=&xmlFile=/banner_info.xml&companyCode=CMEZ&componentSeq=666&cookieCode=35832641&bnrEnviroment=ce_bin" quality="high" width="268" height="133" name="banner_v4" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</td>
+    <td width="300" style="padding-top: 14px;" valign="top"><span style="font-family: Arial; font-size: 12pt; color: #0A447F; font-weight: bold;"><font size =-1><b>Activity Spotlight</b></font></span><span style="font-family: Arial; font-size: 8pt; color: #666666;"><br>
+      <b><font color="red">New Developments in Inguinal Hernia Repair</font></b><br>
+<br><font color="black"><font size="small"> This activity is intended for physicians and other health care professionals.</font>
+<br>
+<b><a href="http://www.cecity.com/ce-bin/owa/eact?a=9507">Click Here to access</a></b></span>
+
+    <td width="14">&nbsp;</td>
+  </tr>
+</table>
+<br />
+<table align="center">
+<tr><td align="center">
+<a href="javascript:openPopup('http://www.cmezone.com/rotating_banner/banner1.html','resource','yes','yes','680','550')">
+<img src="http://www.cmezone.com/rotating_banner/img/banner1.jpg" border="0" WIDTH="550" HEIGHT="150"></a>
+
+<!--
+<a href="javascript:gothere()"><IMG SRC="http://www.cmezone.com/rotating_banner/img/banner2.gif" WIDTH="550" HEIGHT="150" BORDER="0" NAME="bannerad"></a>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Beginning of JavaScript -
+
+if (document.images) {
+ads = new Array(3);
+ads[0] = "http://www.cmezone.com/rotating_banner/img/banner1.jpg";
+ads[1] = "http://www.cmezone.com/rotating_banner/img/banner2.gif";
+ads[2] = "http://www.cmezone.com/rotating_banner/img/banner3.jpg";
+}
+
+newplace = new Array(3);
+newplace[0] = "http://www.cmezone.com/rotating_banner/banner1.html"
+newplace[1] = "http://www.cmezone.com/rotating_banner/banner2.html"
+newplace[2] = "http://www.cmezone.com/rotating_banner/banner3.html"
+
+var timer = null
+var	 counter = 0
+
+function banner() {
+		counter++;
+		if (counter >= 3)
+		counter = 0;
+		document.bannerad.src = ads[counter];
+		 timer=setTimeout("banner()", 12000);
+}
+
+function gothere() {
+		counter2 = counter;
+		window.open(newplace[counter2],'');
+}
+
+banner();
+// - End of JavaScript - -->
+<!--</SCRIPT>
+-->
+
+
+
+</td></tr>
+</table>
+
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_left.gif" width="24" height="23"></td>
+    <td background="/cce_cmez/img/spotlight_border_top.gif">
+<table width="100" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td nowrap><a id="top10_region_link" href="javascript:spotlight_showlayer('top10_region')" style="font-family: Arial; font-size: 12pt; color: #FFFFFF; font-weight: bold; text-decoration: none;">Top 10</a>&nbsp;</td>
+<td width="6"><img src="/cce_cmez/img/spotlight_top_breaker.gif" width="2" height="23"></td>
+<td nowrap>&nbsp;<a id="spotlighton_region_link" href="javascript:spotlight_showlayer('spotlighton_region')" style="font-family: Arial; font-size: 12pt; color: #FFFFFF; font-weight: bold; text-decoration: none;">Coming Soon</a>&nbsp;</td>
+<td width="6"><img src="/cce_cmez/img/spotlight_top_breaker.gif" width="2" height="23"></td>
+<td nowrap>&nbsp;<a id="whatsnew_region_link" href="javascript:spotlight_showlayer('whatsnew_region')" style="font-family: Arial; font-size: 12pt; color: #FFFFFF; font-weight: bold; text-decoration: none;">What's New</a>&nbsp;</td>
+</tr>
+</table></td>
+
+<script language="JavaScript">
+<!--
+function ToggleDetails(ProgramID) {
+	if (document.getElementById(ProgramID).style.display == "none") {
+		document.getElementById(ProgramID).style.display = "block";
+		document.getElementById("DetailsLink"+ProgramID).innerHTML = "Hide Details";
+	}
+	else {
+		document.getElementById(ProgramID).style.display = "none";
+		document.getElementById("DetailsLink"+ProgramID).innerHTML = "Show Details";
+	}
+}
+//-->
+</script>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_right.gif" width="24" height="23"></td>
+  </tr>
+  <tr>
+    <td background="/cce_cmez/img/spotlight_border_left.gif" width="24">&nbsp;</td>
+    <td>
+    <div id="spotlight_region"></div>
+    <div id="spotlighton_region" class="htmllayer">
+     <table style="padding-top:5px;" class="results_border_b" width="100%" cellspacing="0" cellpadding="0" border="0">
+  
+<tr>
+<td class="results_row">
+<table class="results_border_tlr" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="padding-top:8px;padding-bottom:8px;width:43px;" rowspan="6" class="results_label_cell_thmb"><img border="0" src="http://www.cecity.com/img/banners/thumbs/14959_thumbnail.jpg"></td><td nowrap="nowrap" class="results_label_cell_thmb"><span class="results_label_font"><b>Program Title:</b>
+<br>
+</span></td><td class="results_data_cell_thmb"><span class="results_data_font"><b>Chronic Pain In Perspective Recent Evidence and Clinical Implications</b>
+<br>
+</span></td>
+</tr>
+<tr>
+<td align="right" colspan="2"><img src="/cce_cmez/img/search_dots_thmb.gif"></td>
+</tr>
+<tr>
+<td nowrap="nowrap" class="results_label_cell_thmb"><span class="results_label_font">Accreditation:<br>
+</span></td><td class="results_data_cell_thmb"><span class="results_data_font">ACCME<br>
+</span></td>
+</tr>
+<tr>
+<td align="right" colspan="2"><img src="/cce_cmez/img/search_dots_thmb.gif"></td>
+</tr>
+<tr>
+<td colspan="2">
+<div style="display:none;" id="14959">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td nowrap="nowrap" class="results_label_cell_thmb"><span class="results_label_font">Description:<br>
+</span></td><td class="results_data_cell_thmb"><span class="results_data_font">Chronic pain affects approximately 10% to 20% of patients in primary care. Among the most common chronic pain conditions are low back pain, osteoarthritis, fibromyalgia, and diabetic peripheral neuropathic pain. Morbidity in chronic pain is high, including lower quality of life and increased fatigue, and comorbidities are common, including depression, anxiety, and sleep disturbances. The costs to society in lost productivity and increased health care utilization are great. Thorough assessment is needed to determine the best approach to managing a patient with chronic pain, along with careful consideration of pharmacologic and nonpharmacologic treatment options. These tasks have become more complex as the pathophysiology of pain has become better understood, new therapies have become available, and new guidelines have been published. Clinical education is needed to guide clinicians in assessing and managing patients with chronic pain so that therapeutic outcomes are improved.<br>
+</span></td>
+</tr>
+<tr>
+<td colspan="2" align="right"><img src="/cce_cmez/img/search_dots_thmb.gif"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="results_link_cell" colspan="2" align="right"><span class="results_data_font"><a class="search_results_link" href="javascript:void(window.open('pkg_coming_soon.show_email_form?ip_company_code=CMEZ&ip_cookie=35832641&ip_program_id=14959','new','height=200,width=400,scrollbars=no'));"><img border="0" hspace="4" align="absmiddle" src="/ce-img/coming_soon_notification_icon.gif">Notify Me When Available</a></span><span class="results_data_font"> | </span><a class="search_results_link" onClick="ToggleDetails('14959');" href="javascript:;" id="DetailsLink14959">Show Details</a></td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+
+    </div>
+    <div id="whatsnew_region" class="htmllayer">
+	    <table border="0" cellspacing="0" cellpadding="0" width="100%" style="padding-top: 10px; padding-bottom: 3px;">
+<tr>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/15256_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15256&ip_mode=secure" class="right_pane_link">Brain Monitoring of Anesthetic Effect <em>An Evidence-Based Assessment of Clinical Impact and Safe Use</em> (CRNA Version)</a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/15249_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15249&ip_mode=secure" class="right_pane_link">Practical Management of Chronic Pain In Primary Care</a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/15255_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15255&ip_mode=secure" class="right_pane_link">Brain Monitoring of Anesthetic Effect <em>An Evidence-Based Assessment of Clinical Impact and Safe Use</em></a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="right">
+<img src="/ce-img/pixel.gif" width="14" height="1"/>
+<a href="pkg_cfmx_region.view_more_items?ip_company_code=CMEZ&ip_cookie=35832641&ip_region_name=cmez_whats_new_region" style="font-family: Arial; font-size: 10pt; font-weight: bold; color: #F8971B; text-decoration: none;">View More</a>
+</td>
+</tr>
+</table>
+
+    </div>
+    <div id="top10_region" class="htmllayer">
+	    <table border="0" cellspacing="0" cellpadding="0" width="100%" style="padding-top: 10px; padding-bottom: 3px;">
+<tr>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/15084_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15084&ip_mode=secure" class="right_pane_link">Clinical Urine Drug Testing During Opioid Therapy: A Case-Based Approach to Patient Monitoring</a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/14799_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=14799&ip_mode=secure" class="right_pane_link">New Developments in Inguinal Hernia Repair</a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+<td width="33%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding-right:5px; padding-left: 10px;" class="standard_text">
+<img src="http://www.cecity.com/img/banners/thumbs/15130_thumbnail.jpg" border="0"/>
+</td>
+<td align="left" valign="top" width="100%">
+<a href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15130&ip_mode=secure" class="right_pane_link">Advances in ACS Management Tailoring Therapy to Patients</a>
+<br/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="right">
+<img src="/ce-img/pixel.gif" width="14" height="1"/>
+<a href="pkg_cfmx_region.view_more_items?ip_company_code=CMEZ&ip_cookie=35832641&ip_region_name=cmez_top10_region" style="font-family: Arial; font-size: 10pt; font-weight: bold; color: #F8971B; text-decoration: none;">View More</a>
+</td>
+</tr>
+</table>
+
+    </div>
+    </td>
+    <td background="/cce_cmez/img/spotlight_border_right.gif" width="24">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_bottom_left.gif" width="24" height="16"></td>
+    <td background="/cce_cmez/img/spotlight_border_bottom.gif"></td>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_bottom_right.gif" width="24" height="16"></td>
+  </tr>
+</table>
+<script language="javascript">
+<!--
+function spotlight_showlayer(v_obj){
+  document.getElementById('spotlight_region').innerHTML=document.getElementById(v_obj).innerHTML;
+  document.getElementById('top10_region_link').style.color="#FFFFFF";
+  document.getElementById('spotlighton_region_link').style.color="#FFFFFF";
+  document.getElementById('whatsnew_region_link').style.color="#FFFFFF";
+  document.getElementById(v_obj + '_link').style.color="#e2ba00";
+}
+document.getElementById('spotlight_region').innerHTML=document.getElementById('whatsnew_region').innerHTML;
+document.getElementById('whatsnew_region_link').style.color="#e2ba00";
+//-->
+</script>
+<br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_left.gif" width="24" height="23"></td>
+    <td background="/cce_cmez/img/spotlight_border_top.gif"><span style="font-family: Arial; font-size: 12pt; color: #FFFFFF; font-weight: bold; text-decoration: none;">Featured
+      CME/CE Activities</span></td>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_right.gif" width="24" height="23"></td>
+  </tr>
+  <tr>
+    <td background="/cce_cmez/img/spotlight_sh_border_left.gif" width="24">&nbsp;</td>
+    <td bgcolor="#E9E9E9">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top" style="padding-right: 6px;"><br>
+                  <img src="/cce_cmez/img/feat_live_icon.gif" width="35" height="45"> 
+                </td>
+                <td valign="top"> <br>
+                    <span style="font-family: Arial; font-size: 12pt; font-weight: bold; color: #0A447F;">Live CME/CE</span><br><br>
+                              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td/>
+</tr>
+</table>
+
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="50%" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"  style="padding-left: 6px; padding-right: 6px;"><br>
+                  <img src="/cce_cmez/img/feat_online_icon.gif" width="35" height="45"> 
+                </td>
+                <td valign="top"> <br>
+                    <span style="font-family: Arial; font-size: 12pt; font-weight: bold; color: #0A447F;">Multimedia CME/CE</span><br><br>
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td/>
+</tr>
+</table>
+
+                </td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+    </td>
+    <td background="/cce_cmez/img/spotlight_sh_border_right.gif" width="24">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_sh_border_bottom_left.gif" width="24" height="25"></td>
+    <td background="/cce_cmez/img/spotlight_sh_border_bottom.gif"></td>
+    <td width="24" align="right"><img src="/cce_cmez/img/spotlight_sh_border_bottom_right.gif" width="24" height="25"></td>
+  </tr>
+</table>
+<br>
+<!--
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_left.gif" width="24" height="23"></td>
+    <td background="/cce_cmez/img/spotlight_border_top.gif"><span style="font-family: Arial; font-size: 12pt; color: #FFFFFF; font-weight: bold; text-decoration: none;">Featured
+      Specialty Zones</span></td>
+    <td width="24"><img src="/cce_cmez/img/spotlight_border_top_right.gif" width="24" height="23"></td>
+  </tr>
+  <tr>
+    <td background="/cce_cmez/img/spotlight_gr_border_left.gif" width="24">&nbsp;</td>
+    <td bgcolor="#F3F3F3">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3"><span style="font-family: Arial; font-size: 8pt; color: #666666;">Consider CMEZone Specialty Zones a place of your own. One click is all it takes to find a full-range of CME interactive, audio and video educational activities specific to your practice area. Click on your specialty to explore.<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td width="33%"><a href="pkg_specialty_pages.specialty_page_w?v_company_code=CMEZ&cookie=35832641&ip_component_seq=1119"><img src="/cce_cmez/img/gastrozone.jpg" width="187" height="62" border="0"></a></td>
+          <td width="34%"><a href="pkg_specialty_pages.specialty_page_w?v_company_code=CMEZ&cookie=35832641&ip_component_seq=1120"><img src="/cce_cmez/img/painzone.jpg" width="187" height="62" border="0"></a></td>
+          <td width="33%"><a href="pkg_specialty_pages.specialty_page_w?v_company_code=CMEZ&cookie=35832641&ip_component_seq=1121"><img src="/cce_cmez/img/psyzone.jpg" width="187" height="62" border="0"></a></td>
+        </tr>
+      </table>
+      </td>
+    <td background="/cce_cmez/img/spotlight_gr_border_right.gif" width="24">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="24"><img src="/cce_cmez/img/spotlight_gr_border_bottom_left.gif" width="24" height="16"></td>
+    <td background="/cce_cmez/img/spotlight_gr_border_bottom.gif"></td>
+    <td width="24"><img src="/cce_cmez/img/spotlight_gr_border_bottom_right.gif" width="24" height="16"></td>
+  </tr>
+</table>-->
+</td>
+</tr>
+</table>
+<!-- display.myfooter() start //-->
+<!-- display.myfooter() end //-->
+
+</td>
+<td valign="top"><br>
+<!--right-hand side begin (CMEZ)-->
+
+
+    <table width="212" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3"><img src="/cce_cmez/img/didyouknowheader.gif" width="212" height="28"></td>
+        </tr>
+        <tr>
+          <td width="5">&nbsp;</td>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="24" background="/cce_cmez/img/spotlight_border_left.gif"></td>
+                <td><span style="font-family: Arial; color: #999999; font-size: 8pt; padding-bottom: 5px;">You can also search for an activity via the project number.</span>
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td><form name="welcome_search" action="pkg_explorer_search.prof_select?ip_company_code=CMEZ" method="post" style="margin: 0px; padding: 0px">
+          <input type="hidden" name="cookie" value="35832641"><input type="text" size="16" style="font-size: 8pt;" name="ip_keyword">
+          </form><span style="font-family: Arial; color: #999999; font-size: 8pt; padding-bottom: 5px;"><i>Example: SR0605</i></span></td>
+<td><a href="javascript:document.welcome_search.submit()"><img src="/cce_cmez/img/gobutton.gif" border="0"></a></td>
+</tr>
+</table></td>
+                <td width="24" background="/cce_cmez/img/spotlight_border_right.gif">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="24"><img src="/cce_cmez/img/spotlight_border_bottom_left.gif"></td>
+                <td background="/cce_cmez/img/spotlight_border_bottom.gif">&nbsp;</td>
+                <td width="24"><img src="/cce_cmez/img/spotlight_border_bottom_right.gif"></td>
+              </tr>
+            </table>
+          </td>
+          <td width="5">&nbsp;</td>
+        </tr>
+      </table>
+<br>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" width="212">
+            <tr>
+                <td width="6" align="left" background="/cce_cmez/img/rightpane_border_top.gif"><img src="/cce_cmez/img/rightpane_border_top_left.gif" width="6" /></td>
+                <td width="200" background="/cce_cmez/img/rightpane_border_top.gif">
+                <table width="200" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                <td><a id="rightpane_top10_region_link" href="javascript:rightpane_showlayer('rightpane_top10_region')" style="font-family: Arial; font-size: 8pt; color: #FFFFFF; font-weight: bold; text-decoration: none; letter-spacing: 0">Top&nbsp;10<img src="/ce-img/pixel.gif" width="1" border="0"></a></td>
+                <td width="6"><img src="/cce_cmez/img/rightpane_top_breaker.gif" width="2" height="23" /></td>
+                <td><a id="rightpane_spotlighton_region_link" href="javascript:rightpane_showlayer('rightpane_spotlighton_region')" style="font-family: Arial; font-size: 8pt; color: #FFFFFF; font-weight: bold; text-decoration: none; letter-spacing: 0"><img src="/ce-img/pixel.gif" width="1" border="0">Spotlight&nbsp;On<img src="/ce-img/pixel.gif" width="1" border="0"></a></td>
+                <td width="6"><img src="/cce_cmez/img/rightpane_top_breaker.gif" width="2" height="23" /></td>
+                <td><a id="rightpane_whatsnew_region_link" href="javascript:rightpane_showlayer('rightpane_whatsnew_region')" style="font-family: Arial; font-size: 8pt; color: #FFFFFF; font-weight: bold; text-decoration: none; letter-spacing: 0"><img src="/ce-img/pixel.gif" width="1" border="0">What's&nbsp;New</a></td>
+                </tr>
+                </table>
+                </td>
+                <td width="6" align="right" background="/cce_cmez/img/rightpane_border_top.gif"><img src="/cce_cmez/img/rightpane_border_top_right.gif" width="6" /></td>
+                 </tr>
+                 <tr>
+                 <td colspan="3">
+                 <table width="212" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                 <td width="24" background="/cce_cmez/img/spotlight_border_left.gif"></td>
+                 <td width="166">
+<div id="rightpane_region"></div>
+    <div id="rightpane_spotlighton_region" class="htmllayer">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/14959_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=14959&ip_mode=secure">Chronic Pain In Perspective Recent Evidence and Clinical Implications</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME</span></td>
+</tr>
+
+<tr>
+<td colspan="3" align="right"><a class="menu" href="pkg_cfmx_region.view_more_items?ip_company_code=CMEZ&ip_cookie=35832641&ip_region_name=cmez_spotlight_on_region"><img align="absmiddle" border="0" hspace="4" src="/cce_cmez/wrapper/view_all_bullet.gif">View All</a></td>
+</tr>
+</table>
+
+    </div>
+    <div id="rightpane_whatsnew_region" class="htmllayer">
+	    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15256_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15256&ip_mode=secure">Brain Monitoring of Anesthetic Effect <em>An Evidence-Based Assessment of Clinical Impact and Safe Use</em> (CRNA Version)</a>
+<br>
+<br>
+<span class="rightPaneProviders">AANA</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15249_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15249&ip_mode=secure">Practical Management of Chronic Pain In Primary Care</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15255_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15255&ip_mode=secure">Brain Monitoring of Anesthetic Effect <em>An Evidence-Based Assessment of Clinical Impact and Safe Use</em></a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15226_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15226&ip_mode=secure">Fluid Responsiveness Monitoring In Surgical and Critically Ill Patients <em>Clinical Impact of Goal-Directed Therapy</em> (CRNA Version)</a>
+<br>
+<br>
+<span class="rightPaneProviders">AANA</span></td>
+</tr>
+
+<tr>
+<td colspan="3" align="right"><a class="menu" href="pkg_cfmx_region.view_more_items?ip_company_code=CMEZ&ip_cookie=35832641&ip_region_name=cmez_whats_new_region"><img align="absmiddle" border="0" hspace="4" src="/cce_cmez/wrapper/view_all_bullet.gif">View All</a></td>
+</tr>
+</table>
+
+    </div>
+    <div id="rightpane_top10_region" class="htmllayer">
+	    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15084_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15084&ip_mode=secure">Clinical Urine Drug Testing During Opioid Therapy: A Case-Based Approach to Patient Monitoring</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/14799_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=14799&ip_mode=secure">New Developments in Inguinal Hernia Repair</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15130_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15130&ip_mode=secure">Advances in ACS Management Tailoring Therapy to Patients</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME, ACPE</span></td>
+</tr>
+  
+<tr>
+<td class="standard_text" colspan="2"><img height="12" src="/ce-img/pixel.gif"></td>
+</tr>
+<tr>
+<td class="standard_text" style="padding-right:5px;" valign="top"><img border="0" src="http://www.cecity.com/img/banners/thumbs/15198_thumbnail.jpg"></td><td class="standard_text" valign="top"><a class="right_pane_link" href="pkg_disclaimer_html.display?ip_company_code=CMEZ&ip_cookie=35832641&ip_test_id=15198&ip_mode=secure">Intravenous Iron Therapy in Oncology and Other Disease Settings</a>
+<br>
+<br>
+<span class="rightPaneProviders">ACCME, ACPE</span></td>
+</tr>
+
+<tr>
+<td colspan="3" align="right"><a class="menu" href="pkg_cfmx_region.view_more_items?ip_company_code=CMEZ&ip_cookie=35832641&ip_region_name=cmez_top10_region"><img align="absmiddle" border="0" hspace="4" src="/cce_cmez/wrapper/view_all_bullet.gif">View All</a></td>
+</tr>
+</table>
+
+    </div>
+    <td width="24" background="/cce_cmez/img/spotlight_border_right.gif"></td>
+    <tr>
+    <td><img src="/cce_cmez/img/spotlight_border_bottom_left.gif"></td>
+    <td background="/cce_cmez/img/spotlight_border_bottom.gif"></td>
+    <td><img src="/cce_cmez/img/spotlight_border_bottom_right.gif"></td>
+    </table>
+                </td>
+            </tr>
+        </table>
+
+</td>
+</tr>
+</table>
+<script language="javascript">
+<!--
+function rightpane_showlayer(v_obj){
+  document.getElementById('rightpane_region').innerHTML=document.getElementById(v_obj).innerHTML;
+  document.getElementById('rightpane_top10_region_link').style.color="#FFFFFF";
+  document.getElementById('rightpane_spotlighton_region_link').style.color="#FFFFFF";
+  document.getElementById('rightpane_whatsnew_region_link').style.color="#FFFFFF";
+  document.getElementById(v_obj + '_link').style.color="#e2ba00";
+}
+document.getElementById('rightpane_region').innerHTML=document.getElementById('rightpane_top10_region').innerHTML;
+document.getElementById('rightpane_top10_region_link').style.color="#e2ba00";
+//-->
+</script><!--right-hand side end-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><table width="700" border="0" cellspacing="0" cellpadding="0" style="padding-top: 10px;" align="center">
+<tr>
+<!--<td style="padding-left: 10px; padding-right: 5px;" valign="top" width="90"><img src="/cce_cmez/img/celogo.gif"></td>-->
+<td class="copyright" valign="top" align="center">Copyright © 2010 Applied Clinical Education. All Rights Reserved.<br>
+<br>
+For Our Terms of Use and Privacy Policy please review our <a href="javascript:openPopup('http://www.cmezone.com/ce-bin/owa/pkg_eula.license_view?v_company_code=CMEZ&v_path=VIEW','privacy','no','yes','600','560')"><span class="copyright">Legal Agreement</span></a>. Copyright © 2010 CECity.com, Inc.<br>
+All Rights Reserved. CECity® and Centricity<sup>TM</sup> are registered trademarks of CECity.com, Inc.</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<img src="/ce-img/pixel.gif" width="980" height="1">
+</BODY>
+</HTML>

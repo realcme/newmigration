@@ -1,0 +1,45 @@
+/* $Id: style.css,v 1.1 2008-05-12 21:05:43 valerie Exp $ */
+
+/*
+ * This space intentionally left blank.
+ *
+ * See template.php to see how Zen styles are added to the page.
+ */
+
+body { background:#2b4e5b url(img/new_images/slack-bg.jpg) center top !important; }
+#header { margin:0px !important; height:85px; padding:30px 20px 0px 45px; }
+#header img { margin-top:0 !important; }
+#page { width:950px !important; background-color:#FFFFFF !important; }
+#page-main { padding:0 0 0 5px !important; border:none !important; }
+#vindico-footer { clear:both; padding:0 0 10px; }
+#vindico-footer p { margin: 0px; font-size: 0.8em; padding: 0px; line-height: 1.8em; color: #999; text-align:center; }
+#vindico-footer a { color: #002F5D; border-bottom: 1px dotted #808080; padding:0; font-weight:400; }
+#nav-menu { background-color:#5D6164; width:100%; display:block; font-family: Verdana,Arial,Helvetica,sans-serif; font-size:0.95em; margin:0px; padding:0px; height:47px; }
+#nav-menu ul { list-style: none outside none; float: right; margin: 0px; padding: 0px 45px 0px 0px; }
+#nav-menu li.first { float: left; margin: 0px; border-right: 0px none; border-left: 0px none; }
+#nav-menu li { border-left: 1px solid #FFF; padding: 0px; float: left; margin: 0px; }
+#nav-menu li a {
+    height: 1.8em;
+    line-height: 1.8em;
+    float:none;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 3px 15px;
+    border: medium none;
+    font-weight: bold;
+}
+#nav-menu li a:hover { height: 1.8em; line-height: 1.8em; float: left; display: block; text-decoration: none; text-align: center; background-color: #798a84; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; outline: none; }
+#sidebar-right { overflow-x:hidden !important; }
+.sidebar-right #content { width:760px !important; margin-right:-760px !important; }
+#sidebar-right { width:170px !important; margin-left:770px !important; }
+div.listing-tabs { padding:0 !important; }
+.sidebar-right #altcontainer2,
+.sidebar-right #list1 { background:none !important; width:160px !important; }
+.sidebar-right #altcontainer2 { width:160px; }
+#rcmcontent #header { margin:0; padding:0; height:auto; }
+.page-hiv-waiting-room .curric-title { display:none; }
+.page-hiv-waiting-room #intro-text #intro-text-title img { display:none; }
+.page-hiv-waiting-room .activity-info { display:none; }
+.page-hiv-waiting-room .activity-title { height:auto !important; }

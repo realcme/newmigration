@@ -1,0 +1,107 @@
+#header {
+/*background: #0e2b89; /*#153386
+height: 100px;
+width:960px;
+border-top-left-radius: 10px;
+border-top-right-radius:10px;	
+background: url('../img/head2.jpg') repeat;
+*/
+background-color: white;
+}
+
+#headerwrap{
+	background: #fff;
+	height: 130px;
+}
+#logo_text{
+	padding-left:33px;
+	color: #0354a3;
+	font-weight:bold;
+}
+
+#qm0 a:hover{
+	background-color:#cccccc;
+	background-image: url('img/mainmenu.gif');
+	background-repeat:repeat-x;
+	color:#a25551;
+	text-decoration:none;
+}
+
+#qm0 li:hover a{
+	text-decoration:none;
+}
+
+#header-inner {
+	display: inline;
+}
+
+#logojh{
+	background: url('../img/jhlogo2.jpg') no-repeat;
+	height:116px;
+	width: 142px;
+	margin-left:10px;*/
+}
+
+#textjh {
+	float: left;
+	margin-left: 160px;
+	margin-top: 50px;
+	color: #0354a3;
+	font-weight:bold;
+}
+
+#menubar{
+background: url('../img/mainmenu.gif') repeat-x;
+	height:35px;
+	width:960px;
+	color: white;
+	border-top: thin solid white;
+}
+
+#menubar ul{
+	display: inline;
+	list-style-type: none;
+}
+
+table.mainmenubg
+{
+	margin: 0px;
+border:none;
+padding: 0px;
+background: url('../img/mainmenu.gif') repeat-x top center;
+}
+
+#menuwrap{
+	padding-top:0px;
+	margin:auto auto;
+	width:60%;
+	height:100%;
+}
+#menubar ul li{
+	line-height:100%;
+	font-family: Arial;
+	font-size: 1.0em;
+	font-weight: bold;
+	display: inline;
+	padding: 5px 15px 5px 0px;
+}
+
+#menubar ul li a{
+	
+	height:35px;
+}
+
+#menubar ul li a:link{
+	color:white;
+	height:100%;
+
+}
+
+#menubar ul li a:visited{
+	color:white;
+}
+#menubar ul li a:hover{
+	background-color: white;
+	color: #A25551;
+	height:100%;
+}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.node-type-activity_group .title {
+	display: none;	
+}
+
+#intro-text { 
+	font-family: Arial, verdana, sans-serif; 
+	margin-bottom: 15px; 
+}
+
+#intro-text-title { 
+	margin-bottom: 10px; 
+}
+
+.curric-logo { 
+	float: left; padding-right: 5px; 
+}
+
+.curric-title { 
+	color: #faaf40; 
+	font-size: 22px; 
+	font-weight: bold; 
+	clear: right; 
+	padding-top: 10px;
+}
+
+.bold { font-weight: bold; }
+.next-steps-related { padding-top: 5px; height: 48px; float: right; padding-right: 20px }
+.next-steps-icon { width: 29px; height: 29px; float: left; }
+.schedule-activity { font-size: 11px; width: 100px; float: left; padding-top: 7px; }
+.proceed-activity { font-size: 11px; float: left; padding-top: 7px; }
+.next-steps-divider { background-color: transparent; background-repeat: no-repeat; text-align: center; width: 1px; height: 29px; float: left; }
+.promo-link { }
+.promo-link a:link
+  {
+  color: #2c2a75; font-weight: bold; text-decoration: none;
+  }
+.promo-link a:visited
+  {
+  color: #2c2a75; font-weight: bold; text-decoration: none;
+  }
+.promo-link a:hover, .promo-link a:focus
+  {
+  color: #7660ad; font-weight: bold; text-decoration: none;
+  }
+.promo-link a:active
+  {
+  color: #7660ad;
+  }
+#related-activities { width: 100%; font-family: Arial,verdana,sans-serif; }
+.related-activities-title { color: #000; font-size: 15px; font-weight: bold; width: 100%; float: left; margin-top: 30px; margin-bottom: 22px; }
+.related-activities-left { width: 45%; float: left; padding-bottom: 15px;}
+.related-activities-right { width: 45%; float: right; padding-bottom: 15px;}
+.related-patient-bg { background-color: transparent; background-repeat: no-repeat; width: 48px; height: 52px; float: left; margin-right: 9px; padding: 6px 6px 6px; }
+.activity-subject { margin-bottom: 5px; margin-left: 68px;}
+.activity-title { font-size: 14px; height: 35px; overflow: hidden;}
+.certified-icon { background-color: transparent; background-repeat: no-repeat; width: 17px; height: 19px; float: left; }
+.faculty-leader, .credit { color: #333; font-size: 10px;  margin-top: 2px; }
+.activity-info { color: #333; font-size: 11px; line-height: 1.2em; float: left; clear: left; height: 28px; overflow: hidden; width: 100%;}
+
+
+.curriculum-record  {
+	position: relative;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	padding: 10px 10px 5px 10px;
+	border-radius: 14px;
+}
+
+.curriculum-record.completed {
+   background-color: #F2F2F2;
+}
+
+.curriculum-record.open {
+   background-color: #FFFFFF;
+}
+
+
+.curriculum-record-icon {
+  float: left;
+}
+
+.curriculum-record-info {
+  float: left;
+  padding-left: 10px;
+}
+
+.curriculum-record-title {
+	padding-top: 5px;
+	padding-left: 55px;
+  font-weight: bold;
+}
+
+.curriculum-record-perf {
+	font-size: 11px;
+}
+
+.curriculum-record-status {
+  font-size: 11px;
+}
+
+.curriculum-record-goto {
+}
+
+.curriculum-record-cert {
+  font-size: 11px;
+}
+
+.curriculum-record-pdf {
+}
+
+
+.curriculum-record-lo {
+  padding-left: 15px;
+  clear: left;
+}
+
+.curriculum-record-btn {
+  padding: 3px;
+  background-repeat: repeat-x;
+  color: #FFFFFF;
+  font-weight: normal;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #C0C0C0;
+  background-image: -moz-linear-gradient(center top, #D0D0D0, #A0A0A0);
+  border-color: #A0A0A0 #A0A0A0 #888888;
+  border-image: none;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px
+    rgba(0, 0, 0, 0.05);
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.curriculum-record-cert {
+	right: 115px;
+}
+
+.curriculum-record-btn a,.curriculum-record-btn a:link {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.curriculum-record-btn:hover {
+  background-color: #787878;
+  background-position: 0 -15px;
+  color: #333333;
+  text-decoration: none;
+  transition: background-position 0.1s linear 0s;
+}
+
+.curriculum-record-btn:focus {
+  outline: thin dotted #333333;
+  outline-offset: -2px;
+}
+

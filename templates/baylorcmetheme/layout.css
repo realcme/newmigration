@@ -1,0 +1,147 @@
+/* $Id: layout.css,v 1.2 2010-07-14 15:54:52 psantini Exp $ */
+
+/*
+ * LAYOUT STYLES
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Border Politics Layout Method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/** body **/
+  body
+  {
+    margin: 0;
+    padding: 10px;
+  	background-color: #01236A;
+    margin-top: 30px;
+  }
+
+  #page
+  {
+    /*
+     * If you want to make the page a fixed width and centered in the viewport,
+     * this is the standards-compliant way to do that. See also the ie.css file
+     * for the necessary IE5 hack to center a div.
+     */
+    width: 1000px; margin: auto; }
+
+  #page-inner
+  {
+  }
+
+
+/** header **/
+  #header
+  {
+		margin: 0;
+  }
+
+  #header-inner
+  {
+  }
+
+  #logo-title
+  {
+  }
+
+  #logo
+  {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  h1#site-name, div#site-name
+  {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+
+  #site-slogan
+  {
+  }
+
+  #header-blocks
+  {
+    clear: both; /* Clear the logo */
+  }
+
+/** main (container for everything else) **/
+  #main
+  {
+    position: relative;
+  }
+
+  #main-inner
+  {
+		margin: 0 10px;
+  }
+
+/** content **/
+
+  .sidebar-right #content
+  {
+    width: 760px;
+    margin-left: 0;
+    margin-right: 0; /* Negative value of #content's width + left margin. */
+		float: left;
+  }
+
+
+  #content-inner
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+
+/** sidebar-right **/
+  #sidebar-right
+  { float: left; width: 200px; margin-left: 0px; /* Width of content + sidebar-left. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+  }
+
+  #sidebar-right-inner
+  {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+/** footer **/
+  #footer
+  {
+  }
+
+  #footer-inner
+  {
+  }
+
+  #closure-blocks
+  {
+  }
+
+/** Prevent overflowing content **/
+  #header,
+  #content,
+  #navbar,
+  #sidebar-left,
+  #sidebar-right,
+  #footer,
+  #closure-blocks
+  {
+    overflow: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+

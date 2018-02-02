@@ -1,0 +1,1 @@
+1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 <!-- <!-- The footer was extracted by Jon Toshmatov --> The footer was extracted by Jon Toshmatov --> <!-- The footer was extracted by Jon Toshmatov --> <?php global $user, $cmedomain; $subtheme = path_to_subtheme(); $img_path = base_path() . $subtheme; $subtheme = basename($subtheme);

@@ -1,0 +1,542 @@
+
+.view-header-listing-all h1 { font-family: Arial,verdana,sans-serif; font-size: 15px; font-color: #000000; padding-left: 0px; }
+
+.view-content-listing-all table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; margin: 0; width: 100%}
+.view-content-listing-all thead { display: none }
+.view-content-listing-all tbody { border-style: none; }
+.view-content-listing-all table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-all table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-all .listingtopic  { color: #666; background-color: #e7e7e7; border: 1px solid #B3B3B3; font-weight: bold}
+.view-content-listing-all .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-listing-all .view-field-term-node-1-name { display: none }
+.view-content-listing-all .view-field-node-data-field-active-begin-date-field-active-begin-date-value { display: none }
+.view-content-listing-all .view-field-term-node-3-name { display: none }
+.view-content-listing-all .view-field-node-data-field-faculty-field-faculty-value { display: none }
+.view-content-listing-all .view-field-node-data-field-patient-statement-field-patient-statement-value { display: none }
+.view-content-listing-all .view-field-node-data-field-course-desc-field-course-desc-value { display: none }
+.view-content-listing-all .view-field-node-data-field-activity-group-field-activity-group-nid { display: none }
+.view-content-listing-all .view-field-content-type-activity-group-field-group-name-value { display: none }
+.view-content-listing-all .related-activities { display: none }
+
+.view-content-listing-archived table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; margin: 0; width: 100%}
+.view-content-listing-archived thead { display: none }
+.view-content-listing-archived tbody { border-style: none; }
+.view-content-listing-archived table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-archived table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-archived .listingtopic  { color: #666; background-color: #e7e7e7; border: 1px solid #B3B3B3; font-weight: bold}
+.view-content-listing-archived .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-listing-archived .view-field-term-node-1-name { display: none }
+.view-content-listing-archived .view-field-node-data-field-active-begin-date-field-active-begin-date-value { display: none }
+.view-content-listing-archived .view-field-term-node-3-name { display: none }
+.view-content-listing-archived .view-field-node-data-field-faculty-field-faculty-value { display: none }
+.view-content-listing-archived .view-field-node-data-field-patient-statement-field-patient-statement-value { display: none }
+.view-content-listing-archived .view-field-node-data-field-course-desc-field-course-desc-value { display: none }
+.view-content-listing-archived .view-field-node-data-field-activity-group-field-activity-group-nid { display: none }
+.view-content-listing-archived .view-field-content-type-activity-group-field-group-name-value { display: none }
+
+.listing-featured-table table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; margin: 0; width: 100%}
+.listing-featured-table thead { display: none }
+.listing-featured-table tbody { border-style: none; }
+.listing-featured-table table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.listing-featured-table table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.listing-featured-table .view-field-term-node-1-name { display: none }
+.listing-featured-table .view-field-node-data-field-active-begin-date-field-active-begin-date-value { display: none }
+.listing-featured-table .view-field-term-node-3-name { display: none }
+.listing-featured-table .view-field-node-data-field-faculty-field-faculty-value { display: none }
+.listing-featured-table .view-field-node-data-field-patient-statement-field-patient-statement-value { display: none }
+.listing-featured-table .view-field-node-data-field-course-desc-field-course-desc-value { display: none }
+.listing-featured-table .view-field-node-data-field-activity-group-field-activity-group-nid { display: none }
+.listing-featured-table .view-field-content-type-activity-group-field-group-name-value { display: none }
+.listing-featured-table .related-activities { display: none }
+.listing-featured-table .curleft {font-style: italic}
+.listing-featured-table .curright {font-style: italic}
+
+.view-content-listing-curriculum table { background-color:#f6f6f6; border-color: #ccc; border-style: solid; border-width: 1px 1px 2px; margin: 0; width: 100% }
+.view-content-listing-curriculum thead { display: none }
+.view-content-listing-curriculum tbody { border-style: none; }
+.view-content-listing-curriculum table tr.odd { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-curriculum table tr.even { background-color: transparent; padding-top: 2px; padding-bottom: 2px; padding-left: 2px; border-style: none; }
+.view-content-listing-curriculum .listingtopic  { color: #666; background-color: #e7e7e7; border: 1px solid #B3B3B3; font-weight: bold}
+.view-content-listing-curriculum .listingcurriculum  { color: #666; background-color: #e7e7e7; border: 1px solid #B3B3B3;}
+.view-content-listing-curriculum .view-field-node-data-field-series-field-series-value { display: none }
+.view-content-listing-curriculum .view-field-term-node-1-name { display: none }
+.view-content-listing-curriculum .view-field-node-data-field-active-begin-date-field-active-begin-date-value { display: none }
+.view-content-listing-curriculum .view-field-term-node-3-name { display: none }
+.view-content-listing-curriculum .view-field-node-data-field-faculty-field-faculty-value { display: none }
+.view-content-listing-curriculum .view-field-node-data-field-patient-statement-field-patient-statement-value { display: none }
+.view-content-listing-curriculum .view-field-node-data-field-course-desc-field-course-desc-value { display: none }
+.view-content-listing-curriculum .view-field-node-data-field-activity-group-field-activity-group-nid { display: none }
+.view-content-listing-curriculum .view-field-content-type-activity-group-field-group-name-value { display: none }
+.view-content-listing-curriculum .view-field-content-type-activity-group-field-group-type-value { display: none }
+.view-content-listing-curriculum .related-activities { display: none }
+
+.view-listing-all .form-item  { float: left; }
+.view-listing-all thead {display: none;}
+.view-listing-curriculum .form-item  { float: left; }
+.view-listing-curriculum thead {display: none;}
+.view-listing-archived .form-item  { float: left; }
+.view-listing-archived thead {display: none;}
+.listing-featured .form-item  { float: left; }
+.listing-featured thead {display: none;}
+
+.listing-tabs {background-color: #EEEEEE;}
+.listing-tabs tbody {background-color: #CCCCCC}
+.listing-tabs table td {background-color: transparent; margin: 0; padding: 0; border: none}
+.listing-tab-group {float: left; }
+.listing-tab {float: left; width: 100px; text-align: center; background-color: transparent;}
+.listing-tab-selected {float: left; width: 100px; text-align: center; background-color: #000000;}
+.listing-tabs a {color: #FFFFFF; font-weight: bold;}
+.listing-tabs a:active {color: #FFFFFF; font-weight: bold;}
+.listing-tabs a:visited {color: #FFFFFF; font-weight: bold;}
+.listing-tabs .form-item input { width: 150px; }
+
+td.view-field-node-data-field-credit-expire-field-credit-expire-value {
+	white-space: nowrap;
+}
+
+div.popover {
+  position: fixed;
+  visibility: hidden;
+  height: 280px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+div.popmain {
+  position: relative;
+  left: 0;
+  top: -56px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div.top {
+  width: 300px;
+  padding: 30px 30px 0 30px;
+  background: transparent url("images/popover.png") no-repeat 0 0;
+  border: none;
+}
+div.bottom {
+  width: 300px;
+  padding: 0 30px 10px 30px;
+  background: transparent url("images/popover.png") no-repeat 0 -80px;
+  border: none;
+}
+div.bottom table {
+  border-top: 2px solid #CCC;
+  background: #EEF;
+  width: 100%;
+}
+div.bottom table tr.sep {
+  border-top: 1px solid #CCC;
+}
+
+div.arrows {
+  position: relative;
+  left: -26px;
+  height: 68px;
+  width: 46px;
+  background: transparent url("images/arrows.png") no-repeat;
+  z-index: 99;
+}
+div.arrows.set-lo {
+  background-position: 0 -80px;
+}
+div.arrows.set-hi {
+  background-position: 0 -130px;
+}
+div.arrows.flip-x {
+  background-position: -47px 0;
+  left: 337px;
+}
+div.arrows.flip-x.set-lo {
+  background-position: -47px -80px;
+}
+div.arrows.flip-x.set-hi {
+  background-position: -47px -130px;
+}
+
+div.popmain table  {
+  margin: 0;
+  padding: 0;
+  font-size: 8pt;
+  line-height: 1.0em;
+}
+div.popmain td {
+  padding: 3px 4px;
+  vertical-align: top;
+}
+div.popmain td.label {
+  font-weight: bold;
+  text-align: right;
+}
+div.popmain td.image {
+  vertical-align: center;
+  text-align: center;
+}
+div.popmain td.image img {
+  border: 8px solid #EEE;
+}
+div.popmain div.title {
+  font-weight: bold;
+  font-size: 9pt;
+}
+div.popmain td.group {
+  font-weight: bold;
+}
+
+div.popmain div.spec {
+  background: transparent url("images/CME-certified.gif") no-repeat 0 0;
+  padding: 4px 0 0 18px;
+  font-weight: normal;
+  font-size: 7pt;
+}
+div.popmain div.stmt {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 8pt;
+  padding-bottom: 4px;
+}
+
+
+div.listing-tabs {
+	background-color: #EEE;
+	white-space: nowrap;
+	padding: 0 8px;
+  border: 1px solid #CCC;
+}
+div.listing-tab {
+	float: left;
+	width: 128px;
+	line-height: 40px;
+	text-align: center;
+  border: 1px solid #CCC;
+  border-right: none;
+  background-color: #AAA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#777));
+  background: -moz-linear-gradient(top, #EEE, #777);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#777777);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#777777)";
+}
+div.listing-tab:hover {
+	background-color: #999;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#555));
+  background: -moz-linear-gradient(top, #EEE, #555);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#555555);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#555555)";
+}
+
+div.listing-tab.selected {
+  background-color: #888;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDD), to(#000));
+  background: -moz-linear-gradient(top, #DDD, #000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDDDDD, endColorstr=#000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDDDDD, endColorstr=#000000)";
+}
+div.listing-tabs div.form-item {
+	float: left;
+	text-align: center;
+  line-height: 2em;
+  height: 40px;
+  margin: 0;
+  padding: 0 12px;
+  height: 22px;
+  border: 1px inset #AAA;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  background: white;
+}
+div.listing-tabs div.form-item input[type=text] {
+	border: 0;
+	margin-right: 6px;
+}
+div.listing-tabs table tr {
+  background: #EEE;
+  border: none;
+}
+div.listing-tabs #edit-submit {
+	background: transparent url("images/magnifying_glass.png") no-repeat center bottom;
+	border: none;
+	margin: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+div.listing-tab-group {
+	background: transparent;
+}
+div.listing-tab-group div.listing-filter {
+	float: left;
+	padding: 8px 12px;
+  border: 1px solid #DDD;
+  background-color: #AAA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#777));
+  background: -moz-linear-gradient(top, #EEE, #777);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#777777);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#EEEEEE, endColorstr=#777777)";
+}
+div.listing-tab-group a, div.listing-tab-group a:visited {
+	color: #FFF;
+	text-shadow: -1px -1px #666;
+}
+
+div.listing-tab-group div.listing-tab {
+	margin-right: 0px;
+}
+div.listing-tab-group div.listing-tab.first {
+  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+}
+div.listing-tab-group div.listing-filter.last {
+  border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+}
+
+div.view-content-listing-all #edit-submit,
+div.view-content-listing-archived #edit-submit,
+div.view-content-listing-curriculum #edit-submit {
+	display: none;
+}
+
+div.view-content-listing-curriculum > table { width: 100%; }
+div.view-content-listing-curriculum > table tr { display: none; }
+div.view-content-listing-curriculum > table tr.hid { display: none !important; }
+div.view-content-listing-curriculum > table td.listingtopic { cursor: pointer; }
+div.view-content-listing-curriculum > table td.listingtopic span.plus { display: none; }
+div.view-content-listing-curriculum > table td.listingcurriculum { cursor: pointer; color: #2C2A75;}
+div.view-content-listing-curriculum > table td.listingcurriculum span.indent { display: inline-block; width: 20px; }
+div.view-content-listing-curriculum > table td.listingcurriculum span.minus { display: none; }
+
+div.view-content-listing-all > table { width: 100%; }
+div.view-content-listing-all > table td.listingtopic { cursor: pointer; }
+div.view-content-listing-all > table td.listingtopic span.plus { display: none; }
+
+div.view-content-listing-archived > table { width: 100%; }
+div.view-content-listing-archived > table td.listingtopic { cursor: pointer; }
+div.view-content-listing-archived > table td.listingtopic span.plus { display: none; }
+
+div.popmain a,
+div.listing-featured-table a,
+div.view-content-listing-all a,
+div.view-content-listing-archived a,
+div.view-content-listing-curriculum a { color: #2C2A75; }
+
+div.popmain a:hover,
+div.listing-featured-table a:hover,
+div.view-content-listing-all a:hover,
+div.view-content-listing-archived a:hover,
+div.view-content-listing-curriculum a:hover { color: #7660AD; }
+
+.view-field-node-data-field-icon-field-icon-fid img {width: 43px; height: 43px}
+
+#enroll-form {width: 60%;background-color: #EEEEEE; padding: 10px 0px; margin: 10px 0px;}
+#cmepicme-enrollmentform .form-item label {display: inline;}
+#cmepicme-enrollmentform legend {font-weight: bold; font-size: 14px}
+#enroll-btn {width: 50px; margin: auto}
+#reassess-form {width: 500px; float: right;text-align:right;margin:10px 10px;padding-right:5px}
+.picme-intro {margin-top: 20px; }
+.picme-intro-title {font-weight: bold}
+
+#blockcmesuggest {
+	margin-top: 10px;
+	width: 100px;
+}
+#blockcmesuggest_load {
+  background-color: transparent;
+  background-image: url(images/ajax-loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  margin-top: 5px;
+  text-align: right;
+  clear: both;
+  width: 60px;
+  height: 50px;
+}
+#cmelearningmodel-model-edit-form fieldset {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+}
+#cmelearningmodel-model-edit-form table {
+  border-width: 1px;
+  border-spacing: 2px;
+  border-color: #CCCCCC;
+  border-style: solid;
+
+}
+#cmelearningmodel-model-edit-form #tier2 tr {
+  border-width: 1px;
+  border-spacing: 2px;
+  border-color: #CCCCCC;
+  border-style: solid;
+
+}
+#cmelearningmodel-model-edit-form td {
+	vertical-align: top;
+  border-width: 0px;
+  padding: 2px 5px;
+  border-color: gray;
+  -moz-border-radius: 0px 0px 0px 0px;
+}
+
+.fmbutton {
+	background: rgb(242,245,246); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: 10px;
+  -moz-box-shadow: inset -2px -2px 10px #333;
+  -webkit-box-shadow:inset -2px -2px 10px #333;;
+  box-shadow:inset -2px -2px 10px #333;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin: 2px 5px;
+  float: right;
+  color:  #666666;
+}
+.fmbutton a:link, .fmbutton a:visited {
+	color:   #666666;
+}
+#btn-proceed-top #scheduledate, #btn-proceed-bottom #scheduledate {
+	float: right;
+	font-weight: bold;
+  padding-top: 10px;
+}
+
+.fmbuttonadmin {
+  background: #003962; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #82CAFF 0%, #003962 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#82CAFF), color-stop(100%,#003962)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #82CAFF 0%,#003962 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #82CAFF 0%,#003962 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #82CAFF 0%,#003962 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #82CAFF 0%, #003962 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 10px;
+  -moz-box-shadow: inset -2px -2px 10px #333;
+  -webkit-box-shadow:inset -2px -2px 10px #333;;
+  box-shadow:inset -2px -2px 10px #333;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 10px;
+  margin: 2px 5px;
+  float: right;
+  color:  #FFFFFF;
+}
+.fmbuttonadmin a:link, .fmbuttonadmin a:visited {
+  color: #FFFFFF;
+}
+
+div.reassess-btn-proceed {
+}
+
+div.reassess-btn-proceed input {
+  background: transparent url("images/btn-proceed-picme.gif") no-repeat 0 0;
+  border: none;
+  padding: 0 0 0 30px !important;
+  font-weight: bold;
+  color: #4281a9;
+  font-family: verdana,​sans-serif;
+  font-size: 12px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.reflections {
+  width: 300px;
+}
+.reflections.collapsed {
+  width: 43px;
+  height: 30px;
+  padding: 10px 1px 10px 12px;
+  z-index: 0;
+}
+.postit {
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+  background: #eae672;
+  color: black;
+}
+.reflections .teaser {font-size: 10px; font-weight: bold;}
+.reflections .text {color: black;}
+.reflections .header {font-weight: bold;}
+div.reflections .date {display: inline}
+div.reflections .title {display: inline}
+div.reflections .text {clear:left;font-style: italic; margin-bottom:2px}
+#coursedata {
+	position: relative;
+}
+#coursedata table tr {
+	line-height: 1.22em !important;
+}
+#coursedata table td.td-title {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: text-top;
+}
+#coursedata table td h2 {
+	margin: 0px;
+}
+#coursedata .reflections {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+#curricdata .reflections {
+	float:left;
+	width: 90%;
+}
+#curricdata .reflections.collapsed {
+  width: 43px;
+}
+#coursetitle {position:relative; background-color: #fcfcfc; border: 1px solid #ccc;font-size: 90%;margin: 5px 10px 5px 2px;}
+#coursetitle div.info {float: left;}
+#coursetitle div.info table tr td {vertical-align: top; border:none;}
+#coursetitle div.info table tr td.bold {font-weight: bold; text-align: right;}
+#coursetitle div.info table tr:nth-child(1) td {vertical-align: middle;}
+
+.activity-title-display {display:table;}
+
+em strong {
+	font-weight: bold;
+	font-style: italic;
+}
+
+strong em {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.oauth.linkedin{
+	display:none !important;
+}
+
+div#sidebar-right{
+  	/*position: absolute;
+  	top: 0px;
+  	right: 10px;*/
+}
+
+div#content{
+  	margin-bottom:40px;
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a.accel{	
+	background:url("./img/ACCELMED_header.jpg") no-repeat scroll 0 0 transparent;
+	display:block;
+	border-bottom:medium #000;
+	padding-top:150px;
+	border-bottom: medium #000 solid;
+	margin-top:20px;
+}
+
+#main{
+border:4px solid #D8D4D2;
+padding:10px;
+}
+
+body{
+	background:url(img/head-tile.png) repeat-x scroll 0 0;
+}
+
+#accel-footer{
+	font-size:10px;
+	margin:0 0 8px;
+	margin-bottom:4px;
+	padding:0px 15px 0 27px;
+	font-family: normal Arial, Helvetica, Verdana, sans-serif;
+	color: white;
+	background-color:#332A85;
+
+}

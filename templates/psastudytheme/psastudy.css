@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #408ed0 url(./img/bg_body.gif);
+}
+#page {
+	width: 960px;
+	border: 1px solid black;	
+}
+
+#content-inner{
+	margin: 10px;
+}
+
+#footer {
+	padding: 0px;	
+	margin-bottom: 10px;
+}
+
+#schedule {
+	display: none;
+}
+
+
+
+/**
+	* nav code css stolen from alist apart
+	* used for global nav at top of page
+	* http://www.alistapart.com/articles/taminglists/
+	.navButtonActive{background: white; border-right: 1px solid #666; 	font-size: 11px;}
+	.navButton{border-right: 1px solid black; 	font-size: 11px;}
+	*/
+
+/* GLOBAL NAVIGATION */
+	
+
+	#globalNavigation { 
+		background: url(./img/bg_navigation.gif) repeat-x top left;
+		height: 17px;
+		border-top: 1px solid #666; 
+		border-bottom: 1px solid #666;
+		}
+
+	#globalNavigation  ul {
+		margin: auto;
+		padding-left: 0; 
+		display: inline;
+	} 
+
+	#globalNavigation  ul li {
+		background: url(./img/bg_navigation.gif) repeat-x top left;
+		height: 15px;
+		list-style: none;
+		float:left;
+		border-right: 1px solid black;
+		background-color: #e6e6dc; 
+		/* width: 100px; /* min-width does not work on IE... */ 
+		font-size: 11px;
+		font-weight: bold;
+		text-align:center;
+		padding: 1px 10px;
+	}
+	
+	#globalNavigation a{
+		text-decoration:none; 
+		color: #666666;
+	}
+
+	#globalNavigation a:hover{
+		text-decoration:none; 
+		color: #041E74;
+	} 
+	
+	#globalNavigation .current{		
+		background-image: none;
+		background-color:#FFF0E6;
+
+	}
+
+/* END GLOBAL NAVIGATION */

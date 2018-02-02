@@ -1,0 +1,54 @@
+div.blockcmemobile {
+  width: 140px;
+  height: 80px;
+  padding: 15px 0px 0px 65px;
+  vertical-align: middle;
+}
+
+div.navaccount {
+  background-image: url('../img/nav_account.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+div.navactivities {
+  background-image: url('../img/nav_activities.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+div.navmastery {
+  background-image: url('../img/nav_mastery.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+div.navtracker {
+  background-image: url('../img/nav_tracker.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+div.navlogout {
+  background-image: url('../img/nav_logout.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+div.navlogin {
+  background-image: url('../img/nav_login.png');
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+
+/*
+.blockactivityreview-frontmatter {border: 1px solid #C0C0C0; width: 100%; margin-top: 10px; margin-left: 6px; padding: 2px; height: 25px}
+.blockactivityreview-inactivity {border: 1px solid #C0C0C0; width: 100%%; margin-top: 10px; margin-left: 6px; padding: 2px; height: 55px}
+#blockactivityreview .reviewheader{width: 100%; clear: both;height: 20px;}
+#blockactivityreview .reviewtitle {font-weight: bold; font-weight: bold; font-size:11px;color:black;float:left}
+#blockactivityreview .back {float: right; }
+#blockactivityreview .editbrandings {float: right;padding-right: 20px}
+#blockactivityreview .label {margin-bottom: 0px;}
+#blockactivityreview a:link {color: #D0660A; font-weight: bold; text-decoration: none; font-size:12px}
+#blockactivityreview a:active {color: #D0660A;}
+#blockactivityreview a:visited {color: #D0660A;}
+#blockactivityreview #reset {padding-top: 0px;padding-bottom: 0px;}
+#blockactivityreview .profession {padding-top: 5px;width:100%}
+#blockactivityreview .profession div {float: left !important;}
+#blockactivityreview .profession .label {padding-top: 5px}
+*/

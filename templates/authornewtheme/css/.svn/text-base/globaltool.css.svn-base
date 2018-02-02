@@ -1,0 +1,797 @@
+@CHARSET "ISO-8859-1";
+
+
+html, body { margin: 0; padding: 0; }
+body { background-color:#fff; position: relative; }
+.with-navbar #content,
+  .with-navbar #sidebar-left,
+  .with-navbar #sidebar-right
+  { margin: 0 !important; padding: 0 !important; }
+.hidefield {
+  display: none;
+ }
+
+body.section-globaltool, body.section-globaltool #page  { background: white !important; }
+
+/*FCK Editor */
+.textarea-identifier, .fckeditor { display: none; }
+.fck-div { position: relative; font-family: Raleway, Arial, Verdana; border: 2px groove #f0f0f0; border-top: 2px solid white; border-left: 2px ridge #f0f0f0; margin: 0 0 3px 0; background: white; overflow: hidden; }
+.fck-div-div { overflow: auto; cursor: text; line-height: 1.2em; }
+.fck-div-div ul { display: block !important; list-style: disc outside none !important; margin: 0; -moz-padding-start: 30px !important; }
+.fck-div-div ul li { list-style: disc outside none !important; }
+.fck-div-div ol { display: block !important; list-style: decimal outside none !important; margin: 0; -moz-padding-start: 30px !important; }
+.fck-div-div ol li { list-style: decimal outside none !important; }
+.fck-div.red { border: 1px solid red; }
+.fck-tooltip { display:none; }
+/* .fck-tooltip { display:none; } */
+/* .fck-div:hover .fck-tooltip { display: inline; position: absolute; padding: 5px; color: #000; background-color:#FEE; border:1px solid #000; text-decoration: none; } */
+.tb-RealCME { padding-top: 50px; }
+.tb-RealCMEMinimal { padding-top: 26px;  }
+.tb-RealCMEVariant1 { padding-top: 50px; }
+.tb-RealCMEVariant2 { padding-top: 50px; }
+.tb-RealCMEVariant3 { padding-top: 50px; }
+
+/* TEMP */
+.gt-fck-div { border: 1px inset gray; margin: 0 1px; background: white; overflow-x: auto; overflow-y: hide; }
+
+/* GLOBAL TOOL ITEMS */
+.gt-item {
+	overflow: hidden;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #d5d5d5; }
+* html .gt-item {
+	height: 1%;
+	overflow: visible; }
+.gt-item-expand { float: left; }
+.expand, .contract { 
+	background-color: transparent;
+	background-image: url(../img/globaltool/gt_item_expand.gif);
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 10px;
+	padding: 3px 12px 12px 12px;
+	background-position: center;	
+}
+.expand { 
+	background-image: url(../img/globaltool/gt_item_expand.gif);
+	margin-left: 8px;
+}
+.contract { 
+	background-image: url(../img/globaltool/gt_item_contract.gif);
+}
+.gt-item-content { overflow: hidden; }
+* html .gt-item-content {
+	height: 1%;
+	overflow: visible; }
+.gt-item-text, .gt-item-short-text, .gt-item-content th { color: #68809f; font-weight: 600 !important;  }
+.gt-item-text, .gt-item-short-text { width: 80% !important;  }
+.gt-item-short-text { color: #68809f; margin: 4px 2px; }
+.gt-item-short-addtocurrent:after { background: #68809f; }
+.gt-item-content table { background-color: #fff; width: 100%; }
+/*
+.gt-item-content table td { background-color: #fff; vertical-align: top; margin: 0; padding-right: 0; padding-bottom: 0; }
+*/
+.gt-item-text { }
+.gt-item-delete-button { 
+	width: 32px;
+	height: 32px;
+	padding: 0 10px;
+	background: transparent url(img/trash.gif) no-repeat center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	margin-right: 8px;
+	margin-top: 2px;
+}
+.gt-item-delete-button-disabled { background-image: url(../img/globaltool/delete_dis.gif); background-repeat: no-repeat; background-position: right top; text-align: right; height: 11px; width: 42px; margin: 0; padding: 0; }
+.gt-item-edit { background-image: url(../img/globaltool/edit.gif); background-repeat: no-repeat; background-position: right top; text-align: right; height: 11px; width: 35px; margin: 0; padding: 0; }
+.gt-item-edit-disabled { background-image: url(../img/globaltool/edit_dis.gif); background-repeat: no-repeat; background-position: right top; text-align: right; height: 11px; width: 35px; margin: 0; padding: 0; }
+.gt-item-edit-external { text-align: right; height: 11px; width: 35px; margin: 0; padding: 0; vertical-align: top;}
+.gt-item-edit-button { background-image: url(../img/globaltool/edit.gif); background-repeat: no-repeat; background-position: right top; text-align: right; height: 11px; width: 35px; margin: 0; padding: 0; }
+.gt-item-edit-button-disabled { background-image: url(../img/globaltool/edit_dis.gif); background-repeat: no-repeat; background-position: right top; text-align: right; height: 11px; width: 35px; margin: 0; padding: 0; }
+.gt-item-duplicate {}
+.gt-item-duplicate-button { text-align: right; vertical-align: top; height: 11px; margin: 0; padding: 0; }
+.gt-item-duplicate-button-disabled { background-image: url(../img/globaltool/duplicate_dis.gif); background-repeat: no-repeat; background-position: right top; text-align: right; vertical-align: top; height: 11px; width: 127px; margin: 0; padding: 0; }
+.gt-item-expand, .gt-item-delete, .gt-item-delete, .gt-item-edit, .gt-item-addtocurrent, .gt-item-short-addtocurrent, .gt-item-duplicate { cursor: pointer; }
+.gt-item-delete, .gt-item-edit, .gt-item-addtocurrent, .gt-item-short-addtocurrent, .gt-item-duplicate,  
+.gt-item-delete-disabled, .gt-item-edit-disabled, .gt-item-addtocurrent-disabled, .gt-item-short-addtocurrent-disabled { 
+	vertical-align: top; }
+.gt-selected { background-color: #FF6; }
+.gt-usage { color: #444; font-weight: 500; margin-top: 6px;}
+/*GLOBAL TOOL FRAME*/
+#gt-frame-header { position: absolute; top: 0; left: 0; width: 100%; z-index: 2; display: none; }
+#gt-frame-top { margin: 0; padding: 0; }
+#gt-frame-top-left { margin: 0; padding: 0; }
+#gt-frame-top-right { margin: 0; padding: 0; }
+#gt-frame-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 48px;
+	width: 100%;
+	background: white;
+	border-top: 1px solid gray;
+}
+#gt-frame-bottom { margin: 0; padding: 0; }
+#gt-frame-bottom-left { margin: 0; padding: 0; }
+#gt-frame-bottom-right { margin: 0; padding: 0 10px; }
+#gt-frame-header #gt-frame-bottom-right {
+	float: right;
+	padding-right: 10px;
+}
+#page { position: relative; margin: 0; padding: 0; }
+#page-inner { margin:  0; padding: 0; }
+#gt-content { clear: both; height: 100%; overflow: auto; margin: 0; padding: 0 0 50px; overflow-x: hidden; }
+#gt-content .view-content { padding-top: 96px; }
+* html #gt-content { width: 100%; margin: 0; padding: 0; height: 400px; overflow: auto; overflow-x: hidden; }
+/*GLOBAL TOOL HEADER*/
+#gt-header-icon-user-accounts { display: none; }
+#gt-header-txt { 
+font-size: 16pt !important;
+	text-transform: none;
+	font-weight: normal !important;
+	vertical-align: top;
+	display: inline-block;
+	float: left;
+	margin: 4px 0 0 40px;
+	padding: 0 !important;
+	white-space: nowrap;
+	cursor: pointer;
+}
+#gt-close { 
+	background: transparent url(../img/globaltool/gt_collapse.gif) center no-repeat;
+	width: 34px !important;
+	height: 50px !important;
+	margin: 0 0 0 5px !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0;
+	cursor: pointer;
+}
+/*ADD NEW BUTTON and INSTRUCTIONS*/
+#gt-addnew { display: none; text-align: center; margin: 0; padding: 10px 0; }
+#gt-instructions { display: none; margin: 0; padding: 10px 25px; border-bottom: 1px solid #d5d5d5; }
+/*PAGER*/
+.pager  { 
+	text-align: left; vertical-align: top; margin: 40px 12px 0; padding: 15px 0 0 12px; border-top: 1px solid #d5d5d5;
+	position: fixed;
+	left: 0px;
+	bottom: 10px;
+	z-index: 99;
+	font-size: 13px;
+}
+.nopager { text-align: left; vertical-align: top; margin: 40px 12px 0; padding: 15px 0 0 12px; border-top: 1px solid #d5d5d5; }
+.pager strong.pager-current { 
+	color: #fff;
+	font-weight: 600;
+	line-height: 2em;
+	background-color: #68809f;
+	margin: 0;
+	padding: 5px 9px 6px 9px;
+	border: none;
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+}
+.pager a, .pager-last  { padding: 3px 8px; color: #63499b; font-weight: 600; line-height: 2em; background-color: #fff; margin: 0 2px 0; border: solid 1px #eaeaea; }
+/*TOOL SPECIFIC STYLES*/
+/*LEARNING OBJECTIVES*/
+#gt-header-icon-lo  { display: none; }
+#gt-addnew-lo-button { background-color: transparent; background-image: url(../img/create_new_learn_obj.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 194px; height: 21px; display: block; }
+#gt-addnew-lo-button:hover { background-color: transparent; background-image: url(../img/create_new_learn_obj_mo.gif); background-repeat: no-repeat; text-align: center; width: 194px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-lo-button-disabled { background-color: transparent; background-image: url(../img/create_new_learn_obj_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 194px; height: 21px; display: block; }
+/*Search*/
+.view-global-lo-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-lo-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-lo-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-lo-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-lo-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-lo-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-lo-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-lo-auth { overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+/*QUALITY MEASURESS*/
+#gt-header-icon-qm { display: none; }
+#gt-addnew-qm-button { background-color: transparent; background-image: url(../img/create_new_qual_meas.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 194px; height: 21px; display: block; }
+#gt-addnew-qm-button:hover { background-color: transparent; background-image: url(../img/create_new_qual_meas_mo.gif); background-repeat: no-repeat; text-align: center; width: 194px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-qm-button-disabled { background-color: transparent; background-image: url(../img/create_new_qual_meas_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 194px; height: 21px; display: block; }
+/*Search*/
+.view-global-qm-auth table { background-color: transparent; width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-qm-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-qm-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-qm-auth table tbody tr.odd td { background-  color: #eee; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-qm-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-qm-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-qm-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-qm-auth { overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+/*REFERENCES*/
+#gt-header-icon-ref { display: none; }
+/*Add New Button*/
+#gt-addnew-ref-button { background-color: transparent; background-image: url(../img/create_new_reference.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 144px; height: 21px; display: block; }
+#gt-addnew-ref-button:hover { background-color: transparent; background-image: url(../img/create_new_reference_mo.gif); background-repeat: no-repeat; text-align: center; width: 144px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-ref-button-disabled { background-color: transparent; background-image: url(../img/create_new_reference_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 144px; height: 21px; display: block; }
+/*Search*/
+.view-global-ref-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-ref-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-ref-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-ref-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-ref-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-ref-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-ref-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-ref-auth { overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+/*CURRICULUM*/
+#gt-header-icon-curriculum { display: none; }
+/*Add New Button*/
+#gt-addnew-curriculum-button { background-color: transparent; background-image: url(../img/create_new_curriculum.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 180px; height: 21px; display: block; }
+#gt-addnew-curriculum-button:hover { background-color: transparent; background-image: url(../img/create_new_curriculum_mo.gif); background-repeat: no-repeat; text-align: center; width: 180px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-curriculum-button-disabled { background-color: transparent; background-image: url(../img/create_new_curriculum_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 180px; height: 21px; display: block; }
+/*Search*/
+.view-global-curriculum-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-curriculum-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-curriculum-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-curriculum-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0;  }
+#gt-views-args table tbody tr.odd td { vertical-align: top; }
+.view-global-curriculum-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-curriculum-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*.view-global-curriculum-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }*/
+/*Contents*/
+.global_curriculum_title { margin: 6px 0 4px 0; font-weight: 600; }
+.global_curriculum_text { margin-left: 12px; font-weight: normal; }
+/*PICME-Lite*/
+.view-content-global-picmelite-auth { overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+#gt-header-icon-picmelite { display: none; }
+/*Add New Button*/
+#gt-addnew-picmelite-button { background-color: transparent; background-image: url(../img/create_new_picmelite.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 185px; height: 21px; display: block; }
+#gt-addnew-picmelite-button:hover { background-color: transparent; background-image: url(../img/create_new_picmelite_mo.gif); background-repeat: no-repeat; text-align: center; width: 185px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-picmelite-button-disabled { background-color: transparent; background-image: url(../img/create_new_picmelite_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 185px; height: 21px; display: block; }
+/*Search*/
+.view-global-picmelite-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-picmelite-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-picmelite-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-picmelite-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-picmelite-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-picmelite-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-picmelite-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.global_picmelite_title { margin: 6px 0 4px 0; font-weight: 600; }
+.global_picmelite_text { margin-left: 12px; font-weight: normal; }
+/*FACULTY*/
+#gt-header-icon-faculty { display: none; }
+/*Add New Button*/
+#gt-addnew-faculty-button { background-color: transparent; background-image: url(../img/create_new_faculty.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 128px; height: 21px; display: block; }
+#gt-addnew-faculty-button:hover { background-color: transparent; background-image: url(../img/create_new_faculty_mo.gif); background-repeat: no-repeat; text-align: center; width: 128px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-faculty-button-disabled { background-color: transparent; background-image: url(../img/create_new_faculty_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 128px; height: 21px; display: block; }
+/*Search*/
+.view-global-faculty-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-faculty-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-faculty-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-faculty-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-faculty-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-faculty-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-faculty-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-faculty-auth { color: #68809f; font-weight: 600; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.global_faculty table { background-color: #fff; margin: 10px 0 0; padding: 0; }
+.global_faculty table td {
+	vertical-align: top;
+	padding-right: 10px; }
+.global_faculty_left { color: #666; font-weight: normal; text-align: right; width: 85px; }
+.global_faculty_right { font-weight: normal; }
+/*PATIENT*/
+#gt-header-icon-patient { display: none; }
+/*Add New Button*/
+#gt-addnew-patient-button { background-color: transparent; background-image: url(../img/create_new_patient.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 127px; height: 21px; display: block; }
+#gt-addnew-patient-button:hover { background-color: transparent; background-image: url(../img/create_new_patient_mo.gif); background-repeat: no-repeat; text-align: center; width: 127px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-patient-button-disabled { background-color: transparent; background-image: url(../img/create_new_patient_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 127px; height: 21px; display: block; }
+/*Search*/
+.view-global-patient-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-patient-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-patient-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-patient-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-patient-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-patient-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-patient-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-patient-auth {overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.global_patient_icon { width: 48px; float: left; margin-right: 18px; padding: 0; }
+.global_patient_info { float: left; margin: 0; padding: 0; }
+.global_patient_info th { color: #68809f; font-weight: 600; background-color: #fff; text-align: left; margin: 0; padding: 0 0 5px; border-style: none; }
+.global_patient_left { font-weight: normal; background-color: #fff; margin: 0; padding: 0 0 5px; border-style: none; text-align: left; vertical-align: top; width: 80px;}
+.global_patient_right { font-weight: normal; background-color: #fff; margin: 0; padding: 0 0 5px; border-style: none; text-align: left; vertical-align: top;}
+
+.view-footer-global-patient-auth { margin-top: 10px; margin-left: 25px; }
+/*DOCTOR*/
+#gt-header-icon-consultant { display: none; }
+/*Add New Button*/
+#gt-addnew-consultant-button { background-color: transparent; background-image: url(../img/create_new_consult.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 126px; height: 21px; display: block; }
+#gt-addnew-consultant-button:hover { background-color: transparent; background-image: url(../img/create_new_consult_mo.gif); background-repeat: no-repeat; text-align: center; width: 126px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-consultant-button-disabled { background-color: transparent; background-image: url(../img/create_new_consult_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 126px; height: 21px; display: block; }
+/*Search*/
+.view-global-consultant-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-consultant-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-consultant-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-consultant-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-consultant-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-consultant-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-consultant-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-consultant-auth {overflow: auto; margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.global_consultant_icon { width: 48px; float: left; margin-right: 18px; padding: 0; }
+.global_consultant_info { float: left; margin: 0; padding: 0; }
+.global_consultant_info th { color: #68809f; font-weight: 600; background-color: #fff; text-align: left; margin: 0; padding: 0 0 5px; border-style: none; }
+.global_consultant_left { font-weight: normal; background-color: #fff; margin: 0; padding: 0 0 5px; border-style: none; text-align: left; vertical-align: top; width: 80px;}
+.global_consultant_right { font-weight: normal; background-color: #fff; margin: 0; padding: 0 0 5px; border-style: none; text-align: left; vertical-align: top;}
+
+.view-footer-global-consultant-auth { margin-top: 10px; margin-left: 25px; }
+/*SERIES*/
+#gt-header-icon-series { display: none; }
+/*Add New Button*/
+#gt-addnew-series-button { background-color: transparent; background-image: url(../img/create_new_series.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 218px; height: 21px; display: block; }
+#gt-addnew-series-button:hover { background-color: transparent; background-image: url(../img/create_new_series_mo.gif); background-repeat: no-repeat; text-align: center; width: 218px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-series-button-disabled { background-color: transparent; background-image: url(../img/create_new_series_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 218px; height: 21px; display: block; }
+/*Search*/
+.view-global-series-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-series-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-series-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-series-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-series-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-series-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-series-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-series-auth { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.global_series_icon { width: 48px; float: left; margin-right: 18px; padding: 0; }
+.global_series_info { float: left; margin: 0; padding: 0; }
+.global_series_info th { color: #68809f; font-weight: 600; background-color: #fff; text-align: left; margin: 0; padding: 0 0 5px; border-style: none; }
+.global_series_info td { font-weight: normal; background-color: #fff; margin: 0; padding: 0 0 5px; border-style: none; }
+.view-footer-global-series-auth { margin-top: 10px; margin-left: 25px; }
+/*FRONT MATTER STATEMENTS*/
+#gt-header-icon-fineprint { display: none; }
+/*Add New Button*/
+#gt-addnew-fineprint-button { background-color: transparent; background-image: url(../img/create_new_statement.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 146px; height: 21px; display: block; }
+#gt-addnew-fineprint-button:hover { background-color: transparent; background-image: url(../img/create_new_statement_mo.gif); background-repeat: no-repeat; text-align: center; width: 146px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-fineprint-button-disabled { background-color: transparent; background-image: url(../img/create_new_statement_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 146px; height: 21px; display: block; }
+/*Search*/
+.view-global-fine-print-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-fine-print-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-fine-print-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-fine-print-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-fine-print-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-fine-print-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-fine-print-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-fine-print-auth { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+/*SURVEYS*/
+#gt-header-icon-survey { display: none; }
+/*Add New Button*/
+#gt-addnew-survey-button { background-color: transparent; background-image: url(../img/create_new_survey.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 125px; height: 21px; display: block; }
+#gt-addnew-survey-button:hover { background-color: transparent; background-image: url(../img/create_new_survey_mo.gif); background-repeat: no-repeat; text-align: center; width: 125px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-survey-button-disabled { background-color: transparent; background-image: url(../img/create_new_survey_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 125px; height: 21px; display: block; }
+/*Search*/
+.view-global-survey-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-survey-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-survey-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-survey-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-survey-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-survey-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-survey-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-survey-auth { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.view-footer-global-survey-auth { margin-top: 10px; margin-left: 25px; }
+.view-content-global-survey-auth .gt-item-text { color: #68809f; font-weight: 600; }
+.global_survey { font-weight: normal; }
+
+/*RELEVANT TERMS*/
+#gt-header-icon-relevant-term { display: none; }
+/*Add New Button*/
+#gt-addnew-relevant-term-button { background-color: transparent; background-image: url(../img/create_new_term.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 115px; height: 21px; display: block; }
+#gt-addnew-relevant-term-button:hover { background-color: transparent; background-image: url(../img/create_new_term_mo.gif); background-repeat: no-repeat; text-align: center; width: 115px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-relevant-term-button-disabled { background-color: transparent; background-image: url(../img/create_new_term_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 115px; height: 21px; display: block; }
+/*Search*/
+.view-global-relevant-term table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-relevant-term table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-relevant-term table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-relevant-term table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-relevant-term table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-relevant-term table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-relevant-term table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-relevant-term { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+
+
+/*EDIT MODE*/
+.expanded { margin-bottom: 5px; padding: 10px; background: #F8FEFE; padding-right: 0; }
+.form-item label { 
+	color: #444;
+	margin-bottom: 5px;
+/*	float: left; 
+	min-width: 70px; */
+	vertical-align: top;
+	line-height: 20px;
+	clear: both;
+}
+.cke_chrome { clear: both; }
+.form-item textarea { font-size: 12px; padding: 2px; font-family: Raleway, Arial, Verdana; }
+/*ADD NEW*/
+.gt-addnew-cancel-button, #gt-cancel { cursor: pointer; background: transparent; float: right; margin: 0; padding: 0; }
+.description { margin-top: 0px; padding: 0; }
+.form-item .description { font-size: 0.85em; font-weight: normal; }
+#gt-addnew-form { margin: 60px 13px;; }
+#gt-addnew-form .node-form textarea { width: 99%; }
+#gt-addnew-form .form-item .form-text { width: 99%; }
+#gt-addnew-form .form-item .resizable-textarea { width: 100%; }
+#gt-addnew-form .fieldset-wrapper { overflow: hidden; }
+#field-pat-icon-attach-wrapper legend { font-size: 14px; }
+
+/*EVALUATION QUESTIONS*/
+#gt-addnew-eval-button { background-color: transparent; background-image: url(../img/create_new_eval_question.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 199px; height: 21px; display: block; }
+#gt-addnew-eval-button:hover { background-color: transparent; background-image: url(../img/create_new_eval_question_mo.gif); background-repeat: no-repeat; text-align: center; width: 199px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-eval-button-disabled { background-color: transparent; background-image: url(../img/create_new_eval_question_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 199px; height: 21px; display: block; }
+#gt-header-icon-eval  { display: none; }
+
+/*Search*/
+.view-global-eval-ques-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-eval-ques-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-eval-ques-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-eval-ques-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-eval-ques-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-eval-ques-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-eval-ques-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-eval-ques-auth { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.view-footer-global-eval-ques-auth { margin-top: 10px; margin-left: 25px; }
+.view-content-global-eval-ques-auth .gt-item-text { color: #68809f; font-weight: 600; }
+.global_eval_answers, .global_eval_type { font-weight: normal; }
+
+/*METRICS*/
+#gt-header-icon-metric { display: none; }
+/*Add New Button*/
+#gt-addnew-metric-button { background-color: transparent; background-image: url(../img/create_new_metric.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 116px; height: 21px; display: block; }
+#gt-addnew-metric-button:hover { background-color: transparent; background-image: url(../img/create_new_metric_mo.gif); background-repeat: no-repeat; text-align: center; width: 116px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-metric-button-disabled { background-color: transparent; background-image: url(../img/create_new_metric_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 116px; height: 21px; display: block; }
+/*Search*/
+.view-global-metric-auth table { width: 100%; margin: 0; border-style: none; border-width: 0; background-color: transparent;  }
+.view-global-metric-auth table thead { color: #666; background-color: transparent; border-style: none; border-width: 0; }
+.view-global-metric-auth table thead th { color: #666; background-color: transparent; text-align: left; padding-left: 10px; border-style: none; border-width: 0; }
+.view-global-metric-auth table tbody tr.odd td { background-color: transparent; padding-bottom: 10px; border-style: none; border-width: 0; }
+.view-global-metric-auth table tbody input.form-text { margin-right: 10px; margin-left: 10px; width: 95%; }
+.view-global-metric-auth table tbody input.form-submit { font-size: 0; background-color: transparent; background-image: url(../img/go.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+.view-global-metric-auth table tbody input.form-submit:hover { font-size: 0; background-color: transparent; background-image: url(../img/go_mo.gif); background-repeat: no-repeat; background-position: left 50%; text-align: left; width: 26px; height: 20px; margin: 0; padding: 0; border-style: none; }
+/*Contents*/
+.view-content-global-metric-auth { margin-top: 10px; margin-right: 13px; margin-left: 13px; }
+.view-footer-global-metric-auth { margin-top: 10px; margin-left: 25px; }
+.view-content-global-metric-auth .gt-item-text { color: #68809f; font-weight: 600; }
+.global_metric_answers, .global_eval_type { font-weight: normal; }
+
+
+.global-error { 
+  background-color: #FFFFFF; 
+  font-weight: 600; 
+  color: red; 
+  border: 1px solid #CCCCCC; 
+  margin-bottom: 10px; 
+  padding: 5px 4px 0 12px;  
+  background-image: url(../img/warning.png);
+  background-position: 5px 5px;
+  background-repeat: no-repeat;  
+}
+.global-error ul li { list-style: none; }
+
+.membership_content_manager {
+  font-weight: 600;
+}
+.membership {
+  margin: 0px;
+  padding: 0px;
+}
+
+.patient-icons {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background: #EEE;
+  border: 1px solid #ccf;
+}
+.patient-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.patient-icons li {
+  display: block;
+	display: -moz-inline-box; /* gecko*/
+  display: inline-block;    /* opera and safari*/
+  padding: 4px;
+  margin-bottom: 8px;
+}
+.patient-icons img {
+  display: block;
+  cursor: pointer;
+  border: 2px solid #EEE;
+}
+
+<!--[if lte IE 7]>
+.patient-icons {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.patient-icons li {
+	display: inline;
+  margin-bottom: 16px;
+}
+<![endif]-->
+
+<!--[if gt IE 7]>
+.patient-icons ul {
+	display: table-row;
+}
+.patient-icons li {
+	display: table-cell;
+}
+<![endif]-->
+
+/*USER ACCOUNTS*/
+#gt-header-icon-user-accounts { display: none; }
+/*Add New Button*/
+#gt-addnew-account-button { background-color: transparent; background-image: url(../img/create_new_account.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 161px; height: 21px; display: block; }
+#gt-addnew-account-button:hover { background-color: transparent; background-image: url(../img/create_new_account_mo.gif); background-repeat: no-repeat; text-align: center; width: 161px; margin: 0 auto; padding: 0; height: 21px; display: block; }
+#gt-addnew-account-button-disabled { background-color: transparent; background-image: url(../img/create_new_account_dis.gif); background-repeat: no-repeat; text-align: center; margin: 0 auto; padding: 0; width: 161px; height: 21px; display: block; }
+
+#cmeauthoradmin-editaccountform #account-cancel:after, #cmeauthoradmin-newaccountform #account-cancel, #account-save input, #edit-save { 
+	background: none repeat scroll 0 0 #68809f;
+	border: medium none;
+	color: white;
+	float: left;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 0 10px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-weight: normal;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+#cmeauthoradmin-editaccountform #account-cancel:after, #cmeauthoradmin-editaccountform #edit-save { float: right; }
+#cmeauthoradmin-editaccountform #account-cancel:after { content: 'Cancel'; }
+#cmeauthoradmin-newaccountform , #cmeauthoradmin-editaccountform {
+	background: #eee;
+	margin: 30px 10px;
+	display: inline-block;
+	width: 540px;
+	padding: 20px;
+}
+.account-submit { margin-top: 20px; margin-right: 30px; }
+#cmeauthoradmin-newaccountform #account-save { padding-left: 320px; }
+#cmeauthoradmin-partnerform table { 
+	width: 95%;
+	margin: 60px auto;
+	border: 1px solid gray;
+}
+#cmeauthoradmin-partnerform table thead th { color: #000000; background-color: transparent; background-image: url(../img/authoractivities_bgtile.gif); background-repeat: repeat-x; text-align: center; height: 46px; margin: 0 0 0 1px; padding: 0 5px; border-right: 1px solid #bcbbbb; border-top-style: none; border-top-width: 0; border-bottom-style: none; border-bottom-width: 0; border-left-style: none; border-left-width: 0; }
+#cmeauthoradmin-partnerform table tbody tr.odd td { background-color: #e7e7e7; margin: 0; padding: 2px; border-right: 1px solid #aaa9a9; border-bottom: 1px solid #ccc; border-top-style: none; border-top-width: 0; border-left-style: none; border-left-width: 0; }
+#cmeauthoradmin-partnerform table tbody tr.even td { background-color: #f6f6f6; margin: 0; padding: 2px; border-right: 1px solid #aaa9a9; border-bottom: 1px solid #ccc; border-top-style: none; border-top-width: 0; border-left-style: none; border-left-width: 0; }
+#cmeauthoradmin-partnerform td.save  { text-align: center;  }
+#cmeauthoradmin-partnerform .form-checkboxes { text-align: center; }
+
+#cmeauthoradmin-newaccountform, #account-help {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.global-delete-error {
+  background-color: #FFFFFF; 
+  font-weight: 600; 
+  color: red; 
+  border: 1px solid #CCCCCC; 
+  margin: 20px 10px; 
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-image: url(../img/warning.png);
+  background-position: 5px 5px;
+  background-repeat: no-repeat;  
+}
+#global-delete-cancel { height: 22px; width: 59px; float: left; margin: 0; padding: 0; }
+#global-delete-cancel:hover { margin: 0; padding: 0; width: 59px; height: 22px; float: left; }
+/*Search and re-order*/
+#gt-views-search { float: left; position:absolute; top:8px; left:0; width: 40%; }
+#gt-views-search tr.even, tr.odd { border: none; background-color: transparent; }
+#gt-views-search td; { padding-bottom: 0px; }
+#gt-views-order { 
+	text-align: right;	
+	text-transform: lowercase;
+	position: absolute;
+	right: 10px !important;
+}
+#gt-views-args {
+	top: 48px;
+	height: 36px;
+	position: fixed;
+	border-bottom: 1px solid #444;
+	border-top: 1px solid #444;
+	padding: 8px 0 0 0;
+	width: 100%;
+	background: white;
+}
+#gt-header {
+	position: fixed;
+	background: white !important;
+	padding: 10px 0 0 0!important;
+	overflow: hidden;
+	width: 100%;
+	height: 38px !important;
+	border-bottom: 1px solid gray;	
+}	
+
+#gt-views-byactivity { height: 59px; background-color: transparent; clear: both;position:relative; border-bottom: 1px solid #D5D5D5}
+
+.half-width {clear: none;float: left;margin: 8px 0;width: 48%;}
+
+#gt-views-args input.form-submit {
+	width: 28px;
+	height: 28px;
+	background: #68809f;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-left: 5px;
+	display: inline;
+}
+
+#gt-cancel:after,
+#global-delete-cancel:after,
+#gt-global-delete-cancel:after { content: 'Cancel'; }
+
+#gt-save, #global-delete-cancel:after, #gt-cancel:after {
+	background: #68809f;
+	color: white;
+	padding: 5px 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px cursor: pointer;
+	margin: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: none;
+	float: right;
+	margin-left: 10px;
+	line-height: 18px;
+}
+.gt-item-short-addtocurrent:after, .gt-item-addtocurrent:after, .gt-item-duplicate-button:after {
+	background: #68809f;
+	background: #5681a0;
+	color: white;
+	padding: 7px 10px 6px;
+	font-size: 11px;
+	font-weight: 600;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: none;
+	border: none;
+	margin: 3px 10px 0 2px;;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: auto;
+	height: auto;
+	white-space: nowrap;
+	text-align: right;
+	float: right;
+	display: inline-block;
+}
+.gt-item-short-addtocurrent:after, .gt-item-addtocurrent:after {
+	content: 'Add to Course';
+}
+.gt-item-duplicate-button:after {
+	content: 'Duplicate';
+}
+body.nonode .gt-item-short-addtocurrent:after, body.nonode .gt-item-addtocurrent:after { display: none !important; }
+#gt-views-args input.form-submit {
+	background: #68809f url(img/search.png) no-repeat center;
+}
+.gt-item-content .gt-item-edit {
+	width: 10%;
+	height: 32px;
+	padding: 0 10px;
+	background: transparent url(img/edit.gif) no-repeat center top;
+}
+#gt-views-args input.form-text, #gt-views-args select {
+	padding: 4px;
+	border: 1px solid #68809f;
+}
+#gt-views-args select {
+/*	padding: 3px 3px 2px; */
+}
+
+#gt-views-search table thead th {	display: none; }
+#gt-views-order > br { display: none; }
+#gt-views-order > form { display: inline; }
+.gt-createnew-button {
+	background: #68809f;
+	color: white !important;
+	padding: 10px 22px;
+	font-size: 14px !important;
+	font-weight: normal !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: none;
+	margin: 0 10px;
+	cursor: pointer;
+}
+#gt-views-order > .pages {
+	color: #68809f;
+	text-align: right;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 4px;
+	display: inline-block;
+	margin: 0 4px 0 16px;
+	vertical-align: top;
+	border: none;
+}
+
+#gt-views-order > .prev, #gt-views-order > .next {
+	width: 14px;
+	height: 16px;
+	padding: 0px;
+	display: inline-block;
+	background: #68809f;
+	border: 6px solid #68809f;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: -1px;
+	margin-bottom: -9px;
+}
+#gt-views-order > .prev.disabled, #gt-views-order > .next.disabled {
+	background-color: #ccc !important;
+	border-color: #ccc !important;
+	cursor: auto;
+}
+
+#gt-views-order > .prev { 
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background: #68809f url(img/leftright.png) -1px 0 no-repeat;
+	margin-right: 1px;
+}
+#gt-views-order > .next {
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-bottomleft: 0;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-bottom-left	-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	background: #68809f url(img/leftright.png) -17px 0 no-repeat;
+	margin-left: 1px;
+}
+
+#gt-header .plus {
+	width: 16px;
+	height: 16px;
+	padding: 0px;
+	display: none;
+	background: #68809f;
+	border: 6px solid #68809f;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	background: #68809f url(img/plus.png) 0 0 no-repeat;
+	margin: 0 0 0 12px;
+}
+.page-globaltool-account_management #gt-header .plus, .section-globaltool #gt-header .plus {
+	display: inline-block;
+}
+.page-globaltool-account_management #gt-header .plus, .section-globaltool #gt-header .plus { display: inline-block; }
+.page-globaltool-new_account #gt-header .plus, body[class*="page-globaltool-edit_account-"]  #gt-header .plus { display: none; }
+#gt-addnew { display: none; }
