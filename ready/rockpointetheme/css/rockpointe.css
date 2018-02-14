@@ -1,0 +1,42 @@
+.MasterBody {
+    padding: 0px;
+    margin: 0px;
+    background: #ffffff url(../img/rockpointe/MasterBackground.png) repeat-x top;
+}
+
+.Master {
+    width: 987px;
+    margin: 0px auto;
+    background: #ffffff
+}
+
+.MasterHeader {
+    height: 111px;
+    background: #ffffff url(../img/rockpointe/MasterHeaderBackground.png) no-repeat;
+}
+
+.MasterLogin_container {
+    width: 247px;
+    height: 91px;
+    border: solid 1px transparent;
+    float: right;
+    margin: 9px 30px 0px;
+}
+
+.MasterContent {
+    clear: both;
+    padding: 0px 0px 0px 0px;
+    background-color: #ffffff;
+}
+
+.MasterFooter {
+    text-align: center;
+    font-family: arial;
+    color: #454545;
+    font-size: 12px;
+    font-weight: normal
+}
+
+.MasterFooter a:link {
+    font-weight: normal;
+}

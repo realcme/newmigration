@@ -1,0 +1,214 @@
+#views-filters {
+    display: none
+}
+
+.page-cmealerts-alerts #views-filters {
+    display: inline
+}
+
+body {
+    padding: 0px;
+    border-top: 10px solid #443e63;
+}
+
+#page {
+    padding: 10px 0px;
+}
+
+#main {
+    padding: 0px 10px;
+}
+
+#qiheader {
+    font-family: "Helvetica Neue", ​Helvetica, ​Arial, ​sans-serif;
+}
+
+.cme-recommend-to-peer, .cme-mastery-report {
+    display: none !important;
+}
+
+#qiheader div#top-row {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-left: -30px;
+    overflow: hidden;
+}
+
+#qiheader .span4 {
+    width: 370px;
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+}
+
+#qiheader .span8 {
+    width: 660px;
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+}
+
+#qiheader div#home-blurb h1 {
+    display: none;
+}
+
+#qiheader div#home-blurb {
+    color: #75786c;
+    padding-top: 60px;
+}
+
+#qiheader div#home-blurb h2 {
+    font-family: 'Enriqueta', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+    line-height: 27px;
+}
+
+#qiheader div#home-testimonial-top {
+    border-top: 1px solid #443e63;
+}
+
+#qiheader .span12 {
+    width: 1170px;
+}
+
+#footer {
+    padding: 10px 10px;
+}
+
+#qifooter .container, #qiheader .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+div#qifooter {
+    background-color: #443e63;
+    color: #fff;
+    font-family: 'Gudea', sans-serif;
+    line-height: 20px;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+div#qifooter a {
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Gudea', sans-serif;
+    line-height: 15px;
+}
+
+div#qifooter ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+div#qifooter h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+#qifooter .container table td {
+    width: 270px;
+    border: none;
+    padding: none
+}
+
+.curric-title {
+    color: #443e63;
+    font-size: 22px;
+    font-weight: bold;
+    clear: right;
+    padding-top: 10px;
+}
+
+#curricdata .reflections {
+    margin-bottom: 15px;
+}
+
+.healthcourse-record {
+    background-color: #fff;
+    border: 1px solid #443e63;
+    border-radius: 15px;
+}
+
+.healthcourse-record.completed {
+    background-color: #fff;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+    background: #a0a0a0; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d0d0d0), color-stop(100%, #a0a0a0)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #d0d0d0 0%, #a0a0a0 100%); /* W3C */
+}
+
+#healthcoursenav {
+    background-color: #443e63;
+    width: 900px;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #DAD3E7;
+}
+
+#healthcoursenav ul li.has-sub:hover > a {
+    background: #DAD3E7;
+    border-color: #DAD3E7;
+}
+
+#healthcoursenav ul li.has-sub > a:hover {
+    background: #DAD3E7;
+    border-color: #DAD3E7;
+}
+
+#healthcoursenav > ul > li > a {
+    color: #fff;
+}
+
+#healthcoursenav ul li > ul {
+    border: 1px solid #443e63;
+}
+
+ul.primary li {
+    background-color: #443e63;
+    border: 1px solid #443e63;
+}
+
+ul.primary li a:hover {
+    background-color: #DAD3E7;
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #ffff;
+}
+
+.view-item-all-activities .view-data-node-link {
+    background: #a0a0a0; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d0d0d0), color-stop(100%, #a0a0a0)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #d0d0d0 0%, #a0a0a0 100%); /* W3C */
+}
+
+.form-btn {
+    background: #a0a0a0; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d0d0d0), color-stop(100%, #a0a0a0)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #d0d0d0 0%, #a0a0a0 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #d0d0d0 0%, #a0a0a0 100%); /* W3C */
+}

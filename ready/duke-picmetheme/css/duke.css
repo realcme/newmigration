@@ -1,0 +1,234 @@
+body {
+    background-color: #6D7E9E;
+}
+
+#dukeheader .clearfix:after, #dukenavigation .clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#dukeheader .section {
+    position: relative;
+}
+
+#dukeheader #logo {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+#block-duke_lms-search #edit-search-wrapper {
+    float: left;
+    margin: 0 0 0 0.5em;
+    padding: 0;
+}
+
+#duke-lms-search-form {
+    float: right;
+    margin-right: 5px;
+    position: relative;
+    z-index: 40;
+    margin: 0;
+    padding: 0;
+}
+
+#block-duke_lms-search {
+    padding-top: 70px;
+    padding-right: 25px;
+}
+
+#block-duke_lms-search #edit-search {
+    margin-left: 0.5em;
+    width: 120px;
+    border-radius: 5px;
+    height: 20px;
+    padding: 0 30px 0 5px;
+    box-shadow: 1px 1px 4px rgba(191, 191, 191, 0.5) inset;
+    border: 1px solid #CCCCCC;
+}
+
+#duke-lms-search-form input[type="submit"] {
+    background: url("../img/duke_icons_sprite.png") repeat scroll 0 -527px rgba(0, 0, 0, 0);
+    border: medium none;
+    border-radius: 0 5px 5px 0;
+    color: #FFFFFF;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 22px;
+    margin: 0 0 0 -26px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    width: 30px;
+    z-index: 6;
+    margin-left: 0.5em;
+    border-radius: 5px;
+    line-height: 1.6;
+    padding: 3px 8px;
+    right: 0;
+}
+
+#dukenavigation {
+    position: relative;
+    text-align: center;
+    z-index: 20;
+    margin-top: 20px;
+    font-family: Verdana, ​Arial, ​Helvetica, ​sans-serif;
+    font-size: 13px;
+    line-height: 1.6 !important;
+}
+
+#dukenavigation .content {
+    background-color: #D2772D;
+    margin-left: 5px;
+    width: 950px;
+    border-radius: 0;
+    height: 37px;
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+
+#dukenavigation .block ul {
+    margin: 0;
+    padding: 0;
+}
+
+#dukenavigation ul.menu {
+    border: medium none;
+    list-style: none outside none;
+    text-align: left;
+}
+
+#dukenavigation .content li {
+    padding: 0;
+    border-right-color: #FFFFFF;
+    border-right-style: solid !important;
+    border-right-width: 1px;
+    float: left;
+    min-width: 90px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    list-style: none outside none;
+}
+
+#dukenavigation .content li a {
+    float: none;
+    color: #FFFFFF;
+    display: block;
+    height: 100%;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    line-height: 1.6 !important;
+}
+
+#dukenavigation li ul {
+    display: none;
+    background-color: #D2772D !important;
+    color: #FFFFFF;
+    border: medium none;
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    min-width: 189px;
+    position: absolute;
+    top: 37px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    box-shadow: 2px 2px 2px #243A77;
+}
+
+#dukenavigation .content li li.first {
+    margin-top: 15px;
+}
+
+#dukenavigation .content li li {
+    min-width: 0;
+    padding: 0;
+    position: static;
+    width: auto;
+}
+
+#dukenavigation .content li li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: medium none;
+    border-image: none;
+    border-left: medium none;
+    border-right: medium none !important;
+    border-top: medium none;
+    float: none;
+    line-height: 16px;
+    text-align: left !important;
+}
+
+#dukenavigation .content li li a {
+    display: block;
+    min-width: 0;
+    padding: 6px 10px 8px;
+    position: static;
+    width: auto;
+    margin: 0;
+}
+
+#dukenavigation .content li a {
+    float: none;
+}
+
+#dukenavigation .content li li a {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#dukenavigation .content li:hover {
+    background-color: #9F4F1D !important;
+}
+
+#dukenavigation .content ul li a {
+    color: #FFFFFF;
+}
+
+#dukenavigation .content li li a {
+    font-size: 10pt;
+    font-weight: bold;
+    left: 0;
+    top: 0;
+}
+
+#dukenavigation .content li a {
+    height: 100%;
+}
+
+#duke-footer-message {
+    background: url("../img/duke_footer.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 10px;
+    height: 30px;
+    margin: auto;
+    padding: 0 8px 0 0;
+    text-align: right;
+    width: 952px;
+}
+
+#duke-footer-message p {
+    padding-top: 4px;
+}
+
+#duke-footer-message a {
+    color: #1D4F9F !important;
+    margin-right: 14px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#content-inner {
+    padding-left: 5px;
+}

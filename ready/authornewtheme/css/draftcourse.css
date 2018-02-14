@@ -1,0 +1,260 @@
+#page {
+    margin: auto;
+    width: 870px;
+}
+
+#logo /* Wrapper for logo */
+{
+    float: left;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+#logo-partner /* Wrapper for partner logo */
+{
+    float: right;
+    margin: 15px 65px 0 0;
+    padding: 0;
+}
+
+.with-navbar #content,
+.with-navbar #sidebar-left,
+.with-navbar #sidebar-right {
+    margin-top: 10px;
+}
+
+#disabled-companion {
+    float: left;
+    margin: 0;
+    width: 178px;
+}
+
+#draftcourse {
+    font-size: large;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    padding: 10px 0px;
+}
+
+#content {
+    float: left;
+    padding: 0;
+    margin-left: 0;
+    margin-right: -760px;
+    width: 760px;
+}
+
+.sidebar-right #content {
+    margin-left: 0;
+    margin-right: -760px;
+    width: 760px;
+}
+
+table {
+    background-color: #FFFFFF;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.small, .small p {
+    font-size: 85%;
+}
+
+/*
+ * Login/Registration block
+ */
+.cmeloginregistration {
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 4px;
+    margin-left: 6px;
+}
+
+.cmelogout {
+    border-left: 1px solid #CCCCCC;
+    padding-left: 5px;
+    margin-left: 6px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-right: 20px;
+    margin-top: 0px;
+}
+
+#cmelogouttext {
+    padding-top: 0px;
+}
+
+#cmesalutation {
+    padding: 15px 2px 0px 4px;
+    width: 100%;
+}
+
+#rcmcontent {
+}
+
+#rcmcontent p {
+    padding: 10px;
+}
+
+#rcmcontent_requirement p {
+    padding: 10px;
+}
+
+#rcmcontent_requirement dt {
+    padding: 0px 0px 0px 15px;
+}
+
+#rcmcontent_requirement dd {
+    padding: 0px 0px 0px 25px;
+}
+
+#rcmcontent_requirement ol {
+    padding: 0px 0px 0px 15px;
+}
+
+#rcmcontent_requirement table {
+    border: 1px solid #666666;
+}
+
+#rcmcontent_requirement td {
+    border: 1px solid #666666;
+}
+
+.td-title {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: text-top;
+    padding: 5px;
+}
+
+.td-desc {
+    text-align: left;
+    vertical-align: text-top;
+    border-bottom: 1px dashed #999;
+    padding: 5px;
+}
+
+#btn-proceed {
+    margin-top: 15px;
+}
+
+.facultyinfo {
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    width: 95%;
+}
+
+.bio {
+    height: 14px;
+    width: 32px;
+    float: right;
+}
+
+.biotext {
+    border: 1px solid #666666;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.topspace-20 {
+    margin-top: 20px;
+}
+
+.bg-grad {
+    background: transparent url(../img/draftcourse/header-bg-tall.png) left bottom repeat-x;
+    padding: 0px;
+    width: 100%;
+}
+
+.bg-grad-top {
+    background: transparent url(../img/draftcourse/header-bg-tall-top.png) left top repeat-x;
+    padding: 10px;
+    width: 100%;
+}
+
+.bg-grad ul {
+    padding-right: 20px;
+}
+
+.bg-grad ol {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#courseheader {
+    padding: 5px 10px 5px 0px;
+    background-color: #FFFFFF;
+}
+
+#courseheadertable {
+    width: 100%;
+    border: 0;
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+#courseheadertable td {
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.courseheadercell {
+    vertical-align: middle;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.courseheadercellline {
+    width: 40%;
+}
+
+#courseheaderline {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #FF0000;
+}
+
+#courseinfo {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fcfcfc;
+    position: relative;
+    float: left;
+    border: solid 1px #ccc;
+    margin: 0px;
+    text-color: #00FF00;
+}
+
+#courseinfo ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+#coursedata {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 11px;
+}

@@ -1,0 +1,211 @@
+body {
+    background: url("../img/hmcme/background.gif") repeat-x scroll left top #FBF7E3;
+    color: #4B4C42;
+    padding: 0px;
+}
+
+#hmcmeheader {
+    margin: auto;
+    overflow: hidden;
+    width: 955px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#hmcmetop {
+    float: left;
+    height: 73px;
+    width: 782px;
+    position: relative;
+}
+
+#hmcmetop p {
+    position: absolute;
+    bottom: 11px;
+    right: 3px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hmcmetop p a, #hmcmefooter p a {
+    color: #4b4c42;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+#hmcmetop p a:hover, #hmcmefooter p a:hover {
+    text-decoration: underline;
+}
+
+#hmcmenav {
+    width: 782px;
+    float: left;
+    padding-bottom: 9px;
+    _padding-bottom: 5px;
+}
+
+ul#main_nav {
+    float: left;
+    margin-left: 3px;
+    display: inline;
+    text-align: center;
+    border-right: 1px solid #c7cd9d;
+    border-left: 1px solid #6a7334;
+    list-style: none;
+    padding: 0px;
+}
+
+ul#main_nav li {
+    float: left;
+    border-left: 1px solid #c7cd9d;
+    border-right: 1px solid #6a7334;
+}
+
+ul#main_nav li a {
+    display: block;
+    float: left;
+    color: #fff;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 1.2em;
+    padding-top: 13px;
+    font-weight: normal;
+}
+
+ul#main_nav li.twolines a {
+    padding-top: 5px;
+    height: 34px;
+    font-weight: normal;
+}
+
+ul#minor_nav li.twolines a {
+    padding-top: 5px;
+    height: 38px;
+    font-weight: normal;
+}
+
+ul#main_nav li a {
+    height: 26px;
+    background: url(../img/hmcme/nav_bg.gif) repeat-x top left;
+    font-weight: normal;
+}
+
+ul#main_nav li a.home {
+    height: 30px;
+}
+
+/*nav bottom border colors*/
+ul#main_nav li a.hepatitis {
+    border-bottom: 4px solid #3385d4;
+}
+
+ul#main_nav li a.hiv_aids {
+    border-bottom: 4px solid #c62828
+}
+
+ul#main_nav li a.influenza {
+    border-bottom: 4px solid #8d50c5
+}
+
+ul#main_nav li a.pah {
+    border-bottom: 4px solid #669040
+}
+
+ul#main_nav li a.pulmonary {
+    border-bottom: 4px solid #e66f0c
+}
+
+ul#main_nav li a:hover {
+    background-position: 0px -44px
+}
+
+ul#minor_nav li a:hover, body#search ul#minor_nav li a.search, body#live_programs ul#minor_nav li a.live_programs, body#sm ul#minor_nav li a.program {
+    background: url(../img/hmcme/minor_nav_bg_hover.gif) repeat-x top left;
+}
+
+body#home ul#main_nav li a.home, body#hepatitis ul#main_nav li a.hepatitis, body#hiv_aids ul#main_nav li a.hiv_aids, body#influenza ul#main_nav li a.influenza, body#pah ul#main_nav li a.pah, body#pulmonary ul#main_nav li a.pulmonary, body#sm ul#minor_nav li a.program {
+    background-position: 0px -44px;
+}
+
+body.sm ul#minor_nav li a.program {
+    color: #4b4c42;
+}
+
+#main_nav table {
+    margin: 0px;
+}
+
+#main_nav table td {
+    padding: 0px;
+}
+
+ul#minor_nav {
+    float: right;
+    margin-right: 3px;
+    display: inline;
+    text-align: center;
+    border-right: 1px solid #8b8b6f;
+    border-left: 1px solid #6a7334;
+    list-style: none;
+    padding: 0px;
+}
+
+ul#minor_nav li {
+    float: left;
+    border-right: 1px solid #f0efe5;
+    border-left: 1px solid #9c9c8d;
+}
+
+ul#minor_nav li a {
+    display: block;
+    float: left;
+    color: #4b4e3b;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 1.2em;
+    padding-top: 13px;
+}
+
+ul#minor_nav li a {
+    height: 30px;
+    background: url(../img/hmcme/minor_nav_bg_new.gif) repeat-x top left;
+}
+
+#hmcmenav ul#minor_nav li a {
+    color: #4b4e3b;
+    font-weight: normal;
+}
+
+#hmcmefooter {
+    width: 100%;
+    padding-top: 3px;
+    border-top: 3px solid #879435;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+#hmcmefooter .detail {
+    width: 940px;
+    margin: auto;
+    margin-top: 0;
+}
+
+#hmcmefooter p.left {
+    width: 650px;
+    padding-left: 3px;
+    overflow: hidden;
+    float: left;
+}
+
+#hmcmefooter p span {
+    color: #6d6a01
+}
+
+#hmcmefooter p.right {
+    float: right;
+    width: 100px;
+    color: #6d6a01;
+    margin-right: 153px;
+}

@@ -1,0 +1,584 @@
+/*
+ *	content.css
+ *
+ *	This file defines any special case styles
+ *	for the main content area as well as any
+ *	unique style for secondary content areas.
+ */
+
+#header {
+    margin: 5px 0 0;
+}
+
+#header img {
+    position: relative;
+    float: left; /*clear: left; margin-top: 10px;*/
+    display: inline;
+}
+
+#courseheader {
+    padding: 5px 10px 5px 0px;
+}
+
+#courseheadertable {
+    width: 100%;
+    border: 0;
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+}
+
+.courseheadercell {
+    vertical-align: middle;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.courseheadercellline {
+    width: 40%;
+}
+
+#courseheaderline {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #FF0000;
+}
+
+#courseinfo {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fcfcfc;
+    position: relative;
+    float: left;
+    border: solid 1px #ccc;
+    margin: 0px;
+    text-color: #00FF00;
+}
+
+#courseinfo ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+#patientstats {
+    background: transparent url(../img/header-horiz-bg.png) right top repeat-y;
+    width: 95px;
+    margin: 0px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+#patientstats img {
+    float: left;
+    margin-left: 5px;
+}
+
+#patientstats table {
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#patientstats td {
+    padding: 0 0 0 5px;
+}
+
+#courseinfo ul li {
+    margin-bottom: 5px;
+}
+
+#coursedata {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.bg-grad {
+    background: transparent url(../../img/header-bg-tall.png) left bottom repeat-x;
+    padding: 0px;
+    width: 100%;
+}
+
+.bg-grad-top {
+    background: transparent url(../../img/header-bg-tall-top.png) left top repeat-x;
+    padding: 10px;
+    width: 100%;
+}
+
+.bg-grad ul {
+    padding-right: 20px;
+}
+
+.bg-grad ol {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#btn-proceed {
+    margin-top: 15px;
+}
+
+.facultyinfo {
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    width: 95%;
+}
+
+.bio {
+    height: 14px;
+    width: 32px;
+    float: right;
+}
+
+.topspace-20 {
+    margin-top: 20px;
+}
+
+.small, .small p {
+    font-size: 85%;
+}
+
+#prev {
+    float: left;
+    margin-top: 20px;
+}
+
+#next {
+    float: right;
+    margin-top: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#container {
+    overflow: hidden;
+    margin: 0;
+}
+
+* html #container {
+    height: 1%; /* So IE plays nice */
+}
+
+#rcmcontent {
+}
+
+#rcmcontent p {
+    padding: 10px;
+}
+
+#rcmcontent_requirement p {
+    padding: 10px;
+}
+
+#rcmcontent_requirement dt {
+    padding: 0px 0px 0px 15px;
+}
+
+#rcmcontent_requirement dd {
+    padding: 0px 0px 0px 25px;
+}
+
+#rcmcontent_requirement ol {
+    padding: 0px 0px 0px 15px;
+}
+
+#rcmcontent_requirement table {
+    border: 1px solid #666666;
+}
+
+#rcmcontent_requirement td {
+    border: 1px solid #666666;
+}
+
+.biotext {
+    border: 1px solid #666666;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spacer {
+    height: 1px;
+    border-bottom: 0;
+    width: 50%;
+    margin: 10px auto;
+}
+
+#userinfo {
+    background: transparent url(../img/info-bg.png) 5px 100% repeat-x;
+    border: 1px solid #ddd;
+    border-bottom: 0px;
+    border-right: 0px;
+    padding: 0px;
+    padding-top: 3px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 98%;
+}
+
+#userinfo p {
+    color: #666;
+    margin: 8px;
+}
+
+#userinfo img {
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    float: left;
+}
+
+#userinfo ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin-left: 70px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+table {
+    background-color: transparent;
+}
+
+td {
+    padding: 5px;
+    border-color: #ccc;
+}
+
+.td-title {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: text-top;
+}
+
+.td-desc {
+    text-align: left;
+    vertical-align: text-top;
+    border-bottom: 1px dashed #999;
+}
+
+#topnav-prev {
+    width: 33px;
+    height: 11px;
+    position: absolute;
+    top: 11px;
+    left: 366px;
+}
+
+#topnav-next {
+    width: 33px;
+    height: 11px;
+    position: absolute;
+    top: 11px;
+    left: 404px;
+}
+
+fieldset {
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.label {
+    padding: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.label span {
+    position: absolute;
+    left: 35px;
+    width: 400px;
+}
+
+#statusbar {
+    position: relative;
+    width: 100%;
+
+}
+
+#statusbar img {
+    float: left;
+    padding-right: 10px;
+}
+
+#sb-header {
+    margin-left: 15px;
+}
+
+#sb-nav {
+}
+
+#sb-gfx-1 {
+    border: 1px solid #000;
+    border-top: 0px;
+    width: 98%;
+    height: 15px;
+    margin-top: 20px;
+}
+
+#todobar {
+    height: 3px;
+    padding: 0;
+    margin: 55px auto 20px auto;
+    width: 90%;
+    background-color: #ccc;
+    position: relative;
+}
+
+#completedbar {
+    background-color: #666;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#donebar {
+    background-color: #fdb913;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#sbholder {
+    position: absolute;
+    left: -4px; /* half the width of the pin-sub and pin-on image */
+    top: 0;
+    width: 100%;
+}
+
+#sb01, #sb02, #sb03, #sb04, #sb05, #sb06, #sb07, #sb08, #sb09, #sb10, #sb11 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 9px;
+    height: 12px;
+    cursor: pointer;
+    background: transparent url(../img/bar/pin-off.gif) left top no-repeat;
+}
+
+.pinon {
+    background-image: url(../img/bar/pin-on.gif) !important;
+}
+
+#sb-sub-01, #sb-sub-02, #sb-sub-03, #sb-sub-04, #sb-sub-05, #sb-sub-06, #sb-sub-07, #sb-sub-08, #sb-sub-09, #sb-sub-10, #sb-sub-11, #sb-sub-12, #sb-sub-13, #sb-sub-14, #sb-sub-15 {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 9px;
+    height: 12px;
+    background: transparent url(../img/bar/pin-sub.gif) left top no-repeat;
+}
+
+.hide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 30px;
+    width: 400px;
+}
+
+.wide textarea {
+    width: 90%;
+    height: 80px;
+    overflow-y: scroll;
+}
+
+.wide table td {
+    border: 0;
+}
+
+.chartnotes {
+    width: 90%;
+    height: 80px;
+    border: 1px solid #999;
+}
+
+.correct {
+    font-weight: bold;
+}
+
+.noborder {
+    border: 0 !important;
+}
+
+#infogatheringcommentary {
+    background: transparent url(../../img/header-bg-tall-top.png) left top repeat-x;
+    padding: 10px;
+    width: 95%;
+    margin-top: 20px;
+}
+
+#infogatheringcommentary img {
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin: 10px 5px 5px 5px;
+    float: left;
+}
+
+#infogatheringcommentary ul {
+    list-style: none;
+}
+
+#infogatheringcommentary #info {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+#infogatheringcommentary #info img {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.used {
+    color: #999;
+}
+
+.graybg {
+    background-color: #f6f6f6;
+}
+
+#consulta, #consultb {
+    position: relative;
+    clear: both;
+}
+
+.consultcopyA, .consultcopyB {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 80px 10px 10px;
+    font-size: 90%;
+}
+
+.consultcopyB {
+    margin: 10px 10px 10px 80px;
+}
+
+.forumheaderlist {
+    border: 1px solid #ccc;
+    margin-left: 2px;
+    font-size: 11px;
+}
+
+.forumheaderlist tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.forumheaderlist th {
+    background-color: #eee;
+    padding-left: 5px;
+}
+
+.forumheaderlist .replies {
+    text-align: center;
+}
+
+.discussion a {
+    color: #6699cc;
+    font-size: 10px;
+}
+
+#learnerforums li {
+    list-style-type: circle;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+.testscore {
+    background: transparent url(../../img/header-bg-tall.png) left bottom repeat-x;
+    padding: 10px;
+    width: 96%;
+    float: left;
+}
+
+.testscore p {
+    margin-left: 20px;
+}
+
+.testscore img {
+    float: left;
+    margin: 12px 10px 0 0;
+}
+
+.rating-cat {
+    font-weight: bold;
+    text-align: right;
+}
+
+#rat-exc, #rat-vg, #rat-g, #rat-f, #rat-p {
+    background-color: #f9b03f;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+#rat-exc {
+    width: 42%;
+}
+
+#rat-vg {
+    width: 28%;
+}
+
+#rat-g {
+    width: 21%;
+}
+
+#rat-f {
+    width: 9%;
+}
+
+#rat-p {
+    width: 0%;
+}
+
+#nav-bottom {
+    width: 100%;
+}
+
+#p24bottomnav, #p24bottomnav a, #p24bottomnav img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,452 @@
+#views-filters {
+    display: none
+}
+
+.page-cmealerts-alerts #views-filters {
+    display: inline
+}
+
+body {
+    background-color: #FFFFFF;
+    padding: 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+#page {
+    max-width: 940px;
+    padding: 0px;
+}
+
+#footer {
+    padding: 10px 10px;
+}
+
+.healthcourse-record.open {
+    background-color: #FFFFFF;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.healthcourse-record-title {
+    font-weight: bold;
+}
+
+.curric-title {
+    color: #faaf40;
+    font-size: 22px;
+    font-weight: bold;
+    clear: right;
+    padding-top: 10px;
+}
+
+#curricdata .reflections {
+    margin-bottom: 15px;
+}
+
+/* #b8cb77 -> #8f1736*/
+/* #d7e1b1 -> #f0f0f0 */
+
+#healthcoursenav {
+    background-color: #8f1736;
+    width: 100%;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #f0f0f0;
+}
+
+#healthcoursenav ul li.has-sub:hover > a {
+    background: #f0f0f0;
+    border-color: #f0f0f0;
+}
+
+#healthcoursenav ul li.has-sub > a:hover {
+    background: #f0f0f0;
+    color: #184780;
+    border: 1px solid #184780;
+}
+
+#healthcoursenav {
+    background-color: #8f1736;
+}
+
+#healthcoursenav ul li > ul {
+    border: 1px solid #8f1736;
+}
+
+#healthcoursenav > ul > li > a {
+    color: #fff;
+}
+
+#healthcoursenav ul li > ul li a {
+    color: #8f1736;
+}
+
+ul.primary li {
+    border: 1px solid #8f1736;
+    background-color: #8f1736;
+}
+
+ul.primary li a:hover {
+    background-color: #f0f0f0;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+    border-radius: 0;
+    box-shadow: none;
+    background: #194880;
+    background-color: #194880;
+    /*   background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(#fbfbfb) );
+      background-image: -webkit-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+      background-image: -moz-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+      background-image: -o-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+      background-image: linear-gradient(to top, #f0f0f0, #fbfbfb); */
+    border: 1px solid #ababab;
+    color: #ababab;
+}
+
+#btn-proceed-top #btn-proceed:hover, #btn-proceed-bottom #btn-proceed:hover, #btn-proceed-top #login:hover, #btn-proceed-bottom #login:hover {
+    background: #ed3324;
+    background-color: #ed3324;
+    /*background-image: -webkit-gradient(linear, left bottom, left top, from(#fbfbfb), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -moz-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -o-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: linear-gradient(to top, #ed3324, #ed3324);*/
+    border: 1px solid #ababab;
+}
+
+#btn-proceed-top #btn-proceed a, #btn-proceed-bottom #btn-proceed a, #btn-proceed-top #login a, #btn-proceed-bottom #login a {
+    color: #ffffff;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+#coursetitle div.info table tr td {
+    font-size: medium;
+}
+
+.view-item-all-activities {
+    background-color: #FFFFFF;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.view-item-all-activities .view-data-node-link {
+    float: right;
+    border-radius: 0;
+    box-shadow: none;
+    background: #8f1736;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -moz-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -o-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: linear-gradient(to top, #f0f0f0, #fbfbfb);
+    border-radius: 4px;
+    border: 1px solid #ababab;
+    color: #fff;
+    text-shadow: none;
+}
+
+.view-item-all-activities .view-data-node-link:hover {
+    background: #f0f0f0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fbfbfb), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -moz-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -o-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: linear-gradient(to top, #fbfbfb, #f0f0f0);
+    border: 1px solid #ababab;
+    color: #ababab;
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link, .view-item-all-activities .view-data-node-link a:visited {
+    color: #8f1736;
+}
+
+.form-btn {
+    background: #fbfbfb;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -moz-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -o-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: linear-gradient(to top, #f0f0f0, #fbfbfb);
+    border: 1px solid #ababab;
+    color: #ababab;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-btn:hover {
+    background: #f0f0f0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fbfbfb), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -moz-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -o-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: linear-gradient(to top, #fbfbfb, #f0f0f0);
+    border: 1px solid #ababab;
+    color: #ababab;
+}
+
+#user-login .login-btn, #user-register .register-btn, #user-pass .pass-btn {
+    border: 1px solid #ababab;
+}
+
+#user-login #edit-submit, #user-register #edit-submit, #user-pass #edit-submit, #user-edit #edit-submit, #user-edit #edit-delete {
+    color: #ababab;
+}
+
+#user-login #edit-submit:hover, #user-register #edit-submit:hover, #user-pass #edit-submit:hover, #user-edit #edit-submit:hover, #user-edit #edit-delete:hover {
+    color: #ababab;
+}
+
+.healthcourse-record-btn {
+    background: #fbfbfb;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f0f0f0), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -moz-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: -o-linear-gradient(bottom, #f0f0f0, #fbfbfb);
+    background-image: linear-gradient(to top, #f0f0f0, #fbfbfb);
+    border: 1px solid #ababab;
+    color: #ababab;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.healthcourse-record-btn:hover {
+    background: #f0f0f0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fbfbfb), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -moz-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: -o-linear-gradient(bottom, #fbfbfb, #f0f0f0);
+    background-image: linear-gradient(to top, #fbfbfb, #f0f0f0);
+    border: 1px solid #ababab;
+    color: #ababab;
+}
+
+.healthcourse-record-btn a, .healthcourse-record-btn a:link, .healthcourse-record-btn a:visited {
+    color: #ababab;
+}
+
+ul.primary li, ul.primary li a:hover, ul.primary li.active a, ul.primary li.active a:hover {
+    -moz-border-radius-topright: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-top-left-radius: 0px;
+}
+
+ul.primary li.active a, ul.primary li.active a:hover {
+    color: #333;
+}
+
+ul.primary li a:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+body {
+    color: #747474;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+#pahheader {
+    background-attachment: scroll;
+    background-image: url("../img/bkgd_bw2.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#pahheader {
+    border-bottom-color: #8f1736;
+    padding: 0 10px 13px 10px;
+}
+
+.avada-row {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.avada-row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#pahheader .logo {
+    float: left;
+    margin: 31px 0;
+    overflow: hidden;
+}
+
+#pahheader .logo a {
+    display: block;
+    color: #333333;
+}
+
+#pahheader img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+#pahheader #nav {
+    float: right;
+    font: 14px/16px "MuseoSlab500Regular", arial, helvetica, sans-serif;
+    z-index: 99997;
+    color: #747474;
+    font-size: 14px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+#pahheader #nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#pahheader #nav.nav-holder .pahnavigation > li > a {
+    height: 100px;
+    line-height: 100px;
+}
+
+#pahheader #nav ul li {
+    padding-right: 30px;
+}
+
+#pahheader #nav ul li {
+    position: relative;
+}
+
+#pahheader #nav ul li {
+    float: left;
+    margin: 0;
+    padding: 0 35px 0 0;
+}
+
+#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a, #nav ul ul, .pahnavigation li.current-menu-ancestor a, #nav ul li a:hover, #sticky-nav ul .current_page_item a, #sticky-nav ul .current-menu-item a, #sticky-nav ul > .current-menu-parent a, #sticky-nav ul ul, #sticky-nav li.current-menu-ancestor a, .pahnavigation li.current-menu-ancestor a, #sticky-nav ul li a:hover {
+    border-color: #8f1736 !important;
+    color: #8f1736 !important;
+}
+
+#pahheader #nav ul li a {
+    color: #333333;
+    font-weight: normal;
+}
+
+#pahheader #nav ul a, #pahheader .pahnavigation li.current-menu-ancestor > a {
+    border-top: 3px solid transparent;
+    display: block;
+    height: 83px;
+    line-height: 83px;
+}
+
+.footer-area, .footer-area article.col, .copyright {
+    color: #cccccc;
+}
+
+.footer-area a, .copyright a {
+    color: #bfbfbf;
+}
+
+.footer-area {
+    border-color: #8f1736;
+    background-color: #ffffff;
+    position: relative;
+    line-height: 20px;
+    font-size: 14px;
+    border-top: 12px solid #8f1736;;
+    color: #8c8989;
+    padding: 43px 10px 40px;
+    position: relative;
+}
+
+.footer-area .row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.footer-area .fusion-columns {
+    margin: 0 -15px;
+}
+
+.col-lg-4 {
+    width: 33.3333%;
+    float: left;
+}
+
+.fusion-column {
+    box-sizing: border-box;
+}
+
+#pahfooter {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #111111;
+    border-top: 1px solid #4b4c4d;
+    position: relative;
+    z-index: 1;
+    color: #747474;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+a:link, a:hover, a:focus, a:visited {
+    color: #8f1736;
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #8f1736;
+}
+
+.view-data-node-title a {
+    color: #000;
+}
+
+.view-data-node-link a {
+
+}
+
+div.cme-pager input, input.cme-register {
+    background: #194880;
+    text-shadow: 2px 2px #194880;
+    border 0;
+}
+
+#realcme-answer-text {
+    display: none;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #184780;
+}
+
+#healthcoursenav > ul > li > a {
+    font-size: larger;
+}
+
+.form-item label {
+    font-size: larger;
+}
+
+.form-item .description {
+    font-size: small;
+}
+
+.login-required {
+    font-size: small;
+}
+
+div#previousrequired {
+    font-size: small;
+}
+
+.thank-you-support-text {
+    display: none;
+}

@@ -1,0 +1,79 @@
+/*----ELEMENTAL STYLES----*/
+
+ol {
+    margin: 0px 0px 0px -14px;
+}
+
+/*----ELEMENTAL STYLE CLASSES----*/
+
+div.closeBar {
+    height: 20px;
+}
+
+div.distractor {
+    padding: 4px 0px 0px 0px;
+    min-height: 20px;
+}
+
+div.floatLeftHome {
+    margin: 4px 0px 15px 0px;
+}
+
+div.floatRadio {
+    width: 24px;
+}
+
+input.standardLG, select.standardLG {
+    height: 19px;
+}
+
+li.leftNav {
+    margin: 0px 0px 2px -15px;
+    padding-left: 0px;
+}
+
+table.alignCenter {
+    margin: 0px auto;
+}
+
+table.borderTable {
+    width: 100%;
+}
+
+table.searchTable {
+    width: 100%;
+}
+
+ul.cc {
+    list-style: url('/images/bullet_ccFF.gif');
+    margin: 5px 0px 0px -40px;
+}
+
+ul.leftNav {
+    list-style: square url('/images/leftNavBulletFF.gif');
+}
+
+ul.redBullet {
+    list-style: square url('/images/redBulletFF.gif');
+    margin: 0px 0px 0px -30px;
+}
+
+ul.AnnMtgBullet {
+    list-style: square url('/images/AnnMtgBulletFF.gif');
+    margin: 0px 0px 0px -30px;
+}
+
+/* CME-CE Update Styles */
+#cmeCaseStudyContentContainer {
+    height: 100%;
+}
+
+.small ul {
+    margin: 0px 0px 0px -30px;
+}
+
+#cmeRightPanel {
+    background-color: #FFF;
+    border: 1px solid #AE7758;
+    margin-left: 220px;
+}

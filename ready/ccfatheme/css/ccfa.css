@@ -1,0 +1,476 @@
+body {
+    padding: 0;
+}
+
+#headWrap {
+    height: 20px;
+    margin: 0 auto;
+    width: 1250px;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background: #fff;
+    position: relative;
+    margin: 0 0 5px
+}
+
+header #logo {
+    width: 314px;
+    height: 46px;
+    background: url('../img/logo.png') no-repeat;
+    text-indent: -999px;
+    margin: 25px 0 0 59px;
+    float: left;
+}
+
+header #headWrap {
+    width: 1250px;
+    height: 20px;
+    margin: 0px auto;
+}
+
+/* Primary Navigation */
+header nav {
+    width: 100%;
+    min-width: 1250px;
+    height: 34px;
+    background: #340040;
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+    z-index: 99;
+}
+
+header nav ul#primary {
+    width: 1146px;
+    position: relative;
+    left: 50%;
+    margin-left: -625px;
+    height: 10px;
+    padding-left: 104px;
+    list-style: none
+}
+
+header nav li {
+    float: left;
+    height: 34px;
+    position: relative;
+    margin-left: 5px;
+}
+
+header nav li:after {
+    content: url('../img/nav_sep.png');
+    position: absolute;
+    top: 0;
+    right: -4px;
+    top: 4px;
+}
+
+header nav li a {
+    display: block;
+    height: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 10px 8px 0 8px;
+    text-transform: uppercase;
+}
+
+header nav li a:link {
+    color: #fff;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+header nav li a:before {
+    content: url('../img/nav_arrow.png');
+    margin-right: 6px;
+}
+
+header nav li a:hover {
+    background: #540166;
+}
+
+.lastnav:after {
+    content: '';
+}
+
+header nav li .submenu {
+    width: 546px;
+    background: #540166;
+    position: absolute;
+    z-index: 99999;
+    top: 34px;
+    display: none;
+    left: -22px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+}
+
+/* Sub menu */
+header ul ul {
+    list-style: none
+}
+
+header nav li:hover .submenu {
+    width: 546px;
+    background: #540166;
+    position: absolute;
+    z-index: 99999999;
+    top: 34px;
+    display: block;
+    left: -22px;
+}
+
+header nav li:hover > a {
+    background: #540166;
+}
+
+header nav li .submenu > ul {
+    width: 220px;
+    height: auto;
+    margin: 0 0 0 33px;
+    float: left;
+}
+
+header nav li .submenu > ul:first-child {
+    border-right: dotted 1px #aa80b3;
+}
+
+header nav li .submenu > ul:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+header nav li .submenu > ul li {
+    width: 96%;
+    clear: both;
+    margin: 0;
+    height: auto;
+    border-top: dotted 1px #aa80b3;
+    padding: 8px 0 18px 0;
+}
+
+header nav li .submenu ul li a {
+    display: inherit;
+    width: 93%;
+    color: #fec542;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 4px;
+    text-transform: none;
+}
+
+header nav li .submenu ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav li .submenu ul li a:before {
+    content: '';
+}
+
+header nav li .submenu > ul li:before {
+    content: url('../img/sub_arrow.png');
+    margin-right: 5px;
+    float: left;
+}
+
+header nav li .submenu > ul li:first-child {
+    border: none;
+    padding-top: 0;
+}
+
+header nav li .submenu > ul li:after {
+    content: '';
+}
+
+header nav li .submenu .info {
+    width: 266px;
+    height: auto;
+    float: left;
+    margin-left: 17px;
+}
+
+header nav li .submenu .info h3 {
+    color: #fec542;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+}
+
+header nav li .submenu .info a {
+    color: #fec542;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+header nav li .submenu .info a:hover {
+    text-decoration: underline;
+}
+
+header nav li .submenu .info a:before {
+    content: '';
+    margin: 0;
+    padding: 0;
+}
+
+header nav li .submenu .info p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 11px;
+    margin: 3px 0 17px 0;
+}
+
+/* End Primary */
+
+/* Top Nav */
+header ul#topnav {
+    font-family: sans-serif;
+    width: auto;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    position: relative;
+}
+
+header ul#topnav li {
+    float: left; /*margin-left: 16px; 120717 - sbh, adding "profile" to logged in state */
+    margin-left: 12px;
+}
+
+header ul#topnav li a {
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #5d5d5d;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+header ul#topnav li.align {
+    line-height: 4.938em;
+}
+
+header ul#topnav li.align a:link {
+    line-height: 4.938em;
+}
+
+header ul#topnav li.align img {
+    margin-top: -16px;
+}
+
+header ul#topnav li.redarrow {
+    color: #222;
+    font-size: 16px;
+    background: url('../img/topnav_arrow.png') no-repeat right; /* padding-right: 20px; 120717 - sbh, adding "profile" to logged in state */
+    padding-right: 16px;
+}
+
+header ul#topnav li.redarrow a:link {
+    color: #222;
+    font-weight: 800;
+}
+
+/* end top nav */
+
+/* Secondary Nav */
+header ul#secondary {
+    height: 27px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    margin: 8px 0 0 0;
+}
+
+header ul#secondary li {
+    float: left;
+    margin-left: 19px;
+    padding: 12px 0 0 0;
+    position: relative;
+}
+
+header ul#secondary li a {
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    color: #2a5daa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header ul#secondary li:first-child {
+    margin: 0;
+}
+
+header ul#secondary li input[name=q] {
+    width: 140px;
+    height: 37px;
+    border: solid 1px #ccc;
+    outline: none;
+    float: right;
+    line-height: 37px;
+    background: url('../img/search_btn.jpg') no-repeat right;
+    padding: 0 42px 0 0;
+    color: #9a9a9a;
+}
+
+header ul#secondary li input[name=submit] {
+    position: absolute;
+    right: 0;
+}
+
+header ul#secondary li.search_box {
+    padding: 0;
+}
+
+header ul#secondary li.search_box label.hidden {
+    display: none;
+}
+
+/* end Secondary nav */
+
+ccfafooter {
+    height: 64px;
+    margin: 0 auto;
+    padding: 16px 0 0 32px;
+    position: relative;
+    width: 1180px;
+}
+
+ccfafooter img {
+    float: left;
+}
+
+ccfafooter .copyright {
+    bottom: 13px;
+    font-size: 9px;
+    left: 4px;
+    position: absolute;
+}
+
+.contact {
+    background: none repeat scroll 0 0 #e4e3e3;
+    bottom: 10px;
+    color: #5d5d5d;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    height: 38px;
+    left: 0;
+    min-width: 100%;
+    opacity: 0;
+    padding: 5px 0 0 33px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.contact a {
+    color: #2a7ae9;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+ccfafooter nav {
+    float: left;
+    list-style: outside none none;
+    margin: 3px 0 0;
+    padding: 0;
+}
+
+ccfafooter nav ul {
+    list-style: outside none none;
+    margin: 0;
+}
+
+ccfafooter nav li {
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 4px 6px;
+}
+
+ccfafooter nav li a, ccfafooter nav li a:link {
+    color: #2a7ae9;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+ccfafooter nav li:first-child {
+    margin: 0;
+    padding-left: 0;
+}
+
+ccfafooter nav li.solidbg {
+    background: none repeat scroll 0 0 #2a7ae9;
+    color: #fff;
+}
+
+ccfafooter nav li.solidbg a {
+    color: #fff;
+}
+
+ccfafooter nav li img {
+    position: relative;
+    top: -4px;
+}
+
+ccfafooter ul#links {
+    float: right;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+ccfafooter ul#links li {
+    float: left;
+    margin-left: 10px;
+}
+
+ccfafooter .mobile {
+    bottom: 1px;
+    font-size: 10px;
+    left: 4px;
+    position: absolute;
+}
+
+ccfafooter .mobile a {
+    color: #ef4024;
+    text-decoration: none;
+}
+
+ccfafooter #convio-content-519738432 {
+    height: 64px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1180px;
+}
+
+header nav li a:visited {
+    color: #fff;
+}

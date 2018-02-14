@@ -1,7 +1,7 @@
 8
 
 dir
-17674
+17681
 svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/smdctheme/smdc_files
 svn+ssh://svn.realcme.com/svn/realcme
 
@@ -26,18 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 54cdfa15-4bae-4c23-a447-dd2ea17af9e4
 
-mainJavaScriptSmall.js
-file
-
-
-
-
-2015-03-26T15:41:21.000000Z
-8af7932a8b1f3a10ef208bb367b0773b
-2008-10-10T21:34:23.000000Z
-659
-valerie
-
 yellowCircleBlueArrowPurple13by13.gif
 file
 
@@ -51,14 +39,14 @@ ae82442ac20cd7e403c50f129ed17264
 valerie
 has-props
 
-newdcsmall.css
+mainJavaScriptSmall.js
 file
 
 
 
 
 2015-03-26T15:41:21.000000Z
-4bdedd4ccd5596a35110ccad9957e5bb
+8af7932a8b1f3a10ef208bb367b0773b
 2008-10-10T21:34:23.000000Z
 659
 valerie
@@ -75,6 +63,18 @@ file
 659
 valerie
 has-props
+
+newdcsmall.css
+file
+
+
+
+
+2015-03-26T15:41:21.000000Z
+4bdedd4ccd5596a35110ccad9957e5bb
+2008-10-10T21:34:23.000000Z
+659
+valerie
 
 yellowCircleCyanArrowPurple13by13.gif
 file
@@ -165,19 +165,6 @@ file
 valerie
 has-props
 
-blueTabRight19by28.gif
-file
-
-
-
-
-2015-03-26T15:41:21.000000Z
-252709a0d19a4132d9a873a24f4fd1ae
-2008-10-10T21:34:23.000000Z
-659
-valerie
-has-props
-
 yellowCircleBlueArrowBlue13by13.gif
 file
 
@@ -191,14 +178,14 @@ file
 valerie
 has-props
 
-yellowCircleCyanArrowBlue13by13.gif
+blueTabRight19by28.gif
 file
 
 
 
 
 2015-03-26T15:41:21.000000Z
-185dcd8f8e12d98101d6cc064bee8497
+252709a0d19a4132d9a873a24f4fd1ae
 2008-10-10T21:34:23.000000Z
 659
 valerie
@@ -215,6 +202,19 @@ file
 2008-10-10T21:34:23.000000Z
 659
 valerie
+
+yellowCircleCyanArrowBlue13by13.gif
+file
+
+
+
+
+2015-03-26T15:41:21.000000Z
+185dcd8f8e12d98101d6cc064bee8497
+2008-10-10T21:34:23.000000Z
+659
+valerie
+has-props
 
 spotlight_topbar.jpg
 file

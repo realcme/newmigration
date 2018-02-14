@@ -1,3 +1,129 @@
+<?php
+  global $user;
+  $img_path = base_path() . path_to_subtheme();
+?>  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title><?php print $head_title; ?></title>
+  	<?php print $head; ?>
+
+<link rel="shortlink" href="https://www.aace.com/node/26">
+<link rel="canonical" href="https://www.aace.com/advocacy/leg/aacepac">
+  <style type="text/css" media="all">
+	  <?php /*@import url("https://www.aace.com/modules/system/system.base.css?nq5jsi");
+php /*
+       @import url("https://www.aace.com/modules/system/system.menus.css?nq5jsi");
+      @import url("https://www.aace.com/modules/system/system.messages.css?nq5jsi");
+      @import url("https://www.aace.com/modules/system/system.theme.css?nq5jsi");
+       */ ?>
+</style>
+<?php /*
+<style type="text/css" media="all">
+@import url("https://www.aace.com/modules/comment/comment.css?nq5jsi");
+@import url("https://www.aace.com/modules/field/theme/field.css?nq5jsi");
+@import url("https://www.aace.com/modules/node/node.css?nq5jsi");
+@import url("https://www.aace.com/modules/search/search.css?nq5jsi");
+@import url("https://www.aace.com/modules/user/user.css?nq5jsi");
+@import url("https://www.aace.com/modules/forum/forum.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/modules/views/css/views.css?nq5jsi");
+</style>
+ */ ?>
+<style type="text/css" media="all">
+<?php /*@import url("https://www.aace.com/sites/all/modules/ctools/css/ctools.css?nq5jsi");*/ ?>
+</style>
+<style type="text/css" media="all">
+@import url("https://www.aace.com/sites/all/themes/aace/css/html-reset.css?nq5jsi");
+<?php /*@import url("https://www.aace.com/sites/all/themes/aace/css/messages.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/pages.css?nq5jsi");*/ ?>
+
+#footer {
+	background: #444545 none repeat scroll 0 0;
+	color: #fff;
+	overflow: hidden;
+	padding: 15px;
+}
+a {
+	color: #004276;
+	font-size: inherit;
+	outline: medium none;
+}
+#footer .section {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix {
+	clear: both;
+}
+<?php /*
+@import url("https://www.aace.com/sites/all/themes/aace/css/blocks.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/navigation.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/views-styles.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/nodes.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/comments.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/forms.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/fields.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/fonts.css?nq5jsi");
+@import url("https://www.aace.com/sites/all/themes/aace/css/portal.css?nq5jsi");
+ */?>
+</style>
+<?php /*
+<style type="text/css" media="print">
+@import url("https://www.aace.com/sites/all/themes/aace/css/print.css?nq5jsi");
+</style>
+ */ ?>
+  	<?php print $styles; ?>
+<style>
+	#content, .two-sidebars #content {
+		clear: both !important;
+		/*margin-right: -760px;
+		padding: 0;
+		width: 780px;*/
+	}
+
+	#page-inner {
+		padding-left: 10px !important;
+	}
+
+	#page {
+		width: 1000px !important;
+	}
+	#sidebar-right {
+		padding-right: 10px;
+
+	}
+</style>
+
+  <!--[if IE]>
+    <link rel="stylesheet" href="<?php print $base_path . $directory; ?>/ie.css" type="text/css">
+    <?php if ($subtheme_directory && file_exists($subtheme_directory .'/ie.css')): ?>
+      <link rel="stylesheet" href="<?php print $base_path . $subtheme_directory; ?>/ie.css" type="text/css">
+    <?php endif; ?>
+  <![endif]-->
+  	<?php print $scripts; ?>
+  	<?php print phptemplate_cookie_js(); ?> 
+  	<?php print phptemplate_opencomp_js(); ?> 
+  	<?php drupal_add_js('anylinkcssmenu.init("anchorclass");'); ?>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.aace.com/sites/all/themes/aace/css/ie.css?nq5jsi" media="all" />
+<![endif]-->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"AACE_Theme","theme_token":"sDr2mewCIuEueEnHxTgfMZ3_fMPIkcgyNKuYk_RT1Xk","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.5.2\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/aace\/js\/site.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/aace\/css\/html-reset.css":1,"sites\/all\/themes\/aace\/css\/messages.css":1,"sites\/all\/themes\/aace\/css\/pages.css":1,"sites\/all\/themes\/aace\/css\/blocks.css":1,"sites\/all\/themes\/aace\/css\/navigation.css":1,"sites\/all\/themes\/aace\/css\/views-styles.css":1,"sites\/all\/themes\/aace\/css\/nodes.css":1,"sites\/all\/themes\/aace\/css\/comments.css":1,"sites\/all\/themes\/aace\/css\/forms.css":1,"sites\/all\/themes\/aace\/css\/fields.css":1,"sites\/all\/themes\/aace\/css\/fonts.css":1,"sites\/all\/themes\/aace\/css\/portal.css":1,"sites\/all\/themes\/aace\/css\/print.css":1,"sites\/all\/themes\/aace\/css\/ie.css":1}}});
+//--><!]]>
+</script>
+</head>
 <body class="<?php print $body_classes; ?>">
 	<div id="page">
 
@@ -66,10 +192,10 @@
 								<?php if ($sidebar_right) {?>
 								<div id="companionlogo">
 									<img src="<?php print $img_path ?>/img/logo-companion.gif" id="logo-companion" alt="CMECompanion" class="" />
-								</div>
+								</div>      
 								<?php }?>
 			  <!-- Accordion Menu Start -->
-								<div id="list1">
+								<div id="list1">            
 									<?php print $sidebar_right; ?>
 								</div>
 							</div><!--  /altcontainer2 -->
@@ -85,7 +211,7 @@
 				</div>
 			</div> <!-- /#footer-inner, /#footer -->
 	</div>
-
+  
   </div> <!-- /#page, /#page-wrapper -->
     <div id="footer"><div class="section">
         <div class="region region-footer">
@@ -106,5 +232,6 @@
 			</div>
 		  </div>
     	</div>
-    </div> <!-- /.section, /#footer -->
+    </div> <!-- /.section, /#footer -->  
 </body>
+</html>

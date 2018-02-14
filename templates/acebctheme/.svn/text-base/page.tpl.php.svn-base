@@ -1,6 +1,7 @@
 <?php
   global $user;
   $img_path = base_path() . path_to_subtheme();
+  $axis_path = 'http://axismeded.com';
 ?>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language; ?>" xml:lang="<?php print $language; ?>">
@@ -47,19 +48,19 @@
     <div id="navigation">
         <div id="topnav-inner">
           <nav id="main-menu" role="navigation">
-        <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://axismeded.com/" title="home" class="menu__link">Home</a></li>
-<li class="menu__item is-active-trail is-expanded expanded active-trail"><a href="/content/about-us" class="menu__link">About Us</a><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://axismeded.com/team" title="" class="menu__link">The Team</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/privacy-policy" title="" class="menu__link">Privacy Policy</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/permissions" class="menu__link">Permissions</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/employment" class="menu__link">Employment</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/mobile-terms" class="menu__link">Mobile Terms</a></li>
+        <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="<?=$axis_path;?>/" title="home" class="menu__link">Home</a></li>
+<li class="menu__item is-active-trail is-expanded expanded active-trail"><a href="<?=$axis_path;?>/content/about-us" class="menu__link">About Us</a><ul class="menu"><li class="menu__item is-leaf first leaf"><a href="<?=$axis_path;?>/team" title="" class="menu__link">The Team</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/privacy-policy" title="" class="menu__link">Privacy Policy</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/permissions" class="menu__link">Permissions</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/employment" class="menu__link">Employment</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/mobile-terms" class="menu__link">Mobile Terms</a></li>
 <li class="menu__item is-leaf last leaf"><a href="http://axismeded.com/content/terms-service-0" class="menu__link">Terms of Service</a></li>
 </ul></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/courses" title="" class="menu__link">Course Catalog</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="http://axismeded.com/" title="" class="menu__link"> Webinars</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/advocacy-partners" class="menu__link">Advocacy Partners</a></li>
-<li class="menu__item is-leaf leaf"><a href="http://axismeded.com/content/tosdmrc" title="" class="menu__link">OSDMRC</a></li>
-<li class="menu__item is-leaf last leaf"><a href="http://axismeded.com/content/contact-us-1" class="menu__link">Contact Us</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/courses" title="" class="menu__link">Course Catalog</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="<?=$axis_path;?>/" title="" class="menu__link"> Webinars</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/advocacy-partners" class="menu__link">Advocacy Partners</a></li>
+<li class="menu__item is-leaf leaf"><a href="<?=$axis_path;?>/content/tosdmrc" title="" class="menu__link">OSDMRC</a></li>
+<li class="menu__item is-leaf last leaf"><a href="<?=$axis_path;?>/content/contact-us-1" class="menu__link">Contact Us</a></li>
 </ul>      </nav>
     
         </div><!--/#topnav-inner-->

@@ -1,0 +1,121 @@
+#views-filters {
+    display: none
+}
+
+.page-cmealerts-alerts #views-filters {
+    display: inline
+}
+
+body {
+    background-color: #FFFFFF
+}
+
+#page {
+    width: 1024px;
+    padding: 10px 0px;
+}
+
+#main {
+    padding: 0px 10px;
+}
+
+#footer {
+    padding: 10px 10px;
+}
+
+.healthcourse-record.open {
+    background-color: #FFFFFF;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.healthcourse-record-title {
+    font-weight: bold;
+}
+
+.curric-title {
+    color: #faaf40;
+    font-size: 22px;
+    font-weight: bold;
+    clear: right;
+    padding-top: 10px;
+}
+
+#curricdata .reflections {
+    margin-bottom: 15px;
+}
+
+/* #2461AA -> #ae1d2c */
+/* #AECBEE -> #c31a2b */
+
+#healthcoursenav {
+    background-color: #ae1d2c;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #c31a2b;
+}
+
+#healthcoursenav ul li.has-sub:hover > a {
+    background: #c31a2b;
+    border-color: #c31a2b;
+}
+
+#healthcoursenav ul li.has-sub > a:hover {
+    background: #c31a2b;
+    border-color: #c31a2b;
+}
+
+#healthcoursenav {
+    background-color: #ae1d2c;
+}
+
+#healthcoursenav ul li > ul {
+    border: 1px solid #ae1d2c;
+}
+
+#healthcoursenav > ul > li > a {
+    color: #fff;
+}
+
+#healthcoursenav ul li > ul li a {
+    color: #ae1d2c;
+}
+
+ul.primary li {
+    border: 1px solid #ae1d2c;
+    background-color: #ae1d2c;
+}
+
+ul.primary li a:hover {
+    background-color: #c31a2b;
+}
+
+#btn-proceed-top #btn-proceed, #btn-proceed-bottom #btn-proceed, #btn-proceed-top #login, #btn-proceed-bottom #login {
+    background: #ae1d2c; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, # 0%, #ae1d2c 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #), color-stop(100%, #ae1d2c)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, # 0%, #ae1d2c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, # 0%, #ae1d2c 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, # 0%, #ae1d2c 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, # 0%, #ae1d2c 100%); /* W3C */
+}
+
+.view-item-all-activities .view-data-node-link {
+    float: right;
+    background-color: #ae1d2c;
+    background-image: -moz-linear-gradient(center top, #c31a2b, #ae1d2c);
+    border-color: #c31a2b #c31a2b #ae1d2c;
+    color: #FFFFFF;
+}
+
+.form-btn {
+    background: #ae1d2c; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #c31a2b 0%, #ae1d2c 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #c31a2b), color-stop(100%, #ae1d2c)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #c31a2b 0%, #ae1d2c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #c31a2b 0%, #ae1d2c 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #c31a2b 0%, #ae1d2c 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #c31a2b 0%, #ae1d2c 100%); /* W3C */
+    color: #FFFFFF;
+}

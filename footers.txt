@@ -164,3 +164,4 @@ footers/vclinictheme/
 footers/vditheme/
 footers/vindicocmetheme/
 footers/vqitheme/
+footers/zen/

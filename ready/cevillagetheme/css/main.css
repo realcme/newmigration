@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-color: #333333;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+sup {
+    font-size: 9px;
+}
+
+ol, ul {
+    list-style: outside;
+    margin-top: 10px;
+}
+
+.numeric li {
+    list-style: decimal !important;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-top: 5px;
+    width: 650px;
+}
+
+.notice {
+    background: #DFFFD8;
+    border: thin solid #999;
+    display: block;
+    height: 25px;
+    padding: 5px 0 0 5px;
+    width: 450px;
+}
+
+#shell {
+    width: 999px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#banner {
+    width: 999px;
+    height: 139px;
+    background-image: url(../img/banner.jpg);
+    padding-bottom: 1px;
+}
+
+#joinNav {
+    width: 250px;
+    height: 41px;
+    display: block;
+    float: right;
+}
+
+#joingNav img {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#header img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+
+#joinNav img a {
+    margin-right: 2px;
+    border: none;
+}
+
+#nav {
+    width: 600px;
+    height: 33px;
+    float: left;
+    padding-top: 111px;
+    margin-left: 20px;
+}
+
+#nav a.selected {
+    display: block;
+    width: 114px;
+    height: 33px;
+    background-image: url(../img/button_bg.png);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+#nav a {
+    display: block;
+    width: 122px;
+    height: 25px;
+    float: left;
+    background-image: url(../img/button_bgGrey.png);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+#nav a:hover {
+    display: block;
+    width: 122px;
+    height: 25px;
+    background-image: url(../img/button_bg.png);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+#nav a.selected {
+    display: block;
+    width: 122px;
+    height: 25px;
+    background-image: url(../img/button_bg.png);
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+#promoBanner {
+    width: 999px;
+    height: 249px;
+    background-image: url(../img/promoBanner.jpg);
+    background-repeat: no-repeat;
+    background-color: #A7C354;
+}
+
+.flashForm {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#featured {
+    width: 16px;
+    height: 122px;
+    float: left;
+    clear: left;
+    margin-top: 6px;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+#promoImageholder {
+    width: 620px;
+    height: 196px;
+    display: block;
+    float: left;
+    background-color: #FFFFFF;
+    margin-top: 15px;
+}
+
+#promoImageholder img {
+    margin-left: 9px;
+    margin-top: 9px;
+}
+
+#promoText {
+    width: 295px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#promoText h3 {
+    font-size: 18px;
+}
+
+#content {
+    width: 999px;
+    float: left;
+    clear: both;
+    background-color: #FFFFFF;
+    margin-bottom: 1px;
+}
+
+#contentLeft {
+    width: 692px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    background-color: #EDF0F8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+#contentLeft h2 {
+    width: 687px;
+    height: 30px;
+    float: left;
+    display: block;
+    padding-top: 7px;
+    padding-left: 5px;
+    color: #318DE0;
+    background-color: #CED9E9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Content left full */
+#contentLeft_full {
+    width: 989px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    background-color: #EDF0F8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+#contentLeft_full h2 {
+    width: 984px;
+    height: 30px;
+    float: left;
+    display: block;
+    padding-top: 7px;
+    padding-left: 5px;
+    color: #318DE0;
+    background-color: #CED9E9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.standardBanner {
+    width: 600px;
+    height: 120px;
+    display: block;
+    float: left;
+    background-color: #0099FF;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.transcripts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #0099FF;
+}
+
+.descriptionWhite a {
+    color: #FFFFFF;
+!important
+}
+
+.descriptionWhite a:hover {
+    color: #990000;
+}
+
+.descriptionBLK {
+    color: #000000;
+!important
+}
+
+.descriptionBLK a {
+    text-decoration: none;
+}
+
+.descriptionBLK a:hover {
+    color: #FF0000;
+}
+
+.description h3 a {
+    color: #0099FF;
+    text-decoration: none;
+}
+
+.description h3 a:hover {
+    color: #FF0000;
+}
+
+.description h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contentText {
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.contentText img {
+    margin-left: 0px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+#contentRight {
+    width: 300px;
+    float: right;
+}
+
+#contentRight img {
+    margin-left: 30px;
+    margin-top: 10px;
+    border: none;
+}
+
+#cevillagefooter {
+    width: 999px;
+    height: 30px;
+    float: left;
+    clear: both;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: repeat-x;
+    padding-top: 9px;
+    color: #FFFFFF;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cevillagefooter a {
+    color: #FFFFFF;
+    font-family: Trebuchet MS, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#page {
+    width: 999px;
+}
+
+#content {
+    padding-left: 10px;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#footer-message {
+    text-align: center;
+}
+

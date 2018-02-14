@@ -1,0 +1,18 @@
+.node-type-activity_group .title {
+    display: none;
+}
+
+#intro-text {
+    font-family: Arial, verdana, sans-serif;
+    margin-bottom: 15px;
+}
+
+#intro-text-title {
+    margin-bottom: 10px;
+}
+
+.curric-logo {
+    float: left;
+    padding-right: 5px;
+}
+

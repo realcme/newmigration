@@ -1,0 +1,472 @@
+#navbar {
+    display: none;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barscore-value {
+    font-weight: bold;
+    float: left;
+    padding: 0px 5px 0px 2px;
+}
+
+.barscore-value.cscore {
+    padding-right: 7px;
+}
+
+.barscore-text {
+    font-size: 11px;
+    font-family: Arial, verdana, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    position: relative;
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 0 2px 0 0;
+    display: inline;
+}
+
+.barscore-bar {
+    float: left;
+}
+
+.score {
+    font-size: 0;
+    background-color: transparent;
+    background-image: url(../../images/score.gif);
+    background-repeat: repeat-x;
+    background-position: 100% center;
+    position: relative;
+    height: 12px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: solid 1px #666;
+    display: inline;
+}
+
+.barscore-bar.cscore {
+    clear: left;
+}
+
+.score.cscore {
+    background-image: url(../../images/scoreothers.gif);
+}
+
+.score-blank {
+    font-size: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    height: 12px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    display: inline;
+}
+
+.healthcourse-record {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px 10px 5px 10px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.healthcourse-record.completed {
+    background-color: #F2F2F2;
+}
+
+.healthcourse-record.open {
+    background-color: #FFFFFF;
+}
+
+.healthcourse-record-icon {
+    float: left;
+}
+
+.healthcourse-record-info {
+    float: left;
+    padding-left: 10px;
+}
+
+.healthcourse-record-title {
+    padding-top: 5px;
+    padding-left: 55px;
+    font-weight: bold;
+    min-height: 43px;
+}
+
+.healthcourse-record-perf {
+    font-size: 11px;
+    height: 60px;
+}
+
+.healthcourse-record-status {
+    font-size: 11px;
+}
+
+.healthcourse-record-action {
+    float: right
+}
+
+.healthcourse-record-btn {
+    padding: 3px;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #C0C0C0;
+    background-image: -moz-linear-gradient(center top, #D0D0D0, #A0A0A0);
+    border-color: #A0A0A0 #A0A0A0 #888888;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    width: 100px;
+    text-align: center;
+}
+
+.healthcourse-record-btn a, .healthcourse-record-btn a:link {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.healthcourse-record-btn:hover {
+    background-color: #787878;
+    background-position: 0 -15px;
+    color: #333333;
+    text-decoration: none;
+    transition: background-position 0.1s linear 0s;
+}
+
+.healthcourse-record-btn:focus {
+    outline: thin dotted #333333;
+    outline-offset: -2px;
+}
+
+.healthcourse-record-goto {
+}
+
+.healthcourse-record-cert {
+    width: 120px;
+}
+
+.healthcourse-record-pdf {
+    width: 120px;
+}
+
+.healthcourse-record-lo {
+    padding-left: 15px;
+    clear: left;
+}
+
+.view-content-all-activities ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+.view-item-all-activities {
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 50px;
+    padding: 10px 10px 5px 10px
+}
+
+.view-item-all-activities .view-data-node-data-field-icon-field-icon-fid {
+    float: left;
+}
+
+.view-item-all-activities .view-data-node-title {
+    float: left;
+    padding-left: 10px;
+    font-size: 120%
+}
+
+.view-item-all-activities .view-data-node-link {
+    float: right;
+    background-color: #C0C0C0;
+    background-image: -moz-linear-gradient(center top, #D7E1B1, #B8CB77);
+    background-repeat: repeat-x;
+    border-color: #D7E1B1 #D7E1B1 #B8CB77;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #03486E;
+    font-weight: normal;
+}
+
+.view-all-activities #views-filters thead {
+    display: none;
+}
+
+.view-all-activities #views-filters div.form-item {
+    background: none repeat scroll 0 0 white;
+    border: 1px inset #AAAAAA;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    float: left;
+    height: 22px;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 12px;
+    text-align: center;
+}
+
+.view-all-activities #views-filters #edit-filter0 {
+    border: none;
+    width: 150px;
+    margin-right: 6px;
+}
+
+.view-all-activities #views-filters #edit-submit {
+    background: url("/cms/sites/all/themes/zen/images/magnifying_glass.png") no-repeat scroll center bottom transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 16px;
+    margin: 0;
+    width: 16px;
+}
+
+.view-all-activities #views-filters > div {
+    background-color: #AAA;
+    background: -moz-linear-gradient(center top, #EEEEEE, #777777) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#777));
+    border: 1px solid #DDDDDD;
+    padding: 4px 12px;
+    border-radius: 6px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.view-all-activities #views-filters table {
+    margin: 0;
+}
+
+.view-all-activities #views-filters table td {
+    border: none;
+}
+
+.view-all-activities #views-filters table tr.even {
+    background-color: transparent;
+    border: none;
+}
+
+.view-all-activities #views-filters table tr.odd {
+    background-color: transparent;
+    border: none;
+}
+
+.node-type-course .title {
+    display: none;
+}
+
+.section-user .title {
+    display: none;
+}
+
+.homelinks {
+    display: none;
+}
+
+#user-login {
+    height: 300px;
+    background-color: white;
+    padding: 5px 20px;
+}
+
+.form-btn {
+    background: #B8CB77; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #D7E1B1 0%, #B8CB77 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #D7E1B1), color-stop(100%, #B8CB77)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #D7E1B1 0%, #B8CB77 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #D7E1B1 0%, #B8CB77 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #D7E1B1 0%, #B8CB77 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #D7E1B1 0%, #B8CB77 100%); /* W3C */
+    border-radius: 14px;
+    -moz-box-shadow: inset -2px -2px 10px #333;
+    -webkit-box-shadow: inset -2px -2px 10px #333;;
+    box-shadow: inset -2px -2px 10px #333;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    cursor: pointer;
+}
+
+#user-login .login-btn, #user-register .register-btn, #user-pass .pass-btn {
+    border: 0;
+    padding: 10px 0px;
+}
+
+#user-login .login-btn {
+    float: left;
+    width: 150px;
+}
+
+#user-register .register-btn {
+    width: 200px;
+}
+
+#user-pass .pass-btn {
+    width: 200px;
+}
+
+#user-edit .useredit-btn, #user-edit .userdelete-btn {
+    width: 120px;
+}
+
+#user-login input, #user-register input, #user-pass input, #user-edit input {
+    height: 30px;
+    cursor: pointer;
+}
+
+#user-login #edit-submit, #user-register #edit-submit, #user-pass #edit-submit, #user-edit #edit-submit, #user-edit #edit-delete {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+#user-login #edit-submit:hover, #user-register #edit-submit:hover, #user-pass #edit-submit:hover, #user-edit #edit-submit:hover, #user-edit #edit-delete:hover {
+    color: #FAD000;
+}
+
+.login-required {
+    font-size: 0.85em;
+    width: 250px;
+    float: left;
+}
+
+#user-register, #user-pass, #user-edit {
+    background-color: white;
+    padding: 5px 20px;
+}
+
+div.error {
+    padding: 20px 10px;
+    margin: 10px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+    color: red;
+    background-color: white;
+    font-size: bold;
+}
+
+div.messages {
+    padding: 20px 10px;
+    margin: 10px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+    color: green;
+    background-color: white;
+    font-size: bold;
+}
+
+.profile dd, .profile dt {
+    display: inline;
+    margin: 0;
+    height: 25px;
+    padding: 10px 0px;
+}
+
+.profile dd:before {
+    content: ': '; /* space them */
+}
+
+.profile dt:before { /* insert line break before <dt> */
+    content: "\A";
+    white-space: pre;
+}
+
+.profile dt:first-child:before { /* disable line break before the first <dt> */
+    content: none;
+}
+
+.profile, #heathcourseadmin {
+    background-color: white;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.profile .user-member {
+    display: none;
+}
+
+.profile .og-og_groups {
+    display: none;
+}
+
+.node-type-forum h1.title, .node-type-forum h2.title, .node-type-forum h3.title, .section-comment h2.title, .section-mdl h2.title, .section-node-add h2.title {
+    margin: 0;
+}
+
+.node-type-forum h1, .section-node-add h1 {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.node-type-forum, .section-comment, .section-mdl, .section-node-add {
+    color: #666666;
+    font-size: 12px;
+}

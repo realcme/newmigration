@@ -1,0 +1,12 @@
+
+#logo {
+    margin: 0;
+}
+
+#header img {
+    margin-top: 0px;
+}
+
+.with-navbar #content {
+    margin-top: 0;
+}

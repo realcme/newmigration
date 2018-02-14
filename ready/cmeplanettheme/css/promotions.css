@@ -1,0 +1,137 @@
+/*
+ * Virtual Clinic*/
+.bold {
+    font-weight: bold;
+}
+
+.next-steps-related {
+    padding-top: 5px;
+    height: 48px;
+    float: right;
+}
+
+.next-steps-icon {
+    width: 29px;
+    height: 29px;
+    float: left;
+}
+
+.schedule-activity {
+    font-size: 11px;
+    width: 100px;
+    float: left;
+    padding-top: 7px;
+}
+
+.proceed-activity {
+    font-size: 11px;
+    float: left;
+    padding-top: 7px;
+}
+
+.next-steps-divider {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 1px;
+    height: 29px;
+    float: left;
+}
+
+.promo-link {
+}
+
+.promo-link a:link {
+    color: #2c2a75;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.promo-link a:visited {
+    color: #2c2a75;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.promo-link a:hover, .promo-link a:focus {
+    color: #7660ad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.promo-link a:active {
+    color: #7660ad;
+}
+
+#related-activities {
+    width: 100%;
+    font-family: Arial, verdana, sans-serif;
+}
+
+.related-activities-title {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+.related-activities-left {
+    width: 48%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.related-activities-right {
+    width: 48%;
+    float: right;
+    padding-bottom: 15px;
+}
+
+.related-patient-bg {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 52px;
+    float: left;
+    margin-right: 9px;
+    padding: 6px 6px 6px;
+}
+
+.activity-subject {
+    margin-bottom: 5px;
+    margin-left: 68px;
+}
+
+.activity-title {
+    font-size: 14px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.certified-icon {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 19px;
+    float: left;
+}
+
+.certified-text {
+    color: #333;
+    font-size: 10px;
+    float: left;
+    margin-top: 2px;
+}
+
+.activity-info {
+    color: #333;
+    font-size: 11px;
+    line-height: 1.2em;
+    float: left;
+    clear: left;
+    height: 28px;
+    overflow: hidden;
+}

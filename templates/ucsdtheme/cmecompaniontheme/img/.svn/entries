@@ -1,7 +1,7 @@
 8
 
 dir
-17674
+17681
 svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/ucsdtheme/cmecompaniontheme/img
 svn+ssh://svn.realcme.com/svn/realcme
 
@@ -52,14 +52,14 @@ f0689f3db2b7a7ae9b7ab90ac9bd3bf9
 rtorres
 has-props
 
-fakeheader.gif
+header-bg-tall-top-3x.png
 file
 
 
 
 
 2015-03-31T22:52:15.000000Z
-1cbba82b2fed1043860a8767660daa83
+d9320b6bee9cb3dd949d8aff6daefe7e
 2015-03-31T22:38:29.699038Z
 12673
 rtorres
@@ -78,14 +78,14 @@ e7b2ff4ce9262f752209ba370a572c34
 rtorres
 has-props
 
-header-bg-tall-top-3x.png
+fakeheader.gif
 file
 
 
 
 
 2015-03-31T22:52:15.000000Z
-d9320b6bee9cb3dd949d8aff6daefe7e
+1cbba82b2fed1043860a8767660daa83
 2015-03-31T22:38:29.699038Z
 12673
 rtorres
@@ -143,19 +143,6 @@ a4e30569a3ad9a18122ed2782121ac44
 rtorres
 has-props
 
-header-bg-tall-top.png
-file
-
-
-
-
-2015-03-31T22:52:15.000000Z
-b9adc169c706ad6eb6e70aa4ba60475c
-2015-03-31T22:38:29.699038Z
-12673
-rtorres
-has-props
-
 header-bg-tall.png
 file
 
@@ -164,6 +151,19 @@ file
 
 2015-03-31T22:52:15.000000Z
 89ea682cfce3233d947a5b7ee065b059
+2015-03-31T22:38:29.699038Z
+12673
+rtorres
+has-props
+
+header-bg-tall-top.png
+file
+
+
+
+
+2015-03-31T22:52:15.000000Z
+b9adc169c706ad6eb6e70aa4ba60475c
 2015-03-31T22:38:29.699038Z
 12673
 rtorres
@@ -182,19 +182,6 @@ file
 rtorres
 has-props
 
-macFFBgHack.png
-file
-
-
-
-
-2015-03-31T22:52:15.000000Z
-3e380d80212dd61565ec7fc0edc867d0
-2015-03-31T22:38:29.699038Z
-12673
-rtorres
-has-props
-
 nav-bottom-bg.png
 file
 
@@ -203,6 +190,19 @@ file
 
 2015-03-31T22:52:15.000000Z
 a96b69c607a309f968d58fec2e48846e
+2015-03-31T22:38:29.699038Z
+12673
+rtorres
+has-props
+
+macFFBgHack.png
+file
+
+
+
+
+2015-03-31T22:52:15.000000Z
+3e380d80212dd61565ec7fc0edc867d0
 2015-03-31T22:38:29.699038Z
 12673
 rtorres

@@ -1,0 +1,33 @@
+
+body {
+    background: #000066 none repeat scroll 0 0;
+}
+
+#content-inner {
+    padding-left: 20px;
+}
+
+#page {
+    width: 900px;
+}
+
+#sidebar-right {
+    margin-left: 690px;
+}
+
+#header img {
+    margin-top: 0px;
+}
+
+.sidebar-right #content {
+    margin-right: -700px;
+    width: 700px;
+}
+
+#logo {
+    margin: 0;
+}
+
+.with-navbar #content {
+    margin-top: 0;
+}

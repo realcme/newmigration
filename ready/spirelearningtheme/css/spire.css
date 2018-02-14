@@ -1,0 +1,100 @@
+
+#spirelogo img {
+    margin-top: 0px
+}
+
+#spirenav {
+    float: left;
+    width: 780px;
+    background-color: #d8d8d8;
+}
+
+#spirenav ul {
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+#spirenav li {
+    display: inline;
+    background-color: #D8D8D8;
+    float: left;
+    margin-right: 3px
+}
+
+#spirenav li a {
+    float: left;
+    display: block;
+    margin: 0 2px 0 3px;
+    text-decoration: none;
+    padding: 35px 5px 2px 5px;
+    font-size: 10px;
+    background-color: #d8d8d8;
+    color: #231F20;
+    border-bottom: none;
+}
+
+#spirenav li a:link {
+    font-size: 10px;
+    color: #231F20;
+    font-weight: normal;
+    font-family: arial, ​helvetica, ​sans-serif;
+}
+
+#spirenav li a {
+    background: url('../img/00_navGrad.gif') repeat-x 0px 20px;
+}
+
+#spirenav li a:hover, #spirenav .sel a {
+    background: url('../img/00_navGrad.gif') repeat-x 0px 0px;
+}
+
+#spirenav #cme_library {
+    background-color: #FDE404;
+}
+
+#spirenav #cme_archive {
+    background-color: #CEDD28;
+}
+
+#spirenav #request_a_program {
+    background-color: #EF6F24;
+}
+
+#spirenav #calendar {
+    background-color: #9F54CC;
+}
+
+#header {
+    margin: 0px
+}
+
+#spirefooter {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#spirefooter {
+    border-top: solid 1px #231F20;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #dfdfdf;
+}
+
+#spirefooter p {
+    font-size: 10px;
+    line-height: 1.4;
+    margin: 10px;
+    padding: 0
+}
+
+#spirefooter a, #spirefooter a:link, #spirefooter a:visited {
+    font-weight: normal;
+    color: #666;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: arial, ​helvetica, ​sans-serif
+}
+
+#spirefooter a:hover {
+    text-decoration: underline;
+}

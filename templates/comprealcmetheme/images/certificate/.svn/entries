@@ -1,7 +1,7 @@
 8
 
 dir
-17674
+17681
 svn+ssh://svn.realcme.com/svn/realcme/branches/RELEASE_8_1/cms/sites/all/themes/zen/comprealcmetheme/images/certificate
 svn+ssh://svn.realcme.com/svn/realcme
 
@@ -221,19 +221,6 @@ caa6d90c07302142c07efb96caa444de
 valerie
 has-props
 
-cmeoutfitters_signature.png
-file
-
-
-
-
-2015-03-26T15:41:14.000000Z
-ff7cd506dc10d460df642a4e6fa986b8
-2010-03-15T15:56:51.000000Z
-3521
-valerie
-has-props
-
 joslin_logo.png
 file
 
@@ -244,6 +231,19 @@ file
 e9f8ecb8463e5661d44c06afd22b9fb4
 2009-02-05T18:36:41.000000Z
 1185
+valerie
+has-props
+
+cmeoutfitters_signature.png
+file
+
+
+
+
+2015-03-26T15:41:14.000000Z
+ff7cd506dc10d460df642a4e6fa986b8
+2010-03-15T15:56:51.000000Z
+3521
 valerie
 has-props
 
@@ -312,19 +312,6 @@ fee15d44fa6fed0f00fd2f21d65aea74
 valerie
 has-props
 
-cis_logo.jpg
-file
-
-
-
-
-2015-03-26T15:41:14.000000Z
-29274c42d481e7818d9848867318e247
-2010-01-07T15:26:17.000000Z
-3147
-valerie
-has-props
-
 ucc_logo.png
 file
 
@@ -335,6 +322,19 @@ file
 21c439b6e7974d61f54d32f00e39bd74
 2009-11-19T14:39:42.000000Z
 2929
+valerie
+has-props
+
+cis_logo.jpg
+file
+
+
+
+
+2015-03-26T15:41:14.000000Z
+29274c42d481e7818d9848867318e247
+2010-01-07T15:26:17.000000Z
+3147
 valerie
 has-props
 
@@ -364,19 +364,6 @@ c136c6bc4cd3024e42bc93205101c644
 valerie
 has-props
 
-cis_logo.png
-file
-
-
-
-
-2015-03-26T15:41:14.000000Z
-afa63a36632347c59e1f13aad26c329a
-2009-08-17T16:02:36.000000Z
-2633
-valerie
-has-props
-
 lipid_signature_1.jpg
 file
 
@@ -387,6 +374,19 @@ file
 0393b4e00c679bbe836692d5d9119dd5
 2009-03-27T21:34:41.000000Z
 1801
+valerie
+has-props
+
+cis_logo.png
+file
+
+
+
+
+2015-03-26T15:41:14.000000Z
+afa63a36632347c59e1f13aad26c329a
+2009-08-17T16:02:36.000000Z
+2633
 valerie
 has-props
 

@@ -1,0 +1,141 @@
+#views-filters {
+    display: none
+}
+
+.page-cmealerts-alerts #views-filters {
+    display: inline
+}
+
+body {
+    background-color: #FFFFFF
+}
+
+#page {
+    width: 1024px;
+    color: #000000;
+}
+
+#footer {
+    padding: 10px 10px;
+}
+
+h1 {
+    color: #FDA738 !important;
+}
+
+/* COURSE */
+
+#coursedata .td-title {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+}
+
+#coursedata table td {
+    vertical-align: middle;
+}
+
+#coursedata table td h2 {
+    margin: 0;
+}
+
+#coursedata {
+    background-position: 5px 5px !important;
+    padding: 25px 0 5px 0;
+}
+
+#rcmcontent #header {
+    display: none;
+}
+
+#healthcoursenav {
+    background-color: #9AC1FE;
+}
+
+.healthhiv-register-btn {
+    background: rgb(69, 131, 207); /* Old browsers */
+    background: linear-gradient(top, rgb(154, 193, 254) 35%, rgb(69, 131, 207) 68%);
+    background: -o-linear-gradient(top, rgb(154, 193, 254) 35%, rgb(69, 131, 207) 68%);
+    background: -moz-linear-gradient(top, rgb(154, 193, 254) 35%, rgb(69, 131, 207) 68%);
+    background: -webkit-linear-gradient(top, rgb(154, 193, 254) 35%, rgb(69, 131, 207) 68%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.35, rgb(154, 193, 254)), color-stop(0.68, rgb(69, 131, 207)));
+    background: -ms-linear-gradient(top, rgb(154, 193, 254) 35%, rgb(69, 131, 207) 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9AC1FE', endColorstr='#4583CF', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18pt;
+    padding: 12px 5px 5px 5px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 30px;
+}
+
+.healthhiv-register-btn a {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18pt;
+}
+
+.healthhiv-header-register {
+    text-align: right;
+    float: right;
+    margin-top: 10px;
+}
+
+.healthhiv-header-top {
+    text-align: right;
+    float: right;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.healthhiv-header-top a {
+    font-weight: bold;
+    color: #9F999A;
+    font-size: 10pt;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.healthhiv-header-bottom {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: right;
+    float: right;
+    border-top: 1px solid rgb(79, 129, 189);
+    border-bottom: 1px solid rgb(79, 129, 189);
+    padding: 5px 0px;
+    box-shadow: inset 0px 4px 9px -6px rgb(79, 129, 189);
+}
+
+.healthhiv-header-bottom a {
+    color: #000000;
+    font-weight: normal;
+    padding: 8px
+}
+
+#logo-title {
+    width: 570px;
+    float: left
+}
+
+#healthhiv-header {
+    width: 400px;
+    float: right
+}
+
+div.error {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#courseheadertable {
+    display: none;
+}
+
+div.cme-consult {
+    display: none;
+}

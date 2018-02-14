@@ -1,0 +1,76 @@
+#page-inner {
+    border-radius: 20px !important;
+    margin-top: 15px !important;
+}
+
+#header {
+    border-top: 0 !important;
+}
+
+#healthcoursenav > ul > li > a:hover {
+    background: #e0e0e0 !important;
+    color: #7494a9 !important;
+    border-radius: 5px !important;
+}
+
+.view-item-all-activities .view-data-node-link a, .view-item-all-activities .view-data-node-link a:link {
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.view-item-all-activities .view-data-node-link {
+    background: #7494a9 !important;
+    background-image: none !important;
+    border-color: #7494a9 !important;
+    box-shadow: none;
+    text-shadow: none;
+
+}
+
+.view-field.view-data-node-link {
+    margin-top: 9px;
+    padding: 5px;
+}
+
+.view-item-all-activities {
+    border: 1px solid #ddd;
+
+}
+
+.no-sidebars #content {
+    width: 100%;
+}
+
+.view-field.view-data-node-title a {
+    display: block;
+    margin-top: 10px;
+}
+
+.header-content {
+    background-color: #efefef;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.with-navbar #content, .with-navbar #sidebar-left, .with-navbar #sidebar-right {
+    margin-top: 10px;
+}
+
+.view-header h1 {
+    text-transform: uppercase;
+    border-left: 10px solid #e0e0e0;
+    padding: 5px;
+    color: #ffffff;
+    background: #7494a9;
+}
+
+#bg-image {
+    border-top-right-radius: 15px;
+    background-image: url('../img/landing-img.png');
+    background-repeat: no-repeat;
+}
+
+

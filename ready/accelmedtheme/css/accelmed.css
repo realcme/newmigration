@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+banner.a.accel {
+    background: url("./img/ACCELMED_header.jpg");
+    text-decoration: blink;
+
+}
+
+body {
+    background-color: #F00;
+}

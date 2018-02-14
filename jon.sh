@@ -253,7 +253,7 @@ fi
 done
 
 
-#/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/rmeitheme/css/style.css
+#/Applications/XAMPP/xamppfiles/htdocs/migration/ready/rmeitheme/css/style.css
 #copy imgs, css, js
 ls -d /Applications/XAMPP/xamppfiles/htdocs/migration/templates/*/ > templates.txt
 for filename in $(cat templates.txt)
@@ -274,7 +274,7 @@ fi
 done
 
 echo "renaming the logo.gif to logo.png"
-ls -d /Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/*/ > templates_imgs.txt
+ls -d /Applications/XAMPP/xamppfiles/htdocs/migration/ready/*/ > templates_imgs.txt
 for partnername in $(cat templates_imgs.txt)
 do
 logo="$partnername""img/logo.gif"
@@ -300,50 +300,47 @@ file="$filename""page.blade.php"
 foldername=$(basename $filename)
 
 
-    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername" ]; then
-       # mkdir "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername"
-       echo 303
+    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername" ]; then
+       mkdir "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername"
     fi
-    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/latest/public/css/partners/learner/$foldername/css" ]; then
-       # mkdir "/Applications/XAMPP/xamppfiles/htdocs/latest/public/css/partners/learner/$foldername/css"
-       echo 307
+    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/css" ]; then
+       mkdir "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/css"
     fi
-    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/latest/public/js/partners/learner/$foldername/js" ]; then
-       # mkdir "/Applications/XAMPP/xamppfiles/htdocs/latest/public/js/partners/learner/$foldername/js"
-       echo 311
+    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/js" ]; then
+       mkdir "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/js"
     fi
-    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/latest/public/img/partners/learner/$foldername/img" ]; then
-       # mkdir "/Applications/XAMPP/xamppfiles/htdocs/latest/public/img/partners/learner/$foldername/img"
-       echo 315
+    if [ ! -d "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/img" ]; then
+       mkdir "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/img"
     fi
 
      if [ -d "$filename""css/" ]; then
-      cp -R "$filename""css/" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/css/"
+      cp -R "$filename""css/" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/css/"
      fi
 
      if [ -d "$filename""js/" ]; then
-      cp -R "$filename""js/" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/js/"
+      cp -R "$filename""js/" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/js/"
      fi
 
      if [ -d "$filename""img/" ]; then
-      cp -R "$filename""img/" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/img/"
+      cp -R "$filename""img/" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/img/"
      fi
 
-     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/style.css" ]; then
-        cp  "$filename""style.css" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/style.css"
+     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/style.css" ]; then
+        cp  "$filename""style.css" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/style.css"
      fi
-     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/print.css" ]; then
-        cp  "$filename""print.css" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/print.css"
+     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/print.css" ]; then
+        cp  "$filename""print.css" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/print.css"
      fi
-     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/layout.css" ]; then
-        cp  "$filename""layout.css" "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldername/layout.css"
+     if [ -f "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/layout.css" ]; then
+        cp  "$filename""layout.css" "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/$foldername/layout.css"
      fi
-     #Delete .svn folders
-     rm -R "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldernamepublic/js/.svn"
-     rm -R "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldernamepublic/img/.svn"
-     rm -R "/Applications/XAMPP/xamppfiles/htdocs/latest/public/partners/learner/$foldernamepublic/css/.svn"
+
 done
+cp  -R "/Applications/XAMPP/xamppfiles/htdocs/migration/ready/* /Applications/XAMPP/xamppfiles/htdocs/latest/public/img/partners/learner/"
 
+#Migrate Alers too
+#rsync -azP jontoshmatov@107.21.181.244:/opt/realcme/learner/www/cmsdata/alerts /Applications/XAMPP/xamppfiles/htdocs/latest/public/img/
+#sudo s3cmd sync cmsdata/* s3://media.realcme.com/learner/
 
 
 echo "STEP 11:"
@@ -360,19 +357,19 @@ cp -R /Applications/XAMPP/xamppfiles/htdocs/migration/partners_scripts/* /Applic
 #cat certifications2/$filename > certifications/blades/$newfilename
 
 
-text=$(echo "
-<?php
-\$name=\$page_settings['name'];
-\$head_title="\"Head Title\"";
-\$certificate=[
-'begin_date'=>'01/01/2017',
-'dateearned'=>'01/01/2017',
-'expiration_date'=>'01/01/2017',
-'creditearned'=>'01/01/2017',
-'course_title'=>'title',
-]
-?>
-")
+#text=$(echo "
+#<?php
+#\$name=\$page_settings['name'];
+#\$head_title="\"Head Title\"";
+#\$certificate=[
+#'begin_date'=>'01/01/2017',
+#'dateearned'=>'01/01/2017',
+#'expiration_date'=>'01/01/2017',
+#'creditearned'=>'01/01/2017',
+#'course_title'=>'title',
+#]
+#?>
+#")
 
 
 #silence the output by adding &>/dev/null at the end of command

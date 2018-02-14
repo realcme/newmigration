@@ -1,0 +1,49 @@
+#gnav {
+    color: #fff;
+    left: 483px;
+    position: absolute;
+    top: 0;
+}
+
+#gnav a {
+    color: #fff;
+}
+
+#gnav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#gnav ul li {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+ul#pnav {
+    margin: 0;
+    padding: 0;
+}
+
+ul#pnav li {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul#fnav {
+    float: left;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+ul#fnav li {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 5px;
+}
