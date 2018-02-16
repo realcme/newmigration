@@ -134,7 +134,6 @@
         </div> <!-- /#header-inner, /#header --> <!-- /Our Stuff -->
 
 
-
         <div id="header" class="clearfix">
             <div class="logo-wrap" style="margin-top:15px; min-width: 89.10891089%;"><a href="http://www.aace.com/"><img
                             src="/cms/sites/all/themes/zen/aace-medtelligencetheme/img/AACE-banner.jpg"
@@ -420,9 +419,6 @@
         </div> <!-- /#footer-inner, /#footer --> </div>
 
 
-
-
-
 </div> <!-- /#page, /#page-wrapper -->
 <div id="footer">
     <div class="section">
@@ -444,5 +440,5 @@
             </div>
         </div>
     </div>
-</div> <!-- /.section, /#footer --> 
+</div> <!-- /.section, /#footer -->
 
